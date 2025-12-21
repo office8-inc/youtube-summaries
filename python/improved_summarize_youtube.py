@@ -7,6 +7,7 @@ import os
 import re
 import json
 import subprocess
+import pytz
 from datetime import datetime
 from youtube_transcript_api import YouTubeTranscriptApi
 from googleapiclient.discovery import build
@@ -350,8 +351,6 @@ def create_markdown_article(video_id, transcript_text, url, video_info=None):
     # 公開日時を取得
     published_date = ""
     if video_info and 'published_at' in video_info:
-        from datetime import datetime
-        import pytz
         published_at = video_info['published_at']
         pub_date = datetime.fromisoformat(published_at.replace('Z', '+00:00'))
         jst = pytz.timezone('Asia/Tokyo')
@@ -540,13 +539,11 @@ def main(video_url, output_dir=None, auto_push=False):
         
         if video_info:
             # 投稿日時を取得してフォーマット
-            from datetime import datetime
             published_at = video_info['published_at']
             # ISO 8601形式をパース (例: 2024-12-15T03:20:00Z)
             pub_date = datetime.fromisoformat(published_at.replace('Z', '+00:00'))
             
             # 日本時間に変換
-            import pytz
             jst = pytz.timezone('Asia/Tokyo')
             pub_date_jst = pub_date.astimezone(jst)
             
