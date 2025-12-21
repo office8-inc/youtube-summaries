@@ -68,13 +68,10 @@ jobs:
             "title": "$ISSUE_TITLE",
             "body": $(echo "$ISSUE_BODY" | jq -Rs .),
             "labels": ["copilot-task", "content-improvement"],
-            "assignees": ["copilot-swe-agent[bot]"],
             "agent_assignment": {
               "target_repo": "${{ github.repository }}",
               "base_branch": "main",
-              "custom_instructions": "要約記事の品質を改善してください。日本語の文章として自然で読みやすい表現に修正し、重要なポイントを強調してください。",
-              "custom_agent": "",
-              "model": ""
+              "custom_instructions": "要約記事の品質を改善してください。日本語の文章として自然で読みやすい表現に修正し、重要なポイントを強調してください。"
             }
           }
           EOF
