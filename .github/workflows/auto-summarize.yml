@@ -34,7 +34,7 @@ jobs:
           echo "FTP_PASSWORD=${{ secrets.FTP_PASSWORD }}" >> .env
           echo "FTP_PORT=${{ secrets.FTP_PORT }}" >> .env
           echo "FTP_REMOTE_PATH=${{ secrets.FTP_REMOTE_PATH }}" >> .env
-          echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> .env
+          echo "GH_TOKEN=${{ secrets.GH_TOKEN }}" >> .env
           echo "GITHUB_REPO=${{ github.repository }}" >> .env
           echo "MAX_VIDEOS_PER_DAY=10" >> .env
           echo "TIMEZONE=Asia/Tokyo" >> .env

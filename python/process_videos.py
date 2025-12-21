@@ -11,7 +11,7 @@ import pytz
 
 load_dotenv()
 
-GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+GH_TOKEN = os.getenv('GH_TOKEN')
 GITHUB_REPO = os.getenv('GITHUB_REPO')
 QUALITY_THRESHOLD = 50  # クオリティスコアの閾値
 

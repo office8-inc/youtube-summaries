@@ -72,7 +72,7 @@ FTP_PASSWORD=ftpパスワード
 FTP_PORT=21
 FTP_REMOTE_PATH=/public_html/blog
 FTP_PUBLIC_URL=https://your-domain.com/youtube-summaries
-GITHUB_TOKEN=あなたのGitHubトークン（オプション）
+GH_TOKEN=あなたのGitHubトークン（オプション）
 GITHUB_REPO=username/repository
 ```
 
@@ -88,7 +88,7 @@ GITHUB_REPO=username/repository
 - `FTP_PASSWORD` - FTPパスワード
 - `FTP_PORT` - FTPポート（通常は21）
 - `FTP_REMOTE_PATH` - アップロード先パス
-- `GITHUB_TOKEN` - Issue作成用（オプション、repo権限が必要）
+- `GH_TOKEN` - Issue作成用のPersonal Access Token（オプション、repo権限が必要）
 
 ### 5. チャンネルリストの編集
 
