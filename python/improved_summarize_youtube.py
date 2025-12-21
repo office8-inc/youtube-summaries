@@ -639,7 +639,7 @@ if __name__ == "__main__":
         print(f"合計: {len(videos)}件")
     
     elif mode == 'list':
-        # channel-list.mdから全チャンネルを処理
+        # channel-list.mdから全チャンネルの動画を収集し、新しい順に処理
         print(f"\n📋 channel-list.mdから全チャンネルを処理中...\n")
         
         channels = parse_channel_list()
@@ -647,49 +647,65 @@ if __name__ == "__main__":
             print("エラー: チャンネルが見つかりませんでした")
             sys.exit(1)
         
-        print(f"登録チャンネル数: {len(channels)}件\n")
+        print(f"登録チャンネル数: {len(channels)}件")
+        print(f"取得件数: 全チャンネル合計で最新{limit}件\n")
         
-        total_processed = 0
-        total_skipped = 0
-        total_failed = 0
+        # 全チャンネルから動画を収集
+        all_videos = []
         
         for ch_idx, channel_url in enumerate(channels, 1):
-            print(f"\n{'#'*60}")
-            print(f"チャンネル [{ch_idx}/{len(channels)}]: {channel_url}")
-            print(f"{'#'*60}")
+            print(f"[{ch_idx}/{len(channels)}] チャンネルから動画を取得中: {channel_url}")
             
             channel_id = get_channel_id(channel_url)
             if not channel_id:
-                print("⚠️  チャンネルIDを取得できませんでした")
+                print("  ⚠️  チャンネルIDを取得できませんでした")
+                continue
+            
+            # 各チャンネルから多めに取得（最大50件）
+            videos = get_channel_latest_videos(channel_id, 50, output_dir)
+            if videos:
+                for video in videos:
+                    video['channel_url'] = channel_url  # チャンネル情報を追加
+                all_videos.extend(videos)
+                print(f"  ✓ {len(videos)}件の未処理動画を取得")
+            else:
+                print(f"  ℹ️  未処理動画なし")
+        
+        if not all_videos:
+            print("\n全チャンネルで未処理の動画が見つかりませんでした")
+            sys.exit(0)
+        
+        # 公開日時でソート（新しい順）
+        all_videos.sort(key=lambda x: x['published_at'], reverse=True)
+        
+        print(f"\n{'='*60}")
+        print(f"📊 収集結果")
+        print(f"{'='*60}")
+        print(f"全チャンネルから収集した未処理動画: {len(all_videos)}件")
+        print(f"これから処理する動画: {min(limit, len(all_videos))}件")
+        print(f"{'='*60}\n")
+        
+        # 上位limit件だけを処理
+        total_processed = 0
+        total_failed = 0
+        
+        for i, video in enumerate(all_videos[:limit], 1):
+            print(f"\n{'='*60}")
+            print(f"[{i}/{min(limit, len(all_videos))}] 処理中")
+            print(f"{'='*60}")
+            print(f"タイトル: {video['title']}")
+            print(f"公開日: {video['published_at']}")
+            print(f"動画URL: {video['url']}")
+            
+            result = main(video['url'], output_dir, auto_push)
+            
+            if result:
+                total_processed += 1
+            else:
                 total_failed += 1
-                continue
-            
-            videos = get_channel_latest_videos(channel_id, limit, output_dir)
-            if not videos:
-                print("動画が見つかりませんでした")
-                continue
-            
-            print(f"最新{len(videos)}件の動画を処理します\n")
-            
-            for i, video in enumerate(videos, 1):
-                print(f"\n[{i}/{len(videos)}] {video['title']}")
-                
-                # 既に処理済みかチェック
-                if output_dir and is_video_processed(video['video_id'], output_dir):
-                    print(f"⏭️  スキップ: 既に処理済み")
-                    total_skipped += 1
-                    continue
-                
-                result = main(video['url'], output_dir, auto_push)
-                
-                if result:
-                    total_processed += 1
-                else:
-                    total_failed += 1
         
         print(f"\n{'='*60}")
         print(f"🎉 全チャンネル処理完了")
         print(f"{'='*60}")
         print(f"✅ 処理成功: {total_processed}件")
-        print(f"⏭️  スキップ: {total_skipped}件")
         print(f"❌ 失敗: {total_failed}件")

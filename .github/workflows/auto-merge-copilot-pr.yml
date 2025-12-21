@@ -42,13 +42,13 @@ jobs:
       
       - name: Auto approve PR
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
         run: |
           PR_NUMBER="${{ github.event.pull_request.number }}"
           
           echo "✅ PRを自動承認します: #$PR_NUMBER"
           
-          # 自分自身は承認できないため、GitHub Actionsとして承認
+          # Personal Access Tokenで承認
           gh pr review $PR_NUMBER \
             --repo ${{ github.repository }} \
             --approve \
@@ -56,7 +56,7 @@ jobs:
       
       - name: Auto merge PR
         env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
         run: |
           PR_NUMBER="${{ github.event.pull_request.number }}"
           
