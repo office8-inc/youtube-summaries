@@ -1,10 +1,9 @@
 name: Auto Merge Copilot PR
 
 on:
-  pull_request_target:
-    types: [ready_for_review, synchronize]  # Draft PRのコミット時とReady化時に実行
-    paths:
-      - 'xserver/summaries/**/*.md'
+  workflow_run:
+    workflows: ["Copilot coding agent"]
+    types: [completed]
 
 permissions:
   contents: write
@@ -12,82 +11,59 @@ permissions:
 
 jobs:
   auto-merge:
-    # CopilotブランチからのPRのみ自動マージ（より確実な判定）
-    if: contains(github.event.pull_request.head.ref, 'copilot/')
+    # Copilot coding agentが成功した場合のみ実行
+    if: github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     
     steps:
-      - name: Wait for Copilot to finish
-        run: sleep 10
-      
-      - name: Check and fix Draft PR
-        id: pr-check
+      - name: Find and process Copilot PR
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
         run: |
-          PR_NUMBER="${{ github.event.pull_request.number }}"
+          echo "🔍 Copilot coding agent完了。関連PRを検索..."
           
-          # PRの状態と最新コミット情報を確認
-          PR_INFO=$(gh pr view $PR_NUMBER --repo ${{ github.repository }} --json state,isDraft,commits)
-          PR_STATE=$(echo "$PR_INFO" | jq -r '.state')
+          # Copilotブランチの未マージDraft PRを検索
+          PR_INFO=$(gh pr list --repo ${{ github.repository }} --state open --json number,headRefName,isDraft \
+            | jq -r '.[] | select(.headRefName | startswith("copilot/"))')
+          
+          if [ -z "$PR_INFO" ]; then
+            echo "⚠️ Copilot PRが見つかりません"
+            exit 0
+          fi
+          
+          PR_NUMBER=$(echo "$PR_INFO" | jq -r '.number')
           IS_DRAFT=$(echo "$PR_INFO" | jq -r '.isDraft')
-          LATEST_COMMIT_MESSAGE=$(echo "$PR_INFO" | jq -r '.commits[-1].messageHeadline')
           
-          echo "PR状態: $PR_STATE"
-          echo "Draft: $IS_DRAFT"
-          echo "最新コミット: $LATEST_COMMIT_MESSAGE"
+          echo "PR #$PR_NUMBER を検出 (Draft: $IS_DRAFT)"
           
-          if [ "$PR_STATE" != "OPEN" ]; then
-            echo "PRがオープン状態ではありません"
-            exit 1
-          fi
-          
-          # Draft PRかつCopilotが作業完了している場合のみ自動Ready化
+          # Draft PRの場合はReady化
           if [ "$IS_DRAFT" = "true" ]; then
-            # Copilot完了のキーワードチェック（「完了」「finish」「改善完了」など）
-            if echo "$LATEST_COMMIT_MESSAGE" | grep -qiE '(完了|finish|improved|enhanced|optimized)'; then
-              echo "📝 Copilotの作業完了を検出しました。Ready for reviewに変更します..."
-              gh pr ready $PR_NUMBER --repo ${{ github.repository }}
-              echo "✓ PRをReady状態に変更しました"
-              
-              # Draft解除後、少し待機（GitHub APIの反映待ち）
-              sleep 5
-            else
-              echo "⚠️ Draft PRですが、Copilot作業中のため待機します"
-              exit 0
-            fi
+            echo "📝 Draft PRをReady for Reviewに変更..."
+            gh pr ready $PR_NUMBER --repo ${{ github.repository }}
+            echo "✓ Ready状態に変更しました"
+            sleep 5
           fi
-      
-      - name: Auto approve and merge PR
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
-        run: |
-          PR_NUMBER="${{ github.event.pull_request.number }}"
           
+          # PRを自動承認
           echo "✅ PRを自動承認します: #$PR_NUMBER"
-          
-          # Personal Access Tokenで承認（失敗しても続行）
           gh pr review $PR_NUMBER \
             --repo ${{ github.repository }} \
             --approve \
-            --body "✅ Copilotによる改善を自動承認しました。FTPアップロードを実行します。" || echo "⚠️ 承認をスキップ（Rulesetでバイパス設定済み）"
+            --body "✅ Copilotによる改善を自動承認しました。" || echo "⚠️ 承認をスキップ"
           
-          echo ""
+          # PRを自動マージ
           echo "🔀 PRを自動マージします: #$PR_NUMBER"
-          
-          # Rulesetバイパス権限でマージ（Copilot coding agentに権限付与済み）
           if gh pr merge $PR_NUMBER \
             --repo ${{ github.repository }} \
             --squash \
             --delete-branch; then
             echo "✅ 自動マージが完了しました"
-            echo "📤 deploy-to-ftp ワークフローがトリガーされます"
           else
             echo "⚠️ 直接マージ失敗、auto-mergeを試行..."
-            # auto-mergeで待機マージ（チェック完了後に自動マージ）
             gh pr merge $PR_NUMBER \
               --repo ${{ github.repository }} \
               --auto \
               --squash \
-              --delete-branch && echo "✅ Auto-mergeを設定しました（チェック完了後に自動マージされます）"
+              --delete-branch && echo "✅ Auto-mergeを設定しました"
           fi
+
