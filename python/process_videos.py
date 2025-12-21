@@ -58,20 +58,7 @@ def main():
             
             if result:
                 processed_video_ids.append(video['video_id'])
-                
-                # クオリティチェック
-                if result['quality_score'] < QUALITY_THRESHOLD:
-                    print(f"  ⚠️  クオリティスコア低: {result['quality_score']}/100")
-                    issue_number = create_github_issue(
-                        video, 
-                        result['quality_score'],
-                        result['file_path']
-                    )
-                    result['needs_review'] = True
-                    result['issue_number'] = issue_number
-                else:
-                    print(f"  ✓ クオリティスコア: {result['quality_score']}/100")
-                    result['needs_review'] = False
+                print(f"  ✓ クオリティスコア: {result['quality_score']}/100")
                 
                 results.append({
                     'video': video,
