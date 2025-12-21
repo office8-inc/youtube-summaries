@@ -53,51 +53,21 @@ jobs:
           export FILE_LIST
           ISSUE_BODY=$(python3 -c "import os; template = open('.github/ISSUE_TEMPLATE/copilot-improve-summary.md', 'r', encoding='utf-8').read(); print(template.replace('REPLACE_WITH_FILES', os.environ['FILE_LIST']))")
           
-          # Issueを作成してCopilotをアサイン（公式ドキュメントに従った正しい方法）
-          # 参照: https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-a-pr
+          # Issueを作成
           ISSUE_TITLE="🤖 要約記事の改善: $(date +'%Y-%m-%d %H:%M')"
+          COPILOT_REQUEST="@copilot この要約記事を改善してください。日本語の文章として自然で読みやすい表現に修正し、重要なポイントを強調してください。"
+          printf -v FULL_BODY "%s\n\n%s" "$ISSUE_BODY" "$COPILOT_REQUEST"
+          ISSUE_URL=$(gh issue create --title "$ISSUE_TITLE" --body "$FULL_BODY" --label "copilot-task,content-improvement")
+          ISSUE_NUMBER=$(echo "$ISSUE_URL" | grep -oP '/\d+$' | tr -d '/')
           
-          # REST APIでIssueを作成してCopilotをアサイン
-          RESPONSE=$(gh api \
-            --method POST \
-            -H "Accept: application/vnd.github+json" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            /repos/${{ github.repository }}/issues \
-            --input - <<EOF
+          # GitHub APIでCopilotをアサイン
+          gh api --method POST "/repos/${{ github.repository }}/issues/$ISSUE_NUMBER/assignees" --input - <<EOF || echo "⚠️ Copilotの自動アサインに失敗（Issue本文の@copilotメンションで起動します）"
           {
-            "title": "$ISSUE_TITLE",
-            "body": "$ISSUE_BODY\n\n---\n\n**対象ファイル:**\n$FILE_LIST\n\n日本語の文章として自然で読みやすい表現に修正し、重要なポイントを強調してください。",
-            "labels": ["copilot-task", "content-improvement"],
-            "assignees": ["copilot-swe-agent[bot]"],
-            "agent_assignment": {
-              "target_repo": "${{ github.repository }}",
-              "base_branch": "main",
-              "custom_instructions": "この要約記事を改善してください。日本語として自然で読みやすい表現に修正し、重要なポイントを強調してください。",
-              "custom_agent": "",
-              "model": ""
-            }
+            "assignees": ["Copilot"]
           }
           EOF
-          )
           
-          ISSUE_NUMBER=$(echo "$RESPONSE" | jq -r '.number')
-          ISSUE_URL=$(echo "$RESPONSE" | jq -r '.html_url')
-          
-          if [ "$ISSUE_NUMBER" != "null" ] && [ -n "$ISSUE_NUMBER" ]; then
-            echo "✅ Issue #$ISSUE_NUMBER を作成しました: $ISSUE_URL"
-            
-            # アサインされたか確認
-            ASSIGNEES=$(echo "$RESPONSE" | jq -r '.assignees[].login // empty')
-            if [ -n "$ASSIGNEES" ]; then
-              echo "✅ Copilot coding agentをアサインしました"
-            else
-              echo "⚠️ Copilotのアサインに失敗しました（手動でアサインしてください）"
-            fi
-          else
-            echo "❌ Issue作成に失敗しました"
-            echo "$RESPONSE"
-            exit 1
-          fi
+          echo "✅ Issue #$ISSUE_NUMBER を作成しました: $ISSUE_URL"
       
       - name: Summary
         if: always()
