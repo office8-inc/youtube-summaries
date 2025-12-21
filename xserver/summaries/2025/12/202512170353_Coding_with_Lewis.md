@@ -7,7 +7,7 @@
 - **動画URL**: [https://www.youtube.com/watch?v=ZcYQD8NVCDw](https://www.youtube.com/watch?v=ZcYQD8NVCDw)
 - **動画ID**: ZcYQD8NVCDw
 - **要約作成日**: 2025年12月21日
-- **再生回数**: 17,436 回
+- **再生回数**: 17,445 回
 - **高評価数**: 673
 
 ## 💡 概要
