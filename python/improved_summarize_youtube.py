@@ -5,6 +5,7 @@ YouTube動画を要約記事に変換するスクリプト（改良版）
 import sys
 import os
 import re
+import json
 import subprocess
 from datetime import datetime
 from youtube_transcript_api import YouTubeTranscriptApi
@@ -134,33 +135,97 @@ def parse_channel_list(file_path='channel-list.md'):
         print(f"エラー: {file_path} が見つかりません")
         return []
     
+    # サンプル・プレースホルダーを除外するパターン
+    exclude_patterns = [
+        '@channelname',
+        'UCxxxxxxxxxxxxxxxxxxxxxx',
+        '/channel/UCxxxxxx',
+    ]
+    
     channels = []
+    in_code_block = False
+    
     with open(file_path, 'r', encoding='utf-8') as f:
         for line in f:
             line = line.strip()
+            
+            # コードブロック内はスキップ
+            if line.startswith('```'):
+                in_code_block = not in_code_block
+                continue
+            if in_code_block:
+                continue
+            
             # URLを含む行を抽出
             if 'youtube.com' in line or line.startswith('UC'):
+                # サンプルURLを除外
+                if any(pattern in line for pattern in exclude_patterns):
+                    continue
+                
                 # マークダウンリンクから抽出
                 url_match = re.search(r'https?://[^\s\)]+', line)
                 if url_match:
                     channels.append(url_match.group(0))
-                elif line.startswith('UC'):
+                elif line.startswith('UC') and 'xxxx' not in line:
                     channels.append(line)
     
     return channels
 
 
 def is_video_processed(video_id, output_dir):
-    """動画が既に処理済みかチェック"""
-    if not output_dir or not os.path.exists(output_dir):
+    """動画が既に処理済みかチェック（JSONファイルを使用）"""
+    if not output_dir:
         return False
     
-    # 全サブディレクトリを検索
-    for root, dirs, files in os.walk(output_dir):
-        for file in files:
-            if file.endswith('.md') and video_id in file:
-                return True
-    return False
+    processed_file = os.path.join(output_dir, 'processed_videos.json')
+    
+    if not os.path.exists(processed_file):
+        return False
+    
+    try:
+        with open(processed_file, 'r', encoding='utf-8') as f:
+            processed = json.load(f)
+        return video_id in processed.get('video_ids', [])
+    except (json.JSONDecodeError, IOError):
+        return False
+
+
+def mark_video_processed(video_id, output_dir, video_info=None):
+    """動画を処理済みとして記録"""
+    if not output_dir:
+        return
+    
+    os.makedirs(output_dir, exist_ok=True)
+    processed_file = os.path.join(output_dir, 'processed_videos.json')
+    
+    # 既存のデータを読み込み
+    processed = {'video_ids': [], 'details': {}}
+    if os.path.exists(processed_file):
+        try:
+            with open(processed_file, 'r', encoding='utf-8') as f:
+                processed = json.load(f)
+        except (json.JSONDecodeError, IOError):
+            pass
+    
+    # video_idsリストに追加
+    if video_id not in processed.get('video_ids', []):
+        if 'video_ids' not in processed:
+            processed['video_ids'] = []
+        processed['video_ids'].append(video_id)
+    
+    # 詳細情報も保存
+    if 'details' not in processed:
+        processed['details'] = {}
+    
+    processed['details'][video_id] = {
+        'processed_at': datetime.now().isoformat(),
+        'title': video_info.get('title', '') if video_info else '',
+        'channel': video_info.get('channel', '') if video_info else ''
+    }
+    
+    # ファイルに保存
+    with open(processed_file, 'w', encoding='utf-8') as f:
+        json.dump(processed, f, ensure_ascii=False, indent=2)
 
 
 def get_video_id(url_or_id):
@@ -496,6 +561,9 @@ def main(video_url, output_dir=None, auto_push=False):
         f.write(markdown_content)
     
     print(f"✓ 要約記事を作成しました: {output_file}")
+    
+    # 処理済みとして記録
+    mark_video_processed(video_id, output_dir, video_info)
     
     result = {
         'file_path': output_file,
