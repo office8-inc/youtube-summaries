@@ -29,12 +29,16 @@ jobs:
           COMMIT_AUTHOR=$(git log -1 --pretty=format:'%an')
           echo "Commit author: $COMMIT_AUTHOR"
           
+          # 大文字・小文字を区別せずにチェック
+          COMMIT_AUTHOR_LOWER=$(echo "$COMMIT_AUTHOR" | tr '[:upper:]' '[:lower:]')
+          
           # CopilotまたはGitHub Actionsによるコミットの場合はスキップ
-          if [[ "$COMMIT_AUTHOR" == *"copilot"* ]] || [[ "$COMMIT_AUTHOR" == *"github-actions"* ]] || [[ "$COMMIT_AUTHOR" == *"GitHub Actions"* ]]; then
+          if [[ "$COMMIT_AUTHOR_LOWER" == *"copilot"* ]] || [[ "$COMMIT_AUTHOR_LOWER" == *"github-actions"* ]] || [[ "$COMMIT_AUTHOR_LOWER" == *"bot"* ]]; then
             echo "skip=true" >> $GITHUB_OUTPUT
-            echo "Copilotまたはbotによるコミットなのでスキップします"
+            echo "Copilotまたはbotによるコミットなのでスキップします: $COMMIT_AUTHOR"
           else
             echo "skip=false" >> $GITHUB_OUTPUT
+            echo "ユーザーによるコミットです: $COMMIT_AUTHOR"
           fi
       
       - name: Get changed summary files

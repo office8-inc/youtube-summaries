@@ -347,7 +347,18 @@ def create_markdown_article(video_id, transcript_text, url, video_info=None):
     title = video_info['title'] if video_info else f"Video ID: {video_id}"
     channel = video_info['channel'] if video_info else "Unknown Channel"
     
-    markdown = f"""# 📺 YouTube動画要約
+    # 公開日時を取得
+    published_date = ""
+    if video_info and 'published_at' in video_info:
+        from datetime import datetime
+        import pytz
+        published_at = video_info['published_at']
+        pub_date = datetime.fromisoformat(published_at.replace('Z', '+00:00'))
+        jst = pytz.timezone('Asia/Tokyo')
+        pub_date_jst = pub_date.astimezone(jst)
+        published_date = pub_date_jst.strftime('%Y年%m月%d日 %H:%M')
+    
+    markdown = f"""# 📺 {title}
 
 ## 📋 動画情報
 
@@ -355,8 +366,10 @@ def create_markdown_article(video_id, transcript_text, url, video_info=None):
 - **チャンネル**: {channel}
 - **動画URL**: [{url}]({url})
 - **動画ID**: {video_id}
-- **要約作成日**: {today}
 """
+    
+    if published_date:
+        markdown += f"- **公開日**: {published_date}\n"
 
     if video_info:
         view_count = int(video_info['view_count']) if video_info['view_count'] != 'N/A' else 0
