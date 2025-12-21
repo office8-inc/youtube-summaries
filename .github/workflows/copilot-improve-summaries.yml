@@ -22,8 +22,24 @@ jobs:
         with:
           fetch-depth: 2  # 前のコミットと比較するため
       
+      - name: Check if pushed by Copilot
+        id: check-author
+        run: |
+          # 最新のコミット作成者を確認
+          COMMIT_AUTHOR=$(git log -1 --pretty=format:'%an')
+          echo "Commit author: $COMMIT_AUTHOR"
+          
+          # CopilotまたはGitHub Actionsによるコミットの場合はスキップ
+          if [[ "$COMMIT_AUTHOR" == *"copilot"* ]] || [[ "$COMMIT_AUTHOR" == *"github-actions"* ]] || [[ "$COMMIT_AUTHOR" == *"GitHub Actions"* ]]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+            echo "Copilotまたはbotによるコミットなのでスキップします"
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+          fi
+      
       - name: Get changed summary files
         id: changed-files
+        if: steps.check-author.outputs.skip != 'true'
         run: |
           # 前のコミットと比較して追加・変更されたファイルを取得
           CHANGED_FILES=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'xserver/summaries/**/*.md' | tr '\n' ' ')
@@ -38,7 +54,7 @@ jobs:
           fi
       
       - name: Create issue and assign to Copilot
-        if: steps.changed-files.outputs.count > 0
+        if: steps.check-author.outputs.skip != 'true' && steps.changed-files.outputs.count > 0
         env:
           # GH_TOKEN: Personal Access Token（Copilotアサインに必要）
           # secrets.GH_TOKEN が設定されていない場合は github.token にフォールバック
