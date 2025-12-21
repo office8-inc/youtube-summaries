@@ -274,19 +274,38 @@ def get_video_info(video_id):
 
 
 def get_transcript(video_id):
-    """動画の字幕を取得"""
+    """動画の字幕を取得（日本語優先）"""
     try:
+        # 1. まず日本語字幕を試す
         api = YouTubeTranscriptApi()
-        transcript_data = api.fetch(video_id, languages=['en'])
-        return transcript_data, 'en'
-    except Exception as e:
+        transcript_data = api.fetch(video_id, languages=['ja'])
+        return transcript_data, 'ja'
+    except Exception:
         try:
+            # 2. 英語字幕を取得して日本語に翻訳
             api = YouTubeTranscriptApi()
-            transcript_data = api.fetch(video_id)
-            return transcript_data, 'auto'
-        except Exception as e2:
-            print(f"字幕の取得に失敗しました: {e2}")
-            return None, None
+            transcript_list = api.list_transcripts(video_id)
+            
+            # 英語字幕を取得
+            try:
+                transcript = transcript_list.find_transcript(['en'])
+                # 日本語に翻訳
+                translated = transcript.translate('ja')
+                transcript_data = translated.fetch()
+                return transcript_data, 'ja-translated'
+            except Exception:
+                # 翻訳失敗したら英語のまま返す
+                transcript_data = api.fetch(video_id, languages=['en'])
+                return transcript_data, 'en'
+        except Exception:
+            try:
+                # 3. 自動検出で取得
+                api = YouTubeTranscriptApi()
+                transcript_data = api.fetch(video_id)
+                return transcript_data, 'auto'
+            except Exception as e:
+                print(f"字幕の取得に失敗しました: {e}")
+                return None, None
 
 
 def format_transcript(transcript_data):
@@ -380,7 +399,7 @@ def create_markdown_article(video_id, transcript_text, url, video_info=None):
     markdown += """
 ## 💡 概要
 
-この記事は、YouTube動画の字幕から自動生成された要約です。
+この記事は、YouTube動画の日本語字幕（自動翻訳含む）から自動生成された要約です。
 
 ## ⭐ 重要なポイント
 
