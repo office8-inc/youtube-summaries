@@ -1,19 +1,14 @@
 """
-新着動画を一括処理してクオリティチェックを行うスクリプト
+新着動画を一括処理して要約記事を生成するスクリプト
 """
 import os
 import json
 from datetime import datetime
 from improved_summarize_youtube import main as summarize_video
-from github import Github
 from dotenv import load_dotenv
 import pytz
 
 load_dotenv()
-
-GH_TOKEN = os.getenv('GH_TOKEN')
-GITHUB_REPO = os.getenv('GITHUB_REPO')
-QUALITY_THRESHOLD = 50  # クオリティスコアの閾値
 
 
 def create_output_directory(video_info):
@@ -25,62 +20,10 @@ def create_output_directory(video_info):
     year = published_jst.strftime('%Y')
     month = published_jst.strftime('%m')
     
-    output_dir = os.path.join('summaries', year, month)
+    output_dir = os.path.join('xserver', 'summaries', year, month)
     os.makedirs(output_dir, exist_ok=True)
     
     return output_dir
-
-
-def create_github_issue(video_info, quality_score, file_path):
-    """クオリティが低い場合にGitHub Issueを作成"""
-    if not GITHUB_TOKEN or not GITHUB_REPO:
-        print("⚠️  GitHub設定がありません。Issueを作成できません。")
-        return None
-    
-    try:
-        g = Github(GITHUB_TOKEN)
-        repo = g.get_repo(GITHUB_REPO)
-        
-        title = f"📝 要約レビュー必要: {video_info['title']}"
-        body = f"""## 要約記事のクオリティが低いため、レビューが必要です
-
-### 動画情報
-- **タイトル**: {video_info['title']}
-- **チャンネル**: {video_info['channel']}
-- **URL**: {video_info['url']}
-- **投稿日**: {video_info['published_at']}
-
-### クオリティ評価
-- **スコア**: {quality_score}/100
-- **閾値**: {QUALITY_THRESHOLD}/100
-
-### ファイル
-- `{file_path}`
-
-### 対応方法
-
-1. 生成されたMarkdownファイルを確認
-2. 内容を手動で修正・改善
-3. 問題なければこのIssueをクローズ
-4. 削除する場合はファイルを削除してクローズ
-
----
-
-⚠️ **自動生成された要約が不十分な可能性があります**
-"""
-        
-        issue = repo.create_issue(
-            title=title,
-            body=body,
-            labels=['review-needed', 'auto-generated']
-        )
-        
-        print(f"✓ GitHub Issueを作成しました: #{issue.number}")
-        return issue.number
-        
-    except Exception as e:
-        print(f"GitHub Issueの作成に失敗: {e}")
-        return None
 
 
 def main():
@@ -162,13 +105,8 @@ def main():
     print("処理結果サマリー")
     print("="*50)
     print(f"総処理数: {len(results)}")
-    print(f"レビュー必要: {sum(1 for r in results if r['result'].get('needs_review', False))}")
-    print(f"問題なし: {sum(1 for r in results if not r['result'].get('needs_review', False))}")
+    print(f"成功: {len(results)}")
     
     # 結果を保存
     with open('process_results.json', 'w', encoding='utf-8') as f:
-        json.dump(results, f, indent=2, ensure_ascii=False)
-
-
-if __name__ == "__main__":
-    main()
+        json.dumprint(f"  ✓ クオリティスコア: {result['quality_score']}/100")

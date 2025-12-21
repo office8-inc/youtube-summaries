@@ -5,8 +5,8 @@
 
 header('Content-Type: application/json; charset=utf-8');
 
-// summariesディレクトリのパス
-$summariesDir = '../summaries';
+// summariesディレクトリのパス（FTPサーバー上では同じディレクトリ階層）
+$summariesDir = '.';
 
 // Markdownファイルを再帰的に検索
 function findMarkdownFiles($dir, $summariesDir) {

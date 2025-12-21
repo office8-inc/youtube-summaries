@@ -1,0 +1,107 @@
+name: Deploy to FTP on Merge
+
+on:
+  pull_request:
+    types: [closed]
+    paths:
+      - 'xserver/summaries/**/*.md'
+      - 'xserver/index.html'
+      - 'xserver/get_articles.php'
+      - 'xserver/marked.min.js'
+
+permissions:
+  contents: read
+
+jobs:
+  deploy-to-ftp:
+    # Pull RequestがマージされたときのみFTPアップロードを実行
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install python-dotenv
+      
+      - name: Create .env file
+        run: |
+          echo "FTP_HOST=${{ secrets.FTP_HOST }}" >> .env
+          echo "FTP_USER=${{ secrets.FTP_USER }}" >> .env
+          echo "FTP_PASSWORD=${{ secrets.FTP_PASSWORD }}" >> .env
+          echo "FTP_PORT=21" >> .env
+          echo "FTP_REMOTE_PATH=/" >> .env
+      
+      - name: Upload to FTP
+        run: |
+          python -c "
+          import ftplib
+          import os
+          from pathlib import Path
+          from dotenv import load_dotenv
+          
+          load_dotenv()
+          
+          # FTP接続
+          ftp = ftplib.FTP()
+          ftp.connect(os.getenv('FTP_HOST'), int(os.getenv('FTP_PORT', 21)))
+          ftp.login(os.getenv('FTP_USER'), os.getenv('FTP_PASSWORD'))
+          ftp.cwd('/')
+          
+          uploaded_count = 0
+          
+          # xserver/summariesディレクトリ配下を再帰的にアップロード
+          xserver_path = Path('xserver/summaries')
+          if xserver_path.exists():
+              for file_path in xserver_path.rglob('*.md'):
+                  # リモートパスを構築（例: 2025/12/file.md）
+                  relative_path = file_path.relative_to(xserver_path)
+                  remote_path = str(relative_path).replace('\\\\', '/')
+                  
+                  # 必要に応じてディレクトリ作成
+                  remote_dirs = '/'.join(remote_path.split('/')[:-1])
+                  if remote_dirs:
+                      current_dir = ''
+                      for dir_name in remote_dirs.split('/'):
+                          current_dir = f'{current_dir}/{dir_name}' if current_dir else dir_name
+                          try:
+                              ftp.mkd(current_dir)
+                          except:
+                              pass  # ディレクトリが既に存在する場合
+                  
+                  # ファイルアップロード
+                  with open(file_path, 'rb') as f:
+                      ftp.storbinary(f'STOR {remote_path}', f)
+                  print(f'✓ {remote_path} をアップロードしました')
+                  uploaded_count += 1
+          
+          # xserver配下のその他のファイルもアップロード
+          for file_name in ['index.html', 'get_articles.php', 'marked.min.js']:
+              file_path = Path(f'xserver/{file_name}')
+              if file_path.exists():
+                  with open(file_path, 'rb') as f:
+                      ftp.storbinary(f'STOR {file_name}', f)
+                  print(f'✓ {file_name} をアップロードしました')
+                  uploaded_count += 1
+          
+          ftp.quit()
+          
+          print(f'\\n📤 合計 {uploaded_count} ファイルをアップロードしました')
+          "
+      
+      - name: Summary
+        if: always()
+        run: |
+          echo "## 📊 FTPアップロード完了" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Pull Request #${{ github.event.pull_request.number }} のマージに伴い、変更ファイルをXSERVERにアップロードしました。" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "🌐 公開URL: https://office8-inc.com/youtube-summaries/" >> $GITHUB_STEP_SUMMARY

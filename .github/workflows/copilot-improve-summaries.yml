@@ -1,0 +1,132 @@
+name: Copilot Improve Summaries
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'xserver/summaries/**/*.md'
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  create-improvement-issue:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # 前のコミットと比較するため
+      
+      - name: Get changed summary files
+        id: changed-files
+        run: |
+          # 前のコミットと比較して追加・変更されたファイルを取得
+          CHANGED_FILES=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'xserver/summaries/**/*.md' | tr '\n' ' ')
+          echo "files=$CHANGED_FILES" >> $GITHUB_OUTPUT
+          echo "Changed files: $CHANGED_FILES"
+          
+          # ファイル数をカウント
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "count=0" >> $GITHUB_OUTPUT
+          else
+            echo "count=$(echo $CHANGED_FILES | wc -w)" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Create issue and assign to Copilot
+        if: steps.changed-files.outputs.count > 0
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # 変更されたファイルのリストを作成
+          FILES="${{ steps.changed-files.outputs.files }}"
+          
+          # Issue本文を作成
+          ISSUE_BODY="## 📝 要約記事の改善タスク
+
+以下のYouTube要約記事が新規作成されました。日本語の質を向上させ、読者にとってより価値のある内容に改善してください。
+
+### 対象ファイル
+$(for file in $FILES; do echo "- \`$file\`"; done)
+
+### 改善項目
+
+#### 1. 日本語の自然さ向上
+- ✅ 機械翻訳特有の不自然な表現を修正
+- ✅ より読みやすく、流暢な日本語に書き直す
+- ✅ 専門用語は適切な日本語訳を使用（カタカナ表記の場合は初出時に英語を併記）
+
+#### 2. 概要セクションの追加
+各記事の冒頭に「## 📋 概要」セクションを追加し、以下を含めてください：
+- 動画の主なテーマ（2-3文）
+- 想定視聴時間
+- 対象読者（例：初心者向け、開発者向けなど）
+
+#### 3. 重要なポイントのハイライト
+各記事に「## 💡 重要なポイント」セクションを追加し、以下を含めてください：
+- 3-5個の箇条書きで、動画の核心的な学びや要点をまとめる
+- 実践的なアドバイスやTipsがあれば強調
+
+#### 4. 構造の最適化
+- 見出しの階層を見直し、読みやすい構成に
+- 長すぎるセクションは適切に分割
+- 関連する内容をグループ化
+
+### 注意事項
+- 既存の絵文字は保持してください
+- メタデータ（タイトル、チャンネル名、視聴回数など）は変更しないでください
+- 元の内容の意図を変えないようにしてください
+- マークダウン形式を維持してください
+
+### 完了条件
+- [ ] すべての対象ファイルが改善されている
+- [ ] 日本語が自然で読みやすい
+- [ ] 概要セクションが追加されている
+- [ ] 重要なポイントセクションが追加されている
+- [ ] マークダウンの書式が正しい"
+
+          # IssueをCopilotにアサインして作成
+          gh api \
+            --method POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            /repos/${{ github.repository }}/issues \
+            --input - <<EOF
+          {
+            "title": "🤖 要約記事の改善: $(date +'%Y-%m-%d %H:%M')",
+            "body": $(echo "$ISSUE_BODY" | jq -R -s .),
+            "assignees": ["copilot-swe-agent[bot]"],
+            "labels": ["copilot-task", "content-improvement"],
+            "agent_assignment": {
+              "target_repo": "${{ github.repository }}",
+              "base_branch": "main",
+              "custom_instructions": "日本語の記事として高品質な内容に仕上げてください。読者にとって価値のある、わかりやすい記事を目指してください。",
+              "custom_agent": "",
+              "model": ""
+            }
+          }
+          EOF
+          
+          echo "✅ Copilotにタスクをアサインしました"
+      
+      - name: Summary
+        if: always()
+        run: |
+          echo "## 📊 実行結果" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- 検出ファイル数: ${{ steps.changed-files.outputs.count }}" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.changed-files.outputs.count }}" -gt "0" ]; then
+            echo "- ステータス: ✅ Copilotにタスクをアサインしました" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### 対象ファイル" >> $GITHUB_STEP_SUMMARY
+            for file in ${{ steps.changed-files.outputs.files }}; do
+              echo "- \`$file\`" >> $GITHUB_STEP_SUMMARY
+            done
+          else
+            echo "- ステータス: ℹ️ 新規要約ファイルはありません" >> $GITHUB_STEP_SUMMARY
+          fi

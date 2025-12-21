@@ -15,7 +15,7 @@ ENV/
 .venv
 
 # 生成されたファイル
-summaries/
+xserver/summaries/
 processed_videos.json
 process_results.json
 

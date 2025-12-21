@@ -1,15 +1,18 @@
 # 📺 YouTube動画自動要約システム
 
-英語圏のYouTube動画を自動的に日本語要約記事に変換し、FTPサーバーに公開するシステムです。
+英語圏のYouTube動画を自動的に日本語要約記事に変換し、GitHub Copilotで品質向上、XSERVERに公開するシステムです。
 
 ## 🌟 機能
 
 - ✅ 登録したYouTubeチャンネルから新着動画を自動収集
-- ✅ 字幕を取得して日本語の要約記事を自動生成
-- ✅ クオリティチェック機能（低品質な記事はGitHub Issueで通知）
-- ✅ 年/月/日のディレクトリ構造で整理
-- ✅ FTPサーバーへの自動アップロード
-- ✅ GitHub Actionsで毎日自動実行（日本時間03:00）
+- ✅ 字幕を取得して日本語の要約記事を自動生成（ローカル実行）
+- ✅ **GitHub Copilot Coding Agentによる自動品質向上** 🆕
+  - 日本語の自然さ向上
+  - 概要セクションの追加
+  - 重要なポイントのハイライト
+- ✅ Pull Request経由での品質管理
+- ✅ マージ後、XSERVERへ自動FTPアップロード
+- ✅ Webビューアで閲覧可能
 
 ## 📋 必要なもの
 
@@ -21,21 +24,21 @@
 4. 「認証情報」→「認証情報を作成」→「APIキー」を選択
 5. 生成されたAPIキーをコピー
 
-### 2. GitHub Personal Access Token（オプション）
+### 2. GitHub Copilot Pro サブスクリプション 🆕
 
-GitHub Issueを自動作成する場合に必要：
+**自動品質向上機能を使用するには必須**
 
-1. GitHub Settings → Developer settings → Personal access tokens → Tokens (classic)
-2. "Generate new token" をクリック
-3. スコープで `repo` を選択
-4. トークンを生成してコピー
+- [GitHub Copilot Pro](https://github.com/features/copilot) ($10/月)
+- または GitHub Copilot Business/Enterprise
 
-### 3. FTPサーバー
+Copilot Coding Agentが自動でPull Requestを作成し、記事の品質を向上させます。
+
+### 3. XSERVERアカウント
 
 - ホスト名
 - ユーザー名
 - パスワード
-- アップロード先パス
+- アップロード先パス（通常は `/`）
 
 ## 🚀 セットアップ
 
@@ -56,25 +59,7 @@ pip install -r requirements.txt
 
 ⚠️ **重要**: `.env`ファイルは機密情報を含むため、絶対にGitにコミットしないでください。
 
-`.env.example`をコピーして`.env`ファイルを作成し、必要な情報を入力：
-
-```bash
-cp .env.example .env
-```
-
-`.env`ファイルを編集：
-
-```env
-YOUTUBE_API_KEY=あなたのYouTube_APIキー
-FTP_HOST=ftp.example.com
-FTP_USER=ftpユーザー名
-FTP_PASSWORD=ftpパスワード
-FTP_PORT=21
-FTP_REMOTE_PATH=/public_html/blog
-FTP_PUBLIC_URL=https://your-domain.com/youtube-summaries
-GH_TOKEN=あなたのGitHubトークン（オプション）
-GITHUB_REPO=username/repository
-```
+プロジェクトルートに`.env`ファイルを作成し、YouTube APIキーやFTP情報などの必要な環境変数を設定してください。
 
 ### 4. GitHub Secretsの設定
 
@@ -82,13 +67,11 @@ GITHUB_REPO=username/repository
 
 リポジトリの Settings → Secrets and variables → Actions で以下を追加：
 
-- `YOUTUBE_API_KEY` - YouTube Data API v3のキー
-- `FTP_HOST` - FTPサーバーのホスト名
-- `FTP_USER` - FTPユーザー名
-- `FTP_PASSWORD` - FTPパスワード
-- `FTP_PORT` - FTPポート（通常は21）
-- `FTP_REMOTE_PATH` - アップロード先パス
-- `GH_TOKEN` - Issue作成用のPersonal Access Token（オプション、repo権限が必要）
+| Secret名 | 説明 | 必須 |
+|---------|------|------|
+| `FTP_HOST` | FTPサーバーのホスト名 | ✅ |
+| `FTP_USER` | FTPユーザー名 | ✅ |
+| `FTP_PASSWORD` | FTPパスワード | ✅ |
 
 ### 5. チャンネルリストの編集
 
@@ -101,30 +84,45 @@ GITHUB_REPO=username/repository
 
 ## 💻 使い方
 
-### 手動実行（ローカル）
+### 新しい自動化フロー 🆕
 
-#### 1. 新着動画を取得
-
-```bash
-python python/fetch_videos.py
-```
-
-#### 2. 動画を要約
+#### 1. ローカルで要約を生成（手動・週1回程度）
 
 ```bash
 python python/process_videos.py
 ```
 
-#### 3. FTPにアップロード
+これにより `xserver/summaries/` に要約記事が生成されます。
+
+#### 2. GitHubにプッシュ
 
 ```bash
-python python/upload_to_ftp.py
+git add .
+git commit -m "Add new summaries"
+git push
 ```
 
-### 自動実行（GitHub Actions）
+#### 3. GitHub Copilotが自動で改善（完全自動）
 
-- 毎日日本時間03:00に自動実行されます
-- 手動実行も可能：Actions → "Auto Summarize YouTube Videos" → "Run workflow"
+- **自動**: Push検知でGitHub Actionsが起動
+- **自動**: Issueが作成され、Copilotにアサイン
+- **自動**: Copilotが記事を改善（日本語向上・概要追加・ポイント抽出）
+- **自動**: Pull Requestが作成される
+
+#### 4. レビュー＆マージ（手動）
+
+- GitHub上でPull Requestを確認
+- 必要に応じてコメントで修正依頼
+- 問題なければマージ
+
+#### 5. XSERVERへ自動デプロイ（完全自動）
+
+- **自動**: マージ検知でFTPアップロード
+- **自動**: https://office8-inc.com/youtube-summaries/ で公開
+
+### レガシーフロー（参考）
+
+従来の完全自動実行フローは、YouTubeのIP制限により現在使用していません。
 
 ## 📁 ディレクトリ構造
 
@@ -132,86 +130,85 @@ python python/upload_to_ftp.py
 .
 ├── .github/
 │   ├── workflows/
-│   │   └── auto-summarize.yml  # GitHub Actions設定
-│   └── README.md               # このファイル
-├── python/                     # Pythonスクリプト
-│   ├── fetch_videos.py         # 新着動画取得
-│   ├── process_videos.py       # 要約生成とバッチ処理
-│   ├── upload_to_ftp.py        # FTPアップロード
-│   └── improved_summarize_youtube.py  # 要約エンジン本体
-├── viewer/                     # FTP側のWebビューア
-│   ├── index.html              # フロントエンド
-│   └── get_articles.php        # 記事一覧API
-├── summaries/                  # 生成された要約記事（.gitignore）
-│   └── YYYY/
-│       └── MM/
-│           └── YYYYMMDDHHmm_ChannelName.md
-├── channel-list.md             # 監視対象チャンネルリスト
-├── requirements.txt            # Python依存関係
-├── .env.example                # 環境変数のサンプル
-└── processed_videos.json       # 処理済み動画リスト（.gitignore）
+│   │   ├── copilot-improve-summaries.yml  # 🆕 Copilot自動改善
+│   │   ├── deploy-to-ftp.yml              # 🆕 マージ時FTPアップロード
+│   │   └── auto-summarize.yml             # レガシー（無効化推奨）
+│   └── README.md                          # このファイル
+├── python/                                # Pythonスクリプト
+│   ├── process_videos.py                  # 要約生成（ローカル実行）
+│   └── improved_summarize_youtube.py      # 要約エンジン本体
+├── xserver/                               # XSERVER公開ファイル
+│   ├── index.html                         # Webビューア
+│   ├── get_articles.php                   # 記事一覧API
+│   ├── marked.min.js                      # Markdownレンダラー
+│   └── summaries/                         # 生成された要約記事
+│       └── YYYY/
+│           └── MM/
+│               └── YYYYMMDDHHmm_ChannelName.md
+├── channel-list.md                        # 監視対象チャンネルリスト
+└── requirements.txt                       # Python依存関係
 ```
 
 ## 🌐 FTP側のWebシステム設置
 
-### 方法1: PHPビューア（推奨）
-
-`viewer/`ディレクトリの内容をFTPサーバーにアップロード：
+`xserver/`ディレクトリの内容をXSERVERの公開ディレクトリにアップロード：
 
 ```
-/public_html/blog/
+/home/YOUR_FTP_USER/YOUR_DOMAIN/public_html/youtube-summaries/
 ├── index.html
 ├── get_articles.php
+├── marked.min.js
 └── summaries/
 ```
 
-ブラウザで `https://your-domain.com/blog/` にアクセス
-
-### 方法2: 静的サイトジェネレーター
-
-Docsifyやその他の静的サイトジェネレーターを使用することも可能
+ブラウザで `https://YOUR_DOMAIN/youtube-summaries/` にアクセス
 
 ## 🔧 カスタマイズ
 
-### 1日の処理件数を変更
+### Copilotの改善指示を変更
 
-`.env`ファイル：
+[.github/workflows/copilot-improve-summaries.yml](.github/workflows/copilot-improve-summaries.yml) の `custom_instructions` セクションを編集
 
-```env
-MAX_VIDEOS_PER_DAY=20
-```
+### 処理対象のチャンネルを変更
 
-### クオリティ閾値を変更
-
-`process_videos.py`の`QUALITY_THRESHOLD`を編集
-
-### 実行時刻を変更
-
-`.github/workflows/auto-summarize.yml`のcron式を編集：
-
-```yaml
-# 毎日12:00 JST (03:00 UTC)の場合
-- cron: '0 3 * * *'
-```
+`channel-list.md`を編集して監視したいYouTubeチャンネルを追加/削除
 
 ## 🐛 トラブルシューティング
 
+### Copilotにタスクがアサインされない
+
+**原因**: GitHub Copilot Pro/Business/Enterpriseが有効になっていない
+
+**解決策**:
+1. [GitHub Copilot](https://github.com/features/copilot)のサブスクリプションを確認
+2. リポジトリでCopilot Coding Agentが有効か確認
+3. Organization設定でCopilotが許可されているか確認
+
+### Pull Requestが作成されない
+
+**原因**: Copilotが処理中、またはエラーが発生している
+
+**解決策**:
+1. Issueページでステータスを確認
+2. Copilotのセッションログを確認（Issue内のリンクから）
+3. 必要に応じてIssueにコメントで追加指示
+
+### FTPアップロードが失敗する
+
+**原因**: FTP認証情報が正しくない、または接続エラー
+
+**解決策**:
+1. GitHub Secretsの設定を確認
+2. XSERVERのFTP設定を確認
+3. GitHub Actionsのログでエラーメッセージをチェック
+
 ### YouTube APIのクォータ超過
 
-- 1日のクォータは10,000ユニット
-- 動画検索1回 = 100ユニット
-- 必要に応じて`MAX_VIDEOS_PER_DAY`を調整
+**原因**: 1日のAPI使用量が上限（10,000ユニット）に達した
 
-### 字幕が取得できない
-
-- 動画に字幕（英語）が存在することを確認
-- 自動生成字幕も利用可能
-
-### FTP接続エラー
-
-- FTP情報が正しいか確認
-- ファイアウォール設定を確認
-- パッシブモードが必要な場合は`upload_to_ftp.py`を修正
+**解決策**:
+- 翌日まで待つ（クォータは毎日リセット）
+- 処理する動画数を減らす
 
 ## 📝 ライセンス
 
