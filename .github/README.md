@@ -84,45 +84,47 @@ pip install -r requirements.txt
 
 ## 💻 使い方
 
-### 新しい自動化フロー 🆕
+### 完全自動化フロー ⚡
 
-#### 1. ローカルで要約を生成（手動・週1回程度）
-
-```bash
-python python/process_videos.py
-```
-
-これにより `xserver/summaries/` に要約記事が生成されます。
-
-#### 2. GitHubにプッシュ
+#### 1. ローカルで要約を生成＆自動プッシュ（手動実行・週1回程度）
 
 ```bash
-git add .
-git commit -m "Add new summaries"
-git push
+python python/improved_summarize_youtube.py --from-list --limit 10 xserver/summaries --push
 ```
 
-#### 3. GitHub Copilotが自動で改善（完全自動）
+このコマンド1つで以下が実行されます：
+- ✅ `channel-list.md`の全チャンネルから未処理動画を取得
+- ✅ 字幕を取得して要約記事を生成（`xserver/summaries/YYYY/MM/` に保存）
+- ✅ 自動的にgit commit & push
 
-- **自動**: Push検知でGitHub Actionsが起動
-- **自動**: Issueが作成され、Copilotにアサイン
-- **自動**: Copilotが記事を改善（日本語向上・概要追加・ポイント抽出）
-- **自動**: Pull Requestが作成される
+#### 2. 以降は完全自動 🤖
 
-#### 4. レビュー＆マージ（手動）
+**何もしなくても以下が自動実行されます：**
 
-- GitHub上でPull Requestを確認
-- 必要に応じてコメントで修正依頼
-- 問題なければマージ
+1. **Push検知** → GitHub Actionsが起動
+2. **Issueが作成** → Copilotに自動アサイン
+3. **Copilotが記事を改善**
+   - 日本語の自然さ向上
+   - 概要セクションの追加
+   - 重要なポイントのハイライト
+4. **Pull Requestが作成**
+5. **自動承認＆マージ** ⚡ 🆕
+6. **XSERVERへ自動FTPアップロード**
+7. **公開完了** → https://office8-inc.com/youtube-summaries/
 
-#### 5. XSERVERへ自動デプロイ（完全自動）
+**あなたがやること：最初のコマンド実行だけ！**
 
-- **自動**: マージ検知でFTPアップロード
-- **自動**: https://office8-inc.com/youtube-summaries/ で公開
+### オプション
 
-### レガシーフロー（参考）
+**単一動画を処理する場合：**
+```bash
+python python/improved_summarize_youtube.py <YouTube URL> xserver/summaries --push
+```
 
-従来の完全自動実行フローは、YouTubeのIP制限により現在使用していません。
+**特定チャンネルのみ処理する場合：**
+```bash
+python python/improved_summarize_youtube.py --channel <Channel URL> --limit 10 xserver/summaries --push
+```
 
 ## 📁 ディレクトリ構造
 
@@ -130,12 +132,11 @@ git push
 .
 ├── .github/
 │   ├── workflows/
-│   │   ├── copilot-improve-summaries.yml  # 🆕 Copilot自動改善
-│   │   ├── deploy-to-ftp.yml              # 🆕 マージ時FTPアップロード
-│   │   └── auto-summarize.yml             # レガシー（無効化推奨）
+│   │   ├── copilot-improve-summaries.yml  # Copilot自動改善
+│   │   ├── auto-merge-copilot-pr.yml      # ⚡ PR自動マージ
+│   │   └── deploy-to-ftp.yml              # マージ時FTPアップロード
 │   └── README.md                          # このファイル
 ├── python/                                # Pythonスクリプト
-│   ├── process_videos.py                  # 要約生成（ローカル実行）
 │   └── improved_summarize_youtube.py      # 要約エンジン本体
 ├── xserver/                               # XSERVER公開ファイル
 │   ├── index.html                         # Webビューア

@@ -1,0 +1,73 @@
+name: Auto Merge Copilot PR
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - 'xserver/summaries/**/*.md'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  auto-merge:
+    # Copilotが作成したPRのみ自動マージ
+    if: |
+      github.event.pull_request.user.login == 'github-actions[bot]' ||
+      contains(github.event.pull_request.title, 'Copilot') ||
+      contains(github.event.pull_request.title, '要約記事の品質向上')
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Wait for Copilot to finish
+        run: sleep 10
+      
+      - name: Check PR status
+        id: pr-check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          PR_NUMBER="${{ github.event.pull_request.number }}"
+          
+          # PRの状態を確認
+          PR_STATE=$(gh pr view $PR_NUMBER --repo ${{ github.repository }} --json state --jq '.state')
+          
+          echo "PR状態: $PR_STATE"
+          
+          if [ "$PR_STATE" != "OPEN" ]; then
+            echo "PRがオープン状態ではありません"
+            exit 1
+          fi
+      
+      - name: Auto approve PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PR_NUMBER="${{ github.event.pull_request.number }}"
+          
+          echo "✅ PRを自動承認します: #$PR_NUMBER"
+          
+          # 自分自身は承認できないため、GitHub Actionsとして承認
+          gh pr review $PR_NUMBER \
+            --repo ${{ github.repository }} \
+            --approve \
+            --body "✅ Copilotによる改善を自動承認しました。FTPアップロードを実行します。"
+      
+      - name: Auto merge PR
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          PR_NUMBER="${{ github.event.pull_request.number }}"
+          
+          echo "🔀 PRを自動マージします: #$PR_NUMBER"
+          
+          # squashマージで履歴を綺麗に保つ
+          gh pr merge $PR_NUMBER \
+            --repo ${{ github.repository }} \
+            --squash \
+            --auto \
+            --delete-branch
+          
+          echo "✅ 自動マージが完了しました"
+          echo "📤 deploy-to-ftp ワークフローがトリガーされます"

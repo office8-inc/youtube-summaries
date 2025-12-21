@@ -51,8 +51,8 @@ def get_channel_id(channel_url):
     return None
 
 
-def get_channel_latest_videos(channel_id, max_results=10):
-    """チャンネルの最新動画を取得"""
+def get_channel_latest_videos(channel_id, max_results=10, output_dir=None):
+    """チャンネルの未処理動画を取得（既に処理済みの動画をスキップして次のページへ進む）"""
     if not YOUTUBE_API_KEY:
         print("エラー: YOUTUBE_API_KEYが設定されていません")
         return []
@@ -73,25 +73,55 @@ def get_channel_latest_videos(channel_id, max_results=10):
         
         uploads_playlist_id = channel_response['items'][0]['contentDetails']['relatedPlaylists']['uploads']
         
-        # プレイリストから最新動画を取得
-        playlist_request = youtube.playlistItems().list(
-            part='snippet',
-            playlistId=uploads_playlist_id,
-            maxResults=max_results
-        )
-        playlist_response = playlist_request.execute()
+        # 未処理の動画をmax_results件集めるまでページネーション
+        unprocessed_videos = []
+        next_page_token = None
+        total_checked = 0
         
-        videos = []
-        for item in playlist_response['items']:
-            video_id = item['snippet']['resourceId']['videoId']
-            videos.append({
-                'video_id': video_id,
-                'title': item['snippet']['title'],
-                'url': f'https://www.youtube.com/watch?v={video_id}',
-                'published_at': item['snippet']['publishedAt']
-            })
+        while len(unprocessed_videos) < max_results:
+            # プレイリストから動画を取得
+            playlist_request = youtube.playlistItems().list(
+                part='snippet',
+                playlistId=uploads_playlist_id,
+                maxResults=50,  # 1回あたり最大50件取得
+                pageToken=next_page_token
+            )
+            playlist_response = playlist_request.execute()
+            
+            if not playlist_response['items']:
+                break  # これ以上動画がない
+            
+            # 各動画をチェック
+            for item in playlist_response['items']:
+                video_id = item['snippet']['resourceId']['videoId']
+                total_checked += 1
+                
+                # 既に処理済みかチェック
+                if output_dir and is_video_processed(video_id, output_dir):
+                    continue  # スキップ
+                
+                # 未処理の動画を追加
+                unprocessed_videos.append({
+                    'video_id': video_id,
+                    'title': item['snippet']['title'],
+                    'url': f'https://www.youtube.com/watch?v={video_id}',
+                    'published_at': item['snippet']['publishedAt']
+                })
+                
+                # 必要な件数に達したら終了
+                if len(unprocessed_videos) >= max_results:
+                    break
+            
+            # 次のページがあるかチェック
+            next_page_token = playlist_response.get('nextPageToken')
+            if not next_page_token:
+                break  # これ以上ページがない
         
-        return videos
+        if total_checked > 0:
+            print(f"  チェックした動画数: {total_checked}件")
+            print(f"  未処理の動画: {len(unprocessed_videos)}件")
+        
+        return unprocessed_videos
     
     except Exception as e:
         print(f"チャンネル動画取得エラー: {e}")
@@ -569,7 +599,7 @@ if __name__ == "__main__":
         
         print(f"チャンネルID: {channel_id}")
         
-        videos = get_channel_latest_videos(channel_id, limit)
+        videos = get_channel_latest_videos(channel_id, limit, output_dir)
         if not videos:
             print("動画が見つかりませんでした")
             sys.exit(1)
@@ -634,7 +664,7 @@ if __name__ == "__main__":
                 total_failed += 1
                 continue
             
-            videos = get_channel_latest_videos(channel_id, limit)
+            videos = get_channel_latest_videos(channel_id, limit, output_dir)
             if not videos:
                 print("動画が見つかりませんでした")
                 continue
