@@ -277,34 +277,46 @@ def get_transcript(video_id):
     """動画の字幕を取得（日本語優先）"""
     try:
         # 1. まず日本語字幕を試す
+        print("  → 日本語字幕を検索中...")
         api = YouTubeTranscriptApi()
         transcript_data = api.fetch(video_id, languages=['ja'])
+        print("  ✓ 日本語字幕を取得しました")
         return transcript_data, 'ja'
-    except Exception:
+    except Exception as e1:
+        print(f"  × 日本語字幕なし")
         try:
             # 2. 英語字幕を取得して日本語に翻訳
+            print("  → 英語字幕を検索中...")
             api = YouTubeTranscriptApi()
             transcript_list = api.list_transcripts(video_id)
             
             # 英語字幕を取得
             try:
                 transcript = transcript_list.find_transcript(['en'])
+                print("  ✓ 英語字幕を取得、日本語に翻訳中...")
                 # 日本語に翻訳
                 translated = transcript.translate('ja')
                 transcript_data = translated.fetch()
+                print("  ✓ 日本語翻訳完了")
                 return transcript_data, 'ja-translated'
-            except Exception:
+            except Exception as e2:
                 # 翻訳失敗したら英語のまま返す
+                print("  × 翻訳失敗、英語のまま使用...")
                 transcript_data = api.fetch(video_id, languages=['en'])
+                print("  ✓ 英語字幕を取得しました")
                 return transcript_data, 'en'
-        except Exception:
+        except Exception as e3:
+            print(f"  × 英語字幕なし")
             try:
                 # 3. 自動検出で取得
+                print("  → 自動生成字幕を検索中...")
                 api = YouTubeTranscriptApi()
                 transcript_data = api.fetch(video_id)
+                print("  ✓ 自動生成字幕を取得しました")
                 return transcript_data, 'auto'
-            except Exception as e:
-                print(f"字幕の取得に失敗しました: {e}")
+            except Exception as e4:
+                print(f"\n❌ 字幕取得失敗: この動画には字幕がありません")
+                print(f"   動画URL: https://www.youtube.com/watch?v={video_id}")
                 return None, None
 
 
