@@ -23,21 +23,34 @@ jobs:
       - name: Wait for Copilot to finish
         run: sleep 10
       
-      - name: Check PR status
+      - name: Check and fix Draft PR
         id: pr-check
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
         run: |
           PR_NUMBER="${{ github.event.pull_request.number }}"
           
           # PRの状態を確認
-          PR_STATE=$(gh pr view $PR_NUMBER --repo ${{ github.repository }} --json state --jq '.state')
+          PR_INFO=$(gh pr view $PR_NUMBER --repo ${{ github.repository }} --json state,isDraft)
+          PR_STATE=$(echo "$PR_INFO" | jq -r '.state')
+          IS_DRAFT=$(echo "$PR_INFO" | jq -r '.isDraft')
           
           echo "PR状態: $PR_STATE"
+          echo "Draft: $IS_DRAFT"
           
           if [ "$PR_STATE" != "OPEN" ]; then
             echo "PRがオープン状態ではありません"
             exit 1
+          fi
+          
+          # Draft PRの場合は自動的に Ready for review に変更
+          if [ "$IS_DRAFT" = "true" ]; then
+            echo "📝 Draft PRを検出しました。Ready for review に変更します..."
+            gh pr ready $PR_NUMBER --repo ${{ github.repository }}
+            echo "✓ PRをReady状態に変更しました"
+            
+            # Draft解除後、少し待機（GitHub APIの反映待ち）
+            sleep 5
           fi
       
       - name: Auto approve PR
