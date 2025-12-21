@@ -1,11 +1,3 @@
----
-name: Copilot Improve Summary
-about: Copilot による要約記事の自動改善
-title: '🤖 要約記事の改善'
-labels: copilot-task, content-improvement
-assignees: copilot-swe-agent[bot]
----
-
 ## 📝 要約記事の改善タスク
 
 以下のYouTube要約記事が新規作成されました。日本語の質を向上させ、読者にとってより価値のある内容に改善してください。
