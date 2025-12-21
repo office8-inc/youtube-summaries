@@ -41,8 +41,8 @@ jobs:
         if: steps.changed-files.outputs.count > 0
         env:
           # Note: COPILOT_PAT警告は無視してOK（Secretが未設定の場合の警告）
-          # GITHUB_TOKENで動作し、必要に応じてCOPILOT_PATに切り替え可能
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # 公式Docsでは「user token（PAT等）での認証」が推奨/前提のため、設定されていれば優先利用
+          GH_TOKEN: ${{ secrets.COPILOT_PAT || github.token }}
         run: |
           FILES="${{ steps.changed-files.outputs.files }}"
           
@@ -60,10 +60,22 @@ jobs:
           ISSUE_URL=$(gh issue create --title "$ISSUE_TITLE" --body "$FULL_BODY" --label "copilot-task,content-improvement")
           ISSUE_NUMBER=$(echo "$ISSUE_URL" | grep -oP '/\d+$' | tr -d '/')
           
-          # GitHub APIでCopilotをアサイン
-          gh api --method POST "/repos/${{ github.repository }}/issues/$ISSUE_NUMBER/assignees" --input - <<EOF || echo "⚠️ Copilotの自動アサインに失敗（Issue本文の@copilotメンションで起動します）"
+          # GitHub APIでCopilotをアサイン（REST APIでは copilot-swe-agent[bot] を使用）
+          gh api \
+            --method POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "/repos/${{ github.repository }}/issues/$ISSUE_NUMBER/assignees" \
+            --input - <<EOF || echo "⚠️ Copilotの自動アサインに失敗（Issue本文の@copilotメンションで起動します）"
           {
-            "assignees": ["Copilot"]
+            "assignees": ["copilot-swe-agent[bot]"],
+            "agent_assignment": {
+              "target_repo": "${{ github.repository }}",
+              "base_branch": "main",
+              "custom_instructions": "",
+              "custom_agent": "",
+              "model": ""
+            }
           }
           EOF
           
