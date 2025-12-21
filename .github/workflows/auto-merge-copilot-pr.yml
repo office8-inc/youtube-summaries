@@ -22,11 +22,11 @@ jobs:
         run: |
           echo "🔍 Copilot coding agent完了。関連PRを検索..."
           
-          # Copilotブランチの未マージDraft PRを検索
+          # Copilotブランチの未マージPRを検索（最新1件のみ）
           PR_INFO=$(gh pr list --repo ${{ github.repository }} --state open --json number,headRefName,isDraft \
-            | jq -r '.[] | select(.headRefName | startswith("copilot/"))')
+            | jq -r '[.[] | select(.headRefName | startswith("copilot/"))] | .[0]')
           
-          if [ -z "$PR_INFO" ]; then
+          if [ "$PR_INFO" = "null" ] || [ -z "$PR_INFO" ]; then
             echo "⚠️ Copilot PRが見つかりません"
             exit 0
           fi
