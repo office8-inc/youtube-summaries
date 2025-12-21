@@ -728,6 +728,11 @@ if __name__ == "__main__":
         print(f"登録チャンネル数: {len(channels)}件")
         print(f"取得件数: 全チャンネル合計で最新{limit}件\n")
         
+        # 各チャンネルから取得する件数を計算（APIユニット節約）
+        # limitが少ない場合は各チャンネルからの取得数も抑える
+        per_channel_limit = max(1, min(10, (limit * 2) // len(channels) + 1))
+        print(f"💡 API節約モード: 各チャンネルから最大{per_channel_limit}件ずつ取得\n")
+        
         # 全チャンネルから動画を収集
         all_videos = []
         
@@ -739,8 +744,8 @@ if __name__ == "__main__":
                 print("  ⚠️  チャンネルIDを取得できませんでした")
                 continue
             
-            # 各チャンネルから多めに取得（最大50件）
-            videos = get_channel_latest_videos(channel_id, 50, output_dir)
+            # 各チャンネルから必要な分だけ取得（API節約）
+            videos = get_channel_latest_videos(channel_id, per_channel_limit, output_dir)
             if videos:
                 for video in videos:
                     video['channel_url'] = channel_url  # チャンネル情報を追加
@@ -748,6 +753,11 @@ if __name__ == "__main__":
                 print(f"  ✓ {len(videos)}件の未処理動画を取得")
             else:
                 print(f"  ℹ️  未処理動画なし")
+            
+            # 既に十分な動画が集まったら早期終了（API節約）
+            if len(all_videos) >= limit * 2:
+                print(f"\n  💡 十分な動画が集まったため、残りのチャンネルをスキップ")
+                break
         
         if not all_videos:
             print("\n全チャンネルで未処理の動画が見つかりませんでした")
