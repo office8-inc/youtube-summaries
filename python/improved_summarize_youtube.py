@@ -5,6 +5,7 @@ YouTube動画を要約記事に変換するスクリプト（改良版）
 import sys
 import os
 import re
+import subprocess
 from datetime import datetime
 from youtube_transcript_api import YouTubeTranscriptApi
 from googleapiclient.discovery import build
@@ -212,7 +213,59 @@ def calculate_quality_score(transcript_text, sections):
     return max(0, score)
 
 
-def main(video_url, output_dir=None):
+def auto_commit_and_push(file_path, video_info):
+    """生成したファイルを自動的にgit commit & push"""
+    try:
+        # git add
+        subprocess.run(['git', 'add', file_path], check=True, capture_output=True)
+        
+        # コミットメッセージを生成
+        title = video_info['title'][:50] if video_info else "YouTube要約"
+        channel = video_info['channel'] if video_info else "Unknown"
+        commit_msg = f"📝 要約追加: {title}\n\nチャンネル: {channel}"
+        
+        # git commit
+        result = subprocess.run(
+            ['git', 'commit', '-m', commit_msg],
+            capture_output=True,
+            text=True
+        )
+        
+        if result.returncode != 0:
+            # コミット済みまたはエラー
+            if 'nothing to commit' in result.stdout:
+                print("  ℹ️  変更なし（既にコミット済み）")
+                return False
+            else:
+                print(f"  ⚠️  コミット失敗: {result.stderr}")
+                return False
+        
+        print("  ✓ コミット完了")
+        
+        # git push
+        print("  📤 プッシュ中...")
+        push_result = subprocess.run(
+            ['git', 'push'],
+            capture_output=True,
+            text=True
+        )
+        
+        if push_result.returncode == 0:
+            print("  ✓ プッシュ完了 - Copilotワークフローがトリガーされます")
+            return True
+        else:
+            print(f"  ⚠️  プッシュ失敗: {push_result.stderr}")
+            return False
+            
+    except subprocess.CalledProcessError as e:
+        print(f"  ✗ Git操作エラー: {e}")
+        return False
+    except FileNotFoundError:
+        print("  ✗ gitコマンドが見つかりません")
+        return False
+
+
+def main(video_url, output_dir=None, auto_push=False):
     """メイン処理"""
     print(f"動画を処理中: {video_url}")
     
@@ -298,23 +351,40 @@ def main(video_url, output_dir=None):
     
     print(f"✓ 要約記事を作成しました: {output_file}")
     
-    return {
+    result = {
         'file_path': output_file,
         'quality_score': quality_score,
         'video_id': video_id,
         'video_info': video_info
     }
+    
+    # 自動プッシュが有効な場合
+    if auto_push:
+        print("\n🔄 Git操作を実行中...")
+        auto_commit_and_push(output_file, video_info)
+    
+    return result
 
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("使い方: python improved_summarize_youtube.py <YouTube URL> [出力ディレクトリ]")
+        print("使い方: python improved_summarize_youtube.py <YouTube URL> [出力ディレクトリ] [--push]")
+        print("\nオプション:")
+        print("  --push    生成後に自動的にgit commit & pushを実行")
         sys.exit(1)
     
     video_url = sys.argv[1]
-    output_dir = sys.argv[2] if len(sys.argv) > 2 else None
+    output_dir = None
+    auto_push = False
     
-    result = main(video_url, output_dir)
+    # 引数を解析
+    for arg in sys.argv[2:]:
+        if arg == '--push':
+            auto_push = True
+        else:
+            output_dir = arg
+    
+    result = main(video_url, output_dir, auto_push)
     
     if result and result['quality_score'] < 50:
         print(f"\n⚠️  警告: クオリティスコアが低いです ({result['quality_score']}/100)")
