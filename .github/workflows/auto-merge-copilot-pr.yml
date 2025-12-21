@@ -2,7 +2,7 @@ name: Auto Merge Copilot PR
 
 on:
   pull_request_target:
-    types: [ready_for_review]  # Draft解除時のみ実行（重複実行を防止）
+    types: [ready_for_review, synchronize]  # Draft PRのコミット時とReady化時に実行
     paths:
       - 'xserver/summaries/**/*.md'
 
@@ -27,27 +27,35 @@ jobs:
         run: |
           PR_NUMBER="${{ github.event.pull_request.number }}"
           
-          # PRの状態を確認
-          PR_INFO=$(gh pr view $PR_NUMBER --repo ${{ github.repository }} --json state,isDraft)
+          # PRの状態と最新コミット情報を確認
+          PR_INFO=$(gh pr view $PR_NUMBER --repo ${{ github.repository }} --json state,isDraft,commits)
           PR_STATE=$(echo "$PR_INFO" | jq -r '.state')
           IS_DRAFT=$(echo "$PR_INFO" | jq -r '.isDraft')
+          LATEST_COMMIT_MESSAGE=$(echo "$PR_INFO" | jq -r '.commits[-1].messageHeadline')
           
           echo "PR状態: $PR_STATE"
           echo "Draft: $IS_DRAFT"
+          echo "最新コミット: $LATEST_COMMIT_MESSAGE"
           
           if [ "$PR_STATE" != "OPEN" ]; then
             echo "PRがオープン状態ではありません"
             exit 1
           fi
           
-          # Draft PRの場合は自動的に Ready for review に変更
+          # Draft PRかつCopilotが作業完了している場合のみ自動Ready化
           if [ "$IS_DRAFT" = "true" ]; then
-            echo "📝 Draft PRを検出しました。Ready for review に変更します..."
-            gh pr ready $PR_NUMBER --repo ${{ github.repository }}
-            echo "✓ PRをReady状態に変更しました"
-            
-            # Draft解除後、少し待機（GitHub APIの反映待ち）
-            sleep 5
+            # Copilot完了のキーワードチェック（「完了」「finish」「改善完了」など）
+            if echo "$LATEST_COMMIT_MESSAGE" | grep -qiE '(完了|finish|improved|enhanced|optimized)'; then
+              echo "📝 Copilotの作業完了を検出しました。Ready for reviewに変更します..."
+              gh pr ready $PR_NUMBER --repo ${{ github.repository }}
+              echo "✓ PRをReady状態に変更しました"
+              
+              # Draft解除後、少し待機（GitHub APIの反映待ち）
+              sleep 5
+            else
+              echo "⚠️ Draft PRですが、Copilot作業中のため待機します"
+              exit 0
+            fi
           fi
       
       - name: Auto approve and merge PR
