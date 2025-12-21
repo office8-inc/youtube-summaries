@@ -49,14 +49,13 @@ jobs:
           FILE_LIST=$(echo "$FILES" | tr ' ' '\n' | sed 's/^/- `/' | sed 's/$/`/')
           ISSUE_BODY=$(echo "$TEMPLATE" | sed "s|REPLACE_WITH_FILES|$FILE_LIST|")
           
-          # Issueを作成
+          # Issueを作成（assigneeなし - メンションで対応）
           gh issue create \
             --title "🤖 要約記事の改善: $(date +'%Y-%m-%d %H:%M')" \
             --body "$ISSUE_BODY" \
-            --assignee copilot-swe-agent[bot] \
             --label copilot-task,content-improvement
           
-          echo "✅ Copilotにタスクをアサインしました"
+          echo "✅ Issueを作成しました"
       
       - name: Summary
         if: always()
