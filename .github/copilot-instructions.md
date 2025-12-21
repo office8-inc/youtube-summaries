@@ -58,3 +58,36 @@
 3. 個人情報や企業情報が含まれていないか
 4. `.gitignore`が適切に設定されているか
 5. **VS Codeの問題タブ（Problems）のエラーを全て解消する** - 構文エラー、リントエラー、型エラーなどが残っていないことを確認
+
+## プロジェクト固有の指示
+
+### YouTube要約記事生成
+このプロジェクトでは、YouTube動画から要約記事を自動生成します。
+
+#### 使用可能なコマンド
+```bash
+# 単一動画の処理
+python improved_summarize_youtube.py <YouTube URL> xserver/summaries --push
+
+# チャンネルから最新N件を処理
+python improved_summarize_youtube.py --channel <Channel URL> --limit N xserver/summaries --push
+
+# channel-list.mdの全チャンネルを処理
+python improved_summarize_youtube.py --from-list --limit N xserver/summaries --push
+```
+
+#### 重要な機能
+- **重複チェック**: 既に処理済みの動画は自動スキップ
+- **自動プッシュ**: `--push` オプションで自動的にgit commit & push
+- **ワークフロートリガー**: プッシュ後、GitHub Actionsが起動してCopilotに改善タスクをアサイン
+
+#### GitHub Actions ワークフロー
+- `xserver/summaries/**/*.md` への変更を検知
+- 自動的にIssueを作成し、Copilot coding agentをアサイン
+- Copilotが記事の品質改善を提案
+
+### 開発時の注意事項
+- テスト時は `--limit 1` で1件ずつ処理
+- 本番時は `--limit 10` で10件ずつ処理
+- YouTube Data API のクォータに注意（1日あたりの制限あり）
+- 字幕が取得できない動画は自動的にスキップされる

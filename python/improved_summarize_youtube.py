@@ -17,6 +17,122 @@ load_dotenv()
 YOUTUBE_API_KEY = os.getenv('YOUTUBE_API_KEY')
 
 
+def get_channel_id(channel_url):
+    """チャンネルURLからチャンネルIDを抽出"""
+    # @handle形式
+    handle_match = re.search(r'@([\w-]+)', channel_url)
+    if handle_match:
+        # YouTube Data APIでハンドルからチャンネルIDを取得
+        if YOUTUBE_API_KEY:
+            try:
+                youtube = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
+                request = youtube.search().list(
+                    part='snippet',
+                    q=f'@{handle_match.group(1)}',
+                    type='channel',
+                    maxResults=1
+                )
+                response = request.execute()
+                if response['items']:
+                    return response['items'][0]['snippet']['channelId']
+            except Exception as e:
+                print(f"ハンドルからチャンネルID取得エラー: {e}")
+    
+    # UC...形式のチャンネルID
+    channel_id_match = re.search(r'(UC[\w-]{22})', channel_url)
+    if channel_id_match:
+        return channel_id_match.group(1)
+    
+    # /channel/形式
+    channel_match = re.search(r'/channel/(UC[\w-]{22})', channel_url)
+    if channel_match:
+        return channel_match.group(1)
+    
+    return None
+
+
+def get_channel_latest_videos(channel_id, max_results=10):
+    """チャンネルの最新動画を取得"""
+    if not YOUTUBE_API_KEY:
+        print("エラー: YOUTUBE_API_KEYが設定されていません")
+        return []
+    
+    try:
+        youtube = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
+        
+        # チャンネルのアップロードプレイリストIDを取得
+        channel_request = youtube.channels().list(
+            part='contentDetails',
+            id=channel_id
+        )
+        channel_response = channel_request.execute()
+        
+        if not channel_response['items']:
+            print(f"チャンネルが見つかりません: {channel_id}")
+            return []
+        
+        uploads_playlist_id = channel_response['items'][0]['contentDetails']['relatedPlaylists']['uploads']
+        
+        # プレイリストから最新動画を取得
+        playlist_request = youtube.playlistItems().list(
+            part='snippet',
+            playlistId=uploads_playlist_id,
+            maxResults=max_results
+        )
+        playlist_response = playlist_request.execute()
+        
+        videos = []
+        for item in playlist_response['items']:
+            video_id = item['snippet']['resourceId']['videoId']
+            videos.append({
+                'video_id': video_id,
+                'title': item['snippet']['title'],
+                'url': f'https://www.youtube.com/watch?v={video_id}',
+                'published_at': item['snippet']['publishedAt']
+            })
+        
+        return videos
+    
+    except Exception as e:
+        print(f"チャンネル動画取得エラー: {e}")
+        return []
+
+
+def parse_channel_list(file_path='channel-list.md'):
+    """channel-list.mdを解析してチャンネルURLリストを取得"""
+    if not os.path.exists(file_path):
+        print(f"エラー: {file_path} が見つかりません")
+        return []
+    
+    channels = []
+    with open(file_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            line = line.strip()
+            # URLを含む行を抽出
+            if 'youtube.com' in line or line.startswith('UC'):
+                # マークダウンリンクから抽出
+                url_match = re.search(r'https?://[^\s\)]+', line)
+                if url_match:
+                    channels.append(url_match.group(0))
+                elif line.startswith('UC'):
+                    channels.append(line)
+    
+    return channels
+
+
+def is_video_processed(video_id, output_dir):
+    """動画が既に処理済みかチェック"""
+    if not output_dir or not os.path.exists(output_dir):
+        return False
+    
+    # 全サブディレクトリを検索
+    for root, dirs, files in os.walk(output_dir):
+        for file in files:
+            if file.endswith('.md') and video_id in file:
+                return True
+    return False
+
+
 def get_video_id(url_or_id):
     """YouTubeのURLまたはIDから動画IDを抽出"""
     patterns = [
@@ -368,24 +484,182 @@ def main(video_url, output_dir=None, auto_push=False):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("使い方: python improved_summarize_youtube.py <YouTube URL> [出力ディレクトリ] [--push]")
+        print("使い方:")
+        print("  単一動画: python improved_summarize_youtube.py <YouTube URL> [出力ディレクトリ] [--push]")
+        print("  チャンネル: python improved_summarize_youtube.py --channel <Channel URL> [--limit N] [出力ディレクトリ] [--push]")
+        print("  リストから: python improved_summarize_youtube.py --from-list [--limit N] [出力ディレクトリ] [--push]")
         print("\nオプション:")
-        print("  --push    生成後に自動的にgit commit & pushを実行")
+        print("  --channel <URL>  指定チャンネルの最新動画を処理")
+        print("  --from-list      channel-list.mdの全チャンネルを処理")
+        print("  --limit N        取得する動画数（デフォルト: 10）")
+        print("  --push           生成後に自動的にgit commit & push")
+        print("\n例:")
+        print("  python improved_summarize_youtube.py --channel https://www.youtube.com/@AllAboutAI --limit 1 xserver/summaries --push")
+        print("  python improved_summarize_youtube.py --from-list --limit 5 xserver/summaries")
         sys.exit(1)
     
-    video_url = sys.argv[1]
+    # 引数解析
+    mode = 'single'  # single, channel, list
+    video_url = None
+    channel_url = None
     output_dir = None
     auto_push = False
+    limit = 10
     
-    # 引数を解析
-    for arg in sys.argv[2:]:
-        if arg == '--push':
+    i = 1
+    while i < len(sys.argv):
+        arg = sys.argv[i]
+        
+        if arg == '--channel':
+            mode = 'channel'
+            if i + 1 < len(sys.argv):
+                channel_url = sys.argv[i + 1]
+                i += 2
+            else:
+                print("エラー: --channel にはURLが必要です")
+                sys.exit(1)
+        elif arg == '--from-list':
+            mode = 'list'
+            i += 1
+        elif arg == '--limit':
+            if i + 1 < len(sys.argv):
+                limit = int(sys.argv[i + 1])
+                i += 2
+            else:
+                print("エラー: --limit には数値が必要です")
+                sys.exit(1)
+        elif arg == '--push':
             auto_push = True
+            i += 1
+        elif not arg.startswith('--'):
+            if mode == 'single' and not video_url:
+                video_url = arg
+            else:
+                output_dir = arg
+            i += 1
         else:
-            output_dir = arg
+            i += 1
     
-    result = main(video_url, output_dir, auto_push)
+    # モード別処理
+    if mode == 'single':
+        # 単一動画処理
+        if not video_url:
+            print("エラー: 動画URLを指定してください")
+            sys.exit(1)
+        
+        result = main(video_url, output_dir, auto_push)
+        
+        if result and result['quality_score'] < 50:
+            print(f"\n⚠️  警告: クオリティスコアが低いです ({result['quality_score']}/100)")
+            print("手動でのレビューを推奨します。")
     
-    if result and result['quality_score'] < 50:
-        print(f"\n⚠️  警告: クオリティスコアが低いです ({result['quality_score']}/100)")
-        print("手動でのレビューを推奨します。")
+    elif mode == 'channel':
+        # チャンネルから最新動画を処理
+        if not channel_url:
+            print("エラー: チャンネルURLを指定してください")
+            sys.exit(1)
+        
+        print(f"\n📺 チャンネルから最新{limit}件の動画を取得中...")
+        print(f"チャンネル: {channel_url}\n")
+        
+        channel_id = get_channel_id(channel_url)
+        if not channel_id:
+            print("エラー: チャンネルIDを取得できませんでした")
+            sys.exit(1)
+        
+        print(f"チャンネルID: {channel_id}")
+        
+        videos = get_channel_latest_videos(channel_id, limit)
+        if not videos:
+            print("動画が見つかりませんでした")
+            sys.exit(1)
+        
+        print(f"\n取得した動画: {len(videos)}件\n")
+        
+        processed_count = 0
+        skipped_count = 0
+        failed_count = 0
+        
+        for i, video in enumerate(videos, 1):
+            print(f"\n{'='*60}")
+            print(f"[{i}/{len(videos)}] 処理中: {video['title']}")
+            print(f"{'='*60}")
+            
+            # 既に処理済みかチェック
+            if output_dir and is_video_processed(video['video_id'], output_dir):
+                print(f"⏭️  スキップ: 既に処理済みです")
+                skipped_count += 1
+                continue
+            
+            result = main(video['url'], output_dir, auto_push)
+            
+            if result:
+                processed_count += 1
+                if result['quality_score'] < 50:
+                    print(f"⚠️  クオリティスコア低: {result['quality_score']}/100")
+            else:
+                failed_count += 1
+        
+        print(f"\n{'='*60}")
+        print(f"📊 処理完了")
+        print(f"{'='*60}")
+        print(f"✅ 処理成功: {processed_count}件")
+        print(f"⏭️  スキップ: {skipped_count}件")
+        print(f"❌ 失敗: {failed_count}件")
+        print(f"合計: {len(videos)}件")
+    
+    elif mode == 'list':
+        # channel-list.mdから全チャンネルを処理
+        print(f"\n📋 channel-list.mdから全チャンネルを処理中...\n")
+        
+        channels = parse_channel_list()
+        if not channels:
+            print("エラー: チャンネルが見つかりませんでした")
+            sys.exit(1)
+        
+        print(f"登録チャンネル数: {len(channels)}件\n")
+        
+        total_processed = 0
+        total_skipped = 0
+        total_failed = 0
+        
+        for ch_idx, channel_url in enumerate(channels, 1):
+            print(f"\n{'#'*60}")
+            print(f"チャンネル [{ch_idx}/{len(channels)}]: {channel_url}")
+            print(f"{'#'*60}")
+            
+            channel_id = get_channel_id(channel_url)
+            if not channel_id:
+                print("⚠️  チャンネルIDを取得できませんでした")
+                total_failed += 1
+                continue
+            
+            videos = get_channel_latest_videos(channel_id, limit)
+            if not videos:
+                print("動画が見つかりませんでした")
+                continue
+            
+            print(f"最新{len(videos)}件の動画を処理します\n")
+            
+            for i, video in enumerate(videos, 1):
+                print(f"\n[{i}/{len(videos)}] {video['title']}")
+                
+                # 既に処理済みかチェック
+                if output_dir and is_video_processed(video['video_id'], output_dir):
+                    print(f"⏭️  スキップ: 既に処理済み")
+                    total_skipped += 1
+                    continue
+                
+                result = main(video['url'], output_dir, auto_push)
+                
+                if result:
+                    total_processed += 1
+                else:
+                    total_failed += 1
+        
+        print(f"\n{'='*60}")
+        print(f"🎉 全チャンネル処理完了")
+        print(f"{'='*60}")
+        print(f"✅ 処理成功: {total_processed}件")
+        print(f"⏭️  スキップ: {total_skipped}件")
+        print(f"❌ 失敗: {total_failed}件")

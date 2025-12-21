@@ -40,6 +40,8 @@ jobs:
       - name: Create issue and assign to Copilot
         if: steps.changed-files.outputs.count > 0
         env:
+          # Note: COPILOT_PAT警告は無視してOK（Secretが未設定の場合の警告）
+          # GITHUB_TOKENで動作し、必要に応じてCOPILOT_PATに切り替え可能
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           FILES="${{ steps.changed-files.outputs.files }}"
@@ -49,13 +51,33 @@ jobs:
           FILE_LIST=$(echo "$FILES" | tr ' ' '\n' | sed 's/^/- `/' | sed 's/$/`/')
           ISSUE_BODY=$(echo "$TEMPLATE" | sed "s|REPLACE_WITH_FILES|$FILE_LIST|")
           
-          # Issueを作成（assigneeなし - メンションで対応）
-          gh issue create \
-            --title "🤖 要約記事の改善: $(date +'%Y-%m-%d %H:%M')" \
-            --body "$ISSUE_BODY" \
-            --label copilot-task,content-improvement
+          # REST APIを使用してIssueを作成し、Copilotをアサイン
+          # 参考: https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-a-pr#assigning-an-issue-to-copilot-via-the-github-api
+          ISSUE_TITLE="🤖 要約記事の改善: $(date +'%Y-%m-%d %H:%M')"
           
-          echo "✅ Issueを作成しました"
+          # JSONボディを使用してAPIを呼び出す（公式ドキュメントの形式に準拠）
+          gh api \
+            --method POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            /repos/${{ github.repository }}/issues \
+            --input - <<EOF
+          {
+            "title": "$ISSUE_TITLE",
+            "body": $(echo "$ISSUE_BODY" | jq -Rs .),
+            "labels": ["copilot-task", "content-improvement"],
+            "assignees": ["copilot-swe-agent[bot]"],
+            "agent_assignment": {
+              "target_repo": "${{ github.repository }}",
+              "base_branch": "main",
+              "custom_instructions": "要約記事の品質を改善してください。日本語の文章として自然で読みやすい表現に修正し、重要なポイントを強調してください。",
+              "custom_agent": "",
+              "model": ""
+            }
+          }
+          EOF
+          
+          echo "✅ Issueを作成し、Copilotをアサインしました"
       
       - name: Summary
         if: always()
