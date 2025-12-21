@@ -53,14 +53,17 @@ jobs:
           export FILE_LIST
           ISSUE_BODY=$(python3 -c "import os; template = open('.github/ISSUE_TEMPLATE/copilot-improve-summary.md', 'r', encoding='utf-8').read(); print(template.replace('REPLACE_WITH_FILES', os.environ['FILE_LIST']))")
           
-          # Issueを作成してCopilotをアサイン
+          # Issueを作成
           ISSUE_TITLE="🤖 要約記事の改善: $(date +'%Y-%m-%d %H:%M')"
           COPILOT_REQUEST="@copilot この要約記事を改善してください。日本語の文章として自然で読みやすい表現に修正し、重要なポイントを強調してください。"
           printf -v FULL_BODY "%s\n\n%s" "$ISSUE_BODY" "$COPILOT_REQUEST"
-          ISSUE_URL=$(gh issue create --title "$ISSUE_TITLE" --body "$FULL_BODY" --label "copilot-task,content-improvement" --assignee "Copilot")
+          ISSUE_URL=$(gh issue create --title "$ISSUE_TITLE" --body "$FULL_BODY" --label "copilot-task,content-improvement")
           ISSUE_NUMBER=$(echo "$ISSUE_URL" | grep -oP '/\d+$' | tr -d '/')
           
-          echo "✅ Issue #$ISSUE_NUMBER を作成し、Copilotをアサインしました"
+          # GitHub APIでCopilotをアサイン（gh issue createの--assigneeは使えない）
+          gh api --method POST "/repos/${{ github.repository }}/issues/$ISSUE_NUMBER/assignees" -f "assignees[]=Copilot" || echo "⚠️ Copilotの自動アサインに失敗（Issue本文の@copilotメンションで起動します）"
+          
+          echo "✅ Issue #$ISSUE_NUMBER を作成しました: $ISSUE_URL"
       
       - name: Summary
         if: always()
