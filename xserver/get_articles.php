@@ -52,13 +52,16 @@ function findMarkdownFiles($dir, $summariesDir) {
                 $month = $pathParts[1];
                 $date = "$year-$month-01"; // デフォルトで月初
                 
-                // ファイル名から日付を抽出できる場合
+                // ファイル名から日付・時刻を抽出できる場合
                 $filename = basename($relativePath, '.md');
-                if (preg_match('/^(\d{4})(\d{2})(\d{2})/', $filename, $matches)) {
+                if (preg_match('/^(\d{4})(\d{2})(\d{2})(\d{2})(\d{2})/', $filename, $matches)) {
+                    // 時分まで含める (例: 2025-12-21 02:01)
+                    $date = "{$matches[1]}-{$matches[2]}-{$matches[3]} {$matches[4]}:{$matches[5]}";
+                } elseif (preg_match('/^(\d{4})(\d{2})(\d{2})/', $filename, $matches)) {
                     $date = "{$matches[1]}-{$matches[2]}-{$matches[3]}";
                 }
             } else {
-                $date = date('Y-m-d', $file->getMTime());
+                $date = date('Y-m-d H:i', $file->getMTime());
             }
             
             $articles[] = [
