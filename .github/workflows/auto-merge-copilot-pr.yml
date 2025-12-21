@@ -2,7 +2,7 @@ name: Auto Merge Copilot PR
 
 on:
   pull_request_target:
-    types: [opened, synchronize]
+    types: [ready_for_review]  # Draft解除時のみ実行（重複実行を防止）
     paths:
       - 'xserver/summaries/**/*.md'
 
@@ -12,12 +12,8 @@ permissions:
 
 jobs:
   auto-merge:
-    # Copilotが作成したPRのみ自動マージ
-    if: |
-      github.event.pull_request.user.login == 'github-actions[bot]' ||
-      github.event.pull_request.user.login == 'app/copilot-swe-agent' ||
-      contains(github.event.pull_request.title, 'Copilot') ||
-      contains(github.event.pull_request.title, '要約記事の品質向上')
+    # CopilotブランチからのPRのみ自動マージ（より確実な判定）
+    if: contains(github.event.pull_request.head.ref, 'copilot/')
     runs-on: ubuntu-latest
     
     steps:
@@ -54,7 +50,7 @@ jobs:
             sleep 5
           fi
       
-      - name: Auto approve PR
+      - name: Auto approve and merge PR
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
         run: |
@@ -62,26 +58,28 @@ jobs:
           
           echo "✅ PRを自動承認します: #$PR_NUMBER"
           
-          # Personal Access Tokenで承認
+          # Personal Access Tokenで承認（失敗しても続行）
           gh pr review $PR_NUMBER \
             --repo ${{ github.repository }} \
             --approve \
-            --body "✅ Copilotによる改善を自動承認しました。FTPアップロードを実行します。"
-      
-      - name: Auto merge PR
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
-        run: |
-          PR_NUMBER="${{ github.event.pull_request.number }}"
+            --body "✅ Copilotによる改善を自動承認しました。FTPアップロードを実行します。" || echo "⚠️ 承認をスキップ（Rulesetでバイパス設定済み）"
           
+          echo ""
           echo "🔀 PRを自動マージします: #$PR_NUMBER"
           
-          # squashマージで履歴を綺麗に保つ
-          gh pr merge $PR_NUMBER \
+          # Rulesetバイパス権限でマージ（Copilot coding agentに権限付与済み）
+          if gh pr merge $PR_NUMBER \
             --repo ${{ github.repository }} \
             --squash \
-            --auto \
-            --delete-branch
-          
-          echo "✅ 自動マージが完了しました"
-          echo "📤 deploy-to-ftp ワークフローがトリガーされます"
+            --delete-branch; then
+            echo "✅ 自動マージが完了しました"
+            echo "📤 deploy-to-ftp ワークフローがトリガーされます"
+          else
+            echo "⚠️ 直接マージ失敗、auto-mergeを試行..."
+            # auto-mergeで待機マージ（チェック完了後に自動マージ）
+            gh pr merge $PR_NUMBER \
+              --repo ${{ github.repository }} \
+              --auto \
+              --squash \
+              --delete-branch && echo "✅ Auto-mergeを設定しました（チェック完了後に自動マージされます）"
+          fi
