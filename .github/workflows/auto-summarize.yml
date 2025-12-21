@@ -1,0 +1,89 @@
+name: Auto Summarize YouTube Videos
+
+on:
+  schedule:
+    # 毎日日本時間03:00に実行（UTC 18:00）
+    - cron: '0 18 * * *'
+  workflow_dispatch:  # 手動実行も可能
+
+jobs:
+  summarize-and-upload:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      
+      - name: Create .env file
+        run: |
+          echo "YOUTUBE_API_KEY=${{ secrets.YOUTUBE_API_KEY }}" >> .env
+          echo "FTP_HOST=${{ secrets.FTP_HOST }}" >> .env
+          echo "FTP_USER=${{ secrets.FTP_USER }}" >> .env
+          echo "FTP_PASSWORD=${{ secrets.FTP_PASSWORD }}" >> .env
+          echo "FTP_PORT=${{ secrets.FTP_PORT }}" >> .env
+          echo "FTP_REMOTE_PATH=${{ secrets.FTP_REMOTE_PATH }}" >> .env
+          echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" >> .env
+          echo "GITHUB_REPO=${{ github.repository }}" >> .env
+          echo "MAX_VIDEOS_PER_DAY=10" >> .env
+          echo "TIMEZONE=Asia/Tokyo" >> .env
+      
+      - name: Fetch new videos
+        run: |
+          python python/fetch_videos.py
+      
+      - name: Process videos and create summaries
+        run: |
+          python python/process_videos.py
+      
+      - name: Upload to FTP
+        run: |
+          python python/upload_to_ftp.py
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add summaries/ processed_videos.json process_results.json
+          git diff --quiet && git diff --staged --quiet || git commit -m "🤖 自動要約: $(date +'%Y-%m-%d %H:%M JST')"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Summary
+        if: always()
+        run: |
+          echo "## 📊 実行結果" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ -f process_results.json ]; then
+            echo "処理結果の詳細は process_results.json を確認してください" >> $GITHUB_STEP_SUMMARY
+            
+            # 簡易サマリーを表示
+            python -c "
+import json
+try:
+    with open('process_results.json', 'r') as f:
+        results = json.load(f)
+    total = len(results)
+    needs_review = sum(1 for r in results if r['result'].get('needs_review', False))
+    print(f'- 処理動画数: {total}')
+    print(f'- レビュー必要: {needs_review}')
+    print(f'- 問題なし: {total - needs_review}')
+except:
+    print('結果ファイルの読み込みに失敗しました')
+" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "⚠️ 新着動画はありませんでした" >> $GITHUB_STEP_SUMMARY
+          fi

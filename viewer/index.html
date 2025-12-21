@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube要約ブログ</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .articles-list {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .article-item {
+            padding: 20px;
+            margin-bottom: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .article-item:hover {
+            background: #e9ecef;
+            transform: translateX(5px);
+        }
+
+        .article-title {
+            font-size: 1.3em;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .article-meta {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .article-content {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: none;
+        }
+
+        .article-content.active {
+            display: block;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: #5568d3;
+        }
+
+        .markdown-body {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .markdown-body h1 {
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .markdown-body h2 {
+            color: #667eea;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .markdown-body h3 {
+            color: #764ba2;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .markdown-body a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .markdown-body a:hover {
+            text-decoration: underline;
+        }
+
+        .markdown-body code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+
+        .markdown-body table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .markdown-body th,
+        .markdown-body td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .markdown-body th {
+            background: #667eea;
+            color: white;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        .error {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .articles-list,
+            .article-content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📺 YouTube要約ブログ</h1>
+            <p class="subtitle">英語圏YouTubeの自動要約記事</p>
+        </header>
+
+        <div id="articlesList" class="articles-list">
+            <div class="loading">記事を読み込み中...</div>
+        </div>
+
+        <div id="articleContent" class="article-content">
+            <button class="back-button" onclick="showList()">← 記事一覧に戻る</button>
+            <div id="markdownContent" class="markdown-body"></div>
+        </div>
+    </div>
+
+    <script>
+        let articles = [];
+
+        // Markdownファイルのリストを取得
+        async function loadArticles() {
+            try {
+                // summariesディレクトリ構造を探索
+                const response = await fetch('get_articles.php');
+                if (!response.ok) throw new Error('記事の取得に失敗しました');
+                
+                articles = await response.json();
+                displayArticlesList();
+            } catch (error) {
+                document.getElementById('articlesList').innerHTML = 
+                    `<div class="error">エラー: ${error.message}</div>`;
+            }
+        }
+
+        // 記事一覧を表示
+        function displayArticlesList() {
+            const listDiv = document.getElementById('articlesList');
+            
+            if (articles.length === 0) {
+                listDiv.innerHTML = '<p style="text-align: center; color: #666;">まだ記事がありません</p>';
+                return;
+            }
+
+            // 日付順にソート（新しい順）
+            articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+            let html = '<h2 style="margin-bottom: 20px;">📚 記事一覧</h2>';
+            
+            articles.forEach((article, index) => {
+                html += `
+                    <div class="article-item" onclick="loadArticle('${article.path}')">
+                        <div class="article-title">${article.title}</div>
+                        <div class="article-meta">
+                            📅 ${article.date} | 📺 ${article.channel}
+                        </div>
+                    </div>
+                `;
+            });
+
+            listDiv.innerHTML = html;
+        }
+
+        // 記事を読み込んで表示
+        async function loadArticle(path) {
+            try {
+                const response = await fetch(path);
+                if (!response.ok) throw new Error('記事の読み込みに失敗しました');
+                
+                const markdown = await response.text();
+                const html = marked.parse(markdown);
+                
+                document.getElementById('markdownContent').innerHTML = html;
+                document.getElementById('articlesList').classList.remove('active');
+                document.getElementById('articleContent').classList.add('active');
+                
+                // ページトップにスクロール
+                window.scrollTo(0, 0);
+            } catch (error) {
+                alert('記事の読み込みに失敗しました: ' + error.message);
+            }
+        }
+
+        // 記事一覧に戻る
+        function showList() {
+            document.getElementById('articleContent').classList.remove('active');
+            document.getElementById('articlesList').classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        // 初期化
+        document.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('articlesList').classList.add('active');
+            loadArticles();
+        });
+    </script>
+</body>
+</html>
