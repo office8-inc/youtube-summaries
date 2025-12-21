@@ -15,6 +15,7 @@ jobs:
     # Copilotが作成したPRのみ自動マージ
     if: |
       github.event.pull_request.user.login == 'github-actions[bot]' ||
+      github.event.pull_request.user.login == 'app/copilot-swe-agent' ||
       contains(github.event.pull_request.title, 'Copilot') ||
       contains(github.event.pull_request.title, '要約記事の品質向上')
     runs-on: ubuntu-latest
