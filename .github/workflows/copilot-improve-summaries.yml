@@ -50,15 +50,15 @@ jobs:
           FILE_LIST=$(echo "$FILES" | tr ' ' '\n' | sed 's/^/- `/' | sed 's/$/`/')
           
           # テンプレートファイルを読み込み、Pythonで置換（sedより安全）
-          ISSUE_BODY=$(python3 << PYTHON_EOF
-import sys
-with open('.github/ISSUE_TEMPLATE/copilot-improve-summary.md', 'r', encoding='utf-8') as f:
-    template = f.read()
-file_list = """$FILE_LIST"""
-issue_body = template.replace('REPLACE_WITH_FILES', file_list)
-print(issue_body)
-PYTHON_EOF
-)
+          ISSUE_BODY=$(python3 <<'PYTHON_EOF'
+          import sys
+          with open('.github/ISSUE_TEMPLATE/copilot-improve-summary.md', 'r', encoding='utf-8') as f:
+              template = f.read()
+          file_list = """$FILE_LIST"""
+          issue_body = template.replace('REPLACE_WITH_FILES', file_list)
+          print(issue_body)
+          PYTHON_EOF
+          )
           
           # REST APIを使用してIssueを作成し、Copilotをアサイン
           # 参考: https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-a-pr#assigning-an-issue-to-copilot-via-the-github-api
