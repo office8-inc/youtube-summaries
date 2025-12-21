@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Find and process Copilot PR
         env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           echo "🔍 Copilot coding agent完了。関連PRを検索..."
           
