@@ -45,23 +45,19 @@ sequenceDiagram
     Copilot->>Copilot: 要約記事を改善
     Copilot->>GitHub: ファイルをコミット
     Copilot->>GitHub: Draft Pull Request作成<br/>「要約記事の品質向上」
-    
-    Note over Issue,Copilot: 🔑 バトンタッチポイント
-    rect rgb(255, 240, 200)
-        Note over Copilot: 📋 テンプレート指示に従い<br/>「gh pr ready」を実行
-        Copilot->>GitHub: gh pr ready<br/>（Draft → Ready for Review）
-    end
     deactivate Copilot
     
     %% フェーズ3: 自動承認とマージ
     Note over GitHub,GHA2: フェーズ3: 自動承認＆マージ
     rect rgb(200, 255, 200)
-        GitHub->>GHA2: 🎯 トリガー: ready_for_review イベント<br/>paths: xserver/summaries/**/*.md
+        Note over GitHub: Copilot coding agent ワークフロー完了
+        GitHub->>GHA2: 🎯 トリガー: workflow_run<br/>workflows: ["Copilot coding agent"]<br/>types: [completed]
     end
     activate GHA2
     
-    GHA2->>GHA2: ブランチ名チェック<br/>（copilot/ で始まるか）
-    GHA2->>GHA2: 5秒待機<br/>（GitHub API反映待ち）
+    GHA2->>GHA2: conclusion == 'success' 確認
+    GHA2->>GHA2: Copilot PRを検索<br/>（copilot/ ブランチのOpen PR）
+    GHA2->>GitHub: Draft → Ready for Review<br/>（gh pr ready）
     GHA2->>GitHub: PRを自動承認<br/>（secrets.GH_TOKEN使用）
     GHA2->>GitHub: PRを自動マージ（squash）<br/>ブランチ削除
     deactivate GHA2
@@ -91,50 +87,46 @@ sequenceDiagram
 
 ## 🔑 バトンタッチの仕組み（重要！）
 
-### Issueテンプレート → Auto Merge ワークフロー
+### Copilot coding agent → Auto Merge ワークフロー
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  📋 Issueテンプレート (copilot-improve-summary.md)          │
+│  🤖 Copilot coding agent ワークフロー                       │
 │                                                             │
-│  ### 🤖 作業完了後の必須アクション                          │
-│                                                             │
-│  **重要：全ての改善作業が完了したら、                       │
-│  必ず以下のコマンドを実行してPRをReady状態にしてください：**│
-│                                                             │
-│  ```bash                                                    │
-│  gh pr ready                                                │
-│  ```                                                        │
-│                                                             │
-│  これにより自動マージワークフローがトリガーされ、            │
-│  変更がmainブランチにマージされます。                       │
+│  - Issueの指示を読み込み                                    │
+│  - 要約記事を改善                                           │
+│  - Draft PR を作成                                          │
+│  - ワークフロー完了 (conclusion: success)                   │
 └──────────────────────────┬──────────────────────────────────┘
                            │
-                           │ Copilotがこの指示に従い
-                           │ gh pr ready を実行
-                           │
-                           ▼
-┌─────────────────────────────────────────────────────────────┐
-│  ⚡ ready_for_review イベント発火                           │
-└──────────────────────────┬──────────────────────────────────┘
-                           │
-                           │ イベントをキャッチ
+                           │ workflow_run イベント発火
+                           │ (Copilotは gh pr ready を実行できない)
                            │
                            ▼
 ┌─────────────────────────────────────────────────────────────┐
 │  🔧 auto-merge-copilot-pr.yml                               │
 │                                                             │
 │  on:                                                        │
-│    pull_request_target:                                     │
-│      types: [ready_for_review]  ← このイベントでトリガー   │
-│      paths:                                                 │
-│        - 'xserver/summaries/**/*.md'                        │
+│    workflow_run:                                            │
+│      workflows: ["Copilot coding agent"]                    │
+│      types: [completed]                                     │
 │                                                             │
 │  jobs:                                                      │
 │    auto-merge:                                              │
-│      if: contains(...head.ref, 'copilot/')                  │
+│      if: conclusion == 'success'                            │
 │      steps:                                                 │
+│        - Copilot PRを検索                                   │
+│        - Draft → Ready (gh pr ready)                        │
 │        - 自動承認                                           │
 │        - 自動マージ                                         │
 └─────────────────────────────────────────────────────────────┘
 ```
+
+### なぜ workflow_run を使うのか？
+
+GitHubのセキュリティ設計により、**Copilot coding agent は以下の操作ができません**：
+- ❌ PRを Ready for Review にする (`gh pr ready`)
+- ❌ PRを承認する
+- ❌ PRをマージする
+
+そのため、`workflow_run`トリガーを使い、**ワークフローがGH_TOKENを使って**これらの操作を代行します。
