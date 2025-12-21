@@ -47,9 +47,10 @@ jobs:
           FILES="${{ steps.changed-files.outputs.files }}"
           
           # テンプレートファイルを読み込んで、ファイルリストを埋め込む
+          # sedの区切り文字をパイプから#に変更（パスに|が含まれる可能性があるため）
           TEMPLATE=$(cat .github/ISSUE_TEMPLATE/copilot-improve-summary.md)
           FILE_LIST=$(echo "$FILES" | tr ' ' '\n' | sed 's/^/- `/' | sed 's/$/`/')
-          ISSUE_BODY=$(echo "$TEMPLATE" | sed "s|REPLACE_WITH_FILES|$FILE_LIST|")
+          ISSUE_BODY=$(echo "$TEMPLATE" | sed "s#REPLACE_WITH_FILES#$FILE_LIST#")
           
           # REST APIを使用してIssueを作成し、Copilotをアサイン
           # 参考: https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-a-pr#assigning-an-issue-to-copilot-via-the-github-api
