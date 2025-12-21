@@ -53,30 +53,12 @@ jobs:
           export FILE_LIST
           ISSUE_BODY=$(python3 -c "import os; template = open('.github/ISSUE_TEMPLATE/copilot-improve-summary.md', 'r', encoding='utf-8').read(); print(template.replace('REPLACE_WITH_FILES', os.environ['FILE_LIST']))")
           
-          # REST APIを使用してIssueを作成し、Copilotをアサイン
-          # 参考: https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/create-a-pr#assigning-an-issue-to-copilot-via-the-github-api
+          # Issueを作成
           ISSUE_TITLE="🤖 要約記事の改善: $(date +'%Y-%m-%d %H:%M')"
-          
-          # JSONボディを使用してAPIを呼び出す（公式ドキュメントの形式に準拠）
-          gh api \
-            --method POST \
-            -H "Accept: application/vnd.github+json" \
-            -H "X-GitHub-Api-Version: 2022-11-28" \
-            /repos/${{ github.repository }}/issues \
-            --input - <<EOF
-          {
-            "title": "$ISSUE_TITLE",
-            "body": $(echo "$ISSUE_BODY" | jq -Rs .),
-            "labels": ["copilot-task", "content-improvement"],
-            "agent_assignment": {
-              "target_repo": "${{ github.repository }}",
-              "base_branch": "main",
-              "custom_instructions": "要約記事の品質を改善してください。日本語の文章として自然で読みやすい表現に修正し、重要なポイントを強調してください。"
-            }
-          }
-          EOF
-          
-          echo "✅ Issueを作成し、Copilotをアサインしました"
+          COPILOT_REQUEST="@copilot この要約記事を改善してください。日本語の文章として自然で読みやすい表現に修正し、重要なポイントを強調してください。"
+          printf -v FULL_BODY "%s\n\n%s" "$ISSUE_BODY" "$COPILOT_REQUEST"
+          gh issue create --title "$ISSUE_TITLE" --body "$FULL_BODY" --label "copilot-task,content-improvement"
+          echo "✅ Issueを作成しました"
       
       - name: Summary
         if: always()
