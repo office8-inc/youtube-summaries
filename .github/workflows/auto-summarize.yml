@@ -69,21 +69,16 @@ jobs:
           
           if [ -f process_results.json ]; then
             echo "処理結果の詳細は process_results.json を確認してください" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
             
-            # 簡易サマリーを表示
-            python -c "
-import json
-try:
-    with open('process_results.json', 'r') as f:
-        results = json.load(f)
-    total = len(results)
-    needs_review = sum(1 for r in results if r['result'].get('needs_review', False))
-    print(f'- 処理動画数: {total}')
-    print(f'- レビュー必要: {needs_review}')
-    print(f'- 問題なし: {total - needs_review}')
-except:
-    print('結果ファイルの読み込みに失敗しました')
-" >> $GITHUB_STEP_SUMMARY
+            # JSONファイルから統計情報を抽出
+            TOTAL=$(jq 'length' process_results.json)
+            NEEDS_REVIEW=$(jq '[.[] | select(.result.needs_review == true)] | length' process_results.json)
+            OK=$((TOTAL - NEEDS_REVIEW))
+            
+            echo "- 処理動画数: $TOTAL" >> $GITHUB_STEP_SUMMARY
+            echo "- レビュー必要: $NEEDS_REVIEW" >> $GITHUB_STEP_SUMMARY
+            echo "- 問題なし: $OK" >> $GITHUB_STEP_SUMMARY
           else
             echo "⚠️ 新着動画はありませんでした" >> $GITHUB_STEP_SUMMARY
           fi

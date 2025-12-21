@@ -9,7 +9,7 @@ header('Content-Type: application/json; charset=utf-8');
 $summariesDir = '../summaries';
 
 // Markdownファイルを再帰的に検索
-function findMarkdownFiles($dir) {
+function findMarkdownFiles($dir, $summariesDir) {
     $articles = [];
     
     if (!is_dir($dir)) {
@@ -74,7 +74,7 @@ function findMarkdownFiles($dir) {
 }
 
 try {
-    $articles = findMarkdownFiles($summariesDir);
+    $articles = findMarkdownFiles($summariesDir, $summariesDir);
     echo json_encode($articles, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 } catch (Exception $e) {
     http_response_code(500);
