@@ -40,9 +40,9 @@ jobs:
       - name: Create issue and assign to Copilot
         if: steps.changed-files.outputs.count > 0
         env:
-          # Note: COPILOT_PAT警告は無視してOK（Secretが未設定の場合の警告）
-          # 公式Docsでは「user token（PAT等）での認証」が推奨/前提のため、設定されていれば優先利用
-          GH_TOKEN: ${{ secrets.COPILOT_PAT || github.token }}
+          # GH_TOKEN: Personal Access Token（Copilotアサインに必要）
+          # secrets.GH_TOKEN が設定されていない場合は github.token にフォールバック
+          GH_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
         run: |
           FILES="${{ steps.changed-files.outputs.files }}"
           
