@@ -4,7 +4,8 @@
     "tfeXl69VtgI",
     "aOS3in05I7c",
     "udiaa0w46Aw",
-    "5P13mzNX7CQ"
+    "5P13mzNX7CQ",
+    "811ctT3HqcE"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -31,6 +32,12 @@
       "processed_at": "2025-12-24T02:29:32.080136",
       "title": "Shipmas Day 18: How I Get Claude Code Max $200 For \"Free\"",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "811ctT3HqcE": {
+      "processed_at": "2025-12-24T03:03:55.306952",
+      "title": "Build anything with Local AI Models, here's how",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
