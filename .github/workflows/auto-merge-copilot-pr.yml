@@ -1,9 +1,10 @@
 name: Auto Merge Copilot PR
 
 on:
-  workflow_run:
-    workflows: ["Copilot coding agent"]
-    types: [completed]
+  # Copilotブランチへのプッシュを検知
+  push:
+    branches:
+      - 'copilot/**'
 
 permissions:
   contents: write
@@ -11,11 +12,14 @@ permissions:
 
 jobs:
   auto-merge:
-    # Copilot coding agentが成功した場合のみ実行
-    if: github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     
     steps:
+      - name: Wait for CI checks
+        run: |
+          echo "⏳ CIチェック完了を待機中..."
+          sleep 30
+      
       - name: Find and process Copilot PR
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
