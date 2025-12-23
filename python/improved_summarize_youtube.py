@@ -473,11 +473,17 @@ def calculate_quality_score(transcript_text, sections):
     return max(0, score)
 
 
-def auto_commit_and_push(file_path, video_info):
+def auto_commit_and_push(file_path, video_info, output_dir=None):
     """生成したファイルを自動的にgit commit & push"""
     try:
-        # git add
+        # git add（マークダウンファイル）
         subprocess.run(['git', 'add', file_path], check=True, capture_output=True)
+        
+        # processed_videos.jsonも追加
+        if output_dir:
+            processed_file = os.path.join(output_dir, 'processed_videos.json')
+            if os.path.exists(processed_file):
+                subprocess.run(['git', 'add', processed_file], check=True, capture_output=True)
         
         # コミットメッセージを生成
         title = video_info['title'][:50] if video_info else "YouTube要約"
@@ -625,7 +631,7 @@ def main(video_url, output_dir=None, auto_push=False):
     # 自動プッシュが有効な場合
     if auto_push:
         print("\n🔄 Git操作を実行中...")
-        auto_commit_and_push(output_file, video_info)
+        auto_commit_and_push(output_file, video_info, output_dir)
     
     return result
 
