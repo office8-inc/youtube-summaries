@@ -6,7 +6,8 @@
     "udiaa0w46Aw",
     "5P13mzNX7CQ",
     "811ctT3HqcE",
-    "NycRRPFm1n8"
+    "NycRRPFm1n8",
+    "i65H0qaeiq0"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -45,6 +46,12 @@
       "processed_at": "2025-12-24T03:15:09.803006",
       "title": "Shipmas Day 17: How I Plan To Use AI In 2026",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "i65H0qaeiq0": {
+      "processed_at": "2025-12-24T03:22:15.442815",
+      "title": "How to Make 2026 The Best Year of Your Life (With AI)",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
