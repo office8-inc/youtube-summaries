@@ -1,10 +1,11 @@
 name: Auto Merge Copilot PR
 
 on:
-  # Copilotブランチへのプッシュを検知
-  push:
-    branches:
-      - 'copilot/**'
+  # 5分おきに定期実行
+  schedule:
+    - cron: '*/5 * * * *'
+  # 手動実行も可能
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -15,11 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Wait for CI checks
-        run: |
-          echo "⏳ CIチェック完了を待機中..."
-          sleep 30
-      
       - name: Find and process Copilot PR
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
