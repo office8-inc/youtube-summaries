@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Find and process Copilot PR
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           echo "🔍 Copilot coding agent完了。関連PRを検索..."
           
@@ -58,7 +58,6 @@ jobs:
             --squash \
             --delete-branch; then
             echo "✅ 自動マージが完了しました"
-            MERGE_SUCCESS=true
           else
             echo "⚠️ 直接マージ失敗、auto-mergeを試行..."
             gh pr merge $PR_NUMBER \
@@ -66,29 +65,5 @@ jobs:
               --auto \
               --squash \
               --delete-branch && echo "✅ Auto-mergeを設定しました"
-            MERGE_SUCCESS=true
-          fi
-          
-          # マージ成功後、関連Issueをクローズ
-          if [ "$MERGE_SUCCESS" = "true" ]; then
-            echo "🔍 関連Issueを検索してクローズします..."
-            
-            # Copilotラベルが付いた最新のオープンIssueを検索
-            ISSUE_NUMBER=$(gh issue list --repo ${{ github.repository }} \
-              --state open \
-              --label "copilot-task" \
-              --limit 1 \
-              --json number \
-              --jq '.[0].number')
-            
-            if [ ! -z "$ISSUE_NUMBER" ] && [ "$ISSUE_NUMBER" != "null" ]; then
-              echo "📝 Issue #$ISSUE_NUMBER をクローズします"
-              gh issue close $ISSUE_NUMBER \
-                --repo ${{ github.repository }} \
-                --comment "✅ PR #$PR_NUMBER がマージされたため、このIssueを自動的にクローズしました。"
-              echo "✅ Issue #$ISSUE_NUMBER をクローズしました"
-            else
-              echo "ℹ️ 関連Issueが見つかりませんでした"
-            fi
           fi
 

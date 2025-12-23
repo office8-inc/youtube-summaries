@@ -75,7 +75,7 @@ jobs:
           
           # Issueを作成
           ISSUE_TITLE="🤖 要約記事の改善: $(date +'%Y-%m-%d %H:%M')"
-          COPILOT_REQUEST="@copilot この要約記事を改善してください。日本語の文章として自然で読みやすい表現に修正し、重要なポイントを強調してください。"
+          COPILOT_REQUEST="@copilot この要約記事を改善してください。日本語の文章として自然で読みやすい表現に修正し、重要なポイントを強調してください。**重要**: PRを作成する際は、PR本文に「Closes #ISSUE_NUMBER」を含めて、このIssueとリンクさせてください。"
           printf -v FULL_BODY "%s\n\n%s" "$ISSUE_BODY" "$COPILOT_REQUEST"
           ISSUE_URL=$(gh issue create --title "$ISSUE_TITLE" --body "$FULL_BODY" --label "copilot-task,content-improvement")
           ISSUE_NUMBER=$(echo "$ISSUE_URL" | grep -oP '/\d+$' | tr -d '/')
