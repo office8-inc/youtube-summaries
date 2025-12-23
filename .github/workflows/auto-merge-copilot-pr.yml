@@ -1,11 +1,9 @@
 name: Auto Merge Copilot PR
 
 on:
-  # 5分おきに定期実行
-  schedule:
-    - cron: '*/5 * * * *'
-  # 手動実行も可能
-  workflow_dispatch:
+  workflow_run:
+    workflows: ["Copilot coding agent"]
+    types: [completed]
 
 permissions:
   contents: write
@@ -13,6 +11,8 @@ permissions:
 
 jobs:
   auto-merge:
+    # Copilot coding agentが成功した場合のみ実行
+    if: github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     
     steps:
