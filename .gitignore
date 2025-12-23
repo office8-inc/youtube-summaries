@@ -14,10 +14,6 @@ env/
 ENV/
 .venv
 
-# 生成されたファイル
-processed_videos.json
-process_results.json
-
 # IDE
 .vscode/
 .idea/

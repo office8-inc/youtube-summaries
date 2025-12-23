@@ -1,0 +1,30 @@
+{
+  "video_ids": [
+    "uOEengY4Da4",
+    "tfeXl69VtgI",
+    "aOS3in05I7c",
+    "udiaa0w46Aw"
+  ],
+  "details": {
+    "uOEengY4Da4": {
+      "processed_at": "2025-12-21T22:01:22.678715",
+      "title": "Shipmas Day 15: Claude Code Skills Will Dominate 2026",
+      "channel": "All About AI"
+    },
+    "tfeXl69VtgI": {
+      "processed_at": "2025-12-21T22:19:19.835530",
+      "title": "Robots don't have as much input tokens as humans",
+      "channel": "David Ondrej"
+    },
+    "aOS3in05I7c": {
+      "processed_at": "2025-12-22T00:47:04.907586",
+      "title": "Shipmas Day 13: GPT-Image 1.5 vs Nano Banana Pro Testing",
+      "channel": "All About AI"
+    },
+    "udiaa0w46Aw": {
+      "processed_at": "2025-12-22T01:01:50.675887",
+      "title": "Shipmas Day 16: How I Made $10K+ with Micro AI Businesses in 2025",
+      "channel": "All About AI"
+    }
+  }
+}
