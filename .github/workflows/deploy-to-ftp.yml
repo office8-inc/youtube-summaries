@@ -8,14 +8,21 @@ on:
       - 'xserver/index.html'
       - 'xserver/get_articles.php'
       - 'xserver/marked.min.js'
+  workflow_dispatch:
+    inputs:
+      deploy_all:
+        description: '全ファイルをアップロード（通常は変更分のみ）'
+        required: false
+        type: boolean
+        default: false
 
 permissions:
   contents: read
 
 jobs:
   deploy-to-ftp:
-    # Pull RequestがマージされたときのみFTPアップロードを実行
-    if: github.event.pull_request.merged == true
+    # Pull RequestがマージされたときまたはWorkflow Dispatchで実行
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     
     steps:

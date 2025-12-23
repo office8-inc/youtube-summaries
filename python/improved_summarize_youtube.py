@@ -191,8 +191,8 @@ def is_video_processed(video_id, output_dir):
         return False
 
 
-def mark_video_processed(video_id, output_dir, video_info=None):
-    """動画を処理済みとして記録"""
+def mark_video_processed(video_id, output_dir, video_info=None, status='success', error_message=None):
+    """動画を処理済みとして記録（成功・失敗両方）"""
     if not output_dir:
         return
     
@@ -218,11 +218,17 @@ def mark_video_processed(video_id, output_dir, video_info=None):
     if 'details' not in processed:
         processed['details'] = {}
     
-    processed['details'][video_id] = {
+    detail = {
         'processed_at': datetime.now().isoformat(),
         'title': video_info.get('title', '') if video_info else '',
-        'channel': video_info.get('channel', '') if video_info else ''
+        'channel': video_info.get('channel', '') if video_info else '',
+        'status': status
     }
+    
+    if error_message:
+        detail['error'] = error_message
+    
+    processed['details'][video_id] = detail
     
     # ファイルに保存
     with open(processed_file, 'w', encoding='utf-8') as f:
@@ -543,7 +549,10 @@ def main(video_url, output_dir=None, auto_push=False):
     transcript_data, lang = get_transcript(video_id)
     
     if not transcript_data:
-        print("エラー: 字幕を取得できませんでした")
+        error_msg = "字幕を取得できませんでした"
+        print(f"エラー: {error_msg}")
+        # 失敗した動画も記録（次回スキップするため）
+        mark_video_processed(video_id, output_dir, video_info, status='failed', error_message=error_msg)
         return None
     
     print(f"字幕を取得しました（言語: {lang}）")
