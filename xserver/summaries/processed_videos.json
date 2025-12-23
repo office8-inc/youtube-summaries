@@ -8,7 +8,9 @@
     "811ctT3HqcE",
     "NycRRPFm1n8",
     "i65H0qaeiq0",
-    "8crFNVdAcIU"
+    "8crFNVdAcIU",
+    "vhMMKwYYYsc",
+    "Ta5g-OxjPO4"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -58,6 +60,18 @@
     "8crFNVdAcIU": {
       "processed_at": "2025-12-24T03:46:00.802204",
       "title": "Is this AI Business Model worth it?",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "vhMMKwYYYsc": {
+      "processed_at": "2025-12-24T04:10:50.038730",
+      "title": "How to Find $10,000p/m App Ideas & Build Them With AI (Beginner Method)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "Ta5g-OxjPO4": {
+      "processed_at": "2025-12-24T04:10:52.011528",
+      "title": "This AI Business Will Make You $1M (With Zero Employees)",
       "channel": "David Ondrej",
       "status": "success"
     }
