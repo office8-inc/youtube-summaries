@@ -486,6 +486,18 @@ def auto_commit_and_push(file_paths, processed_count, output_dir=None):
         return False
     
     try:
+        # まずgit pullで最新を取得（競合防止）
+        print("  📥 リモートから最新を取得中...")
+        pull_result = subprocess.run(
+            ['git', 'pull', '--rebase'],
+            capture_output=True,
+            text=True
+        )
+        if pull_result.returncode != 0:
+            print(f"  ⚠️  pull失敗（続行します）: {pull_result.stderr}")
+        else:
+            print("  ✓ pull完了")
+        
         # git add（全マークダウンファイル）
         for file_path in file_paths:
             subprocess.run(['git', 'add', file_path], check=True, capture_output=True)
