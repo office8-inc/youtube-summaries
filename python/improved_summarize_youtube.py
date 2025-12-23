@@ -473,11 +473,22 @@ def calculate_quality_score(transcript_text, sections):
     return max(0, score)
 
 
-def auto_commit_and_push(file_path, video_info, output_dir=None):
-    """生成したファイルを自動的にgit commit & push"""
+def auto_commit_and_push(file_paths, processed_count, output_dir=None):
+    """生成したファイルを自動的にgit commit & push（複数ファイル対応）
+    
+    Args:
+        file_paths: 追加するファイルパスのリスト
+        processed_count: 処理した動画数
+        output_dir: 出力ディレクトリ（processed_videos.json用）
+    """
+    if not file_paths:
+        print("  ℹ️  追加するファイルがありません")
+        return False
+    
     try:
-        # git add（マークダウンファイル）
-        subprocess.run(['git', 'add', file_path], check=True, capture_output=True)
+        # git add（全マークダウンファイル）
+        for file_path in file_paths:
+            subprocess.run(['git', 'add', file_path], check=True, capture_output=True)
         
         # processed_videos.jsonも追加
         if output_dir:
@@ -485,10 +496,11 @@ def auto_commit_and_push(file_path, video_info, output_dir=None):
             if os.path.exists(processed_file):
                 subprocess.run(['git', 'add', processed_file], check=True, capture_output=True)
         
-        # コミットメッセージを生成
-        title = video_info['title'][:50] if video_info else "YouTube要約"
-        channel = video_info['channel'] if video_info else "Unknown"
-        commit_msg = f"📝 要約追加: {title}\n\nチャンネル: {channel}"
+        # コミットメッセージを生成（複数ファイル対応）
+        if len(file_paths) == 1:
+            commit_msg = f"📝 要約追加: 1件の動画を処理"
+        else:
+            commit_msg = f"📝 要約追加: {len(file_paths)}件の動画を処理"
         
         # git commit
         result = subprocess.run(
@@ -506,7 +518,7 @@ def auto_commit_and_push(file_path, video_info, output_dir=None):
                 print(f"  ⚠️  コミット失敗: {result.stderr}")
                 return False
         
-        print("  ✓ コミット完了")
+        print(f"  ✓ コミット完了（{len(file_paths)}ファイル）")
         
         # git push
         print("  📤 プッシュ中...")
@@ -531,7 +543,7 @@ def auto_commit_and_push(file_path, video_info, output_dir=None):
         return False
 
 
-def main(video_url, output_dir=None, auto_push=False):
+def main(video_url, output_dir=None):
     """メイン処理"""
     print(f"動画を処理中: {video_url}")
     
@@ -628,11 +640,6 @@ def main(video_url, output_dir=None, auto_push=False):
         'video_info': video_info
     }
     
-    # 自動プッシュが有効な場合
-    if auto_push:
-        print("\n🔄 Git操作を実行中...")
-        auto_commit_and_push(output_file, video_info, output_dir)
-    
     return result
 
 
@@ -701,11 +708,16 @@ if __name__ == "__main__":
             print("エラー: 動画URLを指定してください")
             sys.exit(1)
         
-        result = main(video_url, output_dir, auto_push)
+        result = main(video_url, output_dir)
         
         if result and result['quality_score'] < 50:
             print(f"\n⚠️  警告: クオリティスコアが低いです ({result['quality_score']}/100)")
             print("手動でのレビューを推奨します。")
+        
+        # 自動プッシュが有効な場合
+        if auto_push and result:
+            print("\n🔄 Git操作を実行中...")
+            auto_commit_and_push([result['file_path']], 1, output_dir)
     
     elif mode == 'channel':
         # チャンネルから最新動画を処理
@@ -733,6 +745,7 @@ if __name__ == "__main__":
         processed_count = 0
         skipped_count = 0
         failed_count = 0
+        processed_files = []  # 処理したファイルのリスト
         
         for i, video in enumerate(videos, 1):
             print(f"\n{'='*60}")
@@ -745,10 +758,11 @@ if __name__ == "__main__":
                 skipped_count += 1
                 continue
             
-            result = main(video['url'], output_dir, auto_push)
+            result = main(video['url'], output_dir)
             
             if result:
                 processed_count += 1
+                processed_files.append(result['file_path'])
                 if result['quality_score'] < 50:
                     print(f"⚠️  クオリティスコア低: {result['quality_score']}/100")
             else:
@@ -761,6 +775,11 @@ if __name__ == "__main__":
         print(f"⏭️  スキップ: {skipped_count}件")
         print(f"❌ 失敗: {failed_count}件")
         print(f"合計: {len(videos)}件")
+        
+        # 自動プッシュが有効で、処理したファイルがある場合
+        if auto_push and processed_files:
+            print("\n🔄 Git操作を実行中...")
+            auto_commit_and_push(processed_files, processed_count, output_dir)
     
     elif mode == 'list':
         # channel-list.mdから全チャンネルの動画を収集し、新しい順に処理
@@ -822,6 +841,7 @@ if __name__ == "__main__":
         # 上位limit件だけを処理
         total_processed = 0
         total_failed = 0
+        processed_files = []  # 処理したファイルのリスト
         
         for i, video in enumerate(all_videos[:limit], 1):
             print(f"\n{'='*60}")
@@ -831,10 +851,11 @@ if __name__ == "__main__":
             print(f"公開日: {video['published_at']}")
             print(f"動画URL: {video['url']}")
             
-            result = main(video['url'], output_dir, auto_push)
+            result = main(video['url'], output_dir)
             
             if result:
                 total_processed += 1
+                processed_files.append(result['file_path'])
             else:
                 total_failed += 1
         
@@ -843,3 +864,8 @@ if __name__ == "__main__":
         print(f"{'='*60}")
         print(f"✅ 処理成功: {total_processed}件")
         print(f"❌ 失敗: {total_failed}件")
+        
+        # 自動プッシュが有効で、処理したファイルがある場合
+        if auto_push and processed_files:
+            print("\n🔄 Git操作を実行中...")
+            auto_commit_and_push(processed_files, total_processed, output_dir)
