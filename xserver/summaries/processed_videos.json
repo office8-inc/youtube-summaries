@@ -5,7 +5,8 @@
     "aOS3in05I7c",
     "udiaa0w46Aw",
     "5P13mzNX7CQ",
-    "811ctT3HqcE"
+    "811ctT3HqcE",
+    "NycRRPFm1n8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -38,6 +39,12 @@
       "processed_at": "2025-12-24T03:03:55.306952",
       "title": "Build anything with Local AI Models, here's how",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "NycRRPFm1n8": {
+      "processed_at": "2025-12-24T03:15:09.803006",
+      "title": "Shipmas Day 17: How I Plan To Use AI In 2026",
+      "channel": "All About AI",
       "status": "success"
     }
   }
