@@ -486,19 +486,7 @@ def auto_commit_and_push(file_paths, processed_count, output_dir=None):
         return False
     
     try:
-        # まずgit pullで最新を取得（競合防止）
-        print("  📥 リモートから最新を取得中...")
-        pull_result = subprocess.run(
-            ['git', 'pull', '--rebase'],
-            capture_output=True,
-            text=True
-        )
-        if pull_result.returncode != 0:
-            print(f"  ⚠️  pull失敗（続行します）: {pull_result.stderr}")
-        else:
-            print("  ✓ pull完了")
-        
-        # git add（全マークダウンファイル）
+        # 先にgit add（pullの前にステージングが必要）
         for file_path in file_paths:
             subprocess.run(['git', 'add', file_path], check=True, capture_output=True)
         
@@ -507,6 +495,20 @@ def auto_commit_and_push(file_paths, processed_count, output_dir=None):
             processed_file = os.path.join(output_dir, 'processed_videos.json')
             if os.path.exists(processed_file):
                 subprocess.run(['git', 'add', processed_file], check=True, capture_output=True)
+        
+        print(f"  ✓ {len(file_paths)}ファイルをステージング")
+        
+        # git pullで最新を取得（競合防止）
+        print("  📥 リモートから最新を取得中...")
+        pull_result = subprocess.run(
+            ['git', 'pull', '--rebase'],
+            capture_output=True,
+            text=True
+        )
+        if pull_result.returncode != 0:
+            print(f"  ⚠️  pull失敗（続行します）: {pull_result.stderr.strip()}")
+        else:
+            print("  ✓ pull完了")
         
         # コミットメッセージを生成（複数ファイル対応）
         if len(file_paths) == 1:
