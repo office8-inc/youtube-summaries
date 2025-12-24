@@ -17,7 +17,12 @@
     "WaBdtmkU-Us",
     "wKi3N9fsF0Y",
     "8z6PGUiuNMo",
-    "uXtQU9YW_6w"
+    "uXtQU9YW_6w",
+    "lz6eCN7rY_o",
+    "-6QMS8BHyEY",
+    "T-0fwRqCflc",
+    "QB3l9sFV2Kk",
+    "0pNlWY8hOeE"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -123,6 +128,36 @@
       "processed_at": "2025-12-24T22:26:39.165035",
       "title": "Shipmas Day 10: The AI Reverse Engineering Workflow",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "lz6eCN7rY_o": {
+      "processed_at": "2025-12-24T22:37:29.540183",
+      "title": "I Stacked 3 Remote Jobs and Made $400K With AI (Here's How)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "-6QMS8BHyEY": {
+      "processed_at": "2025-12-24T22:37:32.126796",
+      "title": "5 AI Habits That Will Separate Winners From Losers in 2026",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "T-0fwRqCflc": {
+      "processed_at": "2025-12-24T22:37:35.089219",
+      "title": "Shipmas Day 9: How I Use AI Video To Get 10+ Million Views",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "QB3l9sFV2Kk": {
+      "processed_at": "2025-12-24T22:37:37.821085",
+      "title": "GPT 5.2 is the first AI model I’d actually give my work to",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "0pNlWY8hOeE": {
+      "processed_at": "2025-12-24T22:37:40.149566",
+      "title": "Will this file format REPLACE JSON!?",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
