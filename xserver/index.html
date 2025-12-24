@@ -53,6 +53,11 @@
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             margin-bottom: 20px;
+            display: none;
+        }
+
+        .articles-list.active {
+            display: block;
         }
 
         .article-item {
@@ -182,6 +187,30 @@
             margin: 20px 0;
         }
 
+        .section-title {
+            font-size: 1.5em;
+            color: #667eea;
+            margin: 30px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .section-title:first-of-type {
+            margin-top: 0;
+        }
+
+        .article-item.read {
+            opacity: 0.6;
+            border-left-color: #999;
+        }
+
+        .load-more {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
         @media (max-width: 768px) {
             body {
                 padding: 10px;
@@ -221,6 +250,27 @@
 
     <script>
         let articles = [];
+        let displayedCount = 0;
+        const ITEMS_PER_LOAD = 10;
+        const READ_ARTICLES_KEY = 'youtube-summaries-read';
+
+        // 既読記事の管理
+        function getReadArticles() {
+            const read = localStorage.getItem(READ_ARTICLES_KEY);
+            return read ? JSON.parse(read) : [];
+        }
+
+        function markAsRead(path) {
+            const readArticles = getReadArticles();
+            if (!readArticles.includes(path)) {
+                readArticles.push(path);
+                localStorage.setItem(READ_ARTICLES_KEY, JSON.stringify(readArticles));
+            }
+        }
+
+        function isRead(path) {
+            return getReadArticles().includes(path);
+        }
 
         // Markdownファイルのリストを取得
         async function loadArticles() {
@@ -249,20 +299,89 @@
             // 日付順にソート（新しい順）
             articles.sort((a, b) => new Date(b.date) - new Date(a.date));
 
+            // 未読・既読に分割
+            const unreadArticles = articles.filter(article => !isRead(article.path));
+            const readArticles = articles.filter(article => isRead(article.path));
+
             let html = '<h2 style="margin-bottom: 20px;">📚 記事一覧</h2>';
             
-            articles.forEach((article, index) => {
-                html += `
-                    <div class="article-item" onclick="loadArticle('${article.path}')">
-                        <div class="article-title">${article.title}</div>
-                        <div class="article-meta">
-                            📅 ${article.date} | 📺 ${article.channel}
-                        </div>
-                    </div>
-                `;
-            });
+            // 未読セクション
+            if (unreadArticles.length > 0) {
+                html += '<div class="section-title">📌 未読 (' + unreadArticles.length + '件)</div>';
+                html += '<div id="unreadSection"></div>';
+            }
+
+            // 既読セクション
+            if (readArticles.length > 0) {
+                html += '<div class="section-title">✓ 既読 (' + readArticles.length + '件)</div>';
+                html += '<div id="readSection"></div>';
+            }
+
+            html += '<div class="load-more" id="loadMore"></div>';
 
             listDiv.innerHTML = html;
+
+            // 初回10件を表示
+            displayedCount = 0;
+            loadMoreArticles();
+
+            // 無限スクロールの設定
+            window.addEventListener('scroll', handleScroll);
+        }
+
+        // 記事を追加表示
+        function loadMoreArticles() {
+            const unreadArticles = articles.filter(article => !isRead(article.path));
+            const readArticles = articles.filter(article => isRead(article.path));
+            const allSortedArticles = [...unreadArticles, ...readArticles];
+
+            const nextArticles = allSortedArticles.slice(displayedCount, displayedCount + ITEMS_PER_LOAD);
+            
+            nextArticles.forEach(article => {
+                const isReadArticle = isRead(article.path);
+                const targetSection = isReadArticle ? 'readSection' : 'unreadSection';
+                const section = document.getElementById(targetSection);
+                
+                if (section) {
+                    const articleHtml = `
+                        <div class="article-item ${isReadArticle ? 'read' : ''}" onclick="loadArticle('${article.path}')">
+                            <div class="article-title">${article.title}</div>
+                            <div class="article-meta">
+                                📅 ${article.date} | 📺 ${article.channel}
+                            </div>
+                        </div>
+                    `;
+                    section.innerHTML += articleHtml;
+                }
+            });
+
+            displayedCount += nextArticles.length;
+
+            // ローディング表示の更新
+            const loadMoreDiv = document.getElementById('loadMore');
+            if (displayedCount >= allSortedArticles.length) {
+                loadMoreDiv.textContent = '全ての記事を表示しました';
+                window.removeEventListener('scroll', handleScroll);
+            } else {
+                loadMoreDiv.textContent = `残り ${allSortedArticles.length - displayedCount} 件`;
+            }
+        }
+
+        // スクロールイベントハンドラー
+        function handleScroll() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight;
+            const clientHeight = document.documentElement.clientHeight;
+
+            // ページ下部に近づいたら次を読み込み
+            if (scrollTop + clientHeight >= scrollHeight - 300) {
+                window.removeEventListener('scroll', handleScroll);
+                loadMoreArticles();
+                // 少し待ってから再度イベントを設定
+                setTimeout(() => {
+                    window.addEventListener('scroll', handleScroll);
+                }, 500);
+            }
         }
 
         // 記事を読み込んで表示
@@ -273,6 +392,9 @@
                 
                 const markdown = await response.text();
                 const html = marked.parse(markdown);
+                
+                // 既読としてマーク
+                markAsRead(path);
                 
                 document.getElementById('markdownContent').innerHTML = html;
                 document.getElementById('articlesList').classList.remove('active');
@@ -290,6 +412,9 @@
             document.getElementById('articleContent').classList.remove('active');
             document.getElementById('articlesList').classList.add('active');
             window.scrollTo(0, 0);
+            
+            // リストを再描画（既読状態を反映）
+            displayArticlesList();
         }
 
         // 初期化
