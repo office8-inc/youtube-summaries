@@ -44,12 +44,9 @@ jobs:
             sleep 5
           fi
           
-          # PRを自動承認
-          echo "✅ PRを自動承認します: #$PR_NUMBER"
-          gh pr review $PR_NUMBER \
-            --repo ${{ github.repository }} \
-            --approve \
-            --body "✅ Copilotによる改善を自動承認しました。" || echo "⚠️ 承認をスキップ"
+          # 承認は別のワークフロー(copilot-auto-approve.yml)が自動で行う
+          echo "⏳ 自動承認を待機中..."
+          sleep 10
           
           # PRを自動マージ
           echo "🔀 PRを自動マージします: #$PR_NUMBER"

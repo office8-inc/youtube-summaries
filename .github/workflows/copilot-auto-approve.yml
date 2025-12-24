@@ -1,0 +1,26 @@
+name: Copilot PR Auto Approve
+
+# pull_request_targetを使用することで、PRが作成・更新された時に即座に承認
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  auto-approve:
+    runs-on: ubuntu-latest
+    # Copilotからのプルリクエストのみを対象に限定
+    if: |
+      github.event.pull_request.user.login == 'copilot[bot]' ||
+      startsWith(github.event.pull_request.head.ref, 'copilot/')
+    
+    steps:
+      - name: Auto approve Copilot PR
+        uses: hmarr/auto-approve-action@v4
+        with:
+          review-message: |
+            ✅ Copilot coding agentによる自動生成PRを承認しました
+            
+            このPRは自動的に承認され、マージ可能になりました。
