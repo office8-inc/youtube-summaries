@@ -13,7 +13,9 @@
     "Ta5g-OxjPO4",
     "imrmbtvDV6c",
     "oEgiCgQwi-A",
-    "ZcYQD8NVCDw"
+    "ZcYQD8NVCDw",
+    "WaBdtmkU-Us",
+    "wKi3N9fsF0Y"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -94,6 +96,19 @@
       "processed_at": "2025-12-24T21:06:23.439260",
       "title": "My favourite desk accessory for long night coding #ad",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "WaBdtmkU-Us": {
+      "processed_at": "2025-12-24T21:20:26.171529",
+      "title": "Building AGI from the Fjords of Norway",
+      "channel": "David Ondrej",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "wKi3N9fsF0Y": {
+      "processed_at": "2025-12-24T21:20:41.234745",
+      "title": "Shipmas Day 12: AI Music Video Generator App",
+      "channel": "All About AI",
       "status": "success"
     }
   }
