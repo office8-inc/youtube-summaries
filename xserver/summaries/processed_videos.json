@@ -27,7 +27,12 @@
     "QsTYFsmCL5E",
     "g-JgaoheyTo",
     "GE9DDkcYSHw",
-    "TKnjpW0ltM4"
+    "TKnjpW0ltM4",
+    "e4nGjTsvADc",
+    "udr6CLFERE4",
+    "qNtFxkl975c",
+    "m17MbBSvLF0",
+    "undMSKwdfOU"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -193,6 +198,36 @@
       "processed_at": "2025-12-24T22:50:50.974000",
       "title": "AI Agency Predictions 2026: Where The Real Money Is Moving",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "e4nGjTsvADc": {
+      "processed_at": "2025-12-24T23:21:32.023008",
+      "title": "The Database Query That Cost $1,000,000",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "udr6CLFERE4": {
+      "processed_at": "2025-12-24T23:21:35.179244",
+      "title": "I Only Used the Terminal for 7 Days Straight",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "qNtFxkl975c": {
+      "processed_at": "2025-12-24T23:21:38.163854",
+      "title": "Shipmas Day 6: Bring Any Idea To Life App (Nano Banana Pro API)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "m17MbBSvLF0": {
+      "processed_at": "2025-12-24T23:21:40.654508",
+      "title": "Is NodeJS STILL the king!? 💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "undMSKwdfOU": {
+      "processed_at": "2025-12-24T23:21:43.211646",
+      "title": "Shipmas Day 5: Autonomous Real Time Webpage (AI Automation)",
+      "channel": "All About AI",
       "status": "success"
     }
   }
