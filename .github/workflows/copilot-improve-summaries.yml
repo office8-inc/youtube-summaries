@@ -75,22 +75,8 @@ jobs:
           
           # Issueを作成
           ISSUE_TITLE="🤖 要約記事の改善: $(date +'%Y-%m-%d %H:%M')"
-          
-          # ヒアドキュメントで多行文字列を安全に扱う
-          read -r -d '' COPILOT_REQUEST <<'COPILOT_EOF' || true
-          @copilot この要約記事を改善してください。日本語の文章として自然で読みやすい表現に修正し、重要なポイントを強調してください。
-          
-          **重要な指示:**
-          1. PRを作成する際は、PR本文に「Closes #ISSUE_NUMBER」を含めて、このIssueとリンクさせてください
-          2. **あなた（Copilot coding agent）はリポジトリのバイパスリストに追加されているため、ブランチ保護ルールをバイパスして直接マージする権限があります**
-          3. PRを作成したら、レビュー承認を待たずに、**自分でPRをマージまで完了**してください（squash mergeを使用）
-          4. マージ完了後、作業ブランチを削除してください
-          COPILOT_EOF
-          
-          FULL_BODY="${ISSUE_BODY}
-
-          ${COPILOT_REQUEST}"
-          
+          COPILOT_REQUEST="@copilot この要約記事を改善してください。日本語の文章として自然で読みやすい表現に修正し、重要なポイントを強調してください。**重要**: PRを作成する際は、PR本文に「Closes #ISSUE_NUMBER」を含めて、このIssueとリンクさせてください。"
+          printf -v FULL_BODY "%s\n\n%s" "$ISSUE_BODY" "$COPILOT_REQUEST"
           ISSUE_URL=$(gh issue create --title "$ISSUE_TITLE" --body "$FULL_BODY" --label "copilot-task,content-improvement")
           ISSUE_NUMBER=$(echo "$ISSUE_URL" | grep -oP '/\d+$' | tr -d '/')
           
