@@ -1,4 +1,4 @@
-# 📺 Atom: The Editor That Accidentally Built Its Own Killer
+# 📺 Atom：自らのキラーを生み出してしまったエディター
 
 ## 📋 動画情報
 
@@ -12,11 +12,15 @@
 
 ## 💡 概要
 
-この記事は、YouTube動画の日本語字幕（自動翻訳含む）から自動生成された要約です。
+この動画は、GitHubの共同創設者Chris Wanstrathが開発したコードエディター「Atom」の興亡を描いたドキュメンタリーです。2015年にリリースされたAtomは、Web技術で構築された革新的なエディターとして大きな支持を得ましたが、その核心技術「Atom Shell（後のElectron）」が独立してDiscord、Slack、VS Codeなど数十億のユーザーを持つアプリケーションを動かす一方で、Atom自体はパフォーマンス問題に苦しみました。2018年のMicrosoftによるGitHub買収後、VS Codeとの競争に敗れ、2022年にサンセット。しかし、Atomのオープンソース精神とElectronは今も生き続け、ZedやCursorなど新世代のエディターに影響を与えています。
 
 ## ⭐ 重要なポイント
 
-> 📌 この動画の主要なトピックとポイントがここに表示されます
+- **AtomはElectronを生み出した**: Atomのために作られた「Atom Shell」は後にElectronとして独立し、VS Code、Slack、Discord、Microsoft Teamsなど数十億のユーザーを持つアプリケーションの基盤技術となった
+- **パフォーマンス問題が致命的**: わずか2MBのファイルを開くのに3秒、400MBのメモリを消費。Chromiumブラウザ全体をパッケージするElectronの設計が原因で、「Cyberpunkをウルトラ設定で動かしてテキストエディターを使う」ような状態に
+- **VS CodeがElectronで高速化を実現**: MicrosoftはAtomと同じElectronを使いながら、拡張機能の分離プロセス化、Monacoエディターの最適化、バイナリエンコーディングなどでAtomの4倍の速度を達成
+- **2018年のGitHub買収が転機**: Microsoft が75億ドルでGitHubを買収後、CEOは「AtomとVS Codeの両方をサポートする」と約束したが、419日後に最後のメジャーアップデート。コア開発者がVS Codeチームに移籍し、2022年に正式にサンセット
+- **オープンソースは死なない**: Atomは終わったが、そのコード、アイデア、Electronは生き続けている。VS Code自体もいつか終わるが、誰かがフォークして新しいものを作る—Zed、Cursorなど次世代エディターがその証
 
 ## 📖 詳細内容
 
