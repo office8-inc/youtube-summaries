@@ -22,7 +22,12 @@
     "-6QMS8BHyEY",
     "T-0fwRqCflc",
     "QB3l9sFV2Kk",
-    "0pNlWY8hOeE"
+    "0pNlWY8hOeE",
+    "Yd9oAPNXxs8",
+    "QsTYFsmCL5E",
+    "g-JgaoheyTo",
+    "GE9DDkcYSHw",
+    "TKnjpW0ltM4"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -158,6 +163,36 @@
       "processed_at": "2025-12-24T22:37:40.149566",
       "title": "Will this file format REPLACE JSON!?",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "Yd9oAPNXxs8": {
+      "processed_at": "2025-12-24T22:50:39.620802",
+      "title": "Shipmas Day 8: Image to Code AI Subagents in Claude Code",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "QsTYFsmCL5E": {
+      "processed_at": "2025-12-24T22:50:42.337831",
+      "title": "Atom: The Editor That Accidentally Built Its Own Killer",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "g-JgaoheyTo": {
+      "processed_at": "2025-12-24T22:50:45.143821",
+      "title": "How To Build & Deploy an AI SaaS End To End",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "GE9DDkcYSHw": {
+      "processed_at": "2025-12-24T22:50:47.805943",
+      "title": "Shipmas Day 7: Create Personal Software Tools With Claude Code",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "TKnjpW0ltM4": {
+      "processed_at": "2025-12-24T22:50:50.974000",
+      "title": "AI Agency Predictions 2026: Where The Real Money Is Moving",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
