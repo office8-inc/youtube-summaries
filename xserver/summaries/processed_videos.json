@@ -32,7 +32,17 @@
     "udr6CLFERE4",
     "qNtFxkl975c",
     "m17MbBSvLF0",
-    "undMSKwdfOU"
+    "undMSKwdfOU",
+    "U7M4fmCa4Sc",
+    "IkJhVjb06zQ",
+    "bDW3UM1z4r4",
+    "SVJCYrpZOuA",
+    "-GDzRYe_Yio",
+    "oRgnXdQyMHc",
+    "dEk3LUPAg7s",
+    "Wkn8YDwcyB0",
+    "1MSciowuHBE",
+    "7SrkvlgIKFs"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -227,6 +237,66 @@
     "undMSKwdfOU": {
       "processed_at": "2025-12-24T23:21:43.211646",
       "title": "Shipmas Day 5: Autonomous Real Time Webpage (AI Automation)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "U7M4fmCa4Sc": {
+      "processed_at": "2025-12-24T23:31:42.443111",
+      "title": "I Made $400,000 Teaching Companies AI (How You Can Too)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "IkJhVjb06zQ": {
+      "processed_at": "2025-12-24T23:31:44.984439",
+      "title": "50,000 Developers on the state of programming…",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "bDW3UM1z4r4": {
+      "processed_at": "2025-12-24T23:31:47.459562",
+      "title": "Shipmas Day 4: LLM Group Chat (OpenRouter)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "SVJCYrpZOuA": {
+      "processed_at": "2025-12-24T23:31:49.934883",
+      "title": "Shipmas Day 3: Change Any Scene In Your Favorite Movie With AI",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "-GDzRYe_Yio": {
+      "processed_at": "2025-12-24T23:31:52.705540",
+      "title": "Shipmas Day 2: Podcast Anything App (Gemini 3)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "oRgnXdQyMHc": {
+      "processed_at": "2025-12-24T23:31:55.309157",
+      "title": "Shipmas Day 1: Autonomous AI Social Media Video Converter App",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "dEk3LUPAg7s": {
+      "processed_at": "2025-12-24T23:31:58.056996",
+      "title": "How I Build Beautiful $5,000+ Websites in Minutes with AI (Gemini 3 Tutorial)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "Wkn8YDwcyB0": {
+      "processed_at": "2025-12-24T23:32:01.334938",
+      "title": "I uninstalled Chrome because of this AI browser.",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "1MSciowuHBE": {
+      "processed_at": "2025-12-24T23:32:04.446925",
+      "title": "How Computers Read Text in Real Life",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "7SrkvlgIKFs": {
+      "processed_at": "2025-12-24T23:32:08.236190",
+      "title": "Claude Opus 4.5 Just Changed Video Automation FOREVER",
       "channel": "All About AI",
       "status": "success"
     }
