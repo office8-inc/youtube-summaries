@@ -57,14 +57,14 @@ jobs:
             echo "count=$(echo $CHANGED_FILES | wc -w)" >> $GITHUB_OUTPUT
           fi
       
-      - name: Create issue and assign to Copilot
+      - name: Create branch, PR and assign to Copilot
         if: steps.check-author.outputs.skip != 'true' && steps.changed-files.outputs.count > 0
         env:
-          # GH_TOKEN: Personal Access Token（Copilotアサインに必要）
-          # secrets.GH_TOKEN が設定されていない場合は github.token にフォールバック
           GH_TOKEN: ${{ secrets.GH_TOKEN || github.token }}
         run: |
           FILES="${{ steps.changed-files.outputs.files }}"
+          TIMESTAMP=$(date +'%Y%m%d-%H%M%S')
+          BRANCH_NAME="copilot/improve-summaries-${TIMESTAMP}"
           
           # ファイルリストを作成
           FILE_LIST=$(echo "$FILES" | tr ' ' '\n' | sed 's/^/- `/' | sed 's/$/`/')
@@ -75,18 +75,35 @@ jobs:
           
           # Issueを作成
           ISSUE_TITLE="🤖 要約記事の改善: $(date +'%Y-%m-%d %H:%M')"
-          COPILOT_REQUEST="@copilot この要約記事を改善してください。日本語の文章として自然で読みやすい表現に修正し、重要なポイントを強調してください。**重要**: PRを作成する際は、PR本文に「Closes #ISSUE_NUMBER」を含めて、このIssueとリンクさせてください。"
-          printf -v FULL_BODY "%s\n\n%s" "$ISSUE_BODY" "$COPILOT_REQUEST"
-          ISSUE_URL=$(gh issue create --title "$ISSUE_TITLE" --body "$FULL_BODY" --label "copilot-task,content-improvement")
+          ISSUE_URL=$(gh issue create --title "$ISSUE_TITLE" --body "$ISSUE_BODY" --label "copilot-task,content-improvement")
           ISSUE_NUMBER=$(echo "$ISSUE_URL" | grep -oP '/\d+$' | tr -d '/')
+          echo "✅ Issue #$ISSUE_NUMBER 作成: $ISSUE_URL"
           
-          # GitHub APIでCopilotをアサイン（REST APIでは copilot-swe-agent[bot] を使用）
+          # ブランチを作成
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH_NAME"
+          git push origin "$BRANCH_NAME"
+          echo "✅ ブランチ作成: $BRANCH_NAME"
+          
+          # PRを作成（Ready状態で）
+          PR_BODY="Closes #${ISSUE_NUMBER}\n\n@copilot この要約記事を改善してください。日本語の文章として自然で読みやすい表現に修正し、重要なポイントを強調してください。\n\n作業完了後、自動的に承認・マージされます。"
+          PR_URL=$(gh pr create \
+            --title "$ISSUE_TITLE" \
+            --body "$PR_BODY" \
+            --base main \
+            --head "$BRANCH_NAME" \
+            --label "copilot-task")
+          PR_NUMBER=$(echo "$PR_URL" | grep -oP '/\d+$' | tr -d '/')
+          echo "✅ PR #$PR_NUMBER 作成（Ready状態）: $PR_URL"
+          
+          # CopilotをPRにアサイン
           gh api \
             --method POST \
             -H "Accept: application/vnd.github+json" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
-            "/repos/${{ github.repository }}/issues/$ISSUE_NUMBER/assignees" \
-            --input - <<EOF || echo "⚠️ Copilotの自動アサインに失敗（Issue本文の@copilotメンションで起動します）"
+            "/repos/${{ github.repository }}/issues/$PR_NUMBER/assignees" \
+            --input - <<EOF || echo "⚠️ Copilotの自動アサインに失敗（PR本文の@copilotメンションで起動します）"
           {
             "assignees": ["copilot-swe-agent[bot]"],
             "agent_assignment": {
@@ -99,7 +116,10 @@ jobs:
           }
           EOF
           
-          echo "✅ Issue #$ISSUE_NUMBER を作成しました: $ISSUE_URL"
+          echo "✅ Copilot作業環境の準備完了"
+          echo "  - Issue: #$ISSUE_NUMBER"
+          echo "  - PR: #$PR_NUMBER (Ready状態)"
+          echo "  - ブランチ: $BRANCH_NAME"
       
       - name: Summary
         if: always()

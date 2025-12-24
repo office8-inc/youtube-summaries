@@ -1,4 +1,4 @@
-name: Auto Merge Copilot PR
+name: Auto Approve and Merge Copilot PR
 
 on:
   workflow_run:
@@ -10,19 +10,20 @@ permissions:
   pull-requests: write
 
 jobs:
-  auto-merge:
+  auto-approve-and-merge:
     # Copilot coding agentが成功した場合のみ実行
     if: github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     
     steps:
-      - name: Find and process Copilot PR
+      - name: Find Copilot PR
+        id: find-pr
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
-          echo "🔍 Copilot coding agent完了。関連PRを検索..."
+          echo "🔍 Copilot作業完了。関連PRを検索..."
           
-          # Copilotブランチの未マージPRを検索（最新1件のみ）
+          # Copilotブランチの未マージPRを検索（最新1件）
           PR_INFO=$(gh pr list --repo ${{ github.repository }} --state open --json number,headRefName,isDraft \
             | jq -r '[.[] | select(.headRefName | startswith("copilot/"))] | .[0]')
           
@@ -34,36 +35,46 @@ jobs:
           PR_NUMBER=$(echo "$PR_INFO" | jq -r '.number')
           IS_DRAFT=$(echo "$PR_INFO" | jq -r '.isDraft')
           
-          echo "PR #$PR_NUMBER を検出 (Draft: $IS_DRAFT)"
-          
-          # Draft PRの場合はReady化
-          if [ "$IS_DRAFT" = "true" ]; then
-            echo "📝 Draft PRをReady for Reviewに変更..."
-            gh pr ready $PR_NUMBER --repo ${{ github.repository }}
-            echo "✓ Ready状態に変更しました"
-            sleep 5
-          fi
-          
-          # PRを自動承認
+          echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+          echo "is_draft=$IS_DRAFT" >> $GITHUB_OUTPUT
+          echo "✅ PR #$PR_NUMBER を検出 (Draft: $IS_DRAFT)"
+      
+      - name: Auto approve PR
+        if: steps.find-pr.outputs.pr_number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          PR_NUMBER: ${{ steps.find-pr.outputs.pr_number }}
+        run: |
           echo "✅ PRを自動承認します: #$PR_NUMBER"
           gh pr review $PR_NUMBER \
             --repo ${{ github.repository }} \
             --approve \
-            --body "✅ Copilotによる改善を自動承認しました。" || echo "⚠️ 承認をスキップ"
+            --body "✅ Copilot coding agentの作業完了を確認。自動承認しました。"
           
-          # PRを自動マージ
+          echo "✓ 承認完了"
+          
+      - name: Auto merge PR
+        if: steps.find-pr.outputs.pr_number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          PR_NUMBER: ${{ steps.find-pr.outputs.pr_number }}
+        run: |
           echo "🔀 PRを自動マージします: #$PR_NUMBER"
+          
+          # 直接マージを試行
           if gh pr merge $PR_NUMBER \
             --repo ${{ github.repository }} \
             --squash \
             --delete-branch; then
-            echo "✅ 自動マージが完了しました"
+            echo "✅ 自動マージ完了"
           else
-            echo "⚠️ 直接マージ失敗、auto-mergeを試行..."
+            # 失敗した場合はauto-mergeを有効化
+            echo "⚠️ 直接マージ失敗。auto-mergeを有効化します..."
             gh pr merge $PR_NUMBER \
               --repo ${{ github.repository }} \
               --auto \
               --squash \
-              --delete-branch && echo "✅ Auto-mergeを設定しました"
+              --delete-branch
+            echo "✓ Auto-merge有効化完了（条件を満たし次第自動マージされます）"
           fi
 
