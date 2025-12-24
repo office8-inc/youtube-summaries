@@ -16,7 +16,8 @@
     "ZcYQD8NVCDw",
     "WaBdtmkU-Us",
     "wKi3N9fsF0Y",
-    "8z6PGUiuNMo"
+    "8z6PGUiuNMo",
+    "uXtQU9YW_6w"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -115,6 +116,12 @@
     "8z6PGUiuNMo": {
       "processed_at": "2025-12-24T21:31:55.962815",
       "title": "NVIDIA Nemotron 3 Nano 30B First Impression - Shipmas Day 11",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "uXtQU9YW_6w": {
+      "processed_at": "2025-12-24T22:16:10.762610",
+      "title": "Shipmas Day 10: The AI Reverse Engineering Workflow",
       "channel": "All About AI",
       "status": "success"
     }
