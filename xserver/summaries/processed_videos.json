@@ -42,7 +42,17 @@
     "dEk3LUPAg7s",
     "Wkn8YDwcyB0",
     "1MSciowuHBE",
-    "7SrkvlgIKFs"
+    "7SrkvlgIKFs",
+    "pDu5roEYH3Y",
+    "y__qEgqXcF4",
+    "kxy-52U0u1A",
+    "nx3z07H8Va8",
+    "8dfnDaCAblQ",
+    "-lZ3PXPlWJs",
+    "_6VyjmRZIgA",
+    "JY0d2JZXuFU",
+    "11K3tGgFnJs",
+    "2VktR2fAmF0"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -298,6 +308,66 @@
       "processed_at": "2025-12-24T23:32:08.236190",
       "title": "Claude Opus 4.5 Just Changed Video Automation FOREVER",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "pDu5roEYH3Y": {
+      "processed_at": "2025-12-27T12:40:13.020129",
+      "title": "AI Christmas Special: 2025 Year in Review + 2026 Predictions!",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "y__qEgqXcF4": {
+      "processed_at": "2025-12-27T12:40:15.103587",
+      "title": "The AI Awards 2025 - Best LLM? Biggest Moment in AI? Best Agentic Coder?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "kxy-52U0u1A": {
+      "processed_at": "2025-12-27T12:40:17.549799",
+      "title": "Morning Brew Founder's $100B Bet on Al Transformation (Why He's ALL-IN)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "nx3z07H8Va8": {
+      "processed_at": "2025-12-27T12:40:19.575872",
+      "title": "AI Game Devlog #1: Opus 4.5 is UNREAL - MW2 FPS Clone",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "8dfnDaCAblQ": {
+      "processed_at": "2025-12-27T12:40:21.888090",
+      "title": "The CRAZIEST website I’ve ever seen #ad #ShopifyPartner",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "-lZ3PXPlWJs": {
+      "processed_at": "2025-12-27T12:40:24.093466",
+      "title": "The 1-Person Business That Thrives in a Bad Economy",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "_6VyjmRZIgA": {
+      "processed_at": "2025-12-27T12:40:26.240860",
+      "title": "Why aren’t developers using this!?",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "JY0d2JZXuFU": {
+      "processed_at": "2025-12-27T12:40:28.402344",
+      "title": "I Built an AI Agent to save me $500 #ad",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "11K3tGgFnJs": {
+      "processed_at": "2025-12-27T12:40:30.574862",
+      "title": "5 Interesting Open Source Projects",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "2VktR2fAmF0": {
+      "processed_at": "2025-12-27T12:40:32.847538",
+      "title": "Create Anything with Nano Banana Pro, Here’s How",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
