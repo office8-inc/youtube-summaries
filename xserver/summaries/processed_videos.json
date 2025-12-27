@@ -55,7 +55,17 @@
     "2VktR2fAmF0",
     "HcfFUGEuO6s",
     "C07fP7-HxMk",
-    "GRo73YZ0p_c"
+    "GRo73YZ0p_c",
+    "VRNEr8_cTj8",
+    "pPRoAs8xh2o",
+    "cjoYPSbzHV0",
+    "JYa2UcO_iUs",
+    "M-qMklGGFLU",
+    "7-Qyk6soh1k",
+    "e9JkDvTV34k",
+    "UhKEU7HWkUA",
+    "amAYKfRL8FI",
+    "-2Yx1pV2yng"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -389,6 +399,66 @@
       "processed_at": "2025-12-27T23:48:52.702957",
       "title": "I’m concerned about AI, for real.",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "VRNEr8_cTj8": {
+      "processed_at": "2025-12-28T00:37:55.729558",
+      "title": "5 Nano Banana Pro \"Million Dollar\" Apps I Built In ONE Day",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "pPRoAs8xh2o": {
+      "processed_at": "2025-12-28T00:38:03.803426",
+      "title": "Put your AI Agents on a VPS… trust me",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "cjoYPSbzHV0": {
+      "processed_at": "2025-12-28T00:38:11.731858",
+      "title": "I Gave This Fish $10,000 to Trade Stocks",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "JYa2UcO_iUs": {
+      "processed_at": "2025-12-28T00:38:19.803121",
+      "title": "Gemini 3 PRO: The Best LLM Ever Made | 7 Use Cases TESTED",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "M-qMklGGFLU": {
+      "processed_at": "2025-12-28T00:38:27.806727",
+      "title": "The Cloudflare Outage EXPLAINED",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "7-Qyk6soh1k": {
+      "processed_at": "2025-12-28T00:38:35.747008",
+      "title": "Gemini 3.0 just destroyed all AI models… it’s insane",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "e9JkDvTV34k": {
+      "processed_at": "2025-12-28T00:38:43.533396",
+      "title": "I built an AR app to make cleaning fun #ad",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "UhKEU7HWkUA": {
+      "processed_at": "2025-12-28T00:38:53.039126",
+      "title": "NotebookLM just got 10x better… let’s run it",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "amAYKfRL8FI": {
+      "processed_at": "2025-12-28T00:39:00.935739",
+      "title": "How to Survive the AI Bubble as an AI Agency (Do This NOW!)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "-2Yx1pV2yng": {
+      "processed_at": "2025-12-28T00:39:08.730863",
+      "title": "POV: Your Future AI Workplace Nightmare (2027)",
+      "channel": "All About AI",
       "status": "success"
     }
   }
