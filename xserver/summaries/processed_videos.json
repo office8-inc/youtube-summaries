@@ -65,7 +65,12 @@
     "e9JkDvTV34k",
     "UhKEU7HWkUA",
     "amAYKfRL8FI",
-    "-2Yx1pV2yng"
+    "-2Yx1pV2yng",
+    "zocqnx1vx1E",
+    "zvOjvAsXGWY",
+    "MrhEEYvYK1A",
+    "aGJZ-1hM6-E",
+    "xv5nVVE9IYw"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -459,6 +464,36 @@
       "processed_at": "2025-12-28T00:39:08.730863",
       "title": "POV: Your Future AI Workplace Nightmare (2027)",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "zocqnx1vx1E": {
+      "processed_at": "2025-12-28T08:48:08.780339",
+      "title": "I sold my AI startup for $1,800,000 – here’s why",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "zvOjvAsXGWY": {
+      "processed_at": "2025-12-28T08:48:19.600514",
+      "title": "99% of Developers Don’t Get Docker",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "MrhEEYvYK1A": {
+      "processed_at": "2025-12-28T08:48:28.697227",
+      "title": "Local AI Surveillance Is Getting SCARY Good (Qwen3-VL)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "aGJZ-1hM6-E": {
+      "processed_at": "2025-12-28T08:48:40.258031",
+      "title": "Your AI Projects Won't Work (Unless You're Doing This)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "xv5nVVE9IYw": {
+      "processed_at": "2025-12-28T08:48:51.143317",
+      "title": "POV: moving from Dubai to Poland as a 23yo entrepreneur",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
