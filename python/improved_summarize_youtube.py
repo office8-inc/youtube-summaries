@@ -54,15 +54,20 @@ def get_channel_id(channel_url):
 
 
 def get_channel_latest_videos(channel_id, max_results=10, output_dir=None):
-    """チャンネルの未処理動画を取得（既に処理済みの動画をスキップして次のページへ進む）"""
+    """チャンネルの未処理動画を取得（最適化版: video_idのみ取得→除外→詳細情報取得）"""
     if not YOUTUBE_API_KEY:
         print("エラー: YOUTUBE_API_KEYが設定されていません")
         return []
     
     try:
+        import time
         youtube = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
         
+        # 処理済み動画リストを一度だけロード（ファイルI/O削減）
+        processed_cache = load_processed_videos(output_dir)
+        
         # チャンネルのアップロードプレイリストIDを取得
+        time.sleep(1)  # レート制限対策
         channel_request = youtube.channels().list(
             part='contentDetails',
             id=channel_id
@@ -75,58 +80,79 @@ def get_channel_latest_videos(channel_id, max_results=10, output_dir=None):
         
         uploads_playlist_id = channel_response['items'][0]['contentDetails']['relatedPlaylists']['uploads']
         
-        # 未処理の動画をmax_results件集めるまでページネーション
-        unprocessed_videos = []
+        # ステップ1: video_idをページネーションで取得しながら除外判定（最小APIコール）
+        unprocessed_ids = []
         next_page_token = None
         total_checked = 0
         
-        while len(unprocessed_videos) < max_results:
-            # プレイリストから動画を取得
+        while len(unprocessed_ids) < max_results:
+            time.sleep(1)  # レート制限対策
             playlist_request = youtube.playlistItems().list(
-                part='snippet',
+                part='contentDetails',  # snippetではなくcontentDetailsのみ（軽量）
                 playlistId=uploads_playlist_id,
-                maxResults=50,  # 1回あたり最大50件取得
+                maxResults=50,
                 pageToken=next_page_token
             )
             playlist_response = playlist_request.execute()
             
             if not playlist_response['items']:
-                break  # これ以上動画がない
+                break
             
-            # 各動画をチェック
+            # 取得したIDを即座に処理済みチェック（キャッシュ使用で高速）
             for item in playlist_response['items']:
-                video_id = item['snippet']['resourceId']['videoId']
+                video_id = item['contentDetails']['videoId']
                 total_checked += 1
                 
-                # 既に処理済みかチェック
-                if output_dir and is_video_processed(video_id, output_dir):
-                    continue  # スキップ
-                
-                # 未処理の動画を追加
-                unprocessed_videos.append({
-                    'video_id': video_id,
-                    'title': item['snippet']['title'],
-                    'url': f'https://www.youtube.com/watch?v={video_id}',
-                    'published_at': item['snippet']['publishedAt']
-                })
-                
-                # 必要な件数に達したら終了
-                if len(unprocessed_videos) >= max_results:
-                    break
+                if video_id not in processed_cache:  # キャッシュで高速チェック
+                    unprocessed_ids.append(video_id)
+                    
+                    # 必要な件数に達したら即座に終了（無駄なページ取得を防ぐ）
+                    if len(unprocessed_ids) >= max_results:
+                        break
             
-            # 次のページがあるかチェック
+            # 必要な件数に達したらループ終了
+            if len(unprocessed_ids) >= max_results:
+                break
+            
             next_page_token = playlist_response.get('nextPageToken')
             if not next_page_token:
-                break  # これ以上ページがない
+                break
         
-        if total_checked > 0:
-            print(f"  チェックした動画数: {total_checked}件")
-            print(f"  未処理の動画: {len(unprocessed_videos)}件")
+        print(f"  チェックした動画数: {total_checked}件")
+        print(f"  未処理の動画ID: {len(unprocessed_ids)}件")
         
+        if not unprocessed_ids:
+            return []
+        
+        # ステップ2: 未処理動画の詳細情報のみをバッチ取得（最大50件ずつ）
+        unprocessed_videos = []
+        for i in range(0, len(unprocessed_ids), 50):
+            batch_ids = unprocessed_ids[i:i+50]
+            time.sleep(1)  # レート制限対策
+            
+            video_request = youtube.videos().list(
+                part='snippet',
+                id=','.join(batch_ids)
+            )
+            video_response = video_request.execute()
+            
+            for item in video_response['items']:
+                unprocessed_videos.append({
+                    'video_id': item['id'],
+                    'title': item['snippet']['title'],
+                    'channel': item['snippet']['channelTitle'],
+                    'url': f'https://www.youtube.com/watch?v={item["id"]}',
+                    'published_at': item['snippet']['publishedAt'],
+                    'description': item['snippet']['description']
+                })
+        
+        print(f"  詳細情報を取得: {len(unprocessed_videos)}件")
         return unprocessed_videos
     
     except Exception as e:
         print(f"チャンネル動画取得エラー: {e}")
+        import traceback
+        traceback.print_exc()
         return []
 
 
@@ -173,11 +199,57 @@ def parse_channel_list(file_path='channel-list.md'):
     return channels
 
 
-def is_video_processed(video_id, output_dir):
-    """動画が既に処理済みかチェック（JSONファイルを使用）"""
+# 処理済み動画リストのキャッシュ（グローバル変数）
+_processed_videos_cache = None
+_processed_videos_cache_dir = None
+
+
+def load_processed_videos(output_dir):
+    """処理済み動画リストを一度だけ読み込んでキャッシュ"""
+    global _processed_videos_cache, _processed_videos_cache_dir
+    
+    if not output_dir:
+        return set()
+    
+    # 同じディレクトリならキャッシュを返す
+    if _processed_videos_cache is not None and _processed_videos_cache_dir == output_dir:
+        return _processed_videos_cache
+    
+    processed_file = os.path.join(output_dir, 'processed_videos.json')
+    
+    if not os.path.exists(processed_file):
+        _processed_videos_cache = set()
+        _processed_videos_cache_dir = output_dir
+        return _processed_videos_cache
+    
+    try:
+        with open(processed_file, 'r', encoding='utf-8') as f:
+            processed = json.load(f)
+        _processed_videos_cache = set(processed.get('video_ids', []))
+        _processed_videos_cache_dir = output_dir
+        return _processed_videos_cache
+    except (json.JSONDecodeError, IOError):
+        _processed_videos_cache = set()
+        _processed_videos_cache_dir = output_dir
+        return _processed_videos_cache
+
+
+def is_video_processed(video_id, output_dir, processed_cache=None):
+    """動画が既に処理済みかチェック（キャッシュ対応）
+    
+    Args:
+        video_id: チェックする動画ID
+        output_dir: 出力ディレクトリ
+        processed_cache: 事前ロード済みのキャッシュ（set型）。Noneの場合は自動ロード
+    """
     if not output_dir:
         return False
     
+    # キャッシュが渡されていればそれを使用（高速）
+    if processed_cache is not None:
+        return video_id in processed_cache
+    
+    # キャッシュがなければ従来通りファイルから読み込み
     processed_file = os.path.join(output_dir, 'processed_videos.json')
     
     if not os.path.exists(processed_file):
@@ -281,18 +353,35 @@ def get_video_info(video_id):
 
 def get_transcript(video_id):
     """動画の字幕を取得（日本語優先）"""
+    import time
     try:
         # 1. まず日本語字幕を試す
         print("  → 日本語字幕を検索中...")
+        time.sleep(2)  # レート制限対策
         api = YouTubeTranscriptApi()
         transcript_data = api.fetch(video_id, languages=['ja'])
         print("  ✓ 日本語字幕を取得しました")
         return transcript_data, 'ja'
     except Exception as e1:
+        error_type = type(e1).__name__
+        error_msg = str(e1)[:100]  # 最初の100文字のみ
+        
+        # IpBlocked エラーの検出
+        if 'IpBlocked' in error_type or 'blocking requests' in error_msg:
+            print(f"\n❌ YouTube APIブロック検出: IPがブロックされています")
+            print(f"   エラー: {error_type}")
+            print(f"\n回復手順:")
+            print(f"  1) 数分～数時間待ってから再試行")
+            print(f"  2) VPN/プロキシを使用")
+            print(f"  3) --limit の値を減らす（例: --limit 1）")
+            print(f"  4) 処理間隔を空ける")
+            return None, None
+        
         print(f"  × 日本語字幕なし")
         try:
             # 2. 英語字幕を取得して日本語に翻訳
             print("  → 英語字幕を検索中...")
+            time.sleep(2)  # レート制限対策
             api = YouTubeTranscriptApi()
             transcript_list = api.list_transcripts(video_id)
             
@@ -300,6 +389,7 @@ def get_transcript(video_id):
             try:
                 transcript = transcript_list.find_transcript(['en'])
                 print("  ✓ 英語字幕を取得、日本語に翻訳中...")
+                time.sleep(2)  # 翻訳前に待機
                 # 日本語に翻訳
                 translated = transcript.translate('ja')
                 transcript_data = translated.fetch()
@@ -308,6 +398,7 @@ def get_transcript(video_id):
             except Exception as e2:
                 # 翻訳失敗したら英語のまま返す
                 print("  × 翻訳失敗、英語のまま使用...")
+                time.sleep(2)  # レート制限対策
                 transcript_data = api.fetch(video_id, languages=['en'])
                 print("  ✓ 英語字幕を取得しました")
                 return transcript_data, 'en'
@@ -316,12 +407,16 @@ def get_transcript(video_id):
             try:
                 # 3. 自動検出で取得
                 print("  → 自動生成字幕を検索中...")
+                time.sleep(2)  # レート制限対策
                 api = YouTubeTranscriptApi()
                 transcript_data = api.fetch(video_id)
                 print("  ✓ 自動生成字幕を取得しました")
                 return transcript_data, 'auto'
             except Exception as e4:
-                print(f"\n❌ 字幕取得失敗: この動画には字幕がありません")
+                error_type = type(e4).__name__
+                error_msg = str(e4)[:100]
+                print(f"\n❌ 字幕取得失敗: {error_type}")
+                print(f"   メッセージ: {error_msg}")
                 print(f"   動画URL: https://www.youtube.com/watch?v={video_id}")
                 return None, None
 
@@ -557,8 +652,14 @@ def auto_commit_and_push(file_paths, processed_count, output_dir=None):
         return False
 
 
-def main(video_url, output_dir=None):
-    """メイン処理"""
+def main(video_url, output_dir=None, video_info_cache=None):
+    """メイン処理
+    
+    Args:
+        video_url: 動画URL
+        output_dir: 出力ディレクトリ
+        video_info_cache: 事前取得済みの動画情報（get_channel_latest_videos()から渡される）
+    """
     print(f"動画を処理中: {video_url}")
     
     # 動画IDを取得
@@ -569,9 +670,16 @@ def main(video_url, output_dir=None):
     
     print(f"動画ID: {video_id}")
     
-    # 動画情報を取得
-    print("動画情報を取得中...")
-    video_info = get_video_info(video_id)
+    # 動画情報を取得（キャッシュがあればそれを使用）
+    if video_info_cache:
+        print("動画情報を取得中...（キャッシュ使用）")
+        video_info = video_info_cache
+    else:
+        print("動画情報を取得中...（API）")
+        import time
+        time.sleep(1)  # レート制限対策
+        video_info = get_video_info(video_id)
+    
     if video_info:
         print(f"タイトル: {video_info['title']}")
         print(f"チャンネル: {video_info['channel']}")
@@ -772,7 +880,16 @@ if __name__ == "__main__":
                 skipped_count += 1
                 continue
             
-            result = main(video['url'], output_dir)
+            # video_infoをキャッシュとして渡す（二重API呼び出しを防ぐ）
+            video_info_cache = {
+                'title': video['title'],
+                'channel': video['channel'],
+                'published_at': video['published_at'],
+                'description': video.get('description', ''),
+                'view_count': 'N/A',  # get_channel_latest_videos()では取得していない
+                'like_count': 'N/A'
+            }
+            result = main(video['url'], output_dir, video_info_cache)
             
             if result:
                 processed_count += 1
@@ -865,7 +982,16 @@ if __name__ == "__main__":
             print(f"公開日: {video['published_at']}")
             print(f"動画URL: {video['url']}")
             
-            result = main(video['url'], output_dir)
+            # video_infoをキャッシュとして渡す（二重API呼び出しを防ぐ）
+            video_info_cache = {
+                'title': video['title'],
+                'channel': video['channel'],
+                'published_at': video['published_at'],
+                'description': video.get('description', ''),
+                'view_count': 'N/A',
+                'like_count': 'N/A'
+            }
+            result = main(video['url'], output_dir, video_info_cache)
             
             if result:
                 total_processed += 1
