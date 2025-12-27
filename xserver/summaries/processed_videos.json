@@ -52,7 +52,8 @@
     "_6VyjmRZIgA",
     "JY0d2JZXuFU",
     "11K3tGgFnJs",
-    "2VktR2fAmF0"
+    "2VktR2fAmF0",
+    "HcfFUGEuO6s"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -368,6 +369,12 @@
       "processed_at": "2025-12-27T12:40:32.847538",
       "title": "Create Anything with Nano Banana Pro, Here’s How",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "HcfFUGEuO6s": {
+      "processed_at": "2025-12-27T22:52:58.685996",
+      "title": "7 INSANE Nano Banana Pro Use Cases You NEVER Thought Of",
+      "channel": "All About AI",
       "status": "success"
     }
   }
