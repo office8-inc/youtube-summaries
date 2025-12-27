@@ -211,6 +211,29 @@ python python/improved_summarize_youtube.py --channel <Channel URL> --limit 10 x
 - 翌日まで待つ（クォータは毎日リセット）
 - 処理する動画数を減らす
 
+### 字幕取得時にIPブロックされる（IpBlocked エラー）
+
+**原因**: YouTubeのボット検出システムが、短時間に多数の字幕リクエストを検出してIPをブロック
+
+**背景**:
+- YouTube Data API（公式、認証あり）は成功するが、youtube-transcript-api（非公式スクレイピング）だけブロックされる
+- youtube-transcript-apiは内部でYouTubeのWebページをスクレイピングしており、ボット判定の対象
+
+**解決策**:
+1. **数時間～24時間待つ**（最も確実）
+2. **処理件数を減らす**: `--limit 1` または `--limit 3` で少量ずつ処理
+3. **プロキシを使用**（`.env`に設定）:
+   ```bash
+   # .envファイルに追加
+   TRANSCRIPT_PROXY_URL=http://proxy-server:port
+   ```
+4. **VPNを使用**: ネットワーク環境を変更
+5. **時間を空けて実行**: 1日1回、深夜に実行など
+
+**現在の対策**:
+- スクリプトは自動的に5-10秒のランダムな待機時間を挿入（ボット検出回避）
+- APIリクエスト数は最小限に最適化済み
+
 ## 📝 ライセンス
 
 MIT License

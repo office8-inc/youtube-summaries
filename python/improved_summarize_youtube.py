@@ -352,13 +352,36 @@ def get_video_info(video_id):
 
 
 def get_transcript(video_id):
-    """動画の字幕を取得（日本語優先）"""
+    """動画の字幕を取得（日本語優先）- ボット検出回避のため長めの待機時間"""
     import time
+    import random
+    
+    # ボット検出回避: ランダムな待機時間（5-10秒）
+    wait_time = random.uniform(5, 10)
+    print(f"  ⏳ ボット検出回避のため {wait_time:.1f}秒待機中...")
+    time.sleep(wait_time)
+    
+    # プロキシ設定（.envで設定されている場合）
+    proxies = None
+    proxy_url = os.getenv('TRANSCRIPT_PROXY_URL')
+    if proxy_url:
+        proxies = {
+            'http': proxy_url,
+            'https': proxy_url
+        }
+        print(f"  🔒 プロキシ使用: {proxy_url}")
+    
+    # Cookie設定（オプション、.envで設定されている場合）
+    cookies = None
+    cookie_file = os.getenv('YOUTUBE_COOKIES_FILE')
+    if cookie_file and os.path.exists(cookie_file):
+        print(f"  🍪 Cookie使用: {cookie_file}")
+        # Cookieファイル読み込みロジックは後で実装可能
+    
     try:
         # 1. まず日本語字幕を試す
         print("  → 日本語字幕を検索中...")
-        time.sleep(2)  # レート制限対策
-        api = YouTubeTranscriptApi()
+        api = YouTubeTranscriptApi(proxies=proxies) if proxies else YouTubeTranscriptApi()
         transcript_data = api.fetch(video_id, languages=['ja'])
         print("  ✓ 日本語字幕を取得しました")
         return transcript_data, 'ja'
@@ -381,7 +404,6 @@ def get_transcript(video_id):
         try:
             # 2. 英語字幕を取得して日本語に翻訳
             print("  → 英語字幕を検索中...")
-            time.sleep(2)  # レート制限対策
             api = YouTubeTranscriptApi()
             transcript_list = api.list_transcripts(video_id)
             
@@ -389,7 +411,6 @@ def get_transcript(video_id):
             try:
                 transcript = transcript_list.find_transcript(['en'])
                 print("  ✓ 英語字幕を取得、日本語に翻訳中...")
-                time.sleep(2)  # 翻訳前に待機
                 # 日本語に翻訳
                 translated = transcript.translate('ja')
                 transcript_data = translated.fetch()
@@ -398,7 +419,6 @@ def get_transcript(video_id):
             except Exception as e2:
                 # 翻訳失敗したら英語のまま返す
                 print("  × 翻訳失敗、英語のまま使用...")
-                time.sleep(2)  # レート制限対策
                 transcript_data = api.fetch(video_id, languages=['en'])
                 print("  ✓ 英語字幕を取得しました")
                 return transcript_data, 'en'
@@ -407,7 +427,6 @@ def get_transcript(video_id):
             try:
                 # 3. 自動検出で取得
                 print("  → 自動生成字幕を検索中...")
-                time.sleep(2)  # レート制限対策
                 api = YouTubeTranscriptApi()
                 transcript_data = api.fetch(video_id)
                 print("  ✓ 自動生成字幕を取得しました")
