@@ -70,7 +70,12 @@
     "zvOjvAsXGWY",
     "MrhEEYvYK1A",
     "aGJZ-1hM6-E",
-    "xv5nVVE9IYw"
+    "xv5nVVE9IYw",
+    "Wob27xuQUIA",
+    "SyBsrCXxWdo",
+    "XuAThYV62BQ",
+    "LZT82V2d07Y",
+    "buvSO1vLzBQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -494,6 +499,36 @@
       "processed_at": "2025-12-28T08:48:51.143317",
       "title": "POV: moving from Dubai to Poland as a 23yo entrepreneur",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "Wob27xuQUIA": {
+      "processed_at": "2025-12-28T14:11:11.970657",
+      "title": "Building and Testing an AI Swarm Drone: This is scary...and cool",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "SyBsrCXxWdo": {
+      "processed_at": "2025-12-28T14:11:19.844930",
+      "title": "Top 3 Ways to Get Rich with AI Video in 2026 (Sora 2 vs Veo 3)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "XuAThYV62BQ": {
+      "processed_at": "2025-12-28T14:11:29.603128",
+      "title": "If you’re still Vibe Coding, you’re falling behind",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "LZT82V2d07Y": {
+      "processed_at": "2025-12-28T14:11:40.929587",
+      "title": "Building with IBM watsonx orchestrate #ad",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "buvSO1vLzBQ": {
+      "processed_at": "2025-12-28T14:11:52.936193",
+      "title": "AI Music Might Be In BIG Trouble!",
+      "channel": "All About AI",
       "status": "success"
     }
   }
