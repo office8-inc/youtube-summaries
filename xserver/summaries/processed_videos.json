@@ -80,7 +80,17 @@
     "NyFO6raYPrg",
     "y6DSUCB_0uE",
     "I1-XEpaTxvY",
-    "NuR56EZZWLs"
+    "NuR56EZZWLs",
+    "37KHTE_HA2Y",
+    "3LAFmwf0RMM",
+    "ivxVIdyY_Jc",
+    "NhMq52kqjC4",
+    "hUabJaV0h8w",
+    "aNYl-O-XxCA",
+    "a_h20ZUOd10",
+    "F9EKRZ0wdxE",
+    "31wnevtwD0w",
+    "EnjrRDwycK0"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -564,6 +574,66 @@
       "processed_at": "2025-12-30T08:27:09.915623",
       "title": "From Non-Technical to $160,000/mo with AI Automation (Full Breakdown)",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "37KHTE_HA2Y": {
+      "processed_at": "2025-12-30T08:50:45.418417",
+      "title": "this new benchmark is next-level insane",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "3LAFmwf0RMM": {
+      "processed_at": "2025-12-30T08:50:57.038708",
+      "title": "Avi Loeb reveals the truth about 3I/ATLAS",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "ivxVIdyY_Jc": {
+      "processed_at": "2025-12-30T08:51:04.752711",
+      "title": "AI earns while you sleep",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "NhMq52kqjC4": {
+      "processed_at": "2025-12-30T08:51:14.326954",
+      "title": "OpenAI is \"Is Hiding the Truth\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "hUabJaV0h8w": {
+      "processed_at": "2025-12-30T08:51:24.746379",
+      "title": "Google DeepMind: \"The arrival of AGI\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "aNYl-O-XxCA": {
+      "processed_at": "2025-12-30T08:51:34.444274",
+      "title": "GPT 5.2 is the first HUMAN LABOR replacement",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "a_h20ZUOd10": {
+      "processed_at": "2025-12-30T08:51:41.504687",
+      "title": "Pentagon \"Four Months to Prepare for AGI\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "F9EKRZ0wdxE": {
+      "processed_at": "2025-12-30T08:51:48.951328",
+      "title": "\"Code Red\" Over, OpenAI is about to blow...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "31wnevtwD0w": {
+      "processed_at": "2025-12-30T08:51:56.965012",
+      "title": "Elon Reveals GROK 4.20... and it's getting scary good",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "EnjrRDwycK0": {
+      "processed_at": "2025-12-30T08:52:04.006971",
+      "title": "BREAKING: Grok 4.20 might be *too* good...",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
