@@ -75,7 +75,12 @@
     "SyBsrCXxWdo",
     "XuAThYV62BQ",
     "LZT82V2d07Y",
-    "buvSO1vLzBQ"
+    "buvSO1vLzBQ",
+    "FsxrAgk-7vw",
+    "NyFO6raYPrg",
+    "y6DSUCB_0uE",
+    "I1-XEpaTxvY",
+    "NuR56EZZWLs"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -529,6 +534,36 @@
       "processed_at": "2025-12-28T14:11:52.936193",
       "title": "AI Music Might Be In BIG Trouble!",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "FsxrAgk-7vw": {
+      "processed_at": "2025-12-30T08:26:35.034594",
+      "title": "Lessons from AI Startup founder - sold for $1,800,000",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "NyFO6raYPrg": {
+      "processed_at": "2025-12-30T08:26:42.948901",
+      "title": "Which AI Business Model can even compete?",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "y6DSUCB_0uE": {
+      "processed_at": "2025-12-30T08:26:50.918140",
+      "title": "How I Built a $100K AI SaaS Without Knowing How to Code (5 Easy Steps)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "I1-XEpaTxvY": {
+      "processed_at": "2025-12-30T08:27:01.684313",
+      "title": "GitHub has an AI issue that is growing 💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "NuR56EZZWLs": {
+      "processed_at": "2025-12-30T08:27:09.915623",
+      "title": "From Non-Technical to $160,000/mo with AI Automation (Full Breakdown)",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
