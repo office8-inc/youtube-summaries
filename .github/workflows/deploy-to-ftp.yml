@@ -74,8 +74,8 @@ jobs:
           if [ "${{ steps.changed-files.outputs.mode }}" == "all" ]; then
             echo "⚠️  全ファイルアップロードモード"
             
-            # summaries配下の全.mdファイル
-            find xserver/summaries -name "*.md" -o -name "*.json" | while read file; do
+            # summaries配下の全.mdファイルと.jsonファイル
+            while IFS= read -r file; do
               REMOTE_PATH="${file#xserver/summaries/}"
               REMOTE_DIR=$(dirname "$REMOTE_PATH")
               
@@ -85,7 +85,7 @@ jobs:
               echo "put \"$file\" -o \"$REMOTE_PATH\"" >> upload.lftp
               echo "✓ $REMOTE_PATH を追加"
               UPLOAD_COUNT=$((UPLOAD_COUNT + 1))
-            done
+            done < <(find xserver/summaries \( -name "*.md" -o -name "*.json" \) -type f)
             
             # xserver直下のファイル
             for file in xserver/index.html xserver/get_articles.php xserver/marked.min.js; do
