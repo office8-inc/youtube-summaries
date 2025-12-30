@@ -105,7 +105,12 @@
     "pEa5mbpcBCg",
     "0-CbsNB9tdk",
     "qrGpdYtwuo0",
-    "ksJLxBDugWQ"
+    "ksJLxBDugWQ",
+    "LQfSfVFc4Ss",
+    "s-1x5nqp7mA",
+    "07fuMWzFSUw",
+    "XlSQZKY_gCg",
+    "-BOUeVqgb8s"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -739,6 +744,36 @@
       "processed_at": "2025-12-30T11:18:49.264085",
       "title": "ok WTF is going on? we need to discuss this...",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "LQfSfVFc4Ss": {
+      "processed_at": "2025-12-30T11:50:09.533522",
+      "title": "no one sees it coming (except Google)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "s-1x5nqp7mA": {
+      "processed_at": "2025-12-30T11:50:20.917712",
+      "title": "KIMI K2 just broke the AI Industry... here's it's \"secret\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "07fuMWzFSUw": {
+      "processed_at": "2025-12-30T11:50:29.836982",
+      "title": "\"No One is Prepared\" the next 1,000 days are CRUCIAL | Emad Mostaque",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "XlSQZKY_gCg": {
+      "processed_at": "2025-12-30T11:50:41.013029",
+      "title": "Project Suncatcher - Google's Plan to Put AI Data Centers in Space",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "-BOUeVqgb8s": {
+      "processed_at": "2025-12-30T11:50:48.728537",
+      "title": "When Open Source Rug Pulls 💻",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
