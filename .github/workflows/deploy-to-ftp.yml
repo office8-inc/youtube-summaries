@@ -28,81 +28,117 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
-      - name: Set up Python
-        uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          fetch-depth: 2  # 差分検出のため直前のコミットも取得
       
-      - name: Install dependencies
+      - name: Install lftp
         run: |
-          python -m pip install --upgrade pip
-          pip install python-dotenv
+          sudo apt-get update
+          sudo apt-get install -y lftp
       
-      - name: Create .env file
+      - name: Get changed files
+        id: changed-files
         run: |
-          echo "FTP_HOST=${{ secrets.FTP_HOST }}" >> .env
-          echo "FTP_USER=${{ secrets.FTP_USER }}" >> .env
-          echo "FTP_PASSWORD=${{ secrets.FTP_PASSWORD }}" >> .env
-          echo "FTP_PORT=21" >> .env
-          echo "FTP_REMOTE_PATH=/" >> .env
+          if [ "${{ github.event.inputs.deploy_all }}" == "true" ]; then
+            echo "mode=all" >> $GITHUB_OUTPUT
+          else
+            # PRでマージされたファイルを取得
+            if [ "${{ github.event_name }}" == "pull_request" ]; then
+              # PRの変更ファイル
+              git fetch origin main
+              CHANGED_FILES=$(git diff --name-only origin/main HEAD | grep -E '^xserver/' || true)
+            else
+              # 手動実行時は最新コミットの変更ファイル
+              CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep -E '^xserver/' || true)
+            fi
+            
+            if [ -z "$CHANGED_FILES" ]; then
+              echo "mode=none" >> $GITHUB_OUTPUT
+              echo "変更されたファイルはありません"
+            else
+              echo "mode=diff" >> $GITHUB_OUTPUT
+              echo "$CHANGED_FILES" > changed_files.txt
+              echo "変更されたファイル:"
+              cat changed_files.txt
+            fi
+          fi
       
-      - name: Upload to FTP
+      - name: Upload to FTP (差分アップロード)
+        if: steps.changed-files.outputs.mode != 'none'
         run: |
-          python -c "
-          import ftplib
-          import os
-          from pathlib import Path
-          from dotenv import load_dotenv
+          # lftpスクリプトを作成
+          cat > upload.lftp << 'EOF'
+          set ftp:ssl-allow no
+          set net:timeout 10
+          set net:max-retries 3
           
-          load_dotenv()
+          open ftp://${{ secrets.FTP_USER }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_HOST }}
           
-          # FTP接続
-          ftp = ftplib.FTP()
-          ftp.connect(os.getenv('FTP_HOST'), int(os.getenv('FTP_PORT', 21)))
-          ftp.login(os.getenv('FTP_USER'), os.getenv('FTP_PASSWORD'))
-          ftp.cwd('/')
+          EOF
           
-          uploaded_count = 0
+          UPLOAD_COUNT=0
           
-          # xserver/summariesディレクトリ配下を再帰的にアップロード
-          xserver_path = Path('xserver/summaries')
-          if xserver_path.exists():
-              for file_path in xserver_path.rglob('*.md'):
-                  # リモートパスを構築（例: 2025/12/file.md）
-                  relative_path = file_path.relative_to(xserver_path)
-                  remote_path = str(relative_path).replace('\\\\', '/')
-                  
-                  # 必要に応じてディレクトリ作成
-                  remote_dirs = '/'.join(remote_path.split('/')[:-1])
-                  if remote_dirs:
-                      current_dir = ''
-                      for dir_name in remote_dirs.split('/'):
-                          current_dir = f'{current_dir}/{dir_name}' if current_dir else dir_name
-                          try:
-                              ftp.mkd(current_dir)
-                          except:
-                              pass  # ディレクトリが既に存在する場合
-                  
-                  # ファイルアップロード
-                  with open(file_path, 'rb') as f:
-                      ftp.storbinary(f'STOR {remote_path}', f)
-                  print(f'✓ {remote_path} をアップロードしました')
-                  uploaded_count += 1
+          if [ "${{ steps.changed-files.outputs.mode }}" == "all" ]; then
+            echo "⚠️  全ファイルアップロードモード"
+            
+            # summaries配下の全.mdファイル
+            find xserver/summaries -name "*.md" -o -name "*.json" | while read file; do
+              REMOTE_PATH="${file#xserver/summaries/}"
+              REMOTE_DIR=$(dirname "$REMOTE_PATH")
+              
+              if [ "$REMOTE_DIR" != "." ]; then
+                echo "mkdir -p $REMOTE_DIR" >> upload.lftp
+              fi
+              echo "put \"$file\" -o \"$REMOTE_PATH\"" >> upload.lftp
+              echo "✓ $REMOTE_PATH を追加"
+              UPLOAD_COUNT=$((UPLOAD_COUNT + 1))
+            done
+            
+            # xserver直下のファイル
+            for file in xserver/index.html xserver/get_articles.php xserver/marked.min.js; do
+              if [ -f "$file" ]; then
+                FILENAME=$(basename "$file")
+                echo "put \"$file\" -o \"$FILENAME\"" >> upload.lftp
+                echo "✓ $FILENAME を追加"
+                UPLOAD_COUNT=$((UPLOAD_COUNT + 1))
+              fi
+            done
+          else
+            echo "💡 差分アップロードモード（変更ファイルのみ）"
+            
+            # 変更されたファイルのみアップロード
+            while IFS= read -r file; do
+              if [[ "$file" == xserver/summaries/* ]]; then
+                REMOTE_PATH="${file#xserver/summaries/}"
+                REMOTE_DIR=$(dirname "$REMOTE_PATH")
+                
+                if [ "$REMOTE_DIR" != "." ]; then
+                  echo "mkdir -p $REMOTE_DIR" >> upload.lftp
+                fi
+                echo "put \"$file\" -o \"$REMOTE_PATH\"" >> upload.lftp
+                echo "✓ $REMOTE_PATH を追加 (変更検出)"
+                UPLOAD_COUNT=$((UPLOAD_COUNT + 1))
+              elif [[ "$file" == xserver/* ]]; then
+                FILENAME=$(basename "$file")
+                echo "put \"$file\" -o \"$FILENAME\"" >> upload.lftp
+                echo "✓ $FILENAME を追加 (変更検出)"
+                UPLOAD_COUNT=$((UPLOAD_COUNT + 1))
+              fi
+            done < changed_files.txt
+          fi
           
-          # xserver配下のその他のファイルもアップロード
-          for file_name in ['index.html', 'get_articles.php', 'marked.min.js']:
-              file_path = Path(f'xserver/{file_name}')
-              if file_path.exists():
-                  with open(file_path, 'rb') as f:
-                      ftp.storbinary(f'STOR {file_name}', f)
-                  print(f'✓ {file_name} をアップロードしました')
-                  uploaded_count += 1
+          echo "bye" >> upload.lftp
           
-          ftp.quit()
-          
-          print(f'\\n📤 合計 {uploaded_count} ファイルをアップロードしました')
-          "
+          # lftpスクリプトを実行
+          if [ $UPLOAD_COUNT -gt 0 ]; then
+            echo ""
+            echo "📤 FTPアップロード中..."
+            lftp -f upload.lftp
+            echo ""
+            echo "✅ $UPLOAD_COUNT ファイルをアップロードしました"
+          else
+            echo "ℹ️  アップロード対象のファイルがありません"
+          fi
       
       - name: Summary
         if: always()

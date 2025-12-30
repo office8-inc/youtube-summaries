@@ -35,3 +35,6 @@ logs/
 *.temp
 .cache/
 .playwright-mcp/
+
+# FTP upload history (ローカルキャッシュ、リモート環境では不要)
+xserver/summaries/ftp_upload_history.json
