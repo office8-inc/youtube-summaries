@@ -981,7 +981,14 @@ if __name__ == "__main__":
         print(f"{'='*60}")
         print(f"全チャンネルから収集した未処理動画: {len(all_videos)}件")
         print(f"これから処理する動画: {min(limit, len(all_videos))}件")
-        print(f"{'='*60}\n")
+        print(f"{'='*60}")
+        
+        # ソート後のリストを表示（全件）
+        print(f"\n📋 ソート後の動画リスト（新しい順）:")
+        for idx, video in enumerate(all_videos, 1):
+            pub_date = datetime.fromisoformat(video['published_at'].replace('Z', '+00:00'))
+            print(f"  [{idx:2d}] {pub_date.strftime('%Y-%m-%d %H:%M')} | {video['channel']:20s} | {video['title'][:50]}")
+        print()
         
         # 上位limit件だけを処理
         total_processed = 0
