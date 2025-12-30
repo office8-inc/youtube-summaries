@@ -100,7 +100,12 @@
     "8F1Y5l9cFjI",
     "Aslkp6J-EdE",
     "96qyyz_ZJ_U",
-    "wIR6tRlxgp4"
+    "wIR6tRlxgp4",
+    "fOKeVX8ZdDU",
+    "pEa5mbpcBCg",
+    "0-CbsNB9tdk",
+    "qrGpdYtwuo0",
+    "ksJLxBDugWQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -703,6 +708,36 @@
     "wIR6tRlxgp4": {
       "processed_at": "2025-12-30T09:23:24.284624",
       "title": "xAI's new model is insane...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "fOKeVX8ZdDU": {
+      "processed_at": "2025-12-30T11:18:13.056516",
+      "title": "the creator of Claude Code just revealed the truth",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "pEa5mbpcBCg": {
+      "processed_at": "2025-12-30T11:18:22.338939",
+      "title": "SIMA 2 is a \"significant step towards AGI\" says Google",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "0-CbsNB9tdk": {
+      "processed_at": "2025-12-30T11:18:29.690609",
+      "title": "GEMINI 3.0 stealth release is blowing up (FULLY TESTED)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "qrGpdYtwuo0": {
+      "processed_at": "2025-12-30T11:18:41.387549",
+      "title": "the BIG SHORT against the AI BUBBLE (Nov 25th is the day)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "ksJLxBDugWQ": {
+      "processed_at": "2025-12-30T11:18:49.264085",
+      "title": "ok WTF is going on? we need to discuss this...",
       "channel": "Wes Roth",
       "status": "success"
     }
