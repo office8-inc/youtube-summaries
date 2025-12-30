@@ -110,7 +110,12 @@
     "s-1x5nqp7mA",
     "07fuMWzFSUw",
     "XlSQZKY_gCg",
-    "-BOUeVqgb8s"
+    "-BOUeVqgb8s",
+    "89CQRxq0YSg",
+    "XjLYaGzeF1M",
+    "70Pl0R8R9dk",
+    "LAv884pi5Ac",
+    "mGBh2EAk7j0"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -774,6 +779,36 @@
       "processed_at": "2025-12-30T11:50:48.728537",
       "title": "When Open Source Rug Pulls 💻",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "89CQRxq0YSg": {
+      "processed_at": "2025-12-30T22:08:12.827107",
+      "title": "If you don’t run AI locally you’re falling behind…",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "XjLYaGzeF1M": {
+      "processed_at": "2025-12-30T22:08:24.457114",
+      "title": "How I Make Viral AI Videos That Get 10M+ Views (Full Workflow)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "70Pl0R8R9dk": {
+      "processed_at": "2025-12-30T22:08:34.100502",
+      "title": "Claude just developed self awareness",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "LAv884pi5Ac": {
+      "processed_at": "2025-12-30T22:08:46.111485",
+      "title": "How to Get Rich with AI Avatars in 2026 ($100k Blueprint)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "mGBh2EAk7j0": {
+      "processed_at": "2025-12-30T22:08:53.831389",
+      "title": "BREAKING: Ilya Sutskever DEPOSED, Sam Altman firing was planned a year in advance and more...",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
