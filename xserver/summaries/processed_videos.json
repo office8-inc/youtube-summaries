@@ -90,7 +90,17 @@
     "a_h20ZUOd10",
     "F9EKRZ0wdxE",
     "31wnevtwD0w",
-    "EnjrRDwycK0"
+    "EnjrRDwycK0",
+    "EWAUutf9xKQ",
+    "PshNZ1zztgo",
+    "1Mw6-oyOFjM",
+    "0d727qv_MYs",
+    "T_0DGMeekJM",
+    "_PPA3MHPJPQ",
+    "8F1Y5l9cFjI",
+    "Aslkp6J-EdE",
+    "96qyyz_ZJ_U",
+    "wIR6tRlxgp4"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -633,6 +643,66 @@
     "EnjrRDwycK0": {
       "processed_at": "2025-12-30T08:52:04.006971",
       "title": "BREAKING: Grok 4.20 might be *too* good...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "EWAUutf9xKQ": {
+      "processed_at": "2025-12-30T09:21:59.767253",
+      "title": "this experiment could END the AI hype",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "PshNZ1zztgo": {
+      "processed_at": "2025-12-30T09:22:10.276103",
+      "title": "Google just killed OpenAI...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "1Mw6-oyOFjM": {
+      "processed_at": "2025-12-30T09:22:20.016076",
+      "title": "China Just Popped America's AI Bubble: Cyrus Janssen Reveals What Happens Next!",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "0d727qv_MYs": {
+      "processed_at": "2025-12-30T09:22:27.156770",
+      "title": "You have TWO YEARS LEFT to prepare  - Dr. Roman Yampolskiy",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "T_0DGMeekJM": {
+      "processed_at": "2025-12-30T09:22:37.539998",
+      "title": "Claude turns chaotic evil",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "_PPA3MHPJPQ": {
+      "processed_at": "2025-12-30T09:22:47.956995",
+      "title": "Claude just beat Gemini 3... how?!",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "8F1Y5l9cFjI": {
+      "processed_at": "2025-12-30T09:22:58.412910",
+      "title": "Google's UNREAL New Nano Banana Pro...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Aslkp6J-EdE": {
+      "processed_at": "2025-12-30T09:23:06.385003",
+      "title": "the world wasn't ready for Gemini 3",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "96qyyz_ZJ_U": {
+      "processed_at": "2025-12-30T09:23:13.801156",
+      "title": "Gemini 3 just got *scary* good",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "wIR6tRlxgp4": {
+      "processed_at": "2025-12-30T09:23:24.284624",
+      "title": "xAI's new model is insane...",
       "channel": "Wes Roth",
       "status": "success"
     }
