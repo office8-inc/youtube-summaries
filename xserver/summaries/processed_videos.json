@@ -115,7 +115,12 @@
     "XjLYaGzeF1M",
     "70Pl0R8R9dk",
     "LAv884pi5Ac",
-    "mGBh2EAk7j0"
+    "mGBh2EAk7j0",
+    "Y4GXrYEJNu8",
+    "E5y8BlRo6r4",
+    "VJUK_NIma6Q",
+    "4FgDPaOHqA0",
+    "PwQUTOlpoxk"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -809,6 +814,36 @@
       "processed_at": "2025-12-30T22:08:53.831389",
       "title": "BREAKING: Ilya Sutskever DEPOSED, Sam Altman firing was planned a year in advance and more...",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Y4GXrYEJNu8": {
+      "processed_at": "2025-12-31T14:18:57.065132",
+      "title": "How to crush 2026 in the AI field",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "E5y8BlRo6r4": {
+      "processed_at": "2025-12-31T14:19:09.487136",
+      "title": "I Let an AI AGENT Trade Stocks for One Week… Should We Be Worried?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "VJUK_NIma6Q": {
+      "processed_at": "2025-12-31T14:19:17.884358",
+      "title": "LLMs can't reason",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "4FgDPaOHqA0": {
+      "processed_at": "2025-12-31T14:19:29.830612",
+      "title": "We NEED to remove Cookie Banners 🤦‍♂️",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "PwQUTOlpoxk": {
+      "processed_at": "2025-12-31T14:19:41.180367",
+      "title": "build anything with the n8n code node, here’s how",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
