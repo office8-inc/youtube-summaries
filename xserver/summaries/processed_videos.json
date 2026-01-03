@@ -120,7 +120,12 @@
     "E5y8BlRo6r4",
     "VJUK_NIma6Q",
     "4FgDPaOHqA0",
-    "PwQUTOlpoxk"
+    "PwQUTOlpoxk",
+    "yCYGNXNKoqw",
+    "6iyhM6_7I6g",
+    "6yCz3Ce7hN8",
+    "XxsDlctCS1Y",
+    "RU_ZcKzFdG0"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -844,6 +849,36 @@
       "processed_at": "2025-12-31T14:19:41.180367",
       "title": "build anything with the n8n code node, here’s how",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "yCYGNXNKoqw": {
+      "processed_at": "2026-01-03T22:25:32.313722",
+      "title": "Google's \"Infinite Learning\" and OpenAI's leaked \"AI Pen\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "6iyhM6_7I6g": {
+      "processed_at": "2026-01-03T22:25:46.715426",
+      "title": "All About AI In 2026 - What Now?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "6yCz3Ce7hN8": {
+      "processed_at": "2026-01-03T22:25:58.960109",
+      "title": "The Simplified AI Agency Model That PRINTS $35,000/m on Autopilot (copy this)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "XxsDlctCS1Y": {
+      "processed_at": "2026-01-03T22:26:07.462222",
+      "title": "Meta just did the thing",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "RU_ZcKzFdG0": {
+      "processed_at": "2026-01-03T22:26:16.468218",
+      "title": "Don’t Use Python Without These 8 Tools",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
