@@ -1,4 +1,4 @@
-# 📺 Don’t Use Python Without These 8 Tools
+# 📺 これなしでPythonを使うな！必須ツール8選
 
 ## 📋 動画情報
 
