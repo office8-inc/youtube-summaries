@@ -125,7 +125,12 @@
     "6iyhM6_7I6g",
     "6yCz3Ce7hN8",
     "XxsDlctCS1Y",
-    "RU_ZcKzFdG0"
+    "RU_ZcKzFdG0",
+    "WrEVCsK4XOQ",
+    "09tJS0ZEHms",
+    "RwdaA-A6rZ8",
+    "ep58GeP2bic",
+    "pTTvyQDK_tk"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -879,6 +884,36 @@
       "processed_at": "2026-01-03T22:26:16.468218",
       "title": "Don’t Use Python Without These 8 Tools",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "WrEVCsK4XOQ": {
+      "processed_at": "2026-01-04T01:40:59.916741",
+      "title": "OpenAI just said it",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "09tJS0ZEHms": {
+      "processed_at": "2026-01-04T01:41:08.454491",
+      "title": "AI Agent Crypto MCP Trading - Can AI make bag on Hyperliquid?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "RwdaA-A6rZ8": {
+      "processed_at": "2026-01-04T01:41:17.867274",
+      "title": "the robotic revolution just started",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "ep58GeP2bic": {
+      "processed_at": "2026-01-04T01:41:27.507839",
+      "title": "The INSANE truth about Jensen Huang",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "pTTvyQDK_tk": {
+      "processed_at": "2026-01-04T01:41:39.150526",
+      "title": "How to Build & Sell AI Agent Workforces as a Beginner | FULL COURSE",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
