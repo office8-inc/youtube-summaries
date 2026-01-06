@@ -1,4 +1,4 @@
-# 📺 The Most Downvoted Stack Overflow Posts of All Time
+# 📺 Stack Overflowで史上最も低評価を受けた投稿たち
 
 ## 📋 動画情報
 
@@ -12,85 +12,93 @@
 
 ## 💡 概要
 
-この記事は、YouTube動画の日本語字幕（自動翻訳含む）から自動生成された要約です。
+この動画では、プログラミングQ&Aサイト「Stack Overflow」で史上最も低評価（ダウンボート）を受けた投稿を紹介しています。メール一斉送信の質問から、コード最適化の些細な疑問、さらにはシステム全体の設定を無視した要望まで、コミュニティから厳しい評価を受けた投稿の実例を取り上げています。これらの投稿を通じて、良い質問の書き方や、Stack Overflowコミュニティの文化を学ぶことができます。開発者やStack Overflowユーザーにとって、「やってはいけない質問例」として参考になる内容です。
 
 ## ⭐ 重要なポイント
 
-> 📌 この動画の主要なトピックとポイントがここに表示されます
+- **メール一斉送信の質問**: 10万人に毎週メールを送る方法を尋ねた投稿は、自前で実装するよりも専門サービス（メール配信プラットフォーム）を使うべきという回答が多数。DIYは開発コストとトラブルの温床になると警告されている
+
+- **微細な最適化への執着**: Mongooseのpre-saveフックでの些細なコード性能差を質問した投稿は、「大西洋にバケツ一杯の水を落としたら船が速くなるか聞いているようなもの」と皮肉られた。実用上無視できる差への過度な最適化は避けるべき
+
+- **システム設定の無視**: アプリケーションのタイトルバーの色だけを変更したいという質問は、ユーザーのシステム全体設定を尊重すべきという理由で低評価を受けた。「ユーザーが好みの色を選んでいるなら、それに従うべき」という原則が重要
+
+- **セキュリティを無視した解決策**: クロスオリジンのiframe問題に対して「chrome.exe --disable-web-security」で解決しようとした回答は、セキュリティを完全に無視した危険な方法として批判された
+
+- **質問の書き方とマナー**: 挨拶や感謝の言葉を過度に編集したり削除したりする編集合戦が起きた投稿もあり、Stack Overflowでは簡潔で技術的な内容が求められることが分かる
 
 ## 📖 詳細内容
 
 ### 🎬 導入
 
-How can one send an email to 100,000 users on a weekly basis in PHP? This includes mail to subscribers using the following providers. AOL, Gmail, Hotmail, Yahoo. It is important that all email actually be delivered. The the extent that is possible.
+「PHPで毎週10万人のユーザーにメールを送信するにはどうすればいいですか？」という質問から始まります。AOL、Gmail、Hotmail、Yahooなどのプロバイダーを使用している購読者への送信で、可能な限りすべてのメールが実際に配信されることが重要だとしています。
 
 ### 📋 背景・概要
 
-Obviously, just sending the mail conventionally would do nothing but create problems. Is there a library for PHP that makes this simpler? [Music] Short answer. While it's technically possible to send a 100,000 emails each week yourself, the simplest, easiest, and cheapest solution is to outsource this to one of the companies that specialize in it. I did say cheapest.
+明らかに、通常の方法でメールを送信するだけでは問題が発生するだけです。これを簡単にするPHPライブラリはありますか？【回答】短い答え：技術的には毎週10万通のメールを自分で送信することは可能ですが、最もシンプルで簡単で、かつ最も安価な解決策は、それを専門とする企業にアウトソーシングすることです。安価と言いました。
 
 ### ⭐ 主要ポイント
 
-There's no limit to the amount of development time and therefore money that you can sink into this when trying to DIY. Long answer. If you decide that you absolutely want to do this to yourself, prepare for a world of hurt. After all, this is email/ eail. Is there any difference in performance between the conditional operator and the assignment operator?
+DIYで実装しようとすると、投入できる開発時間、つまりお金に上限はありません。長い答え：もし絶対に自分でやりたいと決めたなら、苦難の世界に備えてください。結局のところ、これはメールです。【次の投稿】条件演算子と代入演算子のパフォーマンスに違いはありますか？
 
 ### 📝 詳細説明
 
-I am writing some pre-save hook middleware in mongoose and I'm wondering if there's much of a speed difference between these two blocks of code. Any performance gain is going to be negligible. Those two examples don't do the same thing. You know, >> you are running this code once before saving a user in the table. This is like wondering if dropping a bucket of water in the Atlantic Ocean will make ships go faster or something.
+「Mongooseでpre-saveフックミドルウェアを書いているのですが、これら2つのコードブロックの間に速度の違いがあるのか気になっています。」【回答】パフォーマンスの向上は無視できるほど小さいでしょう。これら2つの例は同じことをしていません。テーブルにユーザーを保存する前にこのコードを一度実行しているだけです。これは「大西洋にバケツ一杯の水を落としたら船が速くなるのか」と疑問に思っているようなものです。
 
 ### 💡 実例・デモ
 
-Thanks for the constructive comments. Basically, it doesn't look like there's much of a difference in the performance. For those wondering about the code, first off, I made a blatant error in my original post. Then when everyone tried to point it out to me, I cried like a girl. That's probably why everyone downvoted.
+「建設的なコメントをありがとうございます。基本的に、パフォーマンスに大きな違いはないようです。コードについて疑問に思っている方のために言っておくと、まず第一に、元の投稿で明らかな間違いを犯しました。そして、みんなが指摘しようとしたとき、私は女の子のように泣きました。おそらくそれが、みんながダウンボートした理由でしょう。」
 
 ### 🔧 技術的詳細
 
-Remove unnecessary information. Hello stock overflow land. I am trying to remove only one element from an inline style. I would like to see this instead so far. This is what I've tried.
+【次の投稿】不要な情報を削除してください。「こんにちは、Stack Overflowの皆さん。インラインスタイルから1つの要素だけを削除しようとしています。代わりにこれが見たいです。これまでに試したことは次のとおりです。」
 
 ### 🎯 応用例
 
-[Music] Thanks for your help in advance. Have a great day. H. Okay. Um, hello Stack Overflow Land.
+「ご協力いただきありがとうございます。良い一日をお過ごしください。」「えー、こんにちは、Stack Overflowの皆さん。」
 
 ### 💭 考察
 
-Have a great day. Removed greeting and thanks in advance. Roll back to revision three. Roll back to revision 4. Let's rephrase all of this.
+「良い一日をお過ごしください。」挨拶と事前の感謝を削除しました。リビジョン3にロールバック。リビジョン4にロールバック。これをすべて言い換えましょう。
 
 ### 📌 まとめ
 
-Added 41 characters, edited tags, edited title. Roll back to revision one. Roll back to revision 8. Roll back to revision one. [Music] Removal of unnecessary statements.
+41文字を追加、タグを編集、タイトルを編集。リビジョン1にロールバック。リビジョン8にロールバック。リビジョン1にロールバック。不要な記述を削除。
 
 ### ✅ 結論
 
-Improved formatting. Corrected spelling. Fixed grammar. Removed. Thanks.
+フォーマットを改善しました。スペルを修正しました。文法を修正しました。感謝の言葉を削除しました。挨拶を削除しました。リビジョン8にロールバック。クローズ。
 
 ### 📚 追加情報
 
-Greeting. Roll back to revision 8 closed. [Music] Added two characters in body. How can I change an element's class with JavaScript? No offense, but it's unclear to change class on the fly as it forces the CSS interpreter to recalculate the visual presentation of the entire web page.
+挨拶。リビジョン8にロールバック、クローズ。本文に2文字を追加。【次の投稿】「JavaScriptで要素のクラスを変更するにはどうすればいいですか？」【回答】悪気はありませんが、その場でクラスを変更するのは不明確です。なぜなら、CSSインタプリタがWebページ全体の視覚的表示を再計算することを強制するからです。
 
 ### 🔖 補足
 
-The reason is that it's nearly impossible for the CSS interpreter to know if any inheritance or cascading could be changed. So the short answer is never ever change class name on the fly. I'm loading an iframe in my HTML page and trying to access the elements within it using JavaScript. But when I try to execute my code, I get the following error. Security error blocked a frame with origin httpacample.com from accessing a cross origin frame.
+理由は、継承やカスケードが変更される可能性があるかどうかをCSSインタプリタが知ることがほぼ不可能だからです。つまり、短い答えは「その場でクラス名を変更しないでください」です。【次の投稿】「HTMLページにiframeを読み込んで、JavaScriptを使用してその中の要素にアクセスしようとしています。しかし、コードを実行しようとすると、次のエラーが発生します。セキュリティエラー：http://example.comをオリジンとするフレームがクロスオリジンフレームへのアクセスをブロックされました。」
 
-### 🎨 セクション 13
+### 🎨 セキュリティ無視の解決策
 
-How can I access the elements in the frame? Open the start menu. Type windows r or open run execute the following command. chrome.exe disable web security. Terrible for anything that is not a quick and dirty test and already has been addressed in the accepted answer.
+「フレーム内の要素にアクセスするにはどうすればいいですか？」【回答】スタートメニューを開きます。Windowsキー+Rを押すか、「ファイル名を指定して実行」を開き、次のコマンドを実行します：chrome.exe --disable-web-security。【コメント】これは、簡単で汚いテスト以外には最悪の方法で、すでに承認された回答で対処されています。
 
-### 🚀 セクション 14
+### 🚀 ターミナルクリアの質問
 
-Using the clear command on the terminal only fools the user into thinking the screen has been cleared. You can still see output from the previous commands when you scroll using the mouse. This makes life difficult when you're drowning in a tsunami of text. So, how do you clear the contents of a terminal in Linux for real? Compile this application.
+【次の投稿】ターミナルでclearコマンドを使用すると、ユーザーに画面がクリアされたと思わせるだけです。マウスでスクロールすると、以前のコマンドの出力がまだ見えます。テキストの津波に溺れているときには困ります。では、Linuxでターミナルの内容を本当にクリアするにはどうすればいいですか？【回答】このアプリケーションをコンパイルしてください。99行の改行を吐き出すよりも良い方法があります。
 
-### ⚡ セクション 15
+### ⚡ タイトルバーの色変更
 
-[Music] There are better methods than spewing 99 new lines. Is it possible to change the color of the title bar of a wind form in C? This is easy to do. Right click on the desktop and select personalize. Click on the window color tile at the bottom of the screen and just choose your new color.
+【次の投稿】「C#でWindowsフォームのタイトルバーの色を変更することは可能ですか？」【回答】これは簡単です。デスクトップを右クリックして「個人用設定」を選択します。画面下部のウィンドウの色タイルをクリックして、新しい色を選択するだけです。
 
-### 🌟 セクション 16
+### 🌟 システム設定の尊重
 
-If your computer is configured to use the arrow theme, you can choose from one of the standard colors or mix one of your own. If you're using the classic theme, you'll see a window color and appearance dialogue you can use to set colors. Click on the title bar, the sample desktop, the one called active window, and then use color one and color two drop-own boxes to just pick a new color. I can only assume this is what you meant because there is absolutely no excuse to change only the color of your application's title bar. There's a reason that this is a systemwide setting.
+コンピューターがAeroテーマを使用するように設定されている場合、標準の色から選択するか、独自の色を混ぜることができます。クラシックテーマを使用している場合は、色を設定するために使用できるウィンドウの色と外観のダイアログが表示されます。サンプルデスクトップのタイトルバー（アクティブウィンドウと呼ばれるもの）をクリックし、色1と色2のドロップダウンボックスを使用して新しい色を選択します。アプリケーションのタイトルバーの色だけを変更する言い訳は絶対にないので、これがあなたの意図だと思います。これがシステム全体の設定である理由があります。
 
-### 🎬 セクション 17
+### 🎬 ユーザー設定の優先
 
-Always obey the user's preferences. If they wanted your title bar to be a different color, then they would choose a different color. When a programmer wants to do something, he/ she has its reasons. The answer cannot be there is no excuse to want to do that. The reasons he, she, it has are wrong or misguided.
+常にユーザーの設定に従ってください。ユーザーがタイトルバーを別の色にしたければ、別の色を選択するでしょう。【反論コメント】プログラマーが何かをしたいとき、彼/彼女にはその理由があります。「それをしたいという言い訳はない」という答えはありえません。その理由が間違っているか誤解されているということです。
 
-### 📋 セクション 18
+### 📋 回答者の姿勢について
 
-That is not for you to judge. You are either to help or not help. You can post a comment on his question to tell him your opinion. Your judgment is not a helpful answer. [Music]
+それを判断するのはあなたではありません。あなたは助けるか助けないかのどちらかです。彼の質問にコメントを投稿して、あなたの意見を伝えることはできます。しかし、あなたの判断は役に立つ回答ではありません。
 
 ---
 
