@@ -130,7 +130,12 @@
     "09tJS0ZEHms",
     "RwdaA-A6rZ8",
     "ep58GeP2bic",
-    "pTTvyQDK_tk"
+    "pTTvyQDK_tk",
+    "GTWWNZyIsSc",
+    "ATxeVj-JMlo",
+    "smMC1W-Mjt4",
+    "TCDpDXjpgPI",
+    "1jenfjT2PW8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -914,6 +919,36 @@
       "processed_at": "2026-01-04T01:41:39.150526",
       "title": "How to Build & Sell AI Agent Workforces as a Beginner | FULL COURSE",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "GTWWNZyIsSc": {
+      "processed_at": "2026-01-06T21:59:06.241440",
+      "title": "How to Start an AI Business in 2026 | STEP BY STEP",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "ATxeVj-JMlo": {
+      "processed_at": "2026-01-06T21:59:17.998949",
+      "title": "Lee Cronin \"Sam Altman Is Delusional, Hinton Needs Therapy, P(Doom) Is Nonsense\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "smMC1W-Mjt4": {
+      "processed_at": "2026-01-06T21:59:29.047317",
+      "title": "Claude Code is crazy good in 2026… just watch",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "TCDpDXjpgPI": {
+      "processed_at": "2026-01-06T21:59:38.293387",
+      "title": "Self Improving AI is getting wild",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "1jenfjT2PW8": {
+      "processed_at": "2026-01-06T21:59:49.915338",
+      "title": "I Just Gave An AI AGENT $1000 to Trade Stocks With This Week...",
+      "channel": "All About AI",
       "status": "success"
     }
   }
