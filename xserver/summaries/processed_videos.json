@@ -140,7 +140,8 @@
     "rrvI5EZhX58",
     "JsCU1V7Hjpc",
     "Uqxrq4Djd4s",
-    "hT0pErCIAGc"
+    "hT0pErCIAGc",
+    "wBOW86q1Vlo"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -971,6 +972,12 @@
       "processed_at": "2026-01-06T22:55:21.817446",
       "title": "Top 5 Ways to Get Into AI in 2026 (for Beginners)",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "wBOW86q1Vlo": {
+      "processed_at": "2026-01-06T23:09:57.588973",
+      "title": "The Most Downvoted Stack Overflow Posts of All Time",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
