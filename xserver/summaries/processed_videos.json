@@ -135,7 +135,12 @@
     "ATxeVj-JMlo",
     "smMC1W-Mjt4",
     "TCDpDXjpgPI",
-    "1jenfjT2PW8"
+    "1jenfjT2PW8",
+    "Pqp4qJ5sS5g",
+    "rrvI5EZhX58",
+    "JsCU1V7Hjpc",
+    "Uqxrq4Djd4s",
+    "hT0pErCIAGc"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -949,6 +954,37 @@
       "processed_at": "2026-01-06T21:59:49.915338",
       "title": "I Just Gave An AI AGENT $1000 to Trade Stocks With This Week...",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "Pqp4qJ5sS5g": {
+      "processed_at": "2026-01-06T22:54:40.450261",
+      "title": "n8n Tutorial for 2026: How To Build AI Agents for FREE (step by step)",
+      "channel": "David Ondrej",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "rrvI5EZhX58": {
+      "processed_at": "2026-01-06T22:54:48.309527",
+      "title": "AI answers the question of life, the universe and EVERYTHING",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "JsCU1V7Hjpc": {
+      "processed_at": "2026-01-06T22:54:58.875726",
+      "title": "Build Anything with Google Colab, Here’s How",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "Uqxrq4Djd4s": {
+      "processed_at": "2026-01-06T22:55:09.926529",
+      "title": "FINALLY, this AI coding tool actually works!",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "hT0pErCIAGc": {
+      "processed_at": "2026-01-06T22:55:21.817446",
+      "title": "Top 5 Ways to Get Into AI in 2026 (for Beginners)",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
