@@ -141,7 +141,12 @@
     "JsCU1V7Hjpc",
     "Uqxrq4Djd4s",
     "hT0pErCIAGc",
-    "wBOW86q1Vlo"
+    "wBOW86q1Vlo",
+    "V4lFIbAeWpQ",
+    "vslYkSGWUmM",
+    "XCUWrrmaNck",
+    "RX-Y2Vt_2ao",
+    "h-I4o4EgIio"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -978,6 +983,36 @@
       "processed_at": "2026-01-06T23:09:57.588973",
       "title": "The Most Downvoted Stack Overflow Posts of All Time",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "V4lFIbAeWpQ": {
+      "processed_at": "2026-01-10T09:56:30.134966",
+      "title": "Build Anything with Antigravity, Here’s How",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "vslYkSGWUmM": {
+      "processed_at": "2026-01-10T09:56:39.934243",
+      "title": "Solo Building an AI Native Business: The AI Video Agents Bet (Week 1)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "XCUWrrmaNck": {
+      "processed_at": "2026-01-10T09:56:48.875122",
+      "title": "Claude Code is about to break everything",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "RX-Y2Vt_2ao": {
+      "processed_at": "2026-01-10T09:57:00.090394",
+      "title": "This AI Business Is Boring…But It Makes $500,000/yr (just copy it)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "h-I4o4EgIio": {
+      "processed_at": "2026-01-10T09:57:08.346554",
+      "title": "OpenAI's new killer app",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
