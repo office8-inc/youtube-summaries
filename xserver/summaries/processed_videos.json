@@ -146,7 +146,12 @@
     "vslYkSGWUmM",
     "XCUWrrmaNck",
     "RX-Y2Vt_2ao",
-    "h-I4o4EgIio"
+    "h-I4o4EgIio",
+    "LisbEo-nbZs",
+    "jbBi1dlAbaQ",
+    "4D-AsJ5UhF4",
+    "gzXvaLvSfrU",
+    "mRnekf3RPaQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1013,6 +1018,36 @@
       "processed_at": "2026-01-10T09:57:08.346554",
       "title": "OpenAI's new killer app",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "LisbEo-nbZs": {
+      "processed_at": "2026-01-10T10:39:10.065276",
+      "title": "how to get 100 users for your AI app (fast & free)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "jbBi1dlAbaQ": {
+      "processed_at": "2026-01-10T10:39:17.049866",
+      "title": "the \"GOD\" company is coming...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "4D-AsJ5UhF4": {
+      "processed_at": "2026-01-10T10:39:25.872340",
+      "title": "Deepseek just killed LLMs",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "gzXvaLvSfrU": {
+      "processed_at": "2026-01-10T10:39:36.111807",
+      "title": "Sam Altman wants to replace Chrome (ChatGPT Atlas)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "mRnekf3RPaQ": {
+      "processed_at": "2026-01-10T10:39:46.123682",
+      "title": "People are SPAMMING GitHub 🤦‍♂️",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
