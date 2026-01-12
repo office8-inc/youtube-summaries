@@ -151,7 +151,12 @@
     "jbBi1dlAbaQ",
     "4D-AsJ5UhF4",
     "gzXvaLvSfrU",
-    "mRnekf3RPaQ"
+    "mRnekf3RPaQ",
+    "mZecvMwmvGk",
+    "N8I2wYXt4m8",
+    "SEBWHaX2L5s",
+    "663aUMIZsYE",
+    "-EgTYDKtEw8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1048,6 +1053,36 @@
       "processed_at": "2026-01-10T10:39:46.123682",
       "title": "People are SPAMMING GitHub 🤦‍♂️",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "mZecvMwmvGk": {
+      "processed_at": "2026-01-12T21:18:07.617936",
+      "title": "Every Way To Get Rich With AI in 2026 (Explained in 10mins)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "N8I2wYXt4m8": {
+      "processed_at": "2026-01-12T21:18:14.613692",
+      "title": "we just arrived at the \"WTF\" moment in AI",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "SEBWHaX2L5s": {
+      "processed_at": "2026-01-12T21:18:22.316282",
+      "title": "This 100% private AI Agent can do anything… just watch",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "663aUMIZsYE": {
+      "processed_at": "2026-01-12T21:18:33.514441",
+      "title": "Claude Code Q&A - 5 Questions I Get Asked All The Time",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "-EgTYDKtEw8": {
+      "processed_at": "2026-01-12T21:18:40.801713",
+      "title": "\"RED QUEEN\" AI means \"GAME OVER\" for us....",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
