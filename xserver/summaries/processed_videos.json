@@ -156,7 +156,12 @@
     "N8I2wYXt4m8",
     "SEBWHaX2L5s",
     "663aUMIZsYE",
-    "-EgTYDKtEw8"
+    "-EgTYDKtEw8",
+    "0mXR_tdIwPQ",
+    "iT1fWrKhD9M",
+    "d911naXJhKU",
+    "ztyw2NFyS4E",
+    "LoUUNcnScYk"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1083,6 +1088,36 @@
       "processed_at": "2026-01-12T21:18:40.801713",
       "title": "\"RED QUEEN\" AI means \"GAME OVER\" for us....",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "0mXR_tdIwPQ": {
+      "processed_at": "2026-01-12T21:20:07.084017",
+      "title": "My Local Mini AI Data Center That Runs EVERYTHING (DGX Spark)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "iT1fWrKhD9M": {
+      "processed_at": "2026-01-12T21:20:14.263807",
+      "title": "ChatGPT Atlas is live | Testing OpenAI's new AI browser",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "d911naXJhKU": {
+      "processed_at": "2026-01-12T21:20:26.852023",
+      "title": "The AWS Outage EXPLAINED ☁️",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "ztyw2NFyS4E": {
+      "processed_at": "2026-01-12T21:20:34.993378",
+      "title": "If I Wanted to Start a Career in AI in 2026, I'd Do This (Without Coding)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "LoUUNcnScYk": {
+      "processed_at": "2026-01-12T21:20:42.166041",
+      "title": "Stop using Claude Code, start using Droid (trust me)",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
