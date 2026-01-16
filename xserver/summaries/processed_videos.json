@@ -161,7 +161,12 @@
     "iT1fWrKhD9M",
     "d911naXJhKU",
     "ztyw2NFyS4E",
-    "LoUUNcnScYk"
+    "LoUUNcnScYk",
+    "bEbaQMKmfdc",
+    "AzTuegk3RqA",
+    "4uZ4dpwbGcY",
+    "m5RAf4oRyWU",
+    "F_Yly8Ra520"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1118,6 +1123,36 @@
       "processed_at": "2026-01-12T21:20:42.166041",
       "title": "Stop using Claude Code, start using Droid (trust me)",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "bEbaQMKmfdc": {
+      "processed_at": "2026-01-16T23:20:01.797749",
+      "title": "Anthropic Changed the Game in 10 DAYS",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "AzTuegk3RqA": {
+      "processed_at": "2026-01-16T23:20:10.038637",
+      "title": "The secret to life from an AI Entrepreneur",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "4uZ4dpwbGcY": {
+      "processed_at": "2026-01-16T23:20:18.160763",
+      "title": "Claude Cowork, clearly explained (why it matters)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "m5RAf4oRyWU": {
+      "processed_at": "2026-01-16T23:20:27.269337",
+      "title": "5 Awesome Open Source Projects 🧑‍💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "F_Yly8Ra520": {
+      "processed_at": "2026-01-16T23:20:34.278481",
+      "title": "GROK 4.20 cracked the code",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
