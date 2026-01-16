@@ -166,7 +166,12 @@
     "AzTuegk3RqA",
     "4uZ4dpwbGcY",
     "m5RAf4oRyWU",
-    "F_Yly8Ra520"
+    "F_Yly8Ra520",
+    "g0HLg81Sg7I",
+    "oC0mPBSmzfQ",
+    "syK7yprJknM",
+    "8Q8L5x2oBBg",
+    "bbDFPHhpkc4"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1153,6 +1158,36 @@
       "processed_at": "2026-01-16T23:20:34.278481",
       "title": "GROK 4.20 cracked the code",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "g0HLg81Sg7I": {
+      "processed_at": "2026-01-16T23:40:43.190076",
+      "title": "This makes it really easy to focus",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "oC0mPBSmzfQ": {
+      "processed_at": "2026-01-16T23:40:51.249641",
+      "title": "How to Automate Your Work with Claude Code (Beginner Breakdown)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "syK7yprJknM": {
+      "processed_at": "2026-01-16T23:41:02.409397",
+      "title": "OpenCode just killed all vibe coding apps (it’s insane)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "8Q8L5x2oBBg": {
+      "processed_at": "2026-01-16T23:41:11.282999",
+      "title": "Claude Code just EVOLVED",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "bbDFPHhpkc4": {
+      "processed_at": "2026-01-16T23:41:21.940682",
+      "title": "28 months of AI lessons in 32 minutes",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
