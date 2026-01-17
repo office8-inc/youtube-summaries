@@ -176,7 +176,12 @@
     "-X9XILuCwcg",
     "aZlFYDenz38",
     "r8fLTaRGJw8",
-    "NaNgXEQUJkQ"
+    "NaNgXEQUJkQ",
+    "5iGSyS5M80A",
+    "9O8dJW-mIgM",
+    "07YLWTDdStg",
+    "WLmP8Ux3mjM",
+    "gScBQmq06fQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1223,6 +1228,36 @@
       "processed_at": "2026-01-17T21:56:53.951727",
       "title": "Build anything with Haiku 4.5, here’s how",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "5iGSyS5M80A": {
+      "processed_at": "2026-01-17T21:57:41.688300",
+      "title": "Dead Internet Theory is now True | AgentKit by OpenAI | Apps in ChatGPT and other AI News",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "9O8dJW-mIgM": {
+      "processed_at": "2026-01-17T21:57:48.952602",
+      "title": "This sleep app wanted $60… so I remade it for FREE 💀",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "07YLWTDdStg": {
+      "processed_at": "2026-01-17T21:57:58.486227",
+      "title": "9 AI Models Built the Same Game (Results Were Unexpected)",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "WLmP8Ux3mjM": {
+      "processed_at": "2026-01-17T21:58:06.685768",
+      "title": "How I Use AI as a PRO to Land $5K+ Jobs Organically",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "gScBQmq06fQ": {
+      "processed_at": "2026-01-17T21:58:15.383063",
+      "title": "VEO 3.1 is UNLEASHED...",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
