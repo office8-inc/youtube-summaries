@@ -171,7 +171,12 @@
     "oC0mPBSmzfQ",
     "syK7yprJknM",
     "8Q8L5x2oBBg",
-    "bbDFPHhpkc4"
+    "bbDFPHhpkc4",
+    "pdQTLbPAkgc",
+    "-X9XILuCwcg",
+    "aZlFYDenz38",
+    "r8fLTaRGJw8",
+    "NaNgXEQUJkQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1187,6 +1192,36 @@
     "bbDFPHhpkc4": {
       "processed_at": "2026-01-16T23:41:21.940682",
       "title": "28 months of AI lessons in 32 minutes",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "pdQTLbPAkgc": {
+      "processed_at": "2026-01-17T21:56:04.111746",
+      "title": "Solo Building an AI Native Business: Viral Success and More Building (Week 2)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "-X9XILuCwcg": {
+      "processed_at": "2026-01-17T21:56:22.590264",
+      "title": "If I Wanted to Build a $1M Voice AI Business in 2026, I’d Do This",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "aZlFYDenz38": {
+      "processed_at": "2026-01-17T21:56:31.867131",
+      "title": "Grok just 5X’d real money in one day",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "r8fLTaRGJw8": {
+      "processed_at": "2026-01-17T21:56:44.029864",
+      "title": "They put Elden Ring in Gmail and GitHub… 💀",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "NaNgXEQUJkQ": {
+      "processed_at": "2026-01-17T21:56:53.951727",
+      "title": "Build anything with Haiku 4.5, here’s how",
       "channel": "David Ondrej",
       "status": "success"
     }
