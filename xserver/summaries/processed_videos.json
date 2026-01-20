@@ -181,7 +181,12 @@
     "9O8dJW-mIgM",
     "07YLWTDdStg",
     "WLmP8Ux3mjM",
-    "gScBQmq06fQ"
+    "gScBQmq06fQ",
+    "JqLCHjaIaM8",
+    "bBjEMQlsL4A",
+    "eD4CEZ-_-sk",
+    "pLs6ZKEDixQ",
+    "Iiz1KgFexx4"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1257,6 +1262,36 @@
     "gScBQmq06fQ": {
       "processed_at": "2026-01-17T21:58:15.383063",
       "title": "VEO 3.1 is UNLEASHED...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "JqLCHjaIaM8": {
+      "processed_at": "2026-01-20T22:42:20.742556",
+      "title": "how to use open source models without breaking the bank",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "bBjEMQlsL4A": {
+      "processed_at": "2026-01-20T22:42:32.885866",
+      "title": "\"Deskilling\" Shock is Coming | Anthropic Economic Report",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "eD4CEZ-_-sk": {
+      "processed_at": "2026-01-20T22:42:42.290300",
+      "title": "Claude Code Let's Build: The Ralph Loop Easy Setup Testing",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "pLs6ZKEDixQ": {
+      "processed_at": "2026-01-20T22:42:53.889094",
+      "title": "5 Genius Ways to Make Money From Home in 2026 (Using AI)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "Iiz1KgFexx4": {
+      "processed_at": "2026-01-20T22:43:01.719659",
+      "title": "Elon and OpenAI go to WAR",
       "channel": "Wes Roth",
       "status": "success"
     }
