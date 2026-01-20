@@ -186,7 +186,12 @@
     "bBjEMQlsL4A",
     "eD4CEZ-_-sk",
     "pLs6ZKEDixQ",
-    "Iiz1KgFexx4"
+    "Iiz1KgFexx4",
+    "nS62guAxeGA",
+    "dMpaPgLYj_U",
+    "RC9nOk6yLu0",
+    "XC9a29aPtw4",
+    "EcwsvwVJnY4"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1292,6 +1297,36 @@
     "Iiz1KgFexx4": {
       "processed_at": "2026-01-20T22:43:01.719659",
       "title": "Elon and OpenAI go to WAR",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "nS62guAxeGA": {
+      "processed_at": "2026-01-20T23:17:35.805282",
+      "title": "Making $$$ with AI SaaS (I might delete this)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "dMpaPgLYj_U": {
+      "processed_at": "2026-01-20T23:17:48.521023",
+      "title": "Claude Code Let's Build: AI Video Editor",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "RC9nOk6yLu0": {
+      "processed_at": "2026-01-20T23:17:59.027455",
+      "title": "The Hidden Voice AI Gold Rush (Start Before It’s Too Late)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "XC9a29aPtw4": {
+      "processed_at": "2026-01-20T23:18:08.658778",
+      "title": "Build Any n8n Workflow in Minutes, Here’s How",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "EcwsvwVJnY4": {
+      "processed_at": "2026-01-20T23:18:21.056422",
+      "title": "Anthropic's co-founder is throwing up MASSIVE red flags...",
       "channel": "Wes Roth",
       "status": "success"
     }
