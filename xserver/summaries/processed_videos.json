@@ -191,7 +191,12 @@
     "dMpaPgLYj_U",
     "RC9nOk6yLu0",
     "XC9a29aPtw4",
-    "EcwsvwVJnY4"
+    "EcwsvwVJnY4",
+    "HArSGFpcumE",
+    "vDBUf533e_M",
+    "RP-k7AFqTuo",
+    "3iR3kHxCwfo",
+    "Wn5fmdJ7Oxw"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1327,6 +1332,36 @@
     "EcwsvwVJnY4": {
       "processed_at": "2026-01-20T23:18:21.056422",
       "title": "Anthropic's co-founder is throwing up MASSIVE red flags...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "HArSGFpcumE": {
+      "processed_at": "2026-01-22T22:17:04.887996",
+      "title": "This OLD Programming Language STILL Rules the World",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "vDBUf533e_M": {
+      "processed_at": "2026-01-22T22:17:15.372806",
+      "title": "Skills.sh - LEVEL UP Your Claude Code Agents!",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "RP-k7AFqTuo": {
+      "processed_at": "2026-01-22T22:17:24.500442",
+      "title": "the day *after* AGI...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "3iR3kHxCwfo": {
+      "processed_at": "2026-01-22T22:17:35.296227",
+      "title": "How to Turn LinkedIn into a Personal Brand Lead Magnet with AI",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "Wn5fmdJ7Oxw": {
+      "processed_at": "2026-01-22T22:17:46.801235",
+      "title": "are we ready for this?",
       "channel": "Wes Roth",
       "status": "success"
     }
