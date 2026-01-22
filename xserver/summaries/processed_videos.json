@@ -196,7 +196,12 @@
     "vDBUf533e_M",
     "RP-k7AFqTuo",
     "3iR3kHxCwfo",
-    "Wn5fmdJ7Oxw"
+    "Wn5fmdJ7Oxw",
+    "6KB73J01fGw",
+    "vzF7Hj-JmZQ",
+    "UApd-gjQ6nM",
+    "XuSFUvUdvQA",
+    "qlujxdRL3ds"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1363,6 +1368,36 @@
       "processed_at": "2026-01-22T22:17:46.801235",
       "title": "are we ready for this?",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "6KB73J01fGw": {
+      "processed_at": "2026-01-22T23:05:15.066966",
+      "title": "8 Insane OpenCode Use Cases! (build anything)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "vzF7Hj-JmZQ": {
+      "processed_at": "2026-01-22T23:05:24.956942",
+      "title": "how to get 100 paying customers from reddit with zero marketing budget",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "UApd-gjQ6nM": {
+      "processed_at": "2026-01-22T23:05:35.785198",
+      "title": "Local AI on a Laptop in 2026 (AMD Ryzen AI PRO 128GB)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "XuSFUvUdvQA": {
+      "processed_at": "2026-01-22T23:05:46.525141",
+      "title": "Anthropic’s 7 Hour Claude Code Course in 27 Minutes",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "qlujxdRL3ds": {
+      "processed_at": "2026-01-22T23:05:53.741078",
+      "title": "This app wanted $20… so I remade it for FREE 💀",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
