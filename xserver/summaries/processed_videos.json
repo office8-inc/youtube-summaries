@@ -201,7 +201,12 @@
     "vzF7Hj-JmZQ",
     "UApd-gjQ6nM",
     "XuSFUvUdvQA",
-    "qlujxdRL3ds"
+    "qlujxdRL3ds",
+    "-0i2ERMGoq4",
+    "CfN7l4ahOHI",
+    "oB7gia1kC_g",
+    "49rrxFP893c",
+    "Vbws3a_OmBM"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1398,6 +1403,36 @@
       "processed_at": "2026-01-22T23:05:53.741078",
       "title": "This app wanted $20… so I remade it for FREE 💀",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "-0i2ERMGoq4": {
+      "processed_at": "2026-01-25T15:55:42.766945",
+      "title": "my predictions for 2026... AI will never be the same",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "CfN7l4ahOHI": {
+      "processed_at": "2026-01-25T15:55:50.367057",
+      "title": "He raised $2,000,000, how to compete?",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "oB7gia1kC_g": {
+      "processed_at": "2026-01-25T15:55:58.722559",
+      "title": "From Zero to Your First AI Voice Agent in 18 Minutes (No Coding)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "49rrxFP893c": {
+      "processed_at": "2026-01-25T15:56:07.053690",
+      "title": "Vibecoder is jailed and strip searched...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Vbws3a_OmBM": {
+      "processed_at": "2026-01-25T15:56:14.411860",
+      "title": "Claude Code Let's Build: The AI Video Oracle (Qwen3 TTS)",
+      "channel": "All About AI",
       "status": "success"
     }
   }
