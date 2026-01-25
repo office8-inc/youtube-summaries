@@ -206,7 +206,12 @@
     "CfN7l4ahOHI",
     "oB7gia1kC_g",
     "49rrxFP893c",
-    "Vbws3a_OmBM"
+    "Vbws3a_OmBM",
+    "bMMKdmr-jfk",
+    "fOY0_WCR3eY",
+    "VTPC8rs5jig",
+    "vAh1I6yI-hU",
+    "JnAXFnCRM4c"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1433,6 +1438,36 @@
       "processed_at": "2026-01-25T15:56:14.411860",
       "title": "Claude Code Let's Build: The AI Video Oracle (Qwen3 TTS)",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "bMMKdmr-jfk": {
+      "processed_at": "2026-01-25T18:33:13.195718",
+      "title": "The $150,000,000 Typo 🧑‍💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "fOY0_WCR3eY": {
+      "processed_at": "2026-01-25T18:33:23.743523",
+      "title": "Claude Code can now make videos, here’s how",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "VTPC8rs5jig": {
+      "processed_at": "2026-01-25T18:33:34.531947",
+      "title": "Should you fear AI?",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "vAh1I6yI-hU": {
+      "processed_at": "2026-01-25T18:33:45.070637",
+      "title": "Claude \"SOUL DOC\" reveals something strange...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "JnAXFnCRM4c": {
+      "processed_at": "2026-01-25T18:33:54.207461",
+      "title": "Excel… is a programming language!?",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
