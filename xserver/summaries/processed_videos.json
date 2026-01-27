@@ -211,7 +211,12 @@
     "fOY0_WCR3eY",
     "VTPC8rs5jig",
     "vAh1I6yI-hU",
-    "JnAXFnCRM4c"
+    "JnAXFnCRM4c",
+    "7fltOAg8ZGI",
+    "Tt-hpp87pd0",
+    "4ZAH98ruDyg",
+    "jBpQiv-ZlVM",
+    "2zWGFLrTVmI"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1468,6 +1473,36 @@
       "processed_at": "2026-01-25T18:33:54.207461",
       "title": "Excel… is a programming language!?",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "7fltOAg8ZGI": {
+      "processed_at": "2026-01-28T00:35:27.534029",
+      "title": "ClawdBot is out of control",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Tt-hpp87pd0": {
+      "processed_at": "2026-01-28T00:35:39.614509",
+      "title": "Did Claude Just Replace Video Editors? (Remotion Breakdown)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "4ZAH98ruDyg": {
+      "processed_at": "2026-01-28T00:35:47.687496",
+      "title": "The Creator of Linux is VIBE CODING 💀",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "jBpQiv-ZlVM": {
+      "processed_at": "2026-01-28T00:35:59.552174",
+      "title": "I Left an AI Alone in the Forest",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "2zWGFLrTVmI": {
+      "processed_at": "2026-01-28T00:36:07.040203",
+      "title": "I just replaced myself with Clawdbot… here's how",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
