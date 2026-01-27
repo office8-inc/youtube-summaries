@@ -216,7 +216,12 @@
     "Tt-hpp87pd0",
     "4ZAH98ruDyg",
     "jBpQiv-ZlVM",
-    "2zWGFLrTVmI"
+    "2zWGFLrTVmI",
+    "zA0b1okr2og",
+    "65EIqcxfVro",
+    "9btw343FHb4",
+    "g80Q1sVtikE",
+    "tp_QBQVpfbk"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1502,6 +1507,36 @@
     "2zWGFLrTVmI": {
       "processed_at": "2026-01-28T00:36:07.040203",
       "title": "I just replaced myself with Clawdbot… here's how",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "zA0b1okr2og": {
+      "processed_at": "2026-01-28T00:47:38.510320",
+      "title": "I Trained Claude Code To Run My X Account (no API)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "65EIqcxfVro": {
+      "processed_at": "2026-01-28T00:47:45.978002",
+      "title": "Will AI replace your agency in 2026? (here’s the truth)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "9btw343FHb4": {
+      "processed_at": "2026-01-28T00:47:54.059585",
+      "title": "OpenAI's new AI chip",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "g80Q1sVtikE": {
+      "processed_at": "2026-01-28T00:48:05.451547",
+      "title": "Fine-tune your own LLM in 13 minutes, here’s how",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "tp_QBQVpfbk": {
+      "processed_at": "2026-01-28T00:48:16.697603",
+      "title": "AI coding extensions will make you a 10x developer…",
       "channel": "David Ondrej",
       "status": "success"
     }
