@@ -226,7 +226,12 @@
     "_KN5iAQfz6I",
     "KzGpwJMxaTc",
     "dq-olkv8tBs",
-    "yk088BCn4Vk"
+    "yk088BCn4Vk",
+    "C4Zi9dGb0YU",
+    "I7bAKpmip_Y",
+    "aiLZMvMLYMg",
+    "AWqjodHJ3es",
+    "XC5oeZnMvcg"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1573,6 +1578,36 @@
       "processed_at": "2026-01-31T13:07:03.212379",
       "title": "OpenAI is killing open-source… here’s why",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "C4Zi9dGb0YU": {
+      "processed_at": "2026-01-31T13:28:13.316236",
+      "title": "KIMI K2.5 AGENT SWARM is INSANE",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "I7bAKpmip_Y": {
+      "processed_at": "2026-01-31T13:28:21.093454",
+      "title": "5 Software Developers Should Use to Increase Productivity",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "aiLZMvMLYMg": {
+      "processed_at": "2026-01-31T13:28:31.897571",
+      "title": "Build anything with Kimi 2.5, here’s how",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "AWqjodHJ3es": {
+      "processed_at": "2026-01-31T13:28:38.782740",
+      "title": "\"Almost UNIMAGINABLE Power\" - Anthropic Founder",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "XC5oeZnMvcg": {
+      "processed_at": "2026-01-31T13:28:48.741046",
+      "title": "ClawdBot is INSANE. Here’s 3 Ways to Make Money With It",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
