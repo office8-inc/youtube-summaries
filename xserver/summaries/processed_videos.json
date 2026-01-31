@@ -221,7 +221,12 @@
     "65EIqcxfVro",
     "9btw343FHb4",
     "g80Q1sVtikE",
-    "tp_QBQVpfbk"
+    "tp_QBQVpfbk",
+    "wAZvPXEp3ug",
+    "_KN5iAQfz6I",
+    "KzGpwJMxaTc",
+    "dq-olkv8tBs",
+    "yk088BCn4Vk"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1537,6 +1542,36 @@
     "tp_QBQVpfbk": {
       "processed_at": "2026-01-28T00:48:16.697603",
       "title": "AI coding extensions will make you a 10x developer…",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "wAZvPXEp3ug": {
+      "processed_at": "2026-01-31T13:06:30.202433",
+      "title": "I Sent an AI into the Wilderness Alone #ClaudePartner",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "_KN5iAQfz6I": {
+      "processed_at": "2026-01-31T13:06:38.596421",
+      "title": "My Most INSANE AI Agent Ever (OpenClaw Clone)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "KzGpwJMxaTc": {
+      "processed_at": "2026-01-31T13:06:46.187106",
+      "title": "What's the best AI Business Model?",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "dq-olkv8tBs": {
+      "processed_at": "2026-01-31T13:06:53.247243",
+      "title": "Google's MIND BLOWING World Creator (GENIE 3)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "yk088BCn4Vk": {
+      "processed_at": "2026-01-31T13:07:03.212379",
+      "title": "OpenAI is killing open-source… here’s why",
       "channel": "David Ondrej",
       "status": "success"
     }
