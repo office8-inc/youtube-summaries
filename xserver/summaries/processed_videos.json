@@ -236,7 +236,12 @@
     "WuWfPb1jpu4",
     "7RKl18jMzX0",
     "lX85Z77Y424",
-    "P47qqILR6fA"
+    "P47qqILR6fA",
+    "HiC1J8a9V1I",
+    "wk8joeKtXBA",
+    "5YKNIf6CUR0",
+    "iRI8krzMPSo",
+    "KkJZY5Klymw"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1643,6 +1648,36 @@
       "processed_at": "2026-02-05T01:22:49.664154",
       "title": "ClawdBot BROKE EVERYTHING in 72 hours...",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "HiC1J8a9V1I": {
+      "processed_at": "2026-02-05T01:41:39.371873",
+      "title": "How to Scale Your AI Agency (Forward Deployed Engineer Model Breakdown)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "wk8joeKtXBA": {
+      "processed_at": "2026-02-05T01:41:47.347819",
+      "title": "Scrape any website with Apify & OpenCode, here’s how",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "5YKNIf6CUR0": {
+      "processed_at": "2026-02-05T01:41:56.428089",
+      "title": "These 5 Retro CSS Frameworks are AWESOME",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "iRI8krzMPSo": {
+      "processed_at": "2026-02-05T01:42:06.200164",
+      "title": "The biggest grift in AI",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "KkJZY5Klymw": {
+      "processed_at": "2026-02-05T01:42:14.179390",
+      "title": "How To Train Your AI Agent's Skills (Claude Code / OpenClaw)",
+      "channel": "All About AI",
       "status": "success"
     }
   }
