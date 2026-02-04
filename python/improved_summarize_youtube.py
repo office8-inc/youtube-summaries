@@ -587,6 +587,49 @@ def calculate_quality_score(transcript_text, sections):
     return max(0, score)
 
 
+def git_sync_before_processing():
+    """処理開始前にリモートリポジトリと同期する
+    
+    Returns:
+        bool: 同期成功時True、失敗時False
+    """
+    print("\n🔄 リモートリポジトリと同期中...")
+    
+    try:
+        # git fetch
+        print("  📥 フェッチ中...")
+        fetch_result = subprocess.run(
+            ['git', 'fetch', '--all'],
+            capture_output=True,
+            text=True
+        )
+        if fetch_result.returncode != 0:
+            print(f"  ⚠️  フェッチ失敗: {fetch_result.stderr.strip()}")
+        else:
+            print("  ✓ フェッチ完了")
+        
+        # git pull
+        print("  📥 プル中...")
+        pull_result = subprocess.run(
+            ['git', 'pull', '--rebase'],
+            capture_output=True,
+            text=True
+        )
+        if pull_result.returncode != 0:
+            print(f"  ⚠️  プル失敗（続行します）: {pull_result.stderr.strip()}")
+            return False
+        else:
+            print("  ✓ プル完了")
+            return True
+            
+    except subprocess.CalledProcessError as e:
+        print(f"  ✗ Git操作エラー: {e}")
+        return False
+    except FileNotFoundError:
+        print("  ✗ gitコマンドが見つかりません")
+        return False
+
+
 def auto_commit_and_push(file_paths, processed_count, output_dir=None):
     """生成したファイルを自動的にgit commit & push（複数ファイル対応）
     
@@ -611,18 +654,6 @@ def auto_commit_and_push(file_paths, processed_count, output_dir=None):
                 subprocess.run(['git', 'add', processed_file], check=True, capture_output=True)
         
         print(f"  ✓ {len(file_paths)}ファイルをステージング")
-        
-        # git pullで最新を取得（競合防止）
-        print("  📥 リモートから最新を取得中...")
-        pull_result = subprocess.run(
-            ['git', 'pull', '--rebase'],
-            capture_output=True,
-            text=True
-        )
-        if pull_result.returncode != 0:
-            print(f"  ⚠️  pull失敗（続行します）: {pull_result.stderr.strip()}")
-        else:
-            print("  ✓ pull完了")
         
         # コミットメッセージを生成（複数ファイル対応）
         if len(file_paths) == 1:
@@ -841,6 +872,10 @@ if __name__ == "__main__":
             i += 1
         else:
             i += 1
+    
+    # --push オプションが有効な場合、処理開始前に同期
+    if auto_push:
+        git_sync_before_processing()
     
     # モード別処理
     if mode == 'single':
