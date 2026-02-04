@@ -231,7 +231,12 @@
     "I7bAKpmip_Y",
     "aiLZMvMLYMg",
     "AWqjodHJ3es",
-    "XC5oeZnMvcg"
+    "XC5oeZnMvcg",
+    "j9eRyAnr4c0",
+    "WuWfPb1jpu4",
+    "7RKl18jMzX0",
+    "lX85Z77Y424",
+    "P47qqILR6fA"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1608,6 +1613,36 @@
       "processed_at": "2026-01-31T13:28:48.741046",
       "title": "ClawdBot is INSANE. Here’s 3 Ways to Make Money With It",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "j9eRyAnr4c0": {
+      "processed_at": "2026-02-05T01:22:10.551969",
+      "title": "ClawdBot makes money",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "WuWfPb1jpu4": {
+      "processed_at": "2026-02-05T01:22:18.931381",
+      "title": "Every big player is going all in on this",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "7RKl18jMzX0": {
+      "processed_at": "2026-02-05T01:22:29.975765",
+      "title": "You Have Never Seen An AI Agent Do This Before (Claude Code)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "lX85Z77Y424": {
+      "processed_at": "2026-02-05T01:22:41.067692",
+      "title": "Biggest mistake startup founders make",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "P47qqILR6fA": {
+      "processed_at": "2026-02-05T01:22:49.664154",
+      "title": "ClawdBot BROKE EVERYTHING in 72 hours...",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
