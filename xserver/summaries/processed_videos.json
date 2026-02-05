@@ -241,7 +241,12 @@
     "wk8joeKtXBA",
     "5YKNIf6CUR0",
     "iRI8krzMPSo",
-    "KkJZY5Klymw"
+    "KkJZY5Klymw",
+    "tIiO2xTMbWY",
+    "Wk_-aqs3fM4",
+    "CVZI9UHlnbs",
+    "GKOEZSiXVLo",
+    "E3A4JXcFB9Q"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1678,6 +1683,36 @@
       "processed_at": "2026-02-05T01:42:14.179390",
       "title": "How To Train Your AI Agent's Skills (Claude Code / OpenClaw)",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "tIiO2xTMbWY": {
+      "processed_at": "2026-02-06T07:32:44.264191",
+      "title": "Opus 4.6 is about to send SHOCKWAVES...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Wk_-aqs3fM4": {
+      "processed_at": "2026-02-06T07:32:55.271932",
+      "title": "Everyone Will Be Training AI Agents This Way in 6 Months (Claude Code)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "CVZI9UHlnbs": {
+      "processed_at": "2026-02-06T07:33:04.439836",
+      "title": "The most important decision you will face",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "GKOEZSiXVLo": {
+      "processed_at": "2026-02-06T07:33:15.616155",
+      "title": "AI bubble JUST popped...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "E3A4JXcFB9Q": {
+      "processed_at": "2026-02-06T07:33:23.021144",
+      "title": "Learn anything in 2026 with these tools",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
