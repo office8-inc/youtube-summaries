@@ -246,7 +246,12 @@
     "Wk_-aqs3fM4",
     "CVZI9UHlnbs",
     "GKOEZSiXVLo",
-    "E3A4JXcFB9Q"
+    "E3A4JXcFB9Q",
+    "JoQG25gQyRg",
+    "hkfSfr-hMWs",
+    "EvBwh75Nk68",
+    "CSULpfABy0I",
+    "puo9rQ1xmGI"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1713,6 +1718,36 @@
       "processed_at": "2026-02-06T07:33:23.021144",
       "title": "Learn anything in 2026 with these tools",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "JoQG25gQyRg": {
+      "processed_at": "2026-02-06T07:44:49.580127",
+      "title": "Clawdbot is about to BREAK EVEREYTHING",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "hkfSfr-hMWs": {
+      "processed_at": "2026-02-06T07:44:58.020428",
+      "title": "LTX-2 UNLEASHED AI VIDEO",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "EvBwh75Nk68": {
+      "processed_at": "2026-02-06T07:45:04.838391",
+      "title": "Unlock Ancient wisdom from this book",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "CSULpfABy0I": {
+      "processed_at": "2026-02-06T07:45:12.265747",
+      "title": "Every AI Business Model Explained in 8 Minutes (Start from Home)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "puo9rQ1xmGI": {
+      "processed_at": "2026-02-06T07:45:21.154436",
+      "title": "OpenAI Just Changed the Game for AI Agencies (my honest thoughts)",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
