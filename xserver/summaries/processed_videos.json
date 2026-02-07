@@ -251,7 +251,12 @@
     "hkfSfr-hMWs",
     "EvBwh75Nk68",
     "CSULpfABy0I",
-    "puo9rQ1xmGI"
+    "puo9rQ1xmGI",
+    "45-Y8I_Nn4I",
+    "ceEUO_i7aW4",
+    "r1k-mLItb68",
+    "w52IzEfzz1E",
+    "meVolhxJlxM"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1748,6 +1753,36 @@
       "processed_at": "2026-02-06T07:45:21.154436",
       "title": "OpenAI Just Changed the Game for AI Agencies (my honest thoughts)",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "45-Y8I_Nn4I": {
+      "processed_at": "2026-02-07T21:53:25.268845",
+      "title": "Master 95% of Agent Zero in 28 mins",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "ceEUO_i7aW4": {
+      "processed_at": "2026-02-07T21:53:35.522376",
+      "title": "not good for OPENCLAW",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "r1k-mLItb68": {
+      "processed_at": "2026-02-07T21:53:43.848703",
+      "title": "How AI is Taking Over Open Source",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "w52IzEfzz1E": {
+      "processed_at": "2026-02-07T21:53:53.915718",
+      "title": "xAI will birth a SENTIENT SUN...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "meVolhxJlxM": {
+      "processed_at": "2026-02-07T21:54:02.541102",
+      "title": "Tracking in business is underrated",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
