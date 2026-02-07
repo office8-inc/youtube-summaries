@@ -256,7 +256,12 @@
     "ceEUO_i7aW4",
     "r1k-mLItb68",
     "w52IzEfzz1E",
-    "meVolhxJlxM"
+    "meVolhxJlxM",
+    "MRLt90GMvOg",
+    "bOVd1hxWZZc",
+    "od5zckQpJRo",
+    "l0loW5WtUFU",
+    "8ASNQxgOYYM"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1774,7 +1779,7 @@
       "status": "success"
     },
     "w52IzEfzz1E": {
-      "processed_at": "2026-02-07T21:53:53.915718",
+      "processed_at": "2026-02-07T21:54:24.073911",
       "title": "xAI will birth a SENTIENT SUN...",
       "channel": "Wes Roth",
       "status": "success"
@@ -1783,6 +1788,36 @@
       "processed_at": "2026-02-07T21:54:02.541102",
       "title": "Tracking in business is underrated",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "MRLt90GMvOg": {
+      "processed_at": "2026-02-07T21:56:16.882551",
+      "title": "OpenAI's FRONTIER might be the \"JOB KILLER\" we were waiting for",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "bOVd1hxWZZc": {
+      "processed_at": "2026-02-07T21:56:27.854031",
+      "title": "State of AI 2025: GPT-5 can't beat o3, robots coming into your house and fake Veo 3.1 rumors",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "od5zckQpJRo": {
+      "processed_at": "2026-02-07T21:56:37.989262",
+      "title": "Gemini 2.5 Computer Use MCP | On The Edge #7",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "l0loW5WtUFU": {
+      "processed_at": "2026-02-07T21:56:47.433857",
+      "title": "Building AI Automations Just Changed Forever",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "8ASNQxgOYYM": {
+      "processed_at": "2026-02-07T21:56:57.331879",
+      "title": "OpenAI, Google and xAI are about to blow",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
