@@ -266,7 +266,12 @@
     "RXBjzT8gQ2g",
     "H1Xq3aB5Yyk",
     "VHuZL8s78yM",
-    "tlG3SaRqHIw"
+    "tlG3SaRqHIw",
+    "cod50CWlZeU",
+    "If2qFGAMtXg",
+    "IHb_TKFAIf0",
+    "aB2h3SzCZwc",
+    "1zyB1vyfL7E"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1852,6 +1857,36 @@
     "tlG3SaRqHIw": {
       "processed_at": "2026-02-09T23:36:20.964085",
       "title": "How to become free in life",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "cod50CWlZeU": {
+      "processed_at": "2026-02-10T08:00:44.075424",
+      "title": "I made my OpenClaw 10x more powerful (seriously)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "If2qFGAMtXg": {
+      "processed_at": "2026-02-10T08:00:53.738198",
+      "title": "Developers are OBSESSED with this 💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "IHb_TKFAIf0": {
+      "processed_at": "2026-02-10T08:01:01.307323",
+      "title": "OpenAI just destroyed 100 startups… yours is next",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "aB2h3SzCZwc": {
+      "processed_at": "2026-02-10T08:01:12.892138",
+      "title": "OpenAI Just NUKED the AI Automation Industry… (DevDay Reaction)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "1zyB1vyfL7E": {
+      "processed_at": "2026-02-10T08:01:23.540102",
+      "title": "Give ChatGPT + Claude infinite memory, here's how",
       "channel": "David Ondrej",
       "status": "success"
     }
