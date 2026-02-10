@@ -271,7 +271,12 @@
     "If2qFGAMtXg",
     "IHb_TKFAIf0",
     "aB2h3SzCZwc",
-    "1zyB1vyfL7E"
+    "1zyB1vyfL7E",
+    "JPY641zp2nA",
+    "0Y0jbaoREHc",
+    "WSCbyIMXwS4",
+    "xf_Y4eMuklY",
+    "CGb-cTuuzew"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1888,6 +1893,36 @@
       "processed_at": "2026-02-10T08:01:23.540102",
       "title": "Give ChatGPT + Claude infinite memory, here's how",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "JPY641zp2nA": {
+      "processed_at": "2026-02-11T08:00:42.133921",
+      "title": "The Most Controversial Open Source Decision EVER",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "0Y0jbaoREHc": {
+      "processed_at": "2026-02-11T08:00:50.675687",
+      "title": "Learn The AI Agent Cron Job Inception Strategy (Claude Code)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "WSCbyIMXwS4": {
+      "processed_at": "2026-02-11T08:01:01.264616",
+      "title": "OPUS 4.6 is a bit \"TOO SMART\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "xf_Y4eMuklY": {
+      "processed_at": "2026-02-11T08:01:10.585020",
+      "title": "Sora 2 API Deep Dive | On The Edge #6",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "CGb-cTuuzew": {
+      "processed_at": "2026-02-11T08:01:19.058368",
+      "title": "DAVID ONDREJ - Vibe Coding a Startup, Working with Alex Hormozi and Evolving in the AI Age.",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
