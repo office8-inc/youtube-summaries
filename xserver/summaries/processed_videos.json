@@ -276,7 +276,12 @@
     "0Y0jbaoREHc",
     "WSCbyIMXwS4",
     "xf_Y4eMuklY",
-    "CGb-cTuuzew"
+    "CGb-cTuuzew",
+    "DDJhn232eYw",
+    "zMwQ-rjPvZQ",
+    "XYrLixbWtxo",
+    "TzZqFkBNnZA",
+    "ur18In04XXA"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1922,6 +1927,37 @@
     "CGb-cTuuzew": {
       "processed_at": "2026-02-11T08:01:19.058368",
       "title": "DAVID ONDREJ - Vibe Coding a Startup, Working with Alex Hormozi and Evolving in the AI Age.",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "DDJhn232eYw": {
+      "processed_at": "2026-02-12T08:00:42.311277",
+      "title": "Automating an ANNOYING Video Effect 📸",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "zMwQ-rjPvZQ": {
+      "processed_at": "2026-02-12T08:00:53.770286",
+      "title": "LIVESTREAM: OpenAI Dev Day Stream",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "XYrLixbWtxo": {
+      "processed_at": "2026-02-12T08:01:05.559536",
+      "title": "Imagine with Claude | On The Edge #5",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "TzZqFkBNnZA": {
+      "processed_at": "2026-02-12T08:01:14.693596",
+      "title": "Google Launches (nano Banana) Gemini 2.5 Flash Image Model Livestream",
+      "channel": "Wes Roth",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "ur18In04XXA": {
+      "processed_at": "2026-02-12T08:01:23.309712",
+      "title": "Sora 2 *hits* different",
       "channel": "Wes Roth",
       "status": "success"
     }
