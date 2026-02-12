@@ -281,7 +281,12 @@
     "zMwQ-rjPvZQ",
     "XYrLixbWtxo",
     "TzZqFkBNnZA",
-    "ur18In04XXA"
+    "ur18In04XXA",
+    "Pq3205RoOsI",
+    "CP2CqpXXTdA",
+    "NQ1IR4Z_3RY",
+    "2bsfQThGXxc",
+    "ZcIqiLLT7Fg"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1958,6 +1963,36 @@
     "ur18In04XXA": {
       "processed_at": "2026-02-12T08:01:23.309712",
       "title": "Sora 2 *hits* different",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Pq3205RoOsI": {
+      "processed_at": "2026-02-13T08:00:48.077794",
+      "title": "This $50 AI Command Center Runs My Life",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "CP2CqpXXTdA": {
+      "processed_at": "2026-02-13T08:00:57.523754",
+      "title": "24/7 Claude Code AI Agent 12-Day Review: The Results Will Surprise You",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "NQ1IR4Z_3RY": {
+      "processed_at": "2026-02-13T08:01:05.618825",
+      "title": "Don’t start an AI business before watching this (seriously)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "2bsfQThGXxc": {
+      "processed_at": "2026-02-13T08:01:16.286730",
+      "title": "How to Automate Your Life & Work w/ Claude Code: Ultimate Beginner’s Guide",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "ZcIqiLLT7Fg": {
+      "processed_at": "2026-02-13T08:01:25.046549",
+      "title": "INSTALL OPENCLAW in 30 seconds and START BUILDING... | Local Install and VPS FULL Tutorial",
       "channel": "Wes Roth",
       "status": "success"
     }
