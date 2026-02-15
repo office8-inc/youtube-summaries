@@ -286,7 +286,12 @@
     "CP2CqpXXTdA",
     "NQ1IR4Z_3RY",
     "2bsfQThGXxc",
-    "ZcIqiLLT7Fg"
+    "ZcIqiLLT7Fg",
+    "oG0jmaIlL1w",
+    "fMdg9Wvzyqk",
+    "F4w1sCvqtTU",
+    "hgnZPx5x03g",
+    "qNtDxuLfFE8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -1994,6 +1999,36 @@
       "processed_at": "2026-02-13T08:01:25.046549",
       "title": "INSTALL OPENCLAW in 30 seconds and START BUILDING... | Local Install and VPS FULL Tutorial",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "oG0jmaIlL1w": {
+      "processed_at": "2026-02-16T08:00:43.594841",
+      "title": "How to Run OpenCode Inside an Autonomous Claude Code AI Agent",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "fMdg9Wvzyqk": {
+      "processed_at": "2026-02-16T08:00:54.789663",
+      "title": "8 BILION DIGITAL CLONES",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "F4w1sCvqtTU": {
+      "processed_at": "2026-02-16T08:01:06.038688",
+      "title": "AgentZero just released the OpenClaw killer (it’s over)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "hgnZPx5x03g": {
+      "processed_at": "2026-02-16T08:01:14.692959",
+      "title": "it JUST happened",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "qNtDxuLfFE8": {
+      "processed_at": "2026-02-16T08:01:21.695121",
+      "title": "AI Just Had It’s iPhone Moment...(Here's How to WIN)",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
