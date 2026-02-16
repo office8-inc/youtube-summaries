@@ -291,7 +291,12 @@
     "fMdg9Wvzyqk",
     "F4w1sCvqtTU",
     "hgnZPx5x03g",
-    "qNtDxuLfFE8"
+    "qNtDxuLfFE8",
+    "nUxuCoqJzlA",
+    "4Y0bxlRKlEM",
+    "JREYGaJG5Mo",
+    "U3o5cgG105E",
+    "t58Z1yOsSdM"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2028,6 +2033,36 @@
     "qNtDxuLfFE8": {
       "processed_at": "2026-02-16T08:01:21.695121",
       "title": "AI Just Had It’s iPhone Moment...(Here's How to WIN)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "nUxuCoqJzlA": {
+      "processed_at": "2026-02-17T08:00:43.240287",
+      "title": "Is Codex the real Claude Code killer?!",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "4Y0bxlRKlEM": {
+      "processed_at": "2026-02-17T08:00:53.758771",
+      "title": "Automating a Daily Note with watsonx Orchestrate #ad",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "JREYGaJG5Mo": {
+      "processed_at": "2026-02-17T08:01:04.131034",
+      "title": "My 24/7 Claude Code AI Agent’s Biggest Win...that won’t happen again",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "U3o5cgG105E": {
+      "processed_at": "2026-02-17T08:01:11.557720",
+      "title": "AI Video Just Went TOO FAR... NOT OK!",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "t58Z1yOsSdM": {
+      "processed_at": "2026-02-17T08:01:21.900065",
+      "title": "How to Become IRREPLACEABLE With AI in 90 Days",
       "channel": "Liam Ottley",
       "status": "success"
     }
