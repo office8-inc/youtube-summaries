@@ -296,7 +296,12 @@
     "4Y0bxlRKlEM",
     "JREYGaJG5Mo",
     "U3o5cgG105E",
-    "t58Z1yOsSdM"
+    "t58Z1yOsSdM",
+    "7lyU_CKp3WA",
+    "U6m6EdBrGkQ",
+    "DFe1WuiSc60",
+    "OHJb4Hr_0Sg",
+    "RQJGOc_M5Wk"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2064,6 +2069,36 @@
       "processed_at": "2026-02-17T08:01:21.900065",
       "title": "How to Become IRREPLACEABLE With AI in 90 Days",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "7lyU_CKp3WA": {
+      "processed_at": "2026-02-18T08:00:45.642862",
+      "title": "Did My Claude Code AI Agent Automate a Six Figure Job?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "U6m6EdBrGkQ": {
+      "processed_at": "2026-02-18T08:00:53.116154",
+      "title": "If AI Coding Agents had ads 💀",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "DFe1WuiSc60": {
+      "processed_at": "2026-02-18T08:01:04.024436",
+      "title": "How to get infinite energy to keep going",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "OHJb4Hr_0Sg": {
+      "processed_at": "2026-02-18T08:01:14.981581",
+      "title": "the end of OpenClaw",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "RQJGOc_M5Wk": {
+      "processed_at": "2026-02-18T08:01:26.088259",
+      "title": "Wes Roth stars in the new trilogy \"The Roth Identity\" | Sora 2",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
