@@ -302,7 +302,12 @@
     "DFe1WuiSc60",
     "OHJb4Hr_0Sg",
     "RQJGOc_M5Wk",
-    "d4tbdFpcuSQ"
+    "d4tbdFpcuSQ",
+    "j6POqm76Slg",
+    "JJZQr2AuEI0",
+    "8JLyq_-3n58",
+    "a0BNjXs5cSc",
+    "SJWwk_moO50"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2106,6 +2111,36 @@
       "processed_at": "2026-02-18T21:28:15.836670",
       "title": "GROK 4.20 is... different",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "j6POqm76Slg": {
+      "processed_at": "2026-02-19T08:00:41.003266",
+      "title": "How My Claude Code Sonnet 4.6 AI Agent Navigates Chrome Autonomous",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "JJZQr2AuEI0": {
+      "processed_at": "2026-02-19T08:00:49.004071",
+      "title": "GitHub's Code Was Breaking Every 8 Hours. Here's Why.",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "8JLyq_-3n58": {
+      "processed_at": "2026-02-19T08:00:55.730535",
+      "title": "3 years into the AI Agency model. Where it’s all going…",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "a0BNjXs5cSc": {
+      "processed_at": "2026-02-19T08:01:04.673454",
+      "title": "Long Running AI Agents | On The Edge #4",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "SJWwk_moO50": {
+      "processed_at": "2026-02-19T08:01:13.970754",
+      "title": "Build Anything with Claude, Here's How",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
