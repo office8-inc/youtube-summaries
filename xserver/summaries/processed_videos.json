@@ -301,7 +301,8 @@
     "U6m6EdBrGkQ",
     "DFe1WuiSc60",
     "OHJb4Hr_0Sg",
-    "RQJGOc_M5Wk"
+    "RQJGOc_M5Wk",
+    "d4tbdFpcuSQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2098,6 +2099,12 @@
     "RQJGOc_M5Wk": {
       "processed_at": "2026-02-18T08:01:26.088259",
       "title": "Wes Roth stars in the new trilogy \"The Roth Identity\" | Sora 2",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "d4tbdFpcuSQ": {
+      "processed_at": "2026-02-18T21:28:15.836670",
+      "title": "GROK 4.20 is... different",
       "channel": "Wes Roth",
       "status": "success"
     }
