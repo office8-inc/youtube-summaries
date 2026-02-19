@@ -307,7 +307,12 @@
     "JJZQr2AuEI0",
     "8JLyq_-3n58",
     "a0BNjXs5cSc",
-    "SJWwk_moO50"
+    "SJWwk_moO50",
+    "nt3P2dGJfNg",
+    "1084eFuHjKk",
+    "eXOvTmEDa7Y",
+    "EkadHKoGriE",
+    "6Iahem_Ihr8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2141,6 +2146,36 @@
       "processed_at": "2026-02-19T08:01:13.970754",
       "title": "Build Anything with Claude, Here's How",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "nt3P2dGJfNg": {
+      "processed_at": "2026-02-20T08:00:45.723328",
+      "title": "GEMINI 3.1 PRO is the new era...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "1084eFuHjKk": {
+      "processed_at": "2026-02-20T08:00:55.864663",
+      "title": "Automating your Rules files for Code Review #ad",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "eXOvTmEDa7Y": {
+      "processed_at": "2026-02-20T08:01:03.959722",
+      "title": "My Bank Tried to Scam Me… So I used Python instead 💀",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "EkadHKoGriE": {
+      "processed_at": "2026-02-20T08:01:12.593691",
+      "title": "Human Developer vs AI Agent (Actual Test)",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "6Iahem_Ihr8": {
+      "processed_at": "2026-02-20T08:01:22.160216",
+      "title": "they are lying to you about AI development",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
