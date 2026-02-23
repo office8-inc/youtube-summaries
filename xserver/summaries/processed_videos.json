@@ -312,7 +312,12 @@
     "1084eFuHjKk",
     "eXOvTmEDa7Y",
     "EkadHKoGriE",
-    "6Iahem_Ihr8"
+    "6Iahem_Ihr8",
+    "b44lTKX5GFg",
+    "KAufsCas_F4",
+    "tVWK7N_8Z6Y",
+    "O_VBdNrX0PM",
+    "ds1k2cmtqdI"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2176,6 +2181,36 @@
       "processed_at": "2026-02-20T08:01:22.160216",
       "title": "they are lying to you about AI development",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "b44lTKX5GFg": {
+      "processed_at": "2026-02-24T08:00:43.031506",
+      "title": "Is it too late to get into AI?",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "KAufsCas_F4": {
+      "processed_at": "2026-02-24T08:00:51.124057",
+      "title": "The Easiest Software Business to Start in 2026",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "tVWK7N_8Z6Y": {
+      "processed_at": "2026-02-24T08:01:01.764326",
+      "title": "\"The Universe Is A PROGRAM\" Is this the SOURCE CODE of our Universe?  - Stephen Wolfram",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "O_VBdNrX0PM": {
+      "processed_at": "2026-02-24T08:01:12.215310",
+      "title": "My Plan to Automate 70% of my Business w/ Claude Code (in 30 Days)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "ds1k2cmtqdI": {
+      "processed_at": "2026-02-24T08:01:19.735356",
+      "title": "This AI agent builds $200k mobile apps in minutes…",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
