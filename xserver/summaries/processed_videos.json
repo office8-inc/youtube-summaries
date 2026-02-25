@@ -322,7 +322,12 @@
     "OygFUk8B7oo",
     "NqeWOlfeUJs",
     "yuW0939jtco",
-    "qJg3CuqEvek"
+    "qJg3CuqEvek",
+    "lxGUxQjNm7Y",
+    "O_5vugzgoik",
+    "LZ3NkHbd5VU",
+    "ykRToEkWvpA",
+    "Qvz2t-hUlRI"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2246,6 +2251,36 @@
       "processed_at": "2026-02-25T08:01:12.658832",
       "title": "OpenClaw Will Never Actually Run Your Business… Try This Instead.",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "lxGUxQjNm7Y": {
+      "processed_at": "2026-02-26T08:00:42.173977",
+      "title": "The WILDEST GitHub repository EVER 💀",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "O_5vugzgoik": {
+      "processed_at": "2026-02-26T08:00:52.013529",
+      "title": "I Let My AI Agent Run for 504 Hours Straight — Here's What Happened",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "LZ3NkHbd5VU": {
+      "processed_at": "2026-02-26T08:01:02.634908",
+      "title": "You are wrong about Open Claw",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "ykRToEkWvpA": {
+      "processed_at": "2026-02-26T08:01:12.088953",
+      "title": "I’ve been called crazy before…",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "Qvz2t-hUlRI": {
+      "processed_at": "2026-02-26T08:01:18.988878",
+      "title": "$1 Trillion Gone",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
