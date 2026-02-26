@@ -327,7 +327,12 @@
     "O_5vugzgoik",
     "LZ3NkHbd5VU",
     "ykRToEkWvpA",
-    "Qvz2t-hUlRI"
+    "Qvz2t-hUlRI",
+    "qMWeIXdyE2Y",
+    "YScY1-Dtq-A",
+    "V596aOwKvEI",
+    "GyCNs5AymRw",
+    "W0wxKHlbGWI"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2281,6 +2286,36 @@
       "processed_at": "2026-02-26T08:01:18.988878",
       "title": "$1 Trillion Gone",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "qMWeIXdyE2Y": {
+      "processed_at": "2026-02-27T08:00:46.703369",
+      "title": "Anthropic might be DONE (48 hours left)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "YScY1-Dtq-A": {
+      "processed_at": "2026-02-27T08:00:54.882543",
+      "title": "How to adapt with AI",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "V596aOwKvEI": {
+      "processed_at": "2026-02-27T08:01:05.223115",
+      "title": "Put your AI Agents to work, here's how",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "GyCNs5AymRw": {
+      "processed_at": "2026-02-27T08:01:16.749925",
+      "title": "AGI Is Here. It’s Real. And It Changes Everything — Here’s My Plan",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "W0wxKHlbGWI": {
+      "processed_at": "2026-02-27T08:01:23.649620",
+      "title": "Do you realise this about the world?",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
