@@ -332,7 +332,12 @@
     "YScY1-Dtq-A",
     "V596aOwKvEI",
     "GyCNs5AymRw",
-    "W0wxKHlbGWI"
+    "W0wxKHlbGWI",
+    "SNYUTAurLI8",
+    "eAWkezTcIlM",
+    "rtTuXAvS2yw",
+    "iR_b09xcDjs",
+    "_3j4GSju90g"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2315,6 +2320,36 @@
     "W0wxKHlbGWI": {
       "processed_at": "2026-02-27T08:01:23.649620",
       "title": "Do you realise this about the world?",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "SNYUTAurLI8": {
+      "processed_at": "2026-03-02T08:00:41.778453",
+      "title": "Biggest nightmare for a parent",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "eAWkezTcIlM": {
+      "processed_at": "2026-03-02T08:00:52.888278",
+      "title": "CLAUDE GOT BANNED - NOW THEY WILL KILL IT (LIVESTREAM)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "rtTuXAvS2yw": {
+      "processed_at": "2026-03-02T08:01:03.612925",
+      "title": "Claude Code AI Agent Controls Claude Code On Twitch",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "iR_b09xcDjs": {
+      "processed_at": "2026-03-02T08:01:11.670755",
+      "title": "CLAUDE JUST GOT BANNED",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "_3j4GSju90g": {
+      "processed_at": "2026-03-02T08:01:21.959316",
+      "title": "If ww3 starts, i'll be doing this",
       "channel": "David Ondrej",
       "status": "success"
     }
