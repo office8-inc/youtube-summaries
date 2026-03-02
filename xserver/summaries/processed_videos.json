@@ -337,7 +337,12 @@
     "eAWkezTcIlM",
     "rtTuXAvS2yw",
     "iR_b09xcDjs",
-    "_3j4GSju90g"
+    "_3j4GSju90g",
+    "Hzm3D7i3NFk",
+    "_He58Zi8NQg",
+    "BlyJKhhbzwA",
+    "RNyMRbJAHtU",
+    "ICjGiYLmReE"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2350,6 +2355,36 @@
     "_3j4GSju90g": {
       "processed_at": "2026-03-02T08:01:21.959316",
       "title": "If ww3 starts, i'll be doing this",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "Hzm3D7i3NFk": {
+      "processed_at": "2026-03-03T08:00:49.930989",
+      "title": "Claude kill count going up",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "_He58Zi8NQg": {
+      "processed_at": "2026-03-03T08:00:58.903707",
+      "title": "Your Phone Can Now Run Your Entire Business. Here's How It Runs Mine.",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "BlyJKhhbzwA": {
+      "processed_at": "2026-03-03T08:01:09.481796",
+      "title": "Super Nested Claude Code Is Vibecoding On STEROIDS",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "RNyMRbJAHtU": {
+      "processed_at": "2026-03-03T08:01:19.536127",
+      "title": "Get specific, here's what i mean...",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "ICjGiYLmReE": {
+      "processed_at": "2026-03-03T08:01:26.684123",
+      "title": "These next 1-2 months in AI are crucial",
       "channel": "David Ondrej",
       "status": "success"
     }
