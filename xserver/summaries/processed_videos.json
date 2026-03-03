@@ -342,7 +342,12 @@
     "_He58Zi8NQg",
     "BlyJKhhbzwA",
     "RNyMRbJAHtU",
-    "ICjGiYLmReE"
+    "ICjGiYLmReE",
+    "s-VRnhtKm54",
+    "ua6ce9rKgBg",
+    "I9BZRuw5c80",
+    "HXzbz-c4NqA",
+    "yqr2qoTcMPk"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2386,6 +2391,36 @@
       "processed_at": "2026-03-03T08:01:26.684123",
       "title": "These next 1-2 months in AI are crucial",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "s-VRnhtKm54": {
+      "processed_at": "2026-03-04T08:00:45.857899",
+      "title": "Is Dubai safe right now?",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "ua6ce9rKgBg": {
+      "processed_at": "2026-03-04T08:00:56.499628",
+      "title": "He got an $8,000 deal with only 30 subscribers",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "I9BZRuw5c80": {
+      "processed_at": "2026-03-04T08:01:04.046405",
+      "title": "How to Build ANYTHING with Oz by Warp",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "HXzbz-c4NqA": {
+      "processed_at": "2026-03-04T08:01:11.512595",
+      "title": "The most INSANE thing happened on GitHub 🤦‍♂️",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "yqr2qoTcMPk": {
+      "processed_at": "2026-03-04T08:01:21.800143",
+      "title": "Can a Claude Code AI Agent CRUSH The Predictions Market? Let's find out",
+      "channel": "All About AI",
       "status": "success"
     }
   }
