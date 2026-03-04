@@ -347,7 +347,12 @@
     "ua6ce9rKgBg",
     "I9BZRuw5c80",
     "HXzbz-c4NqA",
-    "yqr2qoTcMPk"
+    "yqr2qoTcMPk",
+    "wak7R0luB90",
+    "TCTSHn6NNK4",
+    "uWLt81SgM78",
+    "dm6yJiTUzEs",
+    "Cx2oPWU8qjY"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2421,6 +2426,36 @@
       "processed_at": "2026-03-04T08:01:21.800143",
       "title": "Can a Claude Code AI Agent CRUSH The Predictions Market? Let's find out",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "wak7R0luB90": {
+      "processed_at": "2026-03-05T08:00:44.736774",
+      "title": "“Self-Improving AI Agents Are Almost Here…” – DeepSeek Insider",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "TCTSHn6NNK4": {
+      "processed_at": "2026-03-05T08:00:53.964642",
+      "title": "Make your older self proud",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "uWLt81SgM78": {
+      "processed_at": "2026-03-05T08:01:01.484096",
+      "title": "Cal Newport AI takes are WILD...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "dm6yJiTUzEs": {
+      "processed_at": "2026-03-05T08:01:09.256148",
+      "title": "Stress is how you grow, here's why",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "Cx2oPWU8qjY": {
+      "processed_at": "2026-03-05T08:01:17.403468",
+      "title": "How OpenClaw runs my entire business (step by step)",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
