@@ -352,7 +352,12 @@
     "TCTSHn6NNK4",
     "uWLt81SgM78",
     "dm6yJiTUzEs",
-    "Cx2oPWU8qjY"
+    "Cx2oPWU8qjY",
+    "_1GF4cD_fls",
+    "8RM-u7TkYpw",
+    "jFIBotuTZT4",
+    "oC1h922cDoY",
+    "RoSdjdpbtIA"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2456,6 +2461,36 @@
       "processed_at": "2026-03-05T08:01:17.403468",
       "title": "How OpenClaw runs my entire business (step by step)",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "_1GF4cD_fls": {
+      "processed_at": "2026-03-06T08:00:50.578808",
+      "title": "This is the easiest way to build AI Agents #ad #airia #AIAgents #agents #ai #easyagents",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "8RM-u7TkYpw": {
+      "processed_at": "2026-03-06T08:00:59.273734",
+      "title": "Long-Running AI Agent Browser Automation Tasks Is Here",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "jFIBotuTZT4": {
+      "processed_at": "2026-03-06T08:01:10.348353",
+      "title": "GPT 5.4 leaks",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "oC1h922cDoY": {
+      "processed_at": "2026-03-06T08:01:20.840027",
+      "title": "The Biggest Shift in Business Since the Internet Just Happened",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "RoSdjdpbtIA": {
+      "processed_at": "2026-03-06T08:01:32.182000",
+      "title": "did Anthropic just END OpenClaw?",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
