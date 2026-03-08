@@ -357,7 +357,12 @@
     "8RM-u7TkYpw",
     "jFIBotuTZT4",
     "oC1h922cDoY",
-    "RoSdjdpbtIA"
+    "RoSdjdpbtIA",
+    "rodYMnGntdI",
+    "DXcVT07bQ6g",
+    "4XAAp-j-Op4",
+    "9zVZVtPMU6Y",
+    "BVD49yi_Yhs"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2491,6 +2496,36 @@
       "processed_at": "2026-03-06T08:01:32.182000",
       "title": "did Anthropic just END OpenClaw?",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "rodYMnGntdI": {
+      "processed_at": "2026-03-09T08:00:47.602578",
+      "title": "3 AI Agent Browser Automation Challenges That Keep Getting Harder",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "DXcVT07bQ6g": {
+      "processed_at": "2026-03-09T08:00:58.133822",
+      "title": "What Is an AI Operating System? (And Why Every Business Will Need One)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "4XAAp-j-Op4": {
+      "processed_at": "2026-03-09T08:01:08.469629",
+      "title": "Build Anything with Mercury 2, Here’s How",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "9zVZVtPMU6Y": {
+      "processed_at": "2026-03-09T08:01:17.499114",
+      "title": "GPT 5.4 \"we see no wall\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "BVD49yi_Yhs": {
+      "processed_at": "2026-03-09T08:01:24.718366",
+      "title": "GPT 5.4 hit a wall. It’s over.",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
