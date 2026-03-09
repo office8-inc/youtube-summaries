@@ -362,7 +362,12 @@
     "DXcVT07bQ6g",
     "4XAAp-j-Op4",
     "9zVZVtPMU6Y",
-    "BVD49yi_Yhs"
+    "BVD49yi_Yhs",
+    "lIf4g_5XmMQ",
+    "mA8C55NLYzw",
+    "N0qdecfrb5U",
+    "NV4uUknDt5g",
+    "BCA7ZTafHc8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2526,6 +2531,36 @@
       "processed_at": "2026-03-09T08:01:24.718366",
       "title": "GPT 5.4 hit a wall. It’s over.",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "lIf4g_5XmMQ": {
+      "processed_at": "2026-03-10T08:00:50.376048",
+      "title": "How Spotify predicts what you want to listen to",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "mA8C55NLYzw": {
+      "processed_at": "2026-03-10T08:01:00.959170",
+      "title": "Claude JUST became AWARE",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "N0qdecfrb5U": {
+      "processed_at": "2026-03-10T08:01:10.856869",
+      "title": "Going from $0 to $2000 / month on the EASIEST App 💀",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "NV4uUknDt5g": {
+      "processed_at": "2026-03-10T08:01:21.639559",
+      "title": "Claude Code 2.0 | On The Edge #3",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "BCA7ZTafHc8": {
+      "processed_at": "2026-03-10T08:01:29.870513",
+      "title": "most AI researchers are REALLY worried",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
