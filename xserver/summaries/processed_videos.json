@@ -367,7 +367,12 @@
     "mA8C55NLYzw",
     "N0qdecfrb5U",
     "NV4uUknDt5g",
-    "BCA7ZTafHc8"
+    "BCA7ZTafHc8",
+    "tUkD0oj92Qg",
+    "oOEnqqXkytw",
+    "bCG2wRSTNg4",
+    "6MCxSJd1ZPY",
+    "1jGdRjkhOYE"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2561,6 +2566,36 @@
       "processed_at": "2026-03-10T08:01:29.870513",
       "title": "most AI researchers are REALLY worried",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "tUkD0oj92Qg": {
+      "processed_at": "2026-03-11T08:00:52.422931",
+      "title": "this EX-OPENAI RESEARCHER just released it...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "oOEnqqXkytw": {
+      "processed_at": "2026-03-11T08:01:02.915111",
+      "title": "Sora 2 | On The Edge #2",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "bCG2wRSTNg4": {
+      "processed_at": "2026-03-11T08:01:12.482888",
+      "title": "SORA 2 is absolutely UNREAL",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "6MCxSJd1ZPY": {
+      "processed_at": "2026-03-11T08:01:21.815996",
+      "title": "The 3 AI Agents everyone should have…",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "1jGdRjkhOYE": {
+      "processed_at": "2026-03-11T08:01:31.761410",
+      "title": "INSIDE a Data Center with 90,000+ Servers 💻",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
