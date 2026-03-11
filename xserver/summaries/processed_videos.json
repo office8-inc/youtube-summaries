@@ -372,7 +372,12 @@
     "oOEnqqXkytw",
     "bCG2wRSTNg4",
     "6MCxSJd1ZPY",
-    "1jGdRjkhOYE"
+    "1jGdRjkhOYE",
+    "fGmww9ifU4k",
+    "zI3x4Bb7dTs",
+    "lhAk9BG9Njo",
+    "z04pycIFLlI",
+    "pht47t-oaBM"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2596,6 +2601,36 @@
       "processed_at": "2026-03-11T08:01:31.761410",
       "title": "INSIDE a Data Center with 90,000+ Servers 💻",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "fGmww9ifU4k": {
+      "processed_at": "2026-03-11T10:03:26.537474",
+      "title": "Programming on a Smartphone for 7 Days... Actually Works?",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "zI3x4Bb7dTs": {
+      "processed_at": "2026-03-11T10:03:34.141428",
+      "title": "PYTHON SIMPLIFIED - Developer Reacts to \"Coding is Dead\", AI coding tools and Reinforcement Learning",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "lhAk9BG9Njo": {
+      "processed_at": "2026-03-11T10:03:43.959164",
+      "title": "Top 3 AI Businesses to Start with Nano Banana in 2026",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "z04pycIFLlI": {
+      "processed_at": "2026-03-11T10:03:53.613132",
+      "title": "Claude Sonnet 4.5 | On The Edge #1",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "pht47t-oaBM": {
+      "processed_at": "2026-03-11T10:04:03.468618",
+      "title": "Claude WON'T stop",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
