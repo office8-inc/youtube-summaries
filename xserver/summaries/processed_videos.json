@@ -382,7 +382,12 @@
     "EbqiogbTAJs",
     "APLWy3LTaaw",
     "8qLBD3U5w-c",
-    "R2UZpvp6huw"
+    "R2UZpvp6huw",
+    "6vPaitNQMGY",
+    "oowzvdpH_2o",
+    "V1BhsvI4Trg",
+    "6LmGcNcCXHk",
+    "HNlj1W8dzMM"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2666,6 +2671,36 @@
       "processed_at": "2026-03-12T03:03:13.115754",
       "title": "AI NEWS: OpenAI and xAI spark the AGI race, AI detects consciousness and Google's \"AI Money\"",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "6vPaitNQMGY": {
+      "processed_at": "2026-03-12T08:00:45.407134",
+      "title": "Watch OpenClaw manage a swarm of Claude Code agents…",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "oowzvdpH_2o": {
+      "processed_at": "2026-03-12T08:00:52.307521",
+      "title": "ChatGPT just became 100X more agentic…",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "V1BhsvI4Trg": {
+      "processed_at": "2026-03-12T08:01:03.227822",
+      "title": "both Google and OpenAI are shipping furiously",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "6LmGcNcCXHk": {
+      "processed_at": "2026-03-12T08:01:10.062068",
+      "title": "The CRAZIEST Programming Hot Takes 🧑‍💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "HNlj1W8dzMM": {
+      "processed_at": "2026-03-12T08:01:18.958804",
+      "title": "AI Avatar Models Are Getting INSANE Powerful - Testing Workflows",
+      "channel": "All About AI",
       "status": "success"
     }
   }
