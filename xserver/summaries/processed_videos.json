@@ -377,7 +377,12 @@
     "zI3x4Bb7dTs",
     "lhAk9BG9Njo",
     "z04pycIFLlI",
-    "pht47t-oaBM"
+    "pht47t-oaBM",
+    "kKucCudlHZs",
+    "EbqiogbTAJs",
+    "APLWy3LTaaw",
+    "8qLBD3U5w-c",
+    "R2UZpvp6huw"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2630,6 +2635,36 @@
     "pht47t-oaBM": {
       "processed_at": "2026-03-11T10:04:03.468618",
       "title": "Claude WON'T stop",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "kKucCudlHZs": {
+      "processed_at": "2026-03-12T03:02:36.039555",
+      "title": "Karpathy's Autoresearch On My AI Polymarket Trading Bot",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "EbqiogbTAJs": {
+      "processed_at": "2026-03-12T03:02:45.998696",
+      "title": "the «bitter lesson» machine (AI Video Automation)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "APLWy3LTaaw": {
+      "processed_at": "2026-03-12T03:02:53.896785",
+      "title": "TICKER SYMBOL U | AI Is The Greatest Wealth Transfer In History, NVIDIA vs AMD Stock and AI Future",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "8qLBD3U5w-c": {
+      "processed_at": "2026-03-12T03:03:04.454934",
+      "title": "How to make your first $1,000 online with AI (No-BS Guide)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "R2UZpvp6huw": {
+      "processed_at": "2026-03-12T03:03:13.115754",
+      "title": "AI NEWS: OpenAI and xAI spark the AGI race, AI detects consciousness and Google's \"AI Money\"",
       "channel": "Wes Roth",
       "status": "success"
     }
