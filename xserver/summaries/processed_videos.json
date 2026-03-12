@@ -387,7 +387,12 @@
     "oowzvdpH_2o",
     "V1BhsvI4Trg",
     "6LmGcNcCXHk",
-    "HNlj1W8dzMM"
+    "HNlj1W8dzMM",
+    "ZKOB1Jbn6Bo",
+    "KFMU2XToMIg",
+    "C6IHcZbCMAM",
+    "0ivjwcZwMw4",
+    "WFpEvs2sjgs"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2701,6 +2706,36 @@
       "processed_at": "2026-03-12T08:01:18.958804",
       "title": "AI Avatar Models Are Getting INSANE Powerful - Testing Workflows",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "ZKOB1Jbn6Bo": {
+      "processed_at": "2026-03-13T08:00:51.188442",
+      "title": "The biggest danger in the next 12 months",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "KFMU2XToMIg": {
+      "processed_at": "2026-03-13T08:01:00.054101",
+      "title": "How developers RECREATED the PS3 🕹️",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "C6IHcZbCMAM": {
+      "processed_at": "2026-03-13T08:01:11.899848",
+      "title": "Joscha Bach \"Bootstrapping a GODLIKE Mind\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "0ivjwcZwMw4": {
+      "processed_at": "2026-03-13T08:01:20.809116",
+      "title": "EDWARD SAATCHI -  The Showrunner Simulation has started... CEO of Fable \"AI is Your Competitor\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "WFpEvs2sjgs": {
+      "processed_at": "2026-03-13T08:01:31.011209",
+      "title": "The Incredible Engineering That Saved Slack During COVID",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
