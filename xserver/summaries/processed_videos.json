@@ -392,7 +392,12 @@
     "KFMU2XToMIg",
     "C6IHcZbCMAM",
     "0ivjwcZwMw4",
-    "WFpEvs2sjgs"
+    "WFpEvs2sjgs",
+    "tJ-INHRf8SY",
+    "8PVPMc6XCko",
+    "rk826c1n04g",
+    "Mz7W0qNlmOw",
+    "3q6gNycPjTc"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2736,6 +2741,36 @@
       "processed_at": "2026-03-13T08:01:31.011209",
       "title": "The Incredible Engineering That Saved Slack During COVID",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "tJ-INHRf8SY": {
+      "processed_at": "2026-03-16T08:00:55.745222",
+      "title": "I tested Perplexity Computer… it’s different",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "8PVPMc6XCko": {
+      "processed_at": "2026-03-16T08:01:03.614839",
+      "title": "I am giving away a Nvidia DXG Spark this week",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "rk826c1n04g": {
+      "processed_at": "2026-03-16T08:01:11.072219",
+      "title": "The Dubai construction workers are real grinders",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "Mz7W0qNlmOw": {
+      "processed_at": "2026-03-16T08:01:22.335191",
+      "title": "this is the ONLY AI skill you need to have (seriously)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "3q6gNycPjTc": {
+      "processed_at": "2026-03-16T08:01:33.628969",
+      "title": "Having kids doesn’t cost money, here’s why",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
