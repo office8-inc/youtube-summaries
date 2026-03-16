@@ -1,4 +1,4 @@
-# 📺 The Database ICEBERG 💻
+# 📺 データベース氷山：知られざる深淵の世界 💻
 
 ## 📋 動画情報
 
@@ -12,11 +12,15 @@
 
 ## 💡 概要
 
-この記事は、YouTube動画の日本語字幕（自動翻訳含む）から自動生成された要約です。
+「データベースの氷山」をテーマに、表面的に知られたデータベースから、深海の底にある奇妙なものまでを一気に紹介する動画です。MySQL・MongoDB・Postgresといった定番から、CassandraやRedis、さらにはCockroachDBやSnowflakeなどの中級品、そしてGun.jsやLiteFS、最終的にはMinecraftワールドをストレージとして使う極端な例まで幅広く解説しています。データベース選びに興味があるエンジニアや学習中のプログラマー向けで、自分の知識レベルを測るユニークな切り口が魅力です。各データベースの特性を簡潔にまとめており、技術の幅を広げたい人にとって良い出発点となります。
 
 ## ⭐ 重要なポイント
 
-> 📌 この動画の主要なトピックとポイントがここに表示されます
+- 「表層」にはMySQL・Postgres・MongoDB・SQLiteなどメジャーなデータベースが並ぶ
+- 「中層」にはCassandra・ElasticSearch・Redis・CockroachDB・ClickHouse・Snowflakeなど特定用途向けDBが存在
+- 「深層」にはFoundationDB・QuestDB・SurrealDBなど、特定のユースケースを持つ専門的なDBが登場
+- 「呪われた層」にはJSONファイル・GitリポジトリやMicrosoft Access・Excelスプレッドシートが含まれる
+- 「最深部」にはMinecraftのワールドや動画ピクセルにデータを埋め込む極端な事例が存在する
 
 ## 📖 詳細内容
 
