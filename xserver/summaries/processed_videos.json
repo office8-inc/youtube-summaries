@@ -397,7 +397,12 @@
     "8PVPMc6XCko",
     "rk826c1n04g",
     "Mz7W0qNlmOw",
-    "3q6gNycPjTc"
+    "3q6gNycPjTc",
+    "pEQvElSxKOk",
+    "5-5tMkzVTz0",
+    "y1XtwWLfjZs",
+    "wX_EVS3UOwU",
+    "7u7t_sTrpFo"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2770,6 +2775,36 @@
     "3q6gNycPjTc": {
       "processed_at": "2026-03-16T08:01:33.628969",
       "title": "Having kids doesn’t cost money, here’s why",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "pEQvElSxKOk": {
+      "processed_at": "2026-03-17T08:01:01.669603",
+      "title": "Can Claude Code Learn To Draw In MS PAINT?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "5-5tMkzVTz0": {
+      "processed_at": "2026-03-17T08:01:10.411544",
+      "title": "Communism 2.0 is here",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "y1XtwWLfjZs": {
+      "processed_at": "2026-03-17T08:01:21.487512",
+      "title": "The Database ICEBERG 💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "wX_EVS3UOwU": {
+      "processed_at": "2026-03-17T08:01:30.952903",
+      "title": "this EX-OPENAI RESEARCHER just released it...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "7u7t_sTrpFo": {
+      "processed_at": "2026-03-17T08:01:37.725857",
+      "title": "One shot any feminist, here’s how",
       "channel": "David Ondrej",
       "status": "success"
     }
