@@ -402,7 +402,12 @@
     "5-5tMkzVTz0",
     "y1XtwWLfjZs",
     "wX_EVS3UOwU",
-    "7u7t_sTrpFo"
+    "7u7t_sTrpFo",
+    "AyvZ83PwP5I",
+    "quLuf3PFT2M",
+    "2oe85-zSmoA",
+    "9iyYhxbmr6g",
+    "z1oUk6KjUu0"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2806,6 +2811,36 @@
       "processed_at": "2026-03-17T08:01:37.725857",
       "title": "One shot any feminist, here’s how",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "AyvZ83PwP5I": {
+      "processed_at": "2026-03-18T08:00:53.413416",
+      "title": "How YouTube Stores 500 Hours of Video per MINUTE",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "quLuf3PFT2M": {
+      "processed_at": "2026-03-18T08:01:02.048950",
+      "title": "NEMOCLAW... NVIDIA is going ALL IN on OpenClaw",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "2oe85-zSmoA": {
+      "processed_at": "2026-03-18T08:01:10.983368",
+      "title": "If ww3 begins tomorrow, this is my plan",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "9iyYhxbmr6g": {
+      "processed_at": "2026-03-18T08:01:17.860183",
+      "title": "Sam Altman and Elon Musk go ALL IN",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "z1oUk6KjUu0": {
+      "processed_at": "2026-03-18T08:01:29.340423",
+      "title": "I Ranked Every AI Side Hustle (Here’s What’s ACTUALLY Good)",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
