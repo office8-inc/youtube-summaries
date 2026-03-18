@@ -407,7 +407,12 @@
     "quLuf3PFT2M",
     "2oe85-zSmoA",
     "9iyYhxbmr6g",
-    "z1oUk6KjUu0"
+    "z1oUk6KjUu0",
+    "SOrrKFWRd1I",
+    "OCs0WJ5VoOc",
+    "rzJC-ngZ6CY",
+    "1kqZ2SF97DM",
+    "renH-9Cm-Hk"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2841,6 +2846,36 @@
       "processed_at": "2026-03-18T08:01:29.340423",
       "title": "I Ranked Every AI Side Hustle (Here’s What’s ACTUALLY Good)",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "SOrrKFWRd1I": {
+      "processed_at": "2026-03-19T08:00:57.692013",
+      "title": "Web scraping can change your life, here's how",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "OCs0WJ5VoOc": {
+      "processed_at": "2026-03-19T08:01:08.252530",
+      "title": "I Set Up a Claude Code Operating System for 6 Founders in 8 Hours",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "rzJC-ngZ6CY": {
+      "processed_at": "2026-03-19T08:01:19.245274",
+      "title": "Grok 5 Could be xAI's Biggest Breakthrough Yet...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "1kqZ2SF97DM": {
+      "processed_at": "2026-03-19T08:01:28.562067",
+      "title": "POV: building an AI empire in NYC",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "renH-9Cm-Hk": {
+      "processed_at": "2026-03-19T08:01:38.268323",
+      "title": "EVERY AI Startup video these days 🤦‍♂️",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }

@@ -1,0 +1,51 @@
+# 📺 EVERY AI Startup video these days 🤦‍♂️
+
+## 📋 動画情報
+
+- **タイトル**: EVERY AI Startup video these days 🤦‍♂️
+- **チャンネル**: Coding with Lewis
+- **動画URL**: [https://www.youtube.com/watch?v=renH-9Cm-Hk](https://www.youtube.com/watch?v=renH-9Cm-Hk)
+- **動画ID**: renH-9Cm-Hk
+- **公開日**: 2025年09月24日 01:24
+- **再生回数**: 0 回
+- **高評価数**: 0
+
+## 💡 概要
+
+この記事は、YouTube動画の日本語字幕（自動翻訳含む）から自動生成された要約です。
+
+## ⭐ 重要なポイント
+
+> 📌 この動画の主要なトピックとポイントがここに表示されます
+
+## 📖 詳細内容
+
+### 🎬 導入
+
+Hm. Bus AI 90 million series B. All right, let's check it out. I guess >> we started with ones and zeros, then infrastructure, then magic. But what happens when life gives you lemons?
+
+### 📋 背景・概要
+
+Bus AI. We raised 90 million in our series B to develop an idea. What What does it even do? AI AI 450 million series A to Sydney. I never thought my life would change when we locked eyes in Italy.
+
+### ⭐ 主要ポイント
+
+If I could go back to the good old days and say I love you, I would. AI AI announcing our 450 million series age to develop a better >> um What do you do? How do you make money? It was the case of a century. An entire family missing overnight.
+
+### 📝 詳細説明
+
+The disappearance of the Johnson family remains one of the most bizarre moments in American history. Rapper AI. We raised $9 million to find out. Rapper AI, the AI first AI agent tech platform with agents in every single spot of the application. Thank you, Anthropic, for buying us.
+
+### 💡 実例・デモ
+
+That's just a bunch of words. Do these apps even exist?
+
+---
+
+<div align="center">
+
+**📝 この記事は自動生成されたものです**
+
+生成日: 2026年03月19日
+
+</div>
