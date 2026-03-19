@@ -412,7 +412,12 @@
     "OCs0WJ5VoOc",
     "rzJC-ngZ6CY",
     "1kqZ2SF97DM",
-    "renH-9Cm-Hk"
+    "renH-9Cm-Hk",
+    "LvU1CACAPq8",
+    "JVM40liIElk",
+    "7_Q8ECC9PYA",
+    "u_cklMibJME",
+    "5jGO2Rk605U"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2877,6 +2882,38 @@
       "title": "EVERY AI Startup video these days 🤦‍♂️",
       "channel": "Coding with Lewis",
       "status": "success"
+    },
+    "LvU1CACAPq8": {
+      "processed_at": "2026-03-20T08:00:57.075356",
+      "title": "M2.7 broke the industry | NemoClaw | Grok 4.20 | Jensen calls out Anthropic | Wes & Dylan Pod",
+      "channel": "Wes Roth",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "JVM40liIElk": {
+      "processed_at": "2026-03-20T08:01:07.663745",
+      "title": "Git Worktrees Clearly Explained (and how to use them)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "7_Q8ECC9PYA": {
+      "processed_at": "2026-03-20T08:01:18.521904",
+      "title": "M2.7 just BROKE the Entire Industry...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "u_cklMibJME": {
+      "processed_at": "2026-03-20T08:01:29.721767",
+      "title": "Verbalising your thoughts is the key",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "5jGO2Rk605U": {
+      "processed_at": "2026-03-20T08:01:36.564234",
+      "title": "Liam Ottley Live Stream",
+      "channel": "Liam Ottley",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
     }
   }
 }
