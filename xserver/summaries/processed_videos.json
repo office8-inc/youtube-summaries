@@ -280,7 +280,6 @@
     "DDJhn232eYw",
     "zMwQ-rjPvZQ",
     "XYrLixbWtxo",
-    "TzZqFkBNnZA",
     "ur18In04XXA",
     "Pq3205RoOsI",
     "CP2CqpXXTdA",
@@ -413,11 +412,11 @@
     "rzJC-ngZ6CY",
     "1kqZ2SF97DM",
     "renH-9Cm-Hk",
-    "LvU1CACAPq8",
     "JVM40liIElk",
     "7_Q8ECC9PYA",
     "u_cklMibJME",
-    "5jGO2Rk605U"
+    "cueVwWVoFlU",
+    "dC25kknJ_GI"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2084,13 +2083,6 @@
       "channel": "All About AI",
       "status": "success"
     },
-    "TzZqFkBNnZA": {
-      "processed_at": "2026-02-12T08:01:14.693596",
-      "title": "Google Launches (nano Banana) Gemini 2.5 Flash Image Model Livestream",
-      "channel": "Wes Roth",
-      "status": "failed",
-      "error": "字幕を取得できませんでした"
-    },
     "ur18In04XXA": {
       "processed_at": "2026-02-12T08:01:23.309712",
       "title": "Sora 2 *hits* different",
@@ -2883,13 +2875,6 @@
       "channel": "Coding with Lewis",
       "status": "success"
     },
-    "LvU1CACAPq8": {
-      "processed_at": "2026-03-20T08:00:57.075356",
-      "title": "M2.7 broke the industry | NemoClaw | Grok 4.20 | Jensen calls out Anthropic | Wes & Dylan Pod",
-      "channel": "Wes Roth",
-      "status": "failed",
-      "error": "字幕を取得できませんでした"
-    },
     "JVM40liIElk": {
       "processed_at": "2026-03-20T08:01:07.663745",
       "title": "Git Worktrees Clearly Explained (and how to use them)",
@@ -2908,12 +2893,17 @@
       "channel": "David Ondrej",
       "status": "success"
     },
-    "5jGO2Rk605U": {
-      "processed_at": "2026-03-20T08:01:36.564234",
-      "title": "Liam Ottley Live Stream",
-      "channel": "Liam Ottley",
-      "status": "failed",
-      "error": "字幕を取得できませんでした"
+    "cueVwWVoFlU": {
+      "processed_at": "2026-03-20T10:25:37.471206",
+      "title": "Parallel AI Agent Browser Automation With Claude Code Is WILD",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "dC25kknJ_GI": {
+      "processed_at": "2026-03-20T10:25:46.423108",
+      "title": "Do not look at your past",
+      "channel": "David Ondrej",
+      "status": "success"
     }
   }
 }
