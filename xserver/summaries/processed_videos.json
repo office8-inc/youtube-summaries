@@ -421,7 +421,12 @@
     "prTuCdaT8ic",
     "05bzl6WbJcI",
     "gVbD5cQ1GC8",
-    "TzZqFkBNnZA"
+    "TzZqFkBNnZA",
+    "oYE-CbgZJZ4",
+    "JLIFx9r5EDg",
+    "dtcgzGAeUZA",
+    "MVYrhWxes8s",
+    "LvU1CACAPq8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2939,6 +2944,37 @@
       "title": "M2.7 broke the industry | NemoClaw | Grok 4.20 | Jensen calls out Anthropic | Wes & Dylan Pod",
       "channel": "Wes Roth",
       "status": "success"
+    },
+    "oYE-CbgZJZ4": {
+      "processed_at": "2026-03-24T08:00:53.293987",
+      "title": "Autoresearch Claude Code Hacker - Can It Breach My Vibecoded Site?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "JLIFx9r5EDg": {
+      "processed_at": "2026-03-24T08:01:04.334518",
+      "title": "AgentZero Explained in 22 Minutes (for beginners)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "dtcgzGAeUZA": {
+      "processed_at": "2026-03-24T08:01:11.714167",
+      "title": "Cursor is CAUGHT red handed...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "MVYrhWxes8s": {
+      "processed_at": "2026-03-24T08:01:18.220880",
+      "title": "I Sleep 12 hours a day",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "LvU1CACAPq8": {
+      "processed_at": "2026-03-24T08:01:26.534969",
+      "title": "M2.7 broke the industry | NemoClaw | Grok 4.20 | Jensen calls out Anthropic | Wes & Dylan Pod",
+      "channel": "Wes Roth",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
     }
   }
 }
