@@ -426,7 +426,12 @@
     "JLIFx9r5EDg",
     "dtcgzGAeUZA",
     "MVYrhWxes8s",
-    "LvU1CACAPq8"
+    "LvU1CACAPq8",
+    "DfiCs2oW0DQ",
+    "9csSpwryEVU",
+    "5jGO2Rk605U",
+    "K10txopUnaU",
+    "jhVg-Zbz0V8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -2975,6 +2980,37 @@
       "channel": "Wes Roth",
       "status": "failed",
       "error": "字幕を取得できませんでした"
+    },
+    "DfiCs2oW0DQ": {
+      "processed_at": "2026-03-25T08:00:50.685001",
+      "title": "Sara Imari Walker  \"AI is Life\" | Simulations, the Universe and the Origins of Life",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "9csSpwryEVU": {
+      "processed_at": "2026-03-25T08:00:58.333721",
+      "title": "Don’t hate your work",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "5jGO2Rk605U": {
+      "processed_at": "2026-03-25T08:01:08.245869",
+      "title": "Liam Ottley Live Stream",
+      "channel": "Liam Ottley",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "K10txopUnaU": {
+      "processed_at": "2026-03-25T08:01:18.980466",
+      "title": "OpenAI and NVIDIA just broke the AI industry",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "jhVg-Zbz0V8": {
+      "processed_at": "2026-03-25T08:01:26.754382",
+      "title": "Don’t Sell AI Tools, Sell These 3 AI Agents ($100K Opportunity)",
+      "channel": "Liam Ottley",
+      "status": "success"
     }
   }
 }
