@@ -431,7 +431,12 @@
     "9csSpwryEVU",
     "5jGO2Rk605U",
     "K10txopUnaU",
-    "jhVg-Zbz0V8"
+    "jhVg-Zbz0V8",
+    "osSTRP4_o18",
+    "suIfWt89z0E",
+    "ZubhjvHrxNE",
+    "0e1ZzerTq70",
+    "fJluisRQtJ0"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3010,6 +3015,36 @@
       "processed_at": "2026-03-25T08:01:26.754382",
       "title": "Don’t Sell AI Tools, Sell These 3 AI Agents ($100K Opportunity)",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "osSTRP4_o18": {
+      "processed_at": "2026-03-26T08:00:53.672662",
+      "title": "OpenAI just killed SORA",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "suIfWt89z0E": {
+      "processed_at": "2026-03-26T08:01:05.008043",
+      "title": "How Steam handles an INSANE amount of downloads 🕹️",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "ZubhjvHrxNE": {
+      "processed_at": "2026-03-26T08:01:13.982531",
+      "title": "nemoclaw, $250K token budgets and opensource ai - Nvidia GTC 2026",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "0e1ZzerTq70": {
+      "processed_at": "2026-03-26T08:01:20.620350",
+      "title": "Claude just became OpenClaw",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "fJluisRQtJ0": {
+      "processed_at": "2026-03-26T08:01:31.691946",
+      "title": "My work is just talking to agents lol",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
