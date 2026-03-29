@@ -441,7 +441,12 @@
     "PVhVq9RDxwM",
     "ryYamBwdWYQ",
     "87dN1J_iZNA",
-    "3HHMuaGIC30"
+    "3HHMuaGIC30",
+    "EHlqRx0r4BI",
+    "dZF__37HWQA",
+    "uBWuKh1nZ2Y",
+    "tKc4X6s80Lg",
+    "jCy-e29AC4Y"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3080,6 +3085,36 @@
       "processed_at": "2026-03-27T08:01:39.028151",
       "title": "How to Go From $0 to $100K with AI (Ultimate Beginner’s Guide)",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "EHlqRx0r4BI": {
+      "processed_at": "2026-03-30T08:00:54.898198",
+      "title": "This 100% self-improving AI Agent is insane… just watch",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "dZF__37HWQA": {
+      "processed_at": "2026-03-30T08:01:06.207987",
+      "title": "Claude MYTHOS is Anthropic's MOST DANGEROUS Model",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "uBWuKh1nZ2Y": {
+      "processed_at": "2026-03-30T08:01:15.747575",
+      "title": "The only AutoResearch tutorial you’ll ever need",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "tKc4X6s80Lg": {
+      "processed_at": "2026-03-30T08:01:26.755471",
+      "title": "OpenAI's new \"SPUD\" model will change the ENTIRE Economy",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "jCy-e29AC4Y": {
+      "processed_at": "2026-03-30T08:01:36.423033",
+      "title": "Don’t invest in this",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
