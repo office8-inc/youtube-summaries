@@ -446,7 +446,12 @@
     "dZF__37HWQA",
     "uBWuKh1nZ2Y",
     "tKc4X6s80Lg",
-    "jCy-e29AC4Y"
+    "jCy-e29AC4Y",
+    "2i6_F-pwTu8",
+    "u0UV0ZkcbqI",
+    "VN9Y-E-umwE",
+    "07HtHbbK5jQ",
+    "6B0p9rCN_p0"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3115,6 +3120,36 @@
       "processed_at": "2026-03-30T08:01:36.423033",
       "title": "Don’t invest in this",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "2i6_F-pwTu8": {
+      "processed_at": "2026-03-31T08:00:54.339240",
+      "title": "How Google Maps knows traffic BEFORE it happens",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "u0UV0ZkcbqI": {
+      "processed_at": "2026-03-31T08:01:03.137680",
+      "title": "Google's TurboQuant Crashed the AI Chip Market",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "VN9Y-E-umwE": {
+      "processed_at": "2026-03-31T08:01:13.326628",
+      "title": "Python 3.14 is INSANE 💻🐍",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "07HtHbbK5jQ": {
+      "processed_at": "2026-03-31T08:01:21.148833",
+      "title": "“Anthropic will destroy OpenAI by 2027, here’s why” - Dylan Patel",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "6B0p9rCN_p0": {
+      "processed_at": "2026-03-31T08:01:30.687429",
+      "title": "GPT-5 Codex: The Best Agentic Coding Model? | MCP Testing",
+      "channel": "All About AI",
       "status": "success"
     }
   }
