@@ -451,7 +451,12 @@
     "u0UV0ZkcbqI",
     "VN9Y-E-umwE",
     "07HtHbbK5jQ",
-    "6B0p9rCN_p0"
+    "6B0p9rCN_p0",
+    "yxg20_E-DEk",
+    "x0teqjdlLqQ",
+    "I_EehEQ3sYI",
+    "8s6nGMcyr7k",
+    "YEd1ezoDzys"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3150,6 +3155,37 @@
       "processed_at": "2026-03-31T08:01:30.687429",
       "title": "GPT-5 Codex: The Best Agentic Coding Model? | MCP Testing",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "yxg20_E-DEk": {
+      "processed_at": "2026-04-01T08:01:06.156485",
+      "title": "Claude LEAKED | Wes Roth, Dylan Curious & Julia McCoy",
+      "channel": "Wes Roth",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "x0teqjdlLqQ": {
+      "processed_at": "2026-04-01T08:01:15.301406",
+      "title": "SUNO 5.5 INSANITY and other AI news...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "I_EehEQ3sYI": {
+      "processed_at": "2026-04-01T08:01:25.747520",
+      "title": "The most INSANE attack in JavaScript history?",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "8s6nGMcyr7k": {
+      "processed_at": "2026-04-01T08:01:35.330492",
+      "title": "Google launches AI money",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "YEd1ezoDzys": {
+      "processed_at": "2026-04-01T08:01:45.258540",
+      "title": "Developers are using AI in Coding Interviews 🤦‍♂️",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
