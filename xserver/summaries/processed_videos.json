@@ -456,7 +456,12 @@
     "x0teqjdlLqQ",
     "I_EehEQ3sYI",
     "8s6nGMcyr7k",
-    "YEd1ezoDzys"
+    "YEd1ezoDzys",
+    "rx4w6zhrhPY",
+    "9pOXGoaJ2w0",
+    "PNjIXYAFgCI",
+    "RLj9gKsGlzo",
+    "uvthClm8gmc"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3185,6 +3190,36 @@
     "YEd1ezoDzys": {
       "processed_at": "2026-04-01T08:01:45.258540",
       "title": "Developers are using AI in Coding Interviews 🤦‍♂️",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "rx4w6zhrhPY": {
+      "processed_at": "2026-04-02T08:02:11.693968",
+      "title": "How To Run a Zero-Human Company (Paperclip)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "9pOXGoaJ2w0": {
+      "processed_at": "2026-04-02T08:02:21.834661",
+      "title": "5 Things Developers Can Automate with AI #ad",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "PNjIXYAFgCI": {
+      "processed_at": "2026-04-02T08:02:30.306794",
+      "title": "Claude Code source code LEAKED",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "RLj9gKsGlzo": {
+      "processed_at": "2026-04-02T08:02:37.549054",
+      "title": "GPT 5 Codex is a BEAST Autonomous Coding Agent",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "uvthClm8gmc": {
+      "processed_at": "2026-04-02T08:02:45.149245",
+      "title": "PostgreSQL: A Short History 👨‍💻",
       "channel": "Coding with Lewis",
       "status": "success"
     }
