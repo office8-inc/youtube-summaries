@@ -461,7 +461,12 @@
     "9pOXGoaJ2w0",
     "PNjIXYAFgCI",
     "RLj9gKsGlzo",
-    "uvthClm8gmc"
+    "uvthClm8gmc",
+    "amvEyw_Qrrw",
+    "XIu7XmiTfag",
+    "R4I_YaFYv3M",
+    "yvYj11GdUTc",
+    "7ZEHdaABIJU"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3221,6 +3226,36 @@
       "processed_at": "2026-04-02T08:02:45.149245",
       "title": "PostgreSQL: A Short History 👨‍💻",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "amvEyw_Qrrw": {
+      "processed_at": "2026-04-03T08:02:02.004271",
+      "title": "If I Wanted To Become a Millionaire in 2026, I'd Do This With AI",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "XIu7XmiTfag": {
+      "processed_at": "2026-04-03T08:02:12.459469",
+      "title": "Google is about to bust the AI bubble...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "R4I_YaFYv3M": {
+      "processed_at": "2026-04-03T08:02:22.560204",
+      "title": "“I want ChatGPT with infinite local memory” - Here’s how",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "yvYj11GdUTc": {
+      "processed_at": "2026-04-03T08:02:33.350600",
+      "title": "Replit Agent 3 is INSANE… Here’s 4 Ways to Make Money with It",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "7ZEHdaABIJU": {
+      "processed_at": "2026-04-03T08:02:40.553957",
+      "title": "I just unlocked SHOGGOTH MODE",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
