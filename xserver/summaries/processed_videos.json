@@ -466,7 +466,12 @@
     "XIu7XmiTfag",
     "R4I_YaFYv3M",
     "yvYj11GdUTc",
-    "7ZEHdaABIJU"
+    "7ZEHdaABIJU",
+    "HdohxOTO6lo",
+    "eR167BCL-4g",
+    "xZCbQM-hGa4",
+    "UdAwrQF-LPk",
+    "mnQmBFJEqPg"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3256,6 +3261,36 @@
       "processed_at": "2026-04-03T08:02:40.553957",
       "title": "I just unlocked SHOGGOTH MODE",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "HdohxOTO6lo": {
+      "processed_at": "2026-04-06T08:02:34.155385",
+      "title": "Google just destroyed all open-source models (Gemma 4)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "eR167BCL-4g": {
+      "processed_at": "2026-04-06T08:02:41.285121",
+      "title": "the end of  Claude Code",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "xZCbQM-hGa4": {
+      "processed_at": "2026-04-06T08:02:49.131668",
+      "title": "AI just took all our jobs",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "UdAwrQF-LPk": {
+      "processed_at": "2026-04-06T08:02:57.518531",
+      "title": "Curing my ADHD with a Receipt Printer and Python",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "mnQmBFJEqPg": {
+      "processed_at": "2026-04-06T08:03:09.024393",
+      "title": "6 simple AI Agents you must have - beginners guide",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
