@@ -426,10 +426,8 @@
     "JLIFx9r5EDg",
     "dtcgzGAeUZA",
     "MVYrhWxes8s",
-    "LvU1CACAPq8",
     "DfiCs2oW0DQ",
     "9csSpwryEVU",
-    "5jGO2Rk605U",
     "K10txopUnaU",
     "jhVg-Zbz0V8",
     "osSTRP4_o18",
@@ -452,7 +450,6 @@
     "VN9Y-E-umwE",
     "07HtHbbK5jQ",
     "6B0p9rCN_p0",
-    "yxg20_E-DEk",
     "x0teqjdlLqQ",
     "I_EehEQ3sYI",
     "8s6nGMcyr7k",
@@ -3017,13 +3014,6 @@
       "channel": "David Ondrej",
       "status": "success"
     },
-    "LvU1CACAPq8": {
-      "processed_at": "2026-03-24T08:01:26.534969",
-      "title": "M2.7 broke the industry | NemoClaw | Grok 4.20 | Jensen calls out Anthropic | Wes & Dylan Pod",
-      "channel": "Wes Roth",
-      "status": "failed",
-      "error": "字幕を取得できませんでした"
-    },
     "DfiCs2oW0DQ": {
       "processed_at": "2026-03-25T08:00:50.685001",
       "title": "Sara Imari Walker  \"AI is Life\" | Simulations, the Universe and the Origins of Life",
@@ -3035,13 +3025,6 @@
       "title": "Don’t hate your work",
       "channel": "David Ondrej",
       "status": "success"
-    },
-    "5jGO2Rk605U": {
-      "processed_at": "2026-03-25T08:01:08.245869",
-      "title": "Liam Ottley Live Stream",
-      "channel": "Liam Ottley",
-      "status": "failed",
-      "error": "字幕を取得できませんでした"
     },
     "K10txopUnaU": {
       "processed_at": "2026-03-25T08:01:18.980466",
@@ -3174,13 +3157,6 @@
       "title": "GPT-5 Codex: The Best Agentic Coding Model? | MCP Testing",
       "channel": "All About AI",
       "status": "success"
-    },
-    "yxg20_E-DEk": {
-      "processed_at": "2026-04-01T08:01:06.156485",
-      "title": "Claude LEAKED | Wes Roth, Dylan Curious & Julia McCoy",
-      "channel": "Wes Roth",
-      "status": "failed",
-      "error": "字幕を取得できませんでした"
     },
     "x0teqjdlLqQ": {
       "processed_at": "2026-04-01T08:01:15.301406",
