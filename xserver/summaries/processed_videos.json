@@ -471,7 +471,12 @@
     "mnQmBFJEqPg",
     "o-C4CLSthDo",
     "ZruZhMdFdl8",
-    "3hioz8dlTFs"
+    "3hioz8dlTFs",
+    "27ZsxXOSsDs",
+    "w2ID4YLbzMo",
+    "wDjz7YWdJis",
+    "U_8QyUvl-J4",
+    "bTyKrPB9JrA"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3288,6 +3293,36 @@
       "processed_at": "2026-04-08T22:09:56.543382",
       "title": "My Easy Claude Code Passive Income AI Automation Setup",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "27ZsxXOSsDs": {
+      "processed_at": "2026-04-09T08:34:15.370889",
+      "title": "The delusion of wanting to be an entrepreneur",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "w2ID4YLbzMo": {
+      "processed_at": "2026-04-09T08:34:22.804969",
+      "title": "GitHub has a malware problem",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "wDjz7YWdJis": {
+      "processed_at": "2026-04-09T08:34:32.030722",
+      "title": "Whatever you’re doing is less important than this",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "U_8QyUvl-J4": {
+      "processed_at": "2026-04-09T08:34:44.357635",
+      "title": "Claude just changed overnight",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "bTyKrPB9JrA": {
+      "processed_at": "2026-04-09T08:34:52.656543",
+      "title": "How to get in touch with Billionaires",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
