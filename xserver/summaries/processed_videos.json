@@ -472,7 +472,9 @@
     "xZCbQM-hGa4",
     "UdAwrQF-LPk",
     "mnQmBFJEqPg",
-    "o-C4CLSthDo"
+    "o-C4CLSthDo",
+    "ZruZhMdFdl8",
+    "3hioz8dlTFs"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3298,6 +3300,18 @@
       "processed_at": "2026-04-08T14:44:12.773674",
       "title": "Claude just BROKE the ENTIRE INDUSTRY...",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "ZruZhMdFdl8": {
+      "processed_at": "2026-04-08T22:09:45.842494",
+      "title": "The most important day in AI history. (Claude Mythos)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "3hioz8dlTFs": {
+      "processed_at": "2026-04-08T22:09:56.543382",
+      "title": "My Easy Claude Code Passive Income AI Automation Setup",
+      "channel": "All About AI",
       "status": "success"
     }
   }
