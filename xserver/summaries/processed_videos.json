@@ -476,7 +476,12 @@
     "w2ID4YLbzMo",
     "wDjz7YWdJis",
     "U_8QyUvl-J4",
-    "bTyKrPB9JrA"
+    "bTyKrPB9JrA",
+    "9PzsN00Qq3M",
+    "WSl8Ci8-cGg",
+    "9KYfx_GzY1o",
+    "QFTwUvE-lO0",
+    "yxg20_E-DEk"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3323,6 +3328,36 @@
       "processed_at": "2026-04-09T08:34:52.656543",
       "title": "How to get in touch with Billionaires",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "9PzsN00Qq3M": {
+      "processed_at": "2026-04-10T08:24:44.058632",
+      "title": "Are you doing this?",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "WSl8Ci8-cGg": {
+      "processed_at": "2026-04-10T08:24:53.128923",
+      "title": "we have months left...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "9KYfx_GzY1o": {
+      "processed_at": "2026-04-10T08:25:00.859761",
+      "title": "This 100% minimal AI Agent can do anything… just watch",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "QFTwUvE-lO0": {
+      "processed_at": "2026-04-10T08:25:10.572296",
+      "title": "The Claude Code Nightmare, LLM Emotions, AI Neuroscience and the Death of Software | Wes & Dylan",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "yxg20_E-DEk": {
+      "processed_at": "2026-04-10T08:25:17.266902",
+      "title": "Claude LEAKED | Wes Roth, Dylan Curious & Julia McCoy",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
