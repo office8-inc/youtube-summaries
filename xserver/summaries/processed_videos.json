@@ -486,7 +486,13 @@
     "9KPHe2NgR3M",
     "hoCWD1aI60Y",
     "ywxr5894CCA",
-    "r4JGNJfNQeA"
+    "r4JGNJfNQeA",
+    "rQY-yB-Gob4",
+    "fVjCwy0cNwU",
+    "yd9tr0xqg-Y",
+    "LvU1CACAPq8",
+    "5jGO2Rk605U",
+    "qgqiSDV8FsQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3393,6 +3399,43 @@
       "processed_at": "2026-04-13T08:01:30.707723",
       "title": "Mythos is about to CRASH the markets",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "rQY-yB-Gob4": {
+      "processed_at": "2026-04-14T08:00:50.284541",
+      "title": "Claude + Swift + Rork = insane mobile apps",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "fVjCwy0cNwU": {
+      "processed_at": "2026-04-14T08:10:21.722363",
+      "title": "The most OP skill",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "yd9tr0xqg-Y": {
+      "processed_at": "2026-04-14T08:10:30.076104",
+      "title": "how to sell $5,000 Claude Code AIOS to SMBs (full breakdown)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "LvU1CACAPq8": {
+      "processed_at": "2026-04-14T08:10:38.853805",
+      "title": "SUNO 5.5 INSANITY and other AI news...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "5jGO2Rk605U": {
+      "processed_at": "2026-04-14T08:10:45.329679",
+      "title": "Liam Ottley Live Stream",
+      "channel": "Liam Ottley",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "qgqiSDV8FsQ": {
+      "processed_at": "2026-04-14T08:10:53.924107",
+      "title": "INSANE Codex CLI MCP AI Video Automation Workflow",
+      "channel": "All About AI",
       "status": "success"
     }
   }
