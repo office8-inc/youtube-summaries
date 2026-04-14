@@ -492,7 +492,12 @@
     "yd9tr0xqg-Y",
     "LvU1CACAPq8",
     "5jGO2Rk605U",
-    "qgqiSDV8FsQ"
+    "qgqiSDV8FsQ",
+    "AmTvHoms6JU",
+    "uQzKLAZ3Qug",
+    "tkDIdH62yq8",
+    "rtEn-YdFu2k",
+    "pzLjQffN0I0"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3436,6 +3441,36 @@
       "processed_at": "2026-04-14T08:10:53.924107",
       "title": "INSANE Codex CLI MCP AI Video Automation Workflow",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "AmTvHoms6JU": {
+      "processed_at": "2026-04-15T08:00:53.486280",
+      "title": "Easiest openClaw setup",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "uQzKLAZ3Qug": {
+      "processed_at": "2026-04-15T08:01:01.308499",
+      "title": "NVIDIA's Quantum Day | here's a glimpse into the future...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "tkDIdH62yq8": {
+      "processed_at": "2026-04-15T08:01:09.607509",
+      "title": "Solving Browser Automation For AI Agents: Surfagent",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "rtEn-YdFu2k": {
+      "processed_at": "2026-04-15T08:01:22.460060",
+      "title": "Diffusion LLMs are here...",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "pzLjQffN0I0": {
+      "processed_at": "2026-04-15T08:01:32.102036",
+      "title": "we just reached PEAK AI hype",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
