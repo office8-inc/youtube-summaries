@@ -497,7 +497,12 @@
     "uQzKLAZ3Qug",
     "tkDIdH62yq8",
     "rtEn-YdFu2k",
-    "pzLjQffN0I0"
+    "pzLjQffN0I0",
+    "3jNp14bJpgs",
+    "GR5wdWOhj1Q",
+    "nIKdN0WvC9o",
+    "IyrSfHizvWc",
+    "uesNWFP40zw"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3470,6 +3475,36 @@
     "pzLjQffN0I0": {
       "processed_at": "2026-04-15T08:01:32.102036",
       "title": "we just reached PEAK AI hype",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "3jNp14bJpgs": {
+      "processed_at": "2026-04-16T08:00:51.616759",
+      "title": "HERMES AGENT SETUP: the OpenClaw killer is here",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "GR5wdWOhj1Q": {
+      "processed_at": "2026-04-16T08:00:59.192205",
+      "title": "McDonalds AI LEAKS 64,000,000 job applicants 🤦‍♂️",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "nIKdN0WvC9o": {
+      "processed_at": "2026-04-16T08:01:10.404197",
+      "title": "OpenAI is RATTLED by this...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "IyrSfHizvWc": {
+      "processed_at": "2026-04-16T08:01:19.647769",
+      "title": "The Boring $15k AI Offer That's Killing SaaS (And Making Millionaires)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "uesNWFP40zw": {
+      "processed_at": "2026-04-16T08:01:26.844506",
+      "title": "OpenAI Just SOLVED Hallucinations...",
       "channel": "Wes Roth",
       "status": "success"
     }
