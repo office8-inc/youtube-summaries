@@ -502,7 +502,12 @@
     "GR5wdWOhj1Q",
     "nIKdN0WvC9o",
     "IyrSfHizvWc",
-    "uesNWFP40zw"
+    "uesNWFP40zw",
+    "Tv3lIkbdAGc",
+    "ZVAGTidLVyc",
+    "YqiuGvR7P_o",
+    "C06FBVXMLCY",
+    "_In9fpP6seU"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3505,6 +3510,36 @@
     "uesNWFP40zw": {
       "processed_at": "2026-04-16T08:01:26.844506",
       "title": "OpenAI Just SOLVED Hallucinations...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Tv3lIkbdAGc": {
+      "processed_at": "2026-04-17T08:00:41.936593",
+      "title": "Claude Code + Opus 4.7 = Ultimate Coding Agent",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "ZVAGTidLVyc": {
+      "processed_at": "2026-04-17T08:00:52.266060",
+      "title": "Claude just forced them to reveal THE TRUTH...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "YqiuGvR7P_o": {
+      "processed_at": "2026-04-17T08:01:00.023309",
+      "title": "OpenClaw can be so much more powerful with the right model...",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "C06FBVXMLCY": {
+      "processed_at": "2026-04-17T08:01:11.215920",
+      "title": "OpenAI just destroyed AI coding… Codex 2.0",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "_In9fpP6seU": {
+      "processed_at": "2026-04-17T08:01:22.845128",
+      "title": "Grok 4.2 Will be Scary Good (Sonoma Sky)",
       "channel": "Wes Roth",
       "status": "success"
     }
