@@ -507,7 +507,12 @@
     "ZVAGTidLVyc",
     "YqiuGvR7P_o",
     "C06FBVXMLCY",
-    "_In9fpP6seU"
+    "_In9fpP6seU",
+    "fdBT0OAtzLo",
+    "xuX3-L1buaE",
+    "3LqntdbOWts",
+    "7Z-E16eRLgU",
+    "MtdlIVPhcIU"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3541,6 +3546,36 @@
       "processed_at": "2026-04-17T08:01:22.845128",
       "title": "Grok 4.2 Will be Scary Good (Sonoma Sky)",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "fdBT0OAtzLo": {
+      "processed_at": "2026-04-20T08:00:40.976183",
+      "title": "How I Made Money Automating iOS Apps With AI In 3 Days",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "xuX3-L1buaE": {
+      "processed_at": "2026-04-20T08:00:50.192710",
+      "title": "Mindset key",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "3LqntdbOWts": {
+      "processed_at": "2026-04-20T08:01:01.020867",
+      "title": "constantly keeping up with AI is keeping you poor",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "7Z-E16eRLgU": {
+      "processed_at": "2026-04-20T08:01:08.831766",
+      "title": "Most successful man of all time",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "MtdlIVPhcIU": {
+      "processed_at": "2026-04-20T08:01:17.209855",
+      "title": "Piano teaches you to just keep going",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
