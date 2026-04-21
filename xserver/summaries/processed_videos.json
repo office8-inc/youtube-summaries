@@ -517,7 +517,12 @@
     "x8PTWgi1H4M",
     "kQFW3bUrOu4",
     "P7nBTUKaRec",
-    "OqhtlBRE2oQ"
+    "OqhtlBRE2oQ",
+    "i6WQdQsE0kc",
+    "rTsV52orKOM",
+    "OKxDYtMjCUA",
+    "hrIY-clbdg8",
+    "ENPN-KutYJc"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3611,6 +3616,36 @@
       "processed_at": "2026-04-21T08:01:19.700888",
       "title": "AI NEWS: Deepseek's AI Agent, CEO Stokes AI 'Crisis' Narrative, OpenAI Economic Solutions",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "i6WQdQsE0kc": {
+      "processed_at": "2026-04-22T08:00:40.547134",
+      "title": "Introducing ChatGPT Images 2.0",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "rTsV52orKOM": {
+      "processed_at": "2026-04-22T08:00:49.777377",
+      "title": "The Biggest Job Opportunity in Tech in 2026: AI Cybersecurity",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "OKxDYtMjCUA": {
+      "processed_at": "2026-04-22T08:01:01.049300",
+      "title": "Stop building backends for your AI Agents",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "hrIY-clbdg8": {
+      "processed_at": "2026-04-22T08:01:08.548866",
+      "title": "OpenAI's GPT 5.5 is wild...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "ENPN-KutYJc": {
+      "processed_at": "2026-04-22T08:01:19.851933",
+      "title": "Why 95% of AI Agency Websites NEVER Generate Leads (+ FREE Template)",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
