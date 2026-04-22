@@ -522,7 +522,12 @@
     "rTsV52orKOM",
     "OKxDYtMjCUA",
     "hrIY-clbdg8",
-    "ENPN-KutYJc"
+    "ENPN-KutYJc",
+    "ITT9xWeicWM",
+    "SoD63XY35eg",
+    "vePNTU3T8WY",
+    "mTSy31-SSsk",
+    "qgWUZIEcyic"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3646,6 +3651,36 @@
       "processed_at": "2026-04-22T08:01:19.851933",
       "title": "Why 95% of AI Agency Websites NEVER Generate Leads (+ FREE Template)",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "ITT9xWeicWM": {
+      "processed_at": "2026-04-23T08:00:42.310441",
+      "title": "Mythos leaks, SpaceX buys Cursor and OpenAI drops GPT Image 2.0",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "SoD63XY35eg": {
+      "processed_at": "2026-04-23T08:00:49.624491",
+      "title": "Think about what your working on",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "vePNTU3T8WY": {
+      "processed_at": "2026-04-23T08:00:57.972518",
+      "title": "I built a team of AI Agents with Nano Banana (it’s I-N-S-A-N-E)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "mTSy31-SSsk": {
+      "processed_at": "2026-04-23T08:01:05.573087",
+      "title": "If we talked to Workers like AI 🤖",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "qgWUZIEcyic": {
+      "processed_at": "2026-04-23T08:01:14.359308",
+      "title": "Genspark AI: Agent for AI Slides",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
