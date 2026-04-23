@@ -527,7 +527,12 @@
     "SoD63XY35eg",
     "vePNTU3T8WY",
     "mTSy31-SSsk",
-    "qgWUZIEcyic"
+    "qgWUZIEcyic",
+    "T_xyhjfFCdY",
+    "g8NWmUdMh_E",
+    "NlGIl5-gpHM",
+    "dhbOscdU6IY",
+    "Ejt8QWxpWbI"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3681,6 +3686,36 @@
       "processed_at": "2026-04-23T08:01:14.359308",
       "title": "Genspark AI: Agent for AI Slides",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "T_xyhjfFCdY": {
+      "processed_at": "2026-04-24T08:00:41.545354",
+      "title": "OpenAI just shipped the Mythos killer (GPT 5.5)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "g8NWmUdMh_E": {
+      "processed_at": "2026-04-24T08:00:49.979712",
+      "title": "GPT 5.5 LET'S GOOOOOOOO!",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "NlGIl5-gpHM": {
+      "processed_at": "2026-04-24T08:00:58.769924",
+      "title": "How to Make $20,000/Month with Claude Code",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "dhbOscdU6IY": {
+      "processed_at": "2026-04-24T08:01:08.384320",
+      "title": "The Humble History of 7Zip",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "Ejt8QWxpWbI": {
+      "processed_at": "2026-04-24T08:01:15.326394",
+      "title": "Google maps is insane",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
