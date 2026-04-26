@@ -532,7 +532,12 @@
     "g8NWmUdMh_E",
     "NlGIl5-gpHM",
     "dhbOscdU6IY",
-    "Ejt8QWxpWbI"
+    "Ejt8QWxpWbI",
+    "ena1W3_lWpc",
+    "wRihcAci-S8",
+    "nX80hP3lheY",
+    "UVObNdNmzzw",
+    "sEQ1ecQq0HI"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3716,6 +3721,36 @@
       "processed_at": "2026-04-24T08:01:15.326394",
       "title": "Google maps is insane",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "ena1W3_lWpc": {
+      "processed_at": "2026-04-27T08:00:39.249591",
+      "title": "Why I Love Headless AI Agents: Minecraft & Swarms",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "wRihcAci-S8": {
+      "processed_at": "2026-04-27T08:00:45.917157",
+      "title": "Google needs to improve this",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "nX80hP3lheY": {
+      "processed_at": "2026-04-27T08:00:55.362845",
+      "title": "AI can write your code, but, who's testing it?",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "UVObNdNmzzw": {
+      "processed_at": "2026-04-27T08:01:06.509744",
+      "title": "DeepSeek V4 just shocked the AI industry…",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "sEQ1ecQq0HI": {
+      "processed_at": "2026-04-27T08:01:13.830053",
+      "title": "What a Billion Database Rows Look Like in Real Life",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
