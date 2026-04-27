@@ -537,7 +537,12 @@
     "wRihcAci-S8",
     "nX80hP3lheY",
     "UVObNdNmzzw",
-    "sEQ1ecQq0HI"
+    "sEQ1ecQq0HI",
+    "F3ZzNgf-R7Y",
+    "nIxiVAuXn4o",
+    "bFO0uAMPx1g",
+    "e0agPXsrI2E",
+    "Ka-Eu2LRoCI"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3751,6 +3756,36 @@
       "processed_at": "2026-04-27T08:01:13.830053",
       "title": "What a Billion Database Rows Look Like in Real Life",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "F3ZzNgf-R7Y": {
+      "processed_at": "2026-04-28T08:00:44.603174",
+      "title": "This AI Agent can actually self-evolve… just watch",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "nIxiVAuXn4o": {
+      "processed_at": "2026-04-28T08:00:52.562324",
+      "title": "Automate Anything With This Simple 3-Part AI Agent System",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "bFO0uAMPx1g": {
+      "processed_at": "2026-04-28T08:01:00.037443",
+      "title": "Hermes Agent is INSANE...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "e0agPXsrI2E": {
+      "processed_at": "2026-04-28T08:01:10.272342",
+      "title": "Ai agents are nuts",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "Ka-Eu2LRoCI": {
+      "processed_at": "2026-04-28T08:01:21.082139",
+      "title": "This AI Agent manages your entire contact network",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
