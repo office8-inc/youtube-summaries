@@ -542,7 +542,12 @@
     "nIxiVAuXn4o",
     "bFO0uAMPx1g",
     "e0agPXsrI2E",
-    "Ka-Eu2LRoCI"
+    "Ka-Eu2LRoCI",
+    "JMbN4PagRR4",
+    "Pn8MA-Gahmw",
+    "XdQq90Ug8eY",
+    "evVs-Jtor50",
+    "vitfq9ancVQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3786,6 +3791,36 @@
       "processed_at": "2026-04-28T08:01:21.082139",
       "title": "This AI Agent manages your entire contact network",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "JMbN4PagRR4": {
+      "processed_at": "2026-04-29T08:00:41.118392",
+      "title": "Nvidia Nemotron 3 Nano Omni - First Test and Impression",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "Pn8MA-Gahmw": {
+      "processed_at": "2026-04-29T08:00:49.683300",
+      "title": "The dead file theory",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "XdQq90Ug8eY": {
+      "processed_at": "2026-04-29T08:00:59.080653",
+      "title": "OpenAI just destroyed all AI image tools… GPT Images 2.0",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "evVs-Jtor50": {
+      "processed_at": "2026-04-29T08:01:08.935142",
+      "title": "OpenAI just WON...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "vitfq9ancVQ": {
+      "processed_at": "2026-04-29T08:01:17.844384",
+      "title": "Nano Banana API Part 2: Adding New AMAZING Features to The App!",
+      "channel": "All About AI",
       "status": "success"
     }
   }
