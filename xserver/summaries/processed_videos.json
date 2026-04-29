@@ -547,7 +547,12 @@
     "Pn8MA-Gahmw",
     "XdQq90Ug8eY",
     "evVs-Jtor50",
-    "vitfq9ancVQ"
+    "vitfq9ancVQ",
+    "WRJKaZU4V4M",
+    "h-S9qFL2_Vc",
+    "zXztsSRh904",
+    "2CdNLDttOSg",
+    "bZkz4mFXeuQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3821,6 +3826,36 @@
       "processed_at": "2026-04-29T08:01:17.844384",
       "title": "Nano Banana API Part 2: Adding New AMAZING Features to The App!",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "WRJKaZU4V4M": {
+      "processed_at": "2026-04-30T08:00:46.401659",
+      "title": "Where does “404 Not Found” even come from?",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "h-S9qFL2_Vc": {
+      "processed_at": "2026-04-30T08:00:57.748529",
+      "title": "Building with AI",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "zXztsSRh904": {
+      "processed_at": "2026-04-30T08:01:04.612762",
+      "title": "Google Prepares to Unleash \"Jules\" an Autonomous Coding Agent, OpenAI Faces \"Billionaire Conspiracy\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "2CdNLDttOSg": {
+      "processed_at": "2026-04-30T08:01:15.726460",
+      "title": "How Two 19-Year-Olds Made $320K in 6 Months Selling AI Audits (Full Breakdown)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "bZkz4mFXeuQ": {
+      "processed_at": "2026-04-30T08:01:26.028003",
+      "title": "AI Chatbots Are BREAKING People’s Minds",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
