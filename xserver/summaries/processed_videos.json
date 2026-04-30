@@ -552,7 +552,12 @@
     "h-S9qFL2_Vc",
     "zXztsSRh904",
     "2CdNLDttOSg",
-    "bZkz4mFXeuQ"
+    "bZkz4mFXeuQ",
+    "lSVgeMoXJTs",
+    "xfSeXZG3VmQ",
+    "c3xoOv4aAvE",
+    "vjV3tnGKT3g",
+    "QVBvc5GT-m0"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3856,6 +3861,36 @@
       "processed_at": "2026-04-30T08:01:26.028003",
       "title": "AI Chatbots Are BREAKING People’s Minds",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "lSVgeMoXJTs": {
+      "processed_at": "2026-05-01T08:00:44.690342",
+      "title": "The Code Inside Everything (That Gets Zero Credit)",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "xfSeXZG3VmQ": {
+      "processed_at": "2026-05-01T08:00:55.043663",
+      "title": "UPDATE: AI Is Now Closer Than Ever to Automating Content Creation",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "c3xoOv4aAvE": {
+      "processed_at": "2026-05-01T08:01:02.265763",
+      "title": "Please use AI Agents",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "vjV3tnGKT3g": {
+      "processed_at": "2026-05-01T08:01:12.647666",
+      "title": "XAI Technology STOLEN? Plus: ChatGPT Will Call the COPS on You",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "QVBvc5GT-m0": {
+      "processed_at": "2026-05-01T08:01:19.384532",
+      "title": "AI Hacking Challenge: 1 Token Solution and $100 Bounty Winner!",
+      "channel": "All About AI",
       "status": "success"
     }
   }
