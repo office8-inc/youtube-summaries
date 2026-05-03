@@ -557,7 +557,12 @@
     "xfSeXZG3VmQ",
     "c3xoOv4aAvE",
     "vjV3tnGKT3g",
-    "QVBvc5GT-m0"
+    "QVBvc5GT-m0",
+    "EnXH-Fs4l6U",
+    "sqtX2OmgOF0",
+    "LMJb-_uL6lQ",
+    "2iju0mDDAOU",
+    "1nDiiXfMUK4"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3891,6 +3896,36 @@
       "processed_at": "2026-05-01T08:01:19.384532",
       "title": "AI Hacking Challenge: 1 Token Solution and $100 Bounty Winner!",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "EnXH-Fs4l6U": {
+      "processed_at": "2026-05-04T08:00:40.998937",
+      "title": "DGX Spark Giveaway Draw",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "sqtX2OmgOF0": {
+      "processed_at": "2026-05-04T08:00:50.329442",
+      "title": "Pi Agent, the self-modifying agent behind OpenClaw",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "LMJb-_uL6lQ": {
+      "processed_at": "2026-05-04T08:00:59.116400",
+      "title": "AI just killed Crypto...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "2iju0mDDAOU": {
+      "processed_at": "2026-05-04T08:01:10.467887",
+      "title": "Hack to own the world",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "1nDiiXfMUK4": {
+      "processed_at": "2026-05-04T08:01:17.858579",
+      "title": "Everyone is switching to Hermes Agent… you should too.",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
