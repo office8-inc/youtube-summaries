@@ -562,7 +562,12 @@
     "sqtX2OmgOF0",
     "LMJb-_uL6lQ",
     "2iju0mDDAOU",
-    "1nDiiXfMUK4"
+    "1nDiiXfMUK4",
+    "E6jQGg6O9NM",
+    "9LP_FzzNBIw",
+    "yodaU22JJGU",
+    "quCJwkDAx0g",
+    "ez5Du7-JgS8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3925,6 +3930,36 @@
     "1nDiiXfMUK4": {
       "processed_at": "2026-05-04T08:01:17.858579",
       "title": "Everyone is switching to Hermes Agent… you should too.",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "E6jQGg6O9NM": {
+      "processed_at": "2026-05-05T08:00:41.647253",
+      "title": "Destroy your competition with these 3 things",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "9LP_FzzNBIw": {
+      "processed_at": "2026-05-05T08:00:53.075692",
+      "title": "Use Gemini now",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "yodaU22JJGU": {
+      "processed_at": "2026-05-05T08:01:01.434587",
+      "title": "The Crazy History of Docker 🐳",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "quCJwkDAx0g": {
+      "processed_at": "2026-05-05T08:01:10.026573",
+      "title": "US wants Claude all to itself... because it's \"TOO DANGEROUS\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "ez5Du7-JgS8": {
+      "processed_at": "2026-05-05T08:01:20.072145",
+      "title": "Avoid introspection",
       "channel": "David Ondrej",
       "status": "success"
     }
