@@ -567,7 +567,12 @@
     "9LP_FzzNBIw",
     "yodaU22JJGU",
     "quCJwkDAx0g",
-    "ez5Du7-JgS8"
+    "ez5Du7-JgS8",
+    "rzVhPTSNWnE",
+    "bzhyGjlXBM8",
+    "gMsOwljBpwU",
+    "XC_WKnSFcs0",
+    "q29RU1B0XUg"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3961,6 +3966,36 @@
       "processed_at": "2026-05-05T08:01:20.072145",
       "title": "Avoid introspection",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "rzVhPTSNWnE": {
+      "processed_at": "2026-05-06T09:38:49.274986",
+      "title": "Claude BROKE Wall Street Overnight...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "bzhyGjlXBM8": {
+      "processed_at": "2026-05-06T09:38:58.506064",
+      "title": "Philosophers different approach",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "gMsOwljBpwU": {
+      "processed_at": "2026-05-06T09:39:09.472727",
+      "title": "Why I love supabase",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "XC_WKnSFcs0": {
+      "processed_at": "2026-05-06T09:39:20.767773",
+      "title": "Ai is the best industry",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "q29RU1B0XUg": {
+      "processed_at": "2026-05-06T09:39:29.882395",
+      "title": "AI Researchers SHOCKING New Social Deception Benchmark | AIs Team Up to Deceive | Werewolf Benchmark",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
