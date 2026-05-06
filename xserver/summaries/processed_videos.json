@@ -572,7 +572,12 @@
     "bzhyGjlXBM8",
     "gMsOwljBpwU",
     "XC_WKnSFcs0",
-    "q29RU1B0XUg"
+    "q29RU1B0XUg",
+    "G47mnkGkYwQ",
+    "RK3dz6TWOkA",
+    "THcQjlasv7k",
+    "HMymN0O1hrM",
+    "T6iDmSIpitc"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -3996,6 +4001,37 @@
       "processed_at": "2026-05-06T09:39:29.882395",
       "title": "AI Researchers SHOCKING New Social Deception Benchmark | AIs Team Up to Deceive | Werewolf Benchmark",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "G47mnkGkYwQ": {
+      "processed_at": "2026-05-07T08:00:39.801269",
+      "title": "The 7 Levels of Hermes Agent Explained",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "RK3dz6TWOkA": {
+      "processed_at": "2026-05-07T08:00:50.348854",
+      "title": "UPDATE: App Store AI Automation After 10 days (profit?)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "THcQjlasv7k": {
+      "processed_at": "2026-05-07T08:00:57.776898",
+      "title": "Build Any Mobile App with AI (Step-By-Step)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "HMymN0O1hrM": {
+      "processed_at": "2026-05-07T08:01:04.757613",
+      "title": "10x Terminals with AI Coding Agents = 100x Dev? - Codex + Claude Code",
+      "channel": "All About AI",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "T6iDmSIpitc": {
+      "processed_at": "2026-05-07T08:01:14.095877",
+      "title": "How to Quit Your Job With a 1-Person AI Business (& Make MORE Money)",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
