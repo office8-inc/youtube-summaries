@@ -577,7 +577,12 @@
     "RK3dz6TWOkA",
     "THcQjlasv7k",
     "HMymN0O1hrM",
-    "T6iDmSIpitc"
+    "T6iDmSIpitc",
+    "bgqVq8K8dc4",
+    "Z-BkmP4z3FQ",
+    "vqBSNTZeLsg",
+    "J3DWZ60ShzM",
+    "BT6VYWzvTho"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4031,6 +4036,36 @@
     "T6iDmSIpitc": {
       "processed_at": "2026-05-07T08:01:14.095877",
       "title": "How to Quit Your Job With a 1-Person AI Business (& Make MORE Money)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "bgqVq8K8dc4": {
+      "processed_at": "2026-05-08T08:00:42.409170",
+      "title": "Google and their phenomenal growth",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "Z-BkmP4z3FQ": {
+      "processed_at": "2026-05-08T08:00:51.556509",
+      "title": "End times? Humans will survive!",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "vqBSNTZeLsg": {
+      "processed_at": "2026-05-08T08:01:01.289716",
+      "title": "Google's INSANE new AI Agent",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "J3DWZ60ShzM": {
+      "processed_at": "2026-05-08T08:01:11.928482",
+      "title": "How To Use Midjourney | The ULTIMATE Beginners Guide to Midjourney 2025",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "BT6VYWzvTho": {
+      "processed_at": "2026-05-08T08:01:23.273196",
+      "title": "Closing $200,000 of AI Agency Deals in 7 Days",
       "channel": "Liam Ottley",
       "status": "success"
     }
