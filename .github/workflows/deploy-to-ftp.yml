@@ -1,8 +1,8 @@
 name: Deploy to FTP on Merge
 
 on:
-  pull_request:
-    types: [closed]
+  push:
+    branches: [main]
     paths:
       - 'xserver/summaries/**/*.md'
       - 'xserver/index.html'
@@ -21,8 +21,6 @@ permissions:
 
 jobs:
   deploy-to-ftp:
-    # Pull RequestがマージされたときまたはWorkflow Dispatchで実行
-    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     
     steps:
@@ -138,6 +136,6 @@ jobs:
         run: |
           echo "## 📊 FTPアップロード完了" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Pull Request #${{ github.event.pull_request.number }} のマージに伴い、変更ファイルをXSERVERにアップロードしました。" >> $GITHUB_STEP_SUMMARY
+          echo "main ブランチへのプッシュに伴い、変更ファイルをXSERVERにアップロードしました。" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "🌐 公開URL: https://office8-inc.com/youtube-summaries/" >> $GITHUB_STEP_SUMMARY
