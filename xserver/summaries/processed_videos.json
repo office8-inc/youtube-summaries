@@ -582,7 +582,12 @@
     "Z-BkmP4z3FQ",
     "vqBSNTZeLsg",
     "J3DWZ60ShzM",
-    "BT6VYWzvTho"
+    "BT6VYWzvTho",
+    "sfkaEqHDhq0",
+    "SqJYjbpDZNY",
+    "oyWSdPYeQwQ",
+    "Nn2eXwch-K0",
+    "fabe7nYQa1Q"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4067,6 +4072,36 @@
       "processed_at": "2026-05-08T08:01:23.273196",
       "title": "Closing $200,000 of AI Agency Deals in 7 Days",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "sfkaEqHDhq0": {
+      "processed_at": "2026-05-11T08:00:41.018898",
+      "title": "Geopolitical LLMs current state",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "SqJYjbpDZNY": {
+      "processed_at": "2026-05-11T08:00:49.391097",
+      "title": "Manifest “HARD” present moment into bright future",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "oyWSdPYeQwQ": {
+      "processed_at": "2026-05-11T08:00:57.409372",
+      "title": "Codex can now make videos… it’s insane",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "Nn2eXwch-K0": {
+      "processed_at": "2026-05-11T08:01:05.065036",
+      "title": "we JUST figured out how AI thinks",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "fabe7nYQa1Q": {
+      "processed_at": "2026-05-11T08:01:16.154040",
+      "title": "World Banks JUST got scared...",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
