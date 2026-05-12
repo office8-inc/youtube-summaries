@@ -592,7 +592,12 @@
     "ydUBYFlwhyk",
     "NGGigy7XNu0",
     "MrFGzDJ1pdY",
-    "Hw7PE5a3DGo"
+    "Hw7PE5a3DGo",
+    "0ZJXpMZobjY",
+    "A04tsFpNDrk",
+    "_d5AahGwx-I",
+    "EKomXwswYJ8",
+    "hZL7tw8jp2M"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4137,6 +4142,36 @@
       "processed_at": "2026-05-12T08:01:21.124263",
       "title": "\"1,000 days left\" Anthropic founder",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "0ZJXpMZobjY": {
+      "processed_at": "2026-05-13T08:00:45.463294",
+      "title": "Building a Polymarket AI Trading Bot From Scratch",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "A04tsFpNDrk": {
+      "processed_at": "2026-05-13T08:00:56.404974",
+      "title": "Choose 1 thing and stick to it! Watch you life completely change",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "_d5AahGwx-I": {
+      "processed_at": "2026-05-13T08:01:07.110585",
+      "title": "LIVESTREAM: OpenAI Dev Stream",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "EKomXwswYJ8": {
+      "processed_at": "2026-05-13T08:01:15.517887",
+      "title": "Nick Bostrom - The Intelligence Explosion, What Happens to Humans and New Economic Systems",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "hZL7tw8jp2M": {
+      "processed_at": "2026-05-13T08:01:24.685842",
+      "title": "Master Vibe Coding in 22 Minutes – Lee Robinson",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
