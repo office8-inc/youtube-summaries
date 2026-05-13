@@ -597,7 +597,12 @@
     "A04tsFpNDrk",
     "_d5AahGwx-I",
     "EKomXwswYJ8",
-    "hZL7tw8jp2M"
+    "hZL7tw8jp2M",
+    "k8o_UgtrGyA",
+    "R_mtO9uUCa8",
+    "aYFmCNSG_48",
+    "O1U7R2tm7OA",
+    "A_HVAflCg8E"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4172,6 +4177,36 @@
       "processed_at": "2026-05-13T08:01:24.685842",
       "title": "Master Vibe Coding in 22 Minutes – Lee Robinson",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "k8o_UgtrGyA": {
+      "processed_at": "2026-05-14T08:00:42.856708",
+      "title": "“There Is No Task Agents Cannot Do” - Magnus Müller",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "R_mtO9uUCa8": {
+      "processed_at": "2026-05-14T08:00:53.030798",
+      "title": "How a GitLab engineer DESTROYED their main database…",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "aYFmCNSG_48": {
+      "processed_at": "2026-05-14T08:00:59.595625",
+      "title": "Anti-European agenda is a scam!",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "O1U7R2tm7OA": {
+      "processed_at": "2026-05-14T08:01:08.511158",
+      "title": "Nano Banana API is INSANE: Endless Opportunities! - 20+ Examples",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "A_HVAflCg8E": {
+      "processed_at": "2026-05-14T08:01:15.198127",
+      "title": "Google's UNREAL New AI...",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
