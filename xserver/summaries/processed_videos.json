@@ -602,7 +602,12 @@
     "R_mtO9uUCa8",
     "aYFmCNSG_48",
     "O1U7R2tm7OA",
-    "A_HVAflCg8E"
+    "A_HVAflCg8E",
+    "zYNrRi2r5CM",
+    "3-0scwbr_PY",
+    "p8huhYs6UdA",
+    "YsttCYT-n-Y",
+    "6RSIDrLWfTs"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4207,6 +4212,37 @@
       "processed_at": "2026-05-14T08:01:15.198127",
       "title": "Google's UNREAL New AI...",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "zYNrRi2r5CM": {
+      "processed_at": "2026-05-15T08:08:46.995679",
+      "title": "AI NEWS | OpenAI Lawsuit, Google Hacks, Grok Build Beta",
+      "channel": "Wes Roth",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "3-0scwbr_PY": {
+      "processed_at": "2026-05-15T08:08:55.438440",
+      "title": "People are ignorant to our ancestors and they’re achievements",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "p8huhYs6UdA": {
+      "processed_at": "2026-05-15T08:09:03.019950",
+      "title": "He Makes $2M/Year Selling Simple Voice AI \"Shovels” (Full Demo)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "YsttCYT-n-Y": {
+      "processed_at": "2026-05-15T08:09:13.911904",
+      "title": "Google Launches (nano Banana) Gemini 2.5 Flash Image Model Livestream",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "6RSIDrLWfTs": {
+      "processed_at": "2026-05-15T08:09:23.794713",
+      "title": "Claude Code 24/7 Project Setup // Gemini 3 This Week? // AI Hangout ++",
+      "channel": "All About AI",
       "status": "success"
     }
   }
