@@ -617,7 +617,12 @@
     "TDTXtgJtVtg",
     "W2oxjlOkxRg",
     "RTa6Z0BJ_WY",
-    "ym8A3-mVtFo"
+    "ym8A3-mVtFo",
+    "RIfYuusHqnc",
+    "pAZx6pDstaE",
+    "kN4Hm0azqH0",
+    "r8ojdFJKjqc",
+    "8Ddjy1nlOWA"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4313,6 +4318,37 @@
       "processed_at": "2026-05-19T08:01:14.275788",
       "title": "My Hands-Free AI Streaming Setup (CodeRabbit + Claude Code)",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "RIfYuusHqnc": {
+      "processed_at": "2026-05-20T08:00:47.815726",
+      "title": "GOOGLE IO DEVELOPER STREAM",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "pAZx6pDstaE": {
+      "processed_at": "2026-05-20T08:00:57.486085",
+      "title": "GOOGLE IO   |  LET\"S GOOOOOOOOOOOOOOOOOO!!!",
+      "channel": "Wes Roth",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "kN4Hm0azqH0": {
+      "processed_at": "2026-05-20T08:01:08.853603",
+      "title": "How I Farm Money On The App Store Using AI (you can too)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "r8ojdFJKjqc": {
+      "processed_at": "2026-05-20T08:01:20.153737",
+      "title": "China is the builder of western ideas",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "8Ddjy1nlOWA": {
+      "processed_at": "2026-05-20T08:01:29.115349",
+      "title": "How Meta Went From Open Source Hero to AI's Biggest Villain",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
