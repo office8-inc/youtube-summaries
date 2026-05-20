@@ -622,7 +622,12 @@
     "pAZx6pDstaE",
     "kN4Hm0azqH0",
     "r8ojdFJKjqc",
-    "8Ddjy1nlOWA"
+    "8Ddjy1nlOWA",
+    "cSZ-y49e5q8",
+    "zHE434sBw2U",
+    "BInXzCGWQmI",
+    "5mOjI6GgfyY",
+    "qpa5XwGkLp8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4349,6 +4354,36 @@
       "processed_at": "2026-05-20T08:01:29.115349",
       "title": "How Meta Went From Open Source Hero to AI's Biggest Villain",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "cSZ-y49e5q8": {
+      "processed_at": "2026-05-21T08:00:46.275290",
+      "title": "Google entered the \"AGENTIC ERA\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "zHE434sBw2U": {
+      "processed_at": "2026-05-21T08:00:55.572566",
+      "title": "I gave my Hermes Agent a phone number (it’s crazy)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "BInXzCGWQmI": {
+      "processed_at": "2026-05-21T08:01:06.356856",
+      "title": "Building a Hyperliquid AI Agent Trader From Scratch",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "5mOjI6GgfyY": {
+      "processed_at": "2026-05-21T08:01:14.935835",
+      "title": "Use this trick, watch your life change",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "qpa5XwGkLp8": {
+      "processed_at": "2026-05-21T08:01:23.304552",
+      "title": "Claude Managed Agents Will Make Millionaires (do this now)",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
