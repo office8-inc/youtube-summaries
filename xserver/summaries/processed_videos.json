@@ -627,7 +627,12 @@
     "zHE434sBw2U",
     "BInXzCGWQmI",
     "5mOjI6GgfyY",
-    "qpa5XwGkLp8"
+    "qpa5XwGkLp8",
+    "1b8e64Nxd1E",
+    "OwArDhVYUiM",
+    "guBhKcmd4Wc",
+    "a8EfFGeY9S8",
+    "X6O21jbRcN4"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4384,6 +4389,36 @@
       "processed_at": "2026-05-21T08:01:23.304552",
       "title": "Claude Managed Agents Will Make Millionaires (do this now)",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "1b8e64Nxd1E": {
+      "processed_at": "2026-05-22T08:00:42.572584",
+      "title": "The reason OpenClaw feels unusable lately",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "OwArDhVYUiM": {
+      "processed_at": "2026-05-22T08:00:50.623244",
+      "title": "Leisure isn’t what you think it is",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "guBhKcmd4Wc": {
+      "processed_at": "2026-05-22T08:00:58.329895",
+      "title": "Hermes Agent killed OpenClaw",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "a8EfFGeY9S8": {
+      "processed_at": "2026-05-22T08:01:08.090890",
+      "title": "everyone JUST got HACKED...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "X6O21jbRcN4": {
+      "processed_at": "2026-05-22T08:01:14.864907",
+      "title": "MIT Viral Study DEBUNKED",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
