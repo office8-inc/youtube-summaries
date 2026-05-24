@@ -632,7 +632,12 @@
     "OwArDhVYUiM",
     "guBhKcmd4Wc",
     "a8EfFGeY9S8",
-    "X6O21jbRcN4"
+    "X6O21jbRcN4",
+    "QtA8UGyeWzk",
+    "nO7eQUOhUHU",
+    "DGw2KKyXuYQ",
+    "ytygMoijP4c",
+    "gCHEFZDPVYs"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4418,6 +4423,36 @@
     "X6O21jbRcN4": {
       "processed_at": "2026-05-22T08:01:14.864907",
       "title": "MIT Viral Study DEBUNKED",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "QtA8UGyeWzk": {
+      "processed_at": "2026-05-25T08:00:40.282561",
+      "title": "AI Contract Negotiation Saved Me $6,000!",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "nO7eQUOhUHU": {
+      "processed_at": "2026-05-25T08:00:50.583439",
+      "title": "Inflation isn’t what they taught you in school",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "DGw2KKyXuYQ": {
+      "processed_at": "2026-05-25T08:00:58.163154",
+      "title": "The REAL Reason Andrej Karpathy Joined Anthropic",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "ytygMoijP4c": {
+      "processed_at": "2026-05-25T08:01:07.764807",
+      "title": "Karpathy joins Anthropic: the end of OpenAI’s dominance?",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "gCHEFZDPVYs": {
+      "processed_at": "2026-05-25T08:01:15.967398",
+      "title": "OpenAI just SOLVED MATH....",
       "channel": "Wes Roth",
       "status": "success"
     }
