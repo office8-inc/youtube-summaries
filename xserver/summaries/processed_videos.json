@@ -637,7 +637,12 @@
     "nO7eQUOhUHU",
     "DGw2KKyXuYQ",
     "ytygMoijP4c",
-    "gCHEFZDPVYs"
+    "gCHEFZDPVYs",
+    "6UBGecQTsZE",
+    "z7xyZQVK4Dg",
+    "TckLAVhnAOU",
+    "pDEbyDkE0hw",
+    "PA7pkV4IqAk"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4454,6 +4459,36 @@
       "processed_at": "2026-05-25T08:01:15.967398",
       "title": "OpenAI just SOLVED MATH....",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "6UBGecQTsZE": {
+      "processed_at": "2026-05-26T08:00:46.076318",
+      "title": "Codex 5.5 vs Claude Opus 4.7 Polymarket Trading Challenge",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "z7xyZQVK4Dg": {
+      "processed_at": "2026-05-26T08:00:52.907757",
+      "title": "Build Anything with Tmux, Here's How",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "TckLAVhnAOU": {
+      "processed_at": "2026-05-26T08:00:59.767532",
+      "title": "It’s easy to beat billionaires, here’s why",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "pDEbyDkE0hw": {
+      "processed_at": "2026-05-26T08:01:09.794440",
+      "title": "I opened an office in Katowice (the next Dubai)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "PA7pkV4IqAk": {
+      "processed_at": "2026-05-26T08:01:17.548660",
+      "title": "Why Creating a Fake SaaS Using AI Is So Profitable",
+      "channel": "All About AI",
       "status": "success"
     }
   }
