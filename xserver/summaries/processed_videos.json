@@ -642,7 +642,12 @@
     "z7xyZQVK4Dg",
     "TckLAVhnAOU",
     "pDEbyDkE0hw",
-    "PA7pkV4IqAk"
+    "PA7pkV4IqAk",
+    "4o-D6hHZAG4",
+    "uFnxyXlRxag",
+    "fUCt5iLaaQg",
+    "kpKb7LI__78",
+    "wmKbTGU64FY"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4489,6 +4494,36 @@
       "processed_at": "2026-05-26T08:01:17.548660",
       "title": "Why Creating a Fake SaaS Using AI Is So Profitable",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "4o-D6hHZAG4": {
+      "processed_at": "2026-05-27T08:00:44.153031",
+      "title": "You can have anything you want with This trick",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "uFnxyXlRxag": {
+      "processed_at": "2026-05-27T08:00:52.768314",
+      "title": "Claude, The Pope, and AGI",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "fUCt5iLaaQg": {
+      "processed_at": "2026-05-27T08:01:01.729678",
+      "title": "TRUMP blocked AI Regulation… here’s what it means",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "kpKb7LI__78": {
+      "processed_at": "2026-05-27T08:01:09.064076",
+      "title": "we are NOT PREPARED for the end of 2026",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "wmKbTGU64FY": {
+      "processed_at": "2026-05-27T08:01:19.795976",
+      "title": "Elon Musk GROK 5 Master Plan Revealed",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
