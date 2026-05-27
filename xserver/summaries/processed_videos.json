@@ -647,7 +647,12 @@
     "uFnxyXlRxag",
     "fUCt5iLaaQg",
     "kpKb7LI__78",
-    "wmKbTGU64FY"
+    "wmKbTGU64FY",
+    "TKBiTLHxCh0",
+    "_9-8s6zMwhc",
+    "ixMJIl-Rjao",
+    "KWT5KzoBIPM",
+    "HyPKBWOMoRY"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4524,6 +4529,36 @@
       "processed_at": "2026-05-27T08:01:19.795976",
       "title": "Elon Musk GROK 5 Master Plan Revealed",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "TKBiTLHxCh0": {
+      "processed_at": "2026-05-28T08:00:43.862797",
+      "title": "A Brief History of Java",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "_9-8s6zMwhc": {
+      "processed_at": "2026-05-28T08:00:53.099271",
+      "title": "The Philosophy of David Ondrej",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "ixMJIl-Rjao": {
+      "processed_at": "2026-05-28T08:01:02.483008",
+      "title": "Beat 95% of your competition with this",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "KWT5KzoBIPM": {
+      "processed_at": "2026-05-28T08:01:13.602953",
+      "title": "Claude Code + Codex CLI: Building a UNHINGED AI Video App",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "HyPKBWOMoRY": {
+      "processed_at": "2026-05-28T08:01:21.541962",
+      "title": "What ChatGPT Agent Means for AI Agencies…",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
