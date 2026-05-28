@@ -652,7 +652,12 @@
     "_9-8s6zMwhc",
     "ixMJIl-Rjao",
     "KWT5KzoBIPM",
-    "HyPKBWOMoRY"
+    "HyPKBWOMoRY",
+    "BFH9D05UFvM",
+    "F_6go08nHv4",
+    "fiFMN_HbPt4",
+    "RvoGneNO4b8",
+    "hIF4DNajHAA"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4559,6 +4564,36 @@
       "processed_at": "2026-05-28T08:01:21.541962",
       "title": "What ChatGPT Agent Means for AI Agencies…",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "BFH9D05UFvM": {
+      "processed_at": "2026-05-29T08:00:43.855156",
+      "title": "Unsloth Studio is insane… fine-tune any AI model locally",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "F_6go08nHv4": {
+      "processed_at": "2026-05-29T08:00:54.471334",
+      "title": "Claude Opus 4.8 Is Too Smart… and TOO HONEST",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "fiFMN_HbPt4": {
+      "processed_at": "2026-05-29T08:01:02.766147",
+      "title": "Codex 5.5 vs Claude Code Hyperliquid Trading Challenge",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "RvoGneNO4b8": {
+      "processed_at": "2026-05-29T08:01:10.024018",
+      "title": "The Most Terrifying Tech Acquisition in History",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "hIF4DNajHAA": {
+      "processed_at": "2026-05-29T08:01:21.425098",
+      "title": "WORK while THEY SLEEP",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
