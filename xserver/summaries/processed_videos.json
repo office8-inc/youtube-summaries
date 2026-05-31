@@ -657,7 +657,12 @@
     "F_6go08nHv4",
     "fiFMN_HbPt4",
     "RvoGneNO4b8",
-    "hIF4DNajHAA"
+    "hIF4DNajHAA",
+    "CCuXDZgfOEM",
+    "gkcoKXxHtvg",
+    "hGCrvDDpl5w",
+    "8jDXI4_rJOE",
+    "wlqvB0ccQhQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4594,6 +4599,36 @@
       "processed_at": "2026-05-29T08:01:21.425098",
       "title": "WORK while THEY SLEEP",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "CCuXDZgfOEM": {
+      "processed_at": "2026-06-01T08:00:44.120979",
+      "title": "The Only Skill That Can’t Be Automated",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "gkcoKXxHtvg": {
+      "processed_at": "2026-06-01T08:00:53.941912",
+      "title": "Never choose this job!",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "hGCrvDDpl5w": {
+      "processed_at": "2026-06-01T08:01:05.170246",
+      "title": "Ghost AI let's AI Agents build disposable worlds",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "8jDXI4_rJOE": {
+      "processed_at": "2026-06-01T08:01:15.246305",
+      "title": "This 100% open-source terminal is insane… just watch",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "wlqvB0ccQhQ": {
+      "processed_at": "2026-06-01T08:01:26.143178",
+      "title": "Claude Opus 4.8 Agentic AI Trading Agent First Test",
+      "channel": "All About AI",
       "status": "success"
     }
   }
