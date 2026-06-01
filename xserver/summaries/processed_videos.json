@@ -662,7 +662,12 @@
     "gkcoKXxHtvg",
     "hGCrvDDpl5w",
     "8jDXI4_rJOE",
-    "wlqvB0ccQhQ"
+    "wlqvB0ccQhQ",
+    "LNjrRJRCY_g",
+    "EOBWg2emW1Y",
+    "t5eYuE_u6w4",
+    "OyEBBJDxb74",
+    "ZO9sYrw7i6c"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4629,6 +4634,36 @@
       "processed_at": "2026-06-01T08:01:26.143178",
       "title": "Claude Opus 4.8 Agentic AI Trading Agent First Test",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "LNjrRJRCY_g": {
+      "processed_at": "2026-06-02T08:00:44.837560",
+      "title": "Building a Agentic AI Trading Heartbeat That Works",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "EOBWg2emW1Y": {
+      "processed_at": "2026-06-02T08:00:54.916988",
+      "title": "The Biggest Rugpull in Programming History",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "t5eYuE_u6w4": {
+      "processed_at": "2026-06-02T08:01:04.967858",
+      "title": "The Boring Truth About Winning",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "OyEBBJDxb74": {
+      "processed_at": "2026-06-02T08:01:16.545894",
+      "title": "The Crazy History of Markdown",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "ZO9sYrw7i6c": {
+      "processed_at": "2026-06-02T08:01:24.544400",
+      "title": "Entrepreneurship isn’t what you think it is",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
