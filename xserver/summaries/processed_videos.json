@@ -667,7 +667,12 @@
     "EOBWg2emW1Y",
     "t5eYuE_u6w4",
     "OyEBBJDxb74",
-    "ZO9sYrw7i6c"
+    "ZO9sYrw7i6c",
+    "xJns-MOY1KA",
+    "cS0Tm6ddnsQ",
+    "jZg1EkujbJ0",
+    "ZsBniZ_M7hs",
+    "CFCyzaUc3qY"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4664,6 +4669,36 @@
       "processed_at": "2026-06-02T08:01:24.544400",
       "title": "Entrepreneurship isn’t what you think it is",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "xJns-MOY1KA": {
+      "processed_at": "2026-06-03T08:00:43.241234",
+      "title": "I Let Claude Do My Taxes (It Was Better)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "cS0Tm6ddnsQ": {
+      "processed_at": "2026-06-03T08:00:54.507616",
+      "title": "GPT-5.6 about to DROP",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "jZg1EkujbJ0": {
+      "processed_at": "2026-06-03T08:01:05.271218",
+      "title": "The \"AI Job Apocalypse\" is CANCELLED!",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "ZsBniZ_M7hs": {
+      "processed_at": "2026-06-03T08:01:16.180514",
+      "title": "Stop using Chrome. This AI browser is insane…",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "CFCyzaUc3qY": {
+      "processed_at": "2026-06-03T08:01:26.090807",
+      "title": "Microsoft AI CEO Warns \"Seemingly Conscious AI is Coming\"",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
