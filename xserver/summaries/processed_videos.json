@@ -677,7 +677,12 @@
     "kR4xJKWonvI",
     "0REJDVvBvWQ",
     "oU_rr-bOrK8",
-    "t9m2uw_Ry9Q"
+    "t9m2uw_Ry9Q",
+    "ZN0gkZw-2ks",
+    "oBHMUGLgOlc",
+    "mMuuLocDkog",
+    "n_01yq6icHs",
+    "glonkx9ppz8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4733,6 +4738,36 @@
     "t9m2uw_Ry9Q": {
       "processed_at": "2026-06-04T08:01:23.247920",
       "title": "AI Models about to BREAK the markets",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "ZN0gkZw-2ks": {
+      "processed_at": "2026-06-05T08:00:46.637619",
+      "title": "Agentic AI Trading For Beginners: A New Money Making Era Is Here",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "oBHMUGLgOlc": {
+      "processed_at": "2026-06-05T08:00:57.919894",
+      "title": "The Creator of MySQL’s Wants to Replace It",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "mMuuLocDkog": {
+      "processed_at": "2026-06-05T08:01:07.519032",
+      "title": "Watch this 100x developer use Codex… it’s insane",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "n_01yq6icHs": {
+      "processed_at": "2026-06-05T08:01:17.904297",
+      "title": "What You Think Is what You Become",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "glonkx9ppz8": {
+      "processed_at": "2026-06-05T08:01:26.866567",
+      "title": "Microsoft JUST BROKE OpenAI...",
       "channel": "Wes Roth",
       "status": "success"
     }
