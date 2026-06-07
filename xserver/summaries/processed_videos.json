@@ -682,7 +682,12 @@
     "oBHMUGLgOlc",
     "mMuuLocDkog",
     "n_01yq6icHs",
-    "glonkx9ppz8"
+    "glonkx9ppz8",
+    "uafkYOZ6YRs",
+    "d2K8yLrdcjc",
+    "kUMZ5YNA13k",
+    "4rEgNiP5V2E",
+    "QHGPVC1kVDI"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4769,6 +4774,36 @@
       "processed_at": "2026-06-05T08:01:26.866567",
       "title": "Microsoft JUST BROKE OpenAI...",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "uafkYOZ6YRs": {
+      "processed_at": "2026-06-08T08:00:42.825060",
+      "title": "Improve Your Agentic AI Trading With a Great Data Pipeline",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "d2K8yLrdcjc": {
+      "processed_at": "2026-06-08T08:00:50.690867",
+      "title": "How Twitter Rewired My Brain",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "kUMZ5YNA13k": {
+      "processed_at": "2026-06-08T08:01:00.008099",
+      "title": "24 Agents tasked to build a $1B app",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "4rEgNiP5V2E": {
+      "processed_at": "2026-06-08T08:01:09.342714",
+      "title": "Anthropic Calls for \"Global AI Pause\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "QHGPVC1kVDI": {
+      "processed_at": "2026-06-08T08:01:16.359039",
+      "title": "The Poland Nobody Shows You",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
