@@ -687,7 +687,12 @@
     "d2K8yLrdcjc",
     "kUMZ5YNA13k",
     "4rEgNiP5V2E",
-    "QHGPVC1kVDI"
+    "QHGPVC1kVDI",
+    "JNptWVGSrY4",
+    "u6L9aedHqZc",
+    "Nn7EbMJRRGo",
+    "3BatQW63C8g",
+    "9Ej9JUnFCO0"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4804,6 +4809,36 @@
       "processed_at": "2026-06-08T08:01:16.359039",
       "title": "The Poland Nobody Shows You",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "JNptWVGSrY4": {
+      "processed_at": "2026-06-09T08:00:49.587608",
+      "title": "If Databases were put on paper #ad",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "u6L9aedHqZc": {
+      "processed_at": "2026-06-09T08:00:59.991628",
+      "title": "Hermes Agent is crazy… 180,000+ github stars",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "Nn7EbMJRRGo": {
+      "processed_at": "2026-06-09T08:01:10.907744",
+      "title": "Why The Universe Ignores Most People",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "3BatQW63C8g": {
+      "processed_at": "2026-06-09T08:01:17.823524",
+      "title": "Start a 1-Person AI Creative Agency with Higgsfield + Claude",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "9Ej9JUnFCO0": {
+      "processed_at": "2026-06-09T08:01:27.240061",
+      "title": "How the New York Times Beat Paywall Hackers For Good",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
