@@ -692,7 +692,12 @@
     "u6L9aedHqZc",
     "Nn7EbMJRRGo",
     "3BatQW63C8g",
-    "9Ej9JUnFCO0"
+    "9Ej9JUnFCO0",
+    "xUbIVUnQnZg",
+    "YGx_EQRM1Qs",
+    "4wE7_uK2Fqc",
+    "eTgYehlVEBo",
+    "oMcC-cfJYk8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4839,6 +4844,36 @@
       "processed_at": "2026-06-09T08:01:27.240061",
       "title": "How the New York Times Beat Paywall Hackers For Good",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "xUbIVUnQnZg": {
+      "processed_at": "2026-06-10T08:00:45.498625",
+      "title": "Mythos 5 is WILD...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "YGx_EQRM1Qs": {
+      "processed_at": "2026-06-10T08:00:55.918256",
+      "title": "STOP pretending AI doesn’t Affect You",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "4wE7_uK2Fqc": {
+      "processed_at": "2026-06-10T08:01:06.237967",
+      "title": "Claude Code // Context Engineering // AI Hangout ++",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "eTgYehlVEBo": {
+      "processed_at": "2026-06-10T08:01:15.255753",
+      "title": "AI Village is getting scary",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "oMcC-cfJYk8": {
+      "processed_at": "2026-06-10T08:01:25.699201",
+      "title": "Claude Code Workflows // Codex GTP-5 Test? // AI Hangout ++",
+      "channel": "All About AI",
       "status": "success"
     }
   }
