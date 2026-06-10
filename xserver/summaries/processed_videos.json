@@ -697,7 +697,12 @@
     "YGx_EQRM1Qs",
     "4wE7_uK2Fqc",
     "eTgYehlVEBo",
-    "oMcC-cfJYk8"
+    "oMcC-cfJYk8",
+    "BxR-r4F4Pbw",
+    "7IQz4OqjryY",
+    "DqxUGfa6VfQ",
+    "S3SnmD0YEhU",
+    "B5jNapml-a8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4874,6 +4879,36 @@
       "processed_at": "2026-06-10T08:01:25.699201",
       "title": "Claude Code Workflows // Codex GTP-5 Test? // AI Hangout ++",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "BxR-r4F4Pbw": {
+      "processed_at": "2026-06-11T08:00:47.263614",
+      "title": "Don't use Fable 5 in Claude… do this instead",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "7IQz4OqjryY": {
+      "processed_at": "2026-06-11T08:00:54.396913",
+      "title": "Python's Name Has Nothing to Do With Snakes",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "DqxUGfa6VfQ": {
+      "processed_at": "2026-06-11T08:01:04.786667",
+      "title": "Claude Fable 5 Agentic AI Trading: First Tests Looks VERY Strong",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "S3SnmD0YEhU": {
+      "processed_at": "2026-06-11T08:01:13.100778",
+      "title": "Claude Code Keeps Getting BETTER: Output Styles and Status Line Update",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "B5jNapml-a8": {
+      "processed_at": "2026-06-11T08:01:24.359151",
+      "title": "This AI Agent Replaces ChatGPT, Notion & Manus (Tested) | Skywork",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
