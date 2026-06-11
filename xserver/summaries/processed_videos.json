@@ -702,7 +702,12 @@
     "7IQz4OqjryY",
     "DqxUGfa6VfQ",
     "S3SnmD0YEhU",
-    "B5jNapml-a8"
+    "B5jNapml-a8",
+    "NiY38aQQkqM",
+    "deFvnmibzow",
+    "eRl6UWSjlxM",
+    "4AZWMnWIris",
+    "xwPjTKvmFJw"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4908,6 +4913,36 @@
     "B5jNapml-a8": {
       "processed_at": "2026-06-11T08:01:24.359151",
       "title": "This AI Agent Replaces ChatGPT, Notion & Manus (Tested) | Skywork",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "NiY38aQQkqM": {
+      "processed_at": "2026-06-12T08:00:47.824796",
+      "title": "HeyGen AI video generator just changed the game...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "deFvnmibzow": {
+      "processed_at": "2026-06-12T08:00:56.331896",
+      "title": "Fable JUST made EVERYONE MAD...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "eRl6UWSjlxM": {
+      "processed_at": "2026-06-12T08:01:04.684341",
+      "title": "GPT-5 Pro is the most powerful AI agent ever… just watch",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "4AZWMnWIris": {
+      "processed_at": "2026-06-12T08:01:11.764022",
+      "title": "Claude Code // Browser Use MCP // AI Hacking ++",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "xwPjTKvmFJw": {
+      "processed_at": "2026-06-12T08:01:21.575304",
+      "title": "The GPT-5 Debate Is Insane",
       "channel": "Wes Roth",
       "status": "success"
     }
