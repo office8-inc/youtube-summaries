@@ -707,7 +707,12 @@
     "deFvnmibzow",
     "eRl6UWSjlxM",
     "4AZWMnWIris",
-    "xwPjTKvmFJw"
+    "xwPjTKvmFJw",
+    "qlx40oVrXTY",
+    "vM2At8Uqp2Y",
+    "jcUqsNpDDDk",
+    "rAWB8-qiVQo",
+    "LRPYpgnXIvg"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4944,6 +4949,36 @@
       "processed_at": "2026-06-12T08:01:21.575304",
       "title": "The GPT-5 Debate Is Insane",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "qlx40oVrXTY": {
+      "processed_at": "2026-06-15T08:00:48.470531",
+      "title": "Fable 5 is never coming back, here's why",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "vM2At8Uqp2Y": {
+      "processed_at": "2026-06-15T08:00:55.467130",
+      "title": "Claude Fable JUST got BANNED...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "jcUqsNpDDDk": {
+      "processed_at": "2026-06-15T08:01:05.349396",
+      "title": "PI AGENT FULL COURSE: Master Pi Agent in 30 Minutes",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "rAWB8-qiVQo": {
+      "processed_at": "2026-06-15T08:01:13.628567",
+      "title": "HeyGen AI video generator just changed the game...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "LRPYpgnXIvg": {
+      "processed_at": "2026-06-15T08:01:25.180747",
+      "title": "Hacking AI is TOO EASY (Gemini and Grok go rogue)",
+      "channel": "All About AI",
       "status": "success"
     }
   }
