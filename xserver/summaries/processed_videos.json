@@ -712,7 +712,12 @@
     "vM2At8Uqp2Y",
     "jcUqsNpDDDk",
     "rAWB8-qiVQo",
-    "LRPYpgnXIvg"
+    "LRPYpgnXIvg",
+    "V80QfRa7t_c",
+    "mGC03BNJ2e4",
+    "zRnY3wRMEQs",
+    "YrRRr4On0Bc",
+    "0Qrauf3MrQA"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -4979,6 +4984,36 @@
       "processed_at": "2026-06-15T08:01:25.180747",
       "title": "Hacking AI is TOO EASY (Gemini and Grok go rogue)",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "V80QfRa7t_c": {
+      "processed_at": "2026-06-16T08:00:49.251424",
+      "title": "This MCP makes Hermes Agent 10x more powerful",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "mGC03BNJ2e4": {
+      "processed_at": "2026-06-16T08:00:56.036602",
+      "title": "Building Multiple Agentic AI Trading Portfolio Pods",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "zRnY3wRMEQs": {
+      "processed_at": "2026-06-16T08:01:05.013892",
+      "title": "Matt Wolfe - Phasing Out Humans, AI \"Sin Eaters\", Airplane Swarms and the AI \"Trolley Problem\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "YrRRr4On0Bc": {
+      "processed_at": "2026-06-16T08:01:15.244152",
+      "title": "Scaling an AI startup to $100B",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "0Qrauf3MrQA": {
+      "processed_at": "2026-06-16T08:01:21.748304",
+      "title": "3 Ways to Make Money with GPT-5 (Beginner Methods)",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
