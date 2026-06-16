@@ -717,7 +717,12 @@
     "mGC03BNJ2e4",
     "zRnY3wRMEQs",
     "YrRRr4On0Bc",
-    "0Qrauf3MrQA"
+    "0Qrauf3MrQA",
+    "XtgEA4L7sIU",
+    "OCXlJ9_F6bQ",
+    "G_29XRpKO-Y",
+    "ikBODkpu7Jo",
+    "gGMe0p5QNwA"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5014,6 +5019,36 @@
       "processed_at": "2026-06-16T08:01:21.748304",
       "title": "3 Ways to Make Money with GPT-5 (Beginner Methods)",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "XtgEA4L7sIU": {
+      "processed_at": "2026-06-17T08:00:44.944489",
+      "title": "why Fable ACTUALLY got banned...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "OCXlJ9_F6bQ": {
+      "processed_at": "2026-06-17T08:00:55.903637",
+      "title": "Parsing a 300GB JSON File",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "G_29XRpKO-Y": {
+      "processed_at": "2026-06-17T08:01:06.319605",
+      "title": "I built this game with Hermes using MiniMax M3",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "ikBODkpu7Jo": {
+      "processed_at": "2026-06-17T08:01:13.362066",
+      "title": "GPT-5 just caught them *all*  (Grok 4.20 and Gemini 3.0)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "gGMe0p5QNwA": {
+      "processed_at": "2026-06-17T08:01:22.014454",
+      "title": "Claude Code // Building som AI Hacking Tools // GIVEAWAY at End Of Stream",
+      "channel": "All About AI",
       "status": "success"
     }
   }
