@@ -727,7 +727,12 @@
     "qTNICFYu8-4",
     "hq8J-nj_Sr0",
     "mGaoFe2xfxw",
-    "2aRCDte-Fig"
+    "2aRCDte-Fig",
+    "OdlUXu2sAb4",
+    "nQwJVHCtDDY",
+    "zugGJjnF6vM",
+    "I2aAkp7q_uY",
+    "OKuAqRqlSsI"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5084,6 +5089,36 @@
       "processed_at": "2026-06-18T08:01:24.165887",
       "title": "Top 7 Ways to Make Money with AI WITHOUT Coding",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "OdlUXu2sAb4": {
+      "processed_at": "2026-06-19T08:00:44.674317",
+      "title": "Google JUST revealed path to SUPERINTELLIGENCE",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "nQwJVHCtDDY": {
+      "processed_at": "2026-06-19T08:00:54.138177",
+      "title": "Matt Pocock’s Agentic Engineering Workflow (just copy him)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "zugGJjnF6vM": {
+      "processed_at": "2026-06-19T08:01:02.946172",
+      "title": "If you're building with AI, don’t miss this",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "I2aAkp7q_uY": {
+      "processed_at": "2026-06-19T08:01:12.813156",
+      "title": "Claude Code Opus Plan Mode  //  1M Context // Testing ++",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "OKuAqRqlSsI": {
+      "processed_at": "2026-06-19T08:01:21.137322",
+      "title": "Could GPT-5 + Polymarket Become a Legal Trading Cheat Code?",
+      "channel": "All About AI",
       "status": "success"
     }
   }
