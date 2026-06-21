@@ -732,7 +732,12 @@
     "nQwJVHCtDDY",
     "zugGJjnF6vM",
     "I2aAkp7q_uY",
-    "OKuAqRqlSsI"
+    "OKuAqRqlSsI",
+    "Q0HTefP9DFU",
+    "lLrKuF0YDyw",
+    "L0HEWTP1-L4",
+    "WRRvnFP3t2Q",
+    "LoxWp4kuGK8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5118,6 +5123,36 @@
     "OKuAqRqlSsI": {
       "processed_at": "2026-06-19T08:01:21.137322",
       "title": "Could GPT-5 + Polymarket Become a Legal Trading Cheat Code?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "Q0HTefP9DFU": {
+      "processed_at": "2026-06-22T08:00:45.869012",
+      "title": "Hermes Agent + Obsidian = The Ultimate Second Brain",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "lLrKuF0YDyw": {
+      "processed_at": "2026-06-22T08:00:57.058852",
+      "title": "Can AI Fix This $1,000,000 Business?",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "L0HEWTP1-L4": {
+      "processed_at": "2026-06-22T08:01:05.987370",
+      "title": "Hermes Agent is good but, it has one problem...",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "WRRvnFP3t2Q": {
+      "processed_at": "2026-06-22T08:01:14.833892",
+      "title": "Why ChatGPT isn't good at building automations",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "LoxWp4kuGK8": {
+      "processed_at": "2026-06-22T08:01:25.385040",
+      "title": "My First Winning Agentic AI Trading Strategy On Polymarket",
       "channel": "All About AI",
       "status": "success"
     }
