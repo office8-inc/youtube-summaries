@@ -742,7 +742,12 @@
     "TxrA_c9XdmY",
     "FNV7TECu8BA",
     "bLZDNf2-jf8",
-    "SEcvuS4u0dk"
+    "SEcvuS4u0dk",
+    "LWKic13VqAU",
+    "_CB_Aa2ODeM",
+    "VBi_4cWpup8",
+    "tL8CENSCd0w",
+    "6Z_U6VndFTk"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5189,6 +5194,36 @@
       "processed_at": "2026-06-23T08:01:24.466451",
       "title": "Claude Code GPT-5 MCP Server EASY Tutorial (you wont regret this)",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "LWKic13VqAU": {
+      "processed_at": "2026-06-24T08:00:46.729447",
+      "title": "11 Lines of Code Broke the Internet",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "_CB_Aa2ODeM": {
+      "processed_at": "2026-06-24T08:00:55.828979",
+      "title": "The Database That Should Be Dead but Runs the Internet",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "VBi_4cWpup8": {
+      "processed_at": "2026-06-24T08:01:04.174830",
+      "title": "Cursor JUST beat EVERYONE...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "tL8CENSCd0w": {
+      "processed_at": "2026-06-24T08:01:12.635630",
+      "title": "GPT-5 Fails. AGI Cancelled. It's all over...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "6Z_U6VndFTk": {
+      "processed_at": "2026-06-24T08:01:20.349171",
+      "title": "GPT-5 with Gosu Coder | GPT-5 Exposed!",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
