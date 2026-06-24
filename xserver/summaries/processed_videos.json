@@ -747,7 +747,12 @@
     "_CB_Aa2ODeM",
     "VBi_4cWpup8",
     "tL8CENSCd0w",
-    "6Z_U6VndFTk"
+    "6Z_U6VndFTk",
+    "ImPESBftwr8",
+    "5i1fByfOotg",
+    "NJZEE2mZN64",
+    "3Ct90-xfbZo",
+    "4wXQt6SVO_U"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5223,6 +5228,37 @@
     "6Z_U6VndFTk": {
       "processed_at": "2026-06-24T08:01:20.349171",
       "title": "GPT-5 with Gosu Coder | GPT-5 Exposed!",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "ImPESBftwr8": {
+      "processed_at": "2026-06-25T08:00:44.414789",
+      "title": "“I spent $50,000 self-hosting AI models. You should too.” - 0xSero",
+      "channel": "David Ondrej",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "5i1fByfOotg": {
+      "processed_at": "2026-06-25T08:00:55.279773",
+      "title": "Why arrays really start at zero",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "NJZEE2mZN64": {
+      "processed_at": "2026-06-25T08:01:04.602678",
+      "title": "GPT-5 // CursorCLI // Claude Code - TESTING + GIVEAWAY",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "3Ct90-xfbZo": {
+      "processed_at": "2026-06-25T08:01:12.051238",
+      "title": "The Pokemon Personal Development Model (made me millions)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "4wXQt6SVO_U": {
+      "processed_at": "2026-06-25T08:01:23.047367",
+      "title": "GPT-5 Just ONE-SHOT The World",
       "channel": "Wes Roth",
       "status": "success"
     }
