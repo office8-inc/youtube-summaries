@@ -752,7 +752,12 @@
     "5i1fByfOotg",
     "NJZEE2mZN64",
     "3Ct90-xfbZo",
-    "4wXQt6SVO_U"
+    "4wXQt6SVO_U",
+    "HAsEYh6jTks",
+    "mBGXJ7r69sg",
+    "sIDi85HfWVA",
+    "giZIcnTW4L8",
+    "YosOtEcYw48"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5260,6 +5265,36 @@
       "processed_at": "2026-06-25T08:01:23.047367",
       "title": "GPT-5 Just ONE-SHOT The World",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "HAsEYh6jTks": {
+      "processed_at": "2026-06-26T08:00:44.936739",
+      "title": "OpenAI JUST announced \"JALAPENO\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "mBGXJ7r69sg": {
+      "processed_at": "2026-06-26T08:00:54.742792",
+      "title": "BREAKING: GPT-5 LIVESTREAM | OpenAI much awaited GPT-5 release... this is the big one.",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "sIDi85HfWVA": {
+      "processed_at": "2026-06-26T08:01:05.031897",
+      "title": "GPT-5 // GIVEAWAY AT END OF STREAM",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "giZIcnTW4L8": {
+      "processed_at": "2026-06-26T08:01:13.083097",
+      "title": "7 tips to code faster with AI",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "YosOtEcYw48": {
+      "processed_at": "2026-06-26T08:01:19.913477",
+      "title": "OpenAIs NEW Open Source models 🤖",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
