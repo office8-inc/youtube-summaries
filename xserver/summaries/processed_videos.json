@@ -757,7 +757,12 @@
     "mBGXJ7r69sg",
     "sIDi85HfWVA",
     "giZIcnTW4L8",
-    "YosOtEcYw48"
+    "YosOtEcYw48",
+    "st_HMMt0T7g",
+    "IloXWEYXen8",
+    "wR2wvaIueAM",
+    "TJ5v23JcGIU",
+    "NyW7EDFmWl4"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5295,6 +5300,36 @@
       "processed_at": "2026-06-26T08:01:19.913477",
       "title": "OpenAIs NEW Open Source models 🤖",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "st_HMMt0T7g": {
+      "processed_at": "2026-06-29T08:00:49.149026",
+      "title": "HERMES AGENT + Stripe Payments + NVIDIA Nemotron is INSANE!",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "IloXWEYXen8": {
+      "processed_at": "2026-06-29T08:01:00.412783",
+      "title": "GPT 5.6 banned, Fable banned… it’s actually over.",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "wR2wvaIueAM": {
+      "processed_at": "2026-06-29T08:01:07.138735",
+      "title": "Genie 3// gpt-oss //  Opencode // Claude Opus 4.1 // GIVEAWAY AT END OF STREAM",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "TJ5v23JcGIU": {
+      "processed_at": "2026-06-29T08:01:15.037534",
+      "title": "The 7 essential skills that every AI DEV needs to know!",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "NyW7EDFmWl4": {
+      "processed_at": "2026-06-29T08:01:23.917119",
+      "title": "OpenAI Just Broke The Industry",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
