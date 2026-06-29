@@ -762,7 +762,12 @@
     "IloXWEYXen8",
     "wR2wvaIueAM",
     "TJ5v23JcGIU",
-    "NyW7EDFmWl4"
+    "NyW7EDFmWl4",
+    "40ikbH0Ba-g",
+    "0iGAKLEz8Js",
+    "Cew4tF16n-o",
+    "Sg1fDLtz-ck",
+    "_MJAIjSGSUs"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5329,6 +5334,36 @@
     "NyW7EDFmWl4": {
       "processed_at": "2026-06-29T08:01:23.917119",
       "title": "OpenAI Just Broke The Industry",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "40ikbH0Ba-g": {
+      "processed_at": "2026-06-30T08:00:43.970652",
+      "title": "Hermes Agent + Mixture of Agents is insane…",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "0iGAKLEz8Js": {
+      "processed_at": "2026-06-30T08:00:54.695531",
+      "title": "INSANE Veo 3 Workflow – Insert ANY Object Into an AI Video",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "Cew4tF16n-o": {
+      "processed_at": "2026-06-30T08:01:04.134008",
+      "title": "This JavaScript library changes EVERYTHING 💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "Sg1fDLtz-ck": {
+      "processed_at": "2026-06-30T08:01:11.852951",
+      "title": "Claude Code // Open Router Horizon Beta Testing",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "_MJAIjSGSUs": {
+      "processed_at": "2026-06-30T08:01:23.116460",
+      "title": "Google Just Quietly Dropped SELF IMPROVING AI Agent... Kaggle Gold Medals | MLE STAR",
       "channel": "Wes Roth",
       "status": "success"
     }
