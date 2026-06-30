@@ -767,7 +767,12 @@
     "0iGAKLEz8Js",
     "Cew4tF16n-o",
     "Sg1fDLtz-ck",
-    "_MJAIjSGSUs"
+    "_MJAIjSGSUs",
+    "CTKe2tmdy7s",
+    "FenFAip_CC4",
+    "Kn_8Cku9yfk",
+    "UJh9cXQ_Uk4",
+    "Pu2FoZkm250"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5365,6 +5370,36 @@
       "processed_at": "2026-06-30T08:01:23.116460",
       "title": "Google Just Quietly Dropped SELF IMPROVING AI Agent... Kaggle Gold Medals | MLE STAR",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "CTKe2tmdy7s": {
+      "processed_at": "2026-07-01T08:00:45.732975",
+      "title": "it's all bad now...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "FenFAip_CC4": {
+      "processed_at": "2026-07-01T08:00:55.099514",
+      "title": "The Claude Code bible, written by the creator of Claude Code",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "Kn_8Cku9yfk": {
+      "processed_at": "2026-07-01T08:01:05.790935",
+      "title": "ChatGPT AGENT Killer: Manus AI Wide Research",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "UJh9cXQ_Uk4": {
+      "processed_at": "2026-07-01T08:01:15.859969",
+      "title": "Claude Code 24/7 Project + GIVEAWAY AT END OF STREAM",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "Pu2FoZkm250": {
+      "processed_at": "2026-07-01T08:01:23.987832",
+      "title": "I used Claude Code to build an entire n8n workflow",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
