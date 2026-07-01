@@ -772,7 +772,12 @@
     "FenFAip_CC4",
     "Kn_8Cku9yfk",
     "UJh9cXQ_Uk4",
-    "Pu2FoZkm250"
+    "Pu2FoZkm250",
+    "CpFH1YnJjFY",
+    "73RZkEgC3AE",
+    "SeybVD0NMQI",
+    "IQkhlADRaMQ",
+    "-FSt-8aiMfU"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5400,6 +5405,36 @@
       "processed_at": "2026-07-01T08:01:23.987832",
       "title": "I used Claude Code to build an entire n8n workflow",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "CpFH1YnJjFY": {
+      "processed_at": "2026-07-02T08:00:45.574438",
+      "title": "How one IRC bot took over the internet",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "73RZkEgC3AE": {
+      "processed_at": "2026-07-02T08:00:54.594930",
+      "title": "FABLE 5 IS BACK",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "SeybVD0NMQI": {
+      "processed_at": "2026-07-02T08:01:03.343547",
+      "title": "How to Build & Sell Web Apps With AI Without Coding (FULL COURSE)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "IQkhlADRaMQ": {
+      "processed_at": "2026-07-02T08:01:13.423382",
+      "title": "Veo 3 Advanced Prompting: JSON, XML, and NLP Experimental Prompts",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "-FSt-8aiMfU": {
+      "processed_at": "2026-07-02T08:01:21.525963",
+      "title": "AI Researchers WARN: Google's Gemini Deep Think Model Might be at \"Critical Capability Levels\"",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
