@@ -777,7 +777,12 @@
     "73RZkEgC3AE",
     "SeybVD0NMQI",
     "IQkhlADRaMQ",
-    "-FSt-8aiMfU"
+    "-FSt-8aiMfU",
+    "0akM-5lBurA",
+    "9VRKEZD_s-o",
+    "Sf-nklw0ljQ",
+    "GPxUhrdDbKE",
+    "7LlQZKPBKgs"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5435,6 +5440,36 @@
       "processed_at": "2026-07-02T08:01:21.525963",
       "title": "AI Researchers WARN: Google's Gemini Deep Think Model Might be at \"Critical Capability Levels\"",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "0akM-5lBurA": {
+      "processed_at": "2026-07-03T08:00:49.835705",
+      "title": "Fable 5 is back… here is my plan",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "9VRKEZD_s-o": {
+      "processed_at": "2026-07-03T08:00:58.933853",
+      "title": "Microsoft's AI went rogue in under 24 hours",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "Sf-nklw0ljQ": {
+      "processed_at": "2026-07-03T08:01:07.195074",
+      "title": "I Built My First AI Robot",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "GPxUhrdDbKE": {
+      "processed_at": "2026-07-03T08:01:17.714183",
+      "title": "Fable 5 is WILD...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "7LlQZKPBKgs": {
+      "processed_at": "2026-07-03T08:01:24.800480",
+      "title": "Claude Code can build any AI Agent in n8n… just watch",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
