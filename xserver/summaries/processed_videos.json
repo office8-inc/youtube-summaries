@@ -787,7 +787,12 @@
     "mtXaK9peqCA",
     "xg45b8UXoZI",
     "_Q-mgYm6aPU",
-    "71uVYb0j5QQ"
+    "71uVYb0j5QQ",
+    "9j7c7UusaEs",
+    "0SXCIfFK5r8",
+    "Gtw07JculP4",
+    "jCyTTtk69QY",
+    "UvueQU0cbBY"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5504,6 +5509,36 @@
     "71uVYb0j5QQ": {
       "processed_at": "2026-07-06T08:01:25.316738",
       "title": "Claude Code BIG Update: Assign a Model to Your SubAgents",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "9j7c7UusaEs": {
+      "processed_at": "2026-07-07T08:00:47.251099",
+      "title": "The END of AI Slop is here? 🤖",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "0SXCIfFK5r8": {
+      "processed_at": "2026-07-07T08:00:53.993839",
+      "title": "\"Superintelligence Is Now In Sight\" Mark Zuckerberg's Master Plan Revealed",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Gtw07JculP4": {
+      "processed_at": "2026-07-07T08:01:01.620598",
+      "title": "Can I Recreate an AI Video With 250+ Million Views in 20 Minutes?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "jCyTTtk69QY": {
+      "processed_at": "2026-07-07T08:01:11.812994",
+      "title": "AI News + Coffee: GPT-5, META's \"Superintelligence\" and more...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "UvueQU0cbBY": {
+      "processed_at": "2026-07-07T08:01:19.943901",
+      "title": "Claude Code SubAgents Testing",
       "channel": "All About AI",
       "status": "success"
     }
