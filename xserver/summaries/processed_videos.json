@@ -792,7 +792,12 @@
     "0SXCIfFK5r8",
     "Gtw07JculP4",
     "jCyTTtk69QY",
-    "UvueQU0cbBY"
+    "UvueQU0cbBY",
+    "kxstlfc8Lw4",
+    "BXi4-BwVTg0",
+    "6CljfqMX9i4",
+    "ilyppm2yhm0",
+    "cNFMKgwekyQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5540,6 +5545,36 @@
       "processed_at": "2026-07-07T08:01:19.943901",
       "title": "Claude Code SubAgents Testing",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "kxstlfc8Lw4": {
+      "processed_at": "2026-07-08T08:00:47.667268",
+      "title": "Fine-Tune the biggest open-source models (even with a bad PC)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "BXi4-BwVTg0": {
+      "processed_at": "2026-07-08T08:00:58.179095",
+      "title": "Meet Bop, my first ever robot",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "6CljfqMX9i4": {
+      "processed_at": "2026-07-08T08:01:05.616406",
+      "title": "CLAUDE IS CONSCIOUS",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "ilyppm2yhm0": {
+      "processed_at": "2026-07-08T08:01:13.029241",
+      "title": "The BEST Way to Stay Ahead of AI 🤖",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "cNFMKgwekyQ": {
+      "processed_at": "2026-07-08T08:01:20.036173",
+      "title": "my foolproof system for infinite motivation as an entrepreneur",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
