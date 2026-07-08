@@ -797,7 +797,12 @@
     "BXi4-BwVTg0",
     "6CljfqMX9i4",
     "ilyppm2yhm0",
-    "cNFMKgwekyQ"
+    "cNFMKgwekyQ",
+    "C9pUJya5aZc",
+    "d25wtBb6ywI",
+    "VRHVNgYZx7M",
+    "0dJNFlHeOEM",
+    "QGeql15rcLo"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5575,6 +5580,36 @@
       "processed_at": "2026-07-08T08:01:20.036173",
       "title": "my foolproof system for infinite motivation as an entrepreneur",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "C9pUJya5aZc": {
+      "processed_at": "2026-07-09T08:00:50.276172",
+      "title": "The Steam Bug That Deleted Your Entire Home Directory",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "d25wtBb6ywI": {
+      "processed_at": "2026-07-09T08:01:01.040355",
+      "title": "AI Automation 30 Day Update - How Much Did We Profit?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "VRHVNgYZx7M": {
+      "processed_at": "2026-07-09T08:01:11.720625",
+      "title": "David Ondrej takes over Morocco for 10 days",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "0dJNFlHeOEM": {
+      "processed_at": "2026-07-09T08:01:23.073620",
+      "title": "Claude Code Rate Limit Changes (!) - More SubAgents and Hooks Testing",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "QGeql15rcLo": {
+      "processed_at": "2026-07-09T08:01:31.585534",
+      "title": "\"AlphaGo Moment\" For Self Improving AI... can this be real?",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
