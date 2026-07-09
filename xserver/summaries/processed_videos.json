@@ -802,7 +802,12 @@
     "d25wtBb6ywI",
     "VRHVNgYZx7M",
     "0dJNFlHeOEM",
-    "QGeql15rcLo"
+    "QGeql15rcLo",
+    "xKg7O46HpH8",
+    "EWk9PBbKqzc",
+    "qgyckzrhWAc",
+    "CMjTfpTd-NY",
+    "KELdfNDX-UQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5610,6 +5615,36 @@
       "processed_at": "2026-07-09T08:01:31.585534",
       "title": "\"AlphaGo Moment\" For Self Improving AI... can this be real?",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "xKg7O46HpH8": {
+      "processed_at": "2026-07-10T08:00:46.843875",
+      "title": "GPT-5.6 is here (INSANE)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "EWk9PBbKqzc": {
+      "processed_at": "2026-07-10T08:00:53.907162",
+      "title": "\"Stop prompting, start building LOOPS.\" - swyx",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "qgyckzrhWAc": {
+      "processed_at": "2026-07-10T08:01:04.564840",
+      "title": "How I Build Software Only I Will Ever Use",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "CMjTfpTd-NY": {
+      "processed_at": "2026-07-10T08:01:11.620696",
+      "title": "Grok 4.5 just COOKED Claude and OpenAI",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "KELdfNDX-UQ": {
+      "processed_at": "2026-07-10T08:01:20.150927",
+      "title": "Claude Code Agents For Productivity Is UNREAL!",
+      "channel": "All About AI",
       "status": "success"
     }
   }
