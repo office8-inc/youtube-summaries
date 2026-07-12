@@ -807,7 +807,12 @@
     "EWk9PBbKqzc",
     "qgyckzrhWAc",
     "CMjTfpTd-NY",
-    "KELdfNDX-UQ"
+    "KELdfNDX-UQ",
+    "GtrWMNsXghA",
+    "bzWWeya4crg",
+    "6kt6Lhz4yJU",
+    "Tq_88rZNvdU",
+    "zW28e7LGPRQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5645,6 +5650,36 @@
       "processed_at": "2026-07-10T08:01:20.150927",
       "title": "Claude Code Agents For Productivity Is UNREAL!",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "GtrWMNsXghA": {
+      "processed_at": "2026-07-13T08:00:45.866234",
+      "title": "AI Apps Making $20,000+ per month with 1 person teams.",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "bzWWeya4crg": {
+      "processed_at": "2026-07-13T08:00:53.349671",
+      "title": "OpenAI GPT-5.6 Tested: Can It Find a Profitable Polymarket Strategy?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "6kt6Lhz4yJU": {
+      "processed_at": "2026-07-13T08:01:01.429348",
+      "title": "Claude Code Agents TDD Vibe Coding Test + Research",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "Tq_88rZNvdU": {
+      "processed_at": "2026-07-13T08:01:10.915833",
+      "title": "Unlock GOD MODE in Google Veo 3 (The \"Draw to Direct\" Trick)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "zW28e7LGPRQ": {
+      "processed_at": "2026-07-13T08:01:20.369209",
+      "title": "Claude Code: From Beginner to Expert in 19 Minutes",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
