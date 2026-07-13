@@ -812,7 +812,12 @@
     "bzWWeya4crg",
     "6kt6Lhz4yJU",
     "Tq_88rZNvdU",
-    "zW28e7LGPRQ"
+    "zW28e7LGPRQ",
+    "eNn2tT-lrz4",
+    "H-MU1gXsf2U",
+    "fB3K0D5G6mg",
+    "R7bC46BUEok",
+    "N5dISEgeyCI"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5680,6 +5685,36 @@
       "processed_at": "2026-07-13T08:01:20.369209",
       "title": "Claude Code: From Beginner to Expert in 19 Minutes",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "eNn2tT-lrz4": {
+      "processed_at": "2026-07-14T08:00:50.542529",
+      "title": "Tailscale, Clearly Explained (Beginner's Guide)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "H-MU1gXsf2U": {
+      "processed_at": "2026-07-14T08:01:02.001901",
+      "title": "AI Coding Agents tier list",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "fB3K0D5G6mg": {
+      "processed_at": "2026-07-14T08:01:11.562671",
+      "title": "I Built a Robot Arm to Run My Coffee Shop",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "R7bC46BUEok": {
+      "processed_at": "2026-07-14T08:01:19.671310",
+      "title": "I Opened a Coffee Shop Run by Claude",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "N5dISEgeyCI": {
+      "processed_at": "2026-07-14T08:01:26.871863",
+      "title": "Perplexity Comet: Autonomous AI Browsers Actually WORK!",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
