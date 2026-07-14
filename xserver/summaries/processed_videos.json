@@ -817,7 +817,12 @@
     "H-MU1gXsf2U",
     "fB3K0D5G6mg",
     "R7bC46BUEok",
-    "N5dISEgeyCI"
+    "N5dISEgeyCI",
+    "beslBxPhk-M",
+    "cwf2vEAigKA",
+    "AXavabC9eU4",
+    "JxKlt0K1zTI",
+    "uw5dZ04D3cw"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5715,6 +5720,36 @@
       "processed_at": "2026-07-14T08:01:26.871863",
       "title": "Perplexity Comet: Autonomous AI Browsers Actually WORK!",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "beslBxPhk-M": {
+      "processed_at": "2026-07-15T08:00:49.442738",
+      "title": "Stack Overflow Was Built Out of Spite",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "cwf2vEAigKA": {
+      "processed_at": "2026-07-15T08:01:00.477425",
+      "title": "Claude Built the Ultimate Second Brain",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "AXavabC9eU4": {
+      "processed_at": "2026-07-15T08:01:07.638713",
+      "title": "GPT 5 Lobster - Claude Code Testing",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "JxKlt0K1zTI": {
+      "processed_at": "2026-07-15T08:01:17.568216",
+      "title": "AI Action Plan: The U.S. Blueprint to Outpace China and Rule the Future",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "uw5dZ04D3cw": {
+      "processed_at": "2026-07-15T08:01:25.464375",
+      "title": "Is Firefox… Dying!?",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
