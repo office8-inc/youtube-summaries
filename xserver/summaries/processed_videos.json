@@ -822,7 +822,12 @@
     "cwf2vEAigKA",
     "AXavabC9eU4",
     "JxKlt0K1zTI",
-    "uw5dZ04D3cw"
+    "uw5dZ04D3cw",
+    "Z1NTwYuuvvw",
+    "fKM-wCcawpc",
+    "FgthN_fY3Ic",
+    "MTrBANpkFR4",
+    "1fXM5QwQchE"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5750,6 +5755,36 @@
       "processed_at": "2026-07-15T08:01:25.464375",
       "title": "Is Firefox… Dying!?",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "Z1NTwYuuvvw": {
+      "processed_at": "2026-07-16T08:00:46.561339",
+      "title": "Bad Claude Code Habits",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "fKM-wCcawpc": {
+      "processed_at": "2026-07-16T08:00:57.391952",
+      "title": "This GPT-5.6 Trading Bot Is CRUSHING Hyperliquid 24/7 (so far)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "FgthN_fY3Ic": {
+      "processed_at": "2026-07-16T08:01:08.924206",
+      "title": "Claude Code Agents - ChatGPT Agent - Veo 3 JSON Prompt",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "MTrBANpkFR4": {
+      "processed_at": "2026-07-16T08:01:19.489526",
+      "title": "The Programming Language with NO Characters!? 💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "1fXM5QwQchE": {
+      "processed_at": "2026-07-16T08:01:31.170823",
+      "title": "My 1-Million-Views AI Video Formula Tutorial (Veo 3 / Kling 2.1++)",
+      "channel": "All About AI",
       "status": "success"
     }
   }
