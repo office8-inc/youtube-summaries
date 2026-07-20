@@ -827,7 +827,17 @@
     "fKM-wCcawpc",
     "FgthN_fY3Ic",
     "MTrBANpkFR4",
-    "1fXM5QwQchE"
+    "1fXM5QwQchE",
+    "OPuD-UeQGY8",
+    "YldXzPRWDrg",
+    "BUqGH2IwmOw",
+    "feAc83Qlx4Q",
+    "Cu5kevu384U",
+    "SK8SSr7-JaY",
+    "fu8Pw70ryXc",
+    "4fPLsmJNaMI",
+    "8ZgpAXe5V5w",
+    "XvZDGEddhPU"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5785,6 +5795,66 @@
       "processed_at": "2026-07-16T08:01:31.170823",
       "title": "My 1-Million-Views AI Video Formula Tutorial (Veo 3 / Kling 2.1++)",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "OPuD-UeQGY8": {
+      "processed_at": "2026-07-17T08:00:50.584297",
+      "title": "INSANE AI News: GPT-RED, Kimi K3, Gemini 3.5 Pro and Anthropic's \"END GAME\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "YldXzPRWDrg": {
+      "processed_at": "2026-07-17T08:00:58.620512",
+      "title": "the weird call of duty strategy I used to get rich with AI",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "BUqGH2IwmOw": {
+      "processed_at": "2026-07-17T08:01:09.882211",
+      "title": "AI Researchers SHOCKED as Models \"Quietly\" Learn to be EVIL",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "feAc83Qlx4Q": {
+      "processed_at": "2026-07-17T08:01:16.913848",
+      "title": "QWEN 3 CODER is Unleashed... better than KIMI K2",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Cu5kevu384U": {
+      "processed_at": "2026-07-17T08:01:24.497590",
+      "title": "Build anything with Augment Code, here’s how",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "SK8SSr7-JaY": {
+      "processed_at": "2026-07-20T08:00:51.365353",
+      "title": "KimiK3 - The Biggest moment in Open Source AI ever...",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "fu8Pw70ryXc": {
+      "processed_at": "2026-07-20T08:01:00.611896",
+      "title": "How Kimi K3 CRUSHED Polymarket With a 6,871% Return",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "4fPLsmJNaMI": {
+      "processed_at": "2026-07-20T08:01:10.431549",
+      "title": "Kimi K3 CRUSHED Fable",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "8ZgpAXe5V5w": {
+      "processed_at": "2026-07-20T08:01:18.808338",
+      "title": "L8 Principal's Agentic Engineering Setup (just copy him)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "XvZDGEddhPU": {
+      "processed_at": "2026-07-20T08:01:28.987918",
+      "title": "I \"Cured\" My ADHD with Two Robots #ad",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
