@@ -837,7 +837,12 @@
     "fu8Pw70ryXc",
     "4fPLsmJNaMI",
     "8ZgpAXe5V5w",
-    "XvZDGEddhPU"
+    "XvZDGEddhPU",
+    "wHQPf0RTZdA",
+    "ycG8pn9wUwI",
+    "0CYA8BbGzR8",
+    "36HchiQGU4U",
+    "dm_B9UDMBg4"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5855,6 +5860,36 @@
       "processed_at": "2026-07-20T08:01:28.987918",
       "title": "I \"Cured\" My ADHD with Two Robots #ad",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "wHQPf0RTZdA": {
+      "processed_at": "2026-07-21T08:00:49.443160",
+      "title": "Someone Ported DOOM to a 1995 Casio Loopy with a Sticker Printer",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "ycG8pn9wUwI": {
+      "processed_at": "2026-07-21T08:01:00.046518",
+      "title": "I Built Two Robots to Fix My ADHD. They Started Working Together.",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "0CYA8BbGzR8": {
+      "processed_at": "2026-07-21T08:01:10.592059",
+      "title": "AI in 2022 vs AI in 2025 💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "36HchiQGU4U": {
+      "processed_at": "2026-07-21T08:01:20.365709",
+      "title": "Google Takes the Gold. OpenAI under fire.",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "dm_B9UDMBg4": {
+      "processed_at": "2026-07-21T08:01:30.629980",
+      "title": "AMAZING Claude Code X (twitter) Context Engineering Workflow",
+      "channel": "All About AI",
       "status": "success"
     }
   }
