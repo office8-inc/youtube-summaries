@@ -842,7 +842,12 @@
     "ycG8pn9wUwI",
     "0CYA8BbGzR8",
     "36HchiQGU4U",
-    "dm_B9UDMBg4"
+    "dm_B9UDMBg4",
+    "dH70AHJhUM4",
+    "BZAi9h9uCX4",
+    "rOUs76wtv60",
+    "-adVGpY_vSQ",
+    "5_L_BpL5Whs"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5890,6 +5895,37 @@
       "processed_at": "2026-07-21T08:01:30.629980",
       "title": "AMAZING Claude Code X (twitter) Context Engineering Workflow",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "dH70AHJhUM4": {
+      "processed_at": "2026-07-22T08:00:38.438228",
+      "title": "“White kitty picks on orange cat… plays innocent—justice served! 😼🐾 #CatDrama”",
+      "channel": "DuaMazhar",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "BZAi9h9uCX4": {
+      "processed_at": "2026-07-22T08:00:47.404131",
+      "title": "OpenAI's \"o3 Alpha\" is so cracked",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "rOUs76wtv60": {
+      "processed_at": "2026-07-22T08:00:55.093154",
+      "title": "How to Learn AI as an Entrepreneur (3 Beginner Paths)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "-adVGpY_vSQ": {
+      "processed_at": "2026-07-22T08:01:05.874003",
+      "title": "OpenAI just solved math",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "5_L_BpL5Whs": {
+      "processed_at": "2026-07-22T08:01:13.606880",
+      "title": "ChatGPT Agent is out of control",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
