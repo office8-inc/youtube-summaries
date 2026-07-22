@@ -847,7 +847,12 @@
     "BZAi9h9uCX4",
     "rOUs76wtv60",
     "-adVGpY_vSQ",
-    "5_L_BpL5Whs"
+    "5_L_BpL5Whs",
+    "HNTej_rff7Q",
+    "5BRyIFnIoos",
+    "IbJiSx0cxDI",
+    "fAORqsKoUzc",
+    "w4oF46beOn0"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5926,6 +5931,37 @@
       "processed_at": "2026-07-22T08:01:13.606880",
       "title": "ChatGPT Agent is out of control",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "HNTej_rff7Q": {
+      "processed_at": "2026-07-23T08:00:34.410836",
+      "title": "@WesRoth @dylan_curious",
+      "channel": "Vornix Chaos Club ",
+      "status": "success"
+    },
+    "5BRyIFnIoos": {
+      "processed_at": "2026-07-23T08:00:41.098560",
+      "title": "Fun fact: Before Vornix Chaos Club, Tuesday didn't exist. It was just a second but fake Monday",
+      "channel": "Vornix Chaos Club ",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "IbJiSx0cxDI": {
+      "processed_at": "2026-07-23T08:00:50.445711",
+      "title": "🏆🏆🏆🇸🇳🇸🇳🇸🇳",
+      "channel": "Vornix Chaos Club ",
+      "status": "success"
+    },
+    "fAORqsKoUzc": {
+      "processed_at": "2026-07-23T08:00:57.525878",
+      "title": "⁠Africa is a village in North Pole @flame_timer",
+      "channel": "Vornix Chaos Club ",
+      "status": "success"
+    },
+    "w4oF46beOn0": {
+      "processed_at": "2026-07-23T08:01:04.436670",
+      "title": "@flametimer is great. Vx we confirm the past tense of think is thank. thats why we have think tanks",
+      "channel": "Vornix Chaos Club ",
       "status": "success"
     }
   }
