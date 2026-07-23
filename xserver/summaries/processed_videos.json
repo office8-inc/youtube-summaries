@@ -852,7 +852,12 @@
     "5BRyIFnIoos",
     "IbJiSx0cxDI",
     "fAORqsKoUzc",
-    "w4oF46beOn0"
+    "w4oF46beOn0",
+    "LIXAMir9-AU",
+    "GsgTEr2w4S8",
+    "UXYU2xKjkMM",
+    "P3mFkCLea_E",
+    "j1vm7ZxDlt8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5962,6 +5967,36 @@
       "processed_at": "2026-07-23T08:01:04.436670",
       "title": "@flametimer is great. Vx we confirm the past tense of think is thank. thats why we have think tanks",
       "channel": "Vornix Chaos Club ",
+      "status": "success"
+    },
+    "LIXAMir9-AU": {
+      "processed_at": "2026-07-24T08:00:31.400563",
+      "title": "Someone Built a CPU Using CSS",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "GsgTEr2w4S8": {
+      "processed_at": "2026-07-24T08:00:41.002123",
+      "title": "How I Build Apps on my Phone While at the Park #ad",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "UXYU2xKjkMM": {
+      "processed_at": "2026-07-24T08:00:49.842576",
+      "title": "I let AI run my business for the day (the future is HERE)",
+      "channel": "Liam Ottley VLOGs",
+      "status": "success"
+    },
+    "P3mFkCLea_E": {
+      "processed_at": "2026-07-24T08:00:58.366384",
+      "title": "i taught 6 founders claude code. the results were insane",
+      "channel": "Liam Ottley VLOGs",
+      "status": "success"
+    },
+    "j1vm7ZxDlt8": {
+      "processed_at": "2026-07-24T08:01:04.960338",
+      "title": "bro, claude code is actually insane",
+      "channel": "Liam Ottley VLOGs",
       "status": "success"
     }
   }
