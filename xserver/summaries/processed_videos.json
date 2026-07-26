@@ -857,7 +857,12 @@
     "GsgTEr2w4S8",
     "UXYU2xKjkMM",
     "P3mFkCLea_E",
-    "j1vm7ZxDlt8"
+    "j1vm7ZxDlt8",
+    "k9Gd1fYYWa8",
+    "rPFnjDTlYuY",
+    "bk8RL4_V1Yc",
+    "VYWKb91jSWw",
+    "z8pjFF9-Vss"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -5997,6 +6002,36 @@
       "processed_at": "2026-07-24T08:01:04.960338",
       "title": "bro, claude code is actually insane",
       "channel": "Liam Ottley VLOGs",
+      "status": "success"
+    },
+    "k9Gd1fYYWa8": {
+      "processed_at": "2026-07-27T08:00:42.809898",
+      "title": "Remote Work is the #1 Productivity Killer",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "rPFnjDTlYuY": {
+      "processed_at": "2026-07-27T08:00:52.584841",
+      "title": "Opus 5 and Genspark SecondBrain JUST went live...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "bk8RL4_V1Yc": {
+      "processed_at": "2026-07-27T08:01:00.038024",
+      "title": "How My AI Agent Found a 993% Return Polymarket Strategy",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "VYWKb91jSWw": {
+      "processed_at": "2026-07-27T08:01:06.546424",
+      "title": "This PNG Can Attack AI Coding Agents",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "z8pjFF9-Vss": {
+      "processed_at": "2026-07-27T08:01:13.173005",
+      "title": "AI Concepts tier list",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
