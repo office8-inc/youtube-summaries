@@ -862,7 +862,12 @@
     "rPFnjDTlYuY",
     "bk8RL4_V1Yc",
     "VYWKb91jSWw",
-    "z8pjFF9-Vss"
+    "z8pjFF9-Vss",
+    "CtO3ChufJT8",
+    "FU5_kpTAVDo",
+    "_t-Hbg-3_CU",
+    "ZW7R3qNw4nk",
+    "GapEWqXgKHk"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6031,6 +6036,36 @@
     "z8pjFF9-Vss": {
       "processed_at": "2026-07-27T08:01:13.173005",
       "title": "AI Concepts tier list",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "CtO3ChufJT8": {
+      "processed_at": "2026-07-28T08:00:43.062191",
+      "title": "I Built a Winamp Clone on a 20-Year-old Mac",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "FU5_kpTAVDo": {
+      "processed_at": "2026-07-28T08:00:50.495796",
+      "title": "Agentic Engineering, explained by a 10x developer",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "_t-Hbg-3_CU": {
+      "processed_at": "2026-07-28T08:01:00.663682",
+      "title": "Opus 5 - better than Fable?",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "ZW7R3qNw4nk": {
+      "processed_at": "2026-07-28T08:01:11.384386",
+      "title": "Build Anything with Kimi K3, Here’s How",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "GapEWqXgKHk": {
+      "processed_at": "2026-07-28T08:01:23.044991",
+      "title": "The major bottleneck with AI Coding in 2026",
       "channel": "David Ondrej",
       "status": "success"
     }
