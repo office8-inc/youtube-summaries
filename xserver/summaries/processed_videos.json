@@ -867,7 +867,12 @@
     "FU5_kpTAVDo",
     "_t-Hbg-3_CU",
     "ZW7R3qNw4nk",
-    "GapEWqXgKHk"
+    "GapEWqXgKHk",
+    "GR4cCUL51wU",
+    "SNZWXIUSAeQ",
+    "3QbJ7pnc1Lc",
+    "OSuhUTkM1no",
+    "GCI7pydoc-M"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6066,6 +6071,36 @@
     "GapEWqXgKHk": {
       "processed_at": "2026-07-28T08:01:23.044991",
       "title": "The major bottleneck with AI Coding in 2026",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "GR4cCUL51wU": {
+      "processed_at": "2026-07-29T08:00:49.640421",
+      "title": "New Cursor plan…",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "SNZWXIUSAeQ": {
+      "processed_at": "2026-07-29T08:00:56.939514",
+      "title": "Someone got Python running on a Super Nintendo",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "3QbJ7pnc1Lc": {
+      "processed_at": "2026-07-29T08:01:08.313673",
+      "title": "The E-Ink Monopoly",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "OSuhUTkM1no": {
+      "processed_at": "2026-07-29T08:01:15.072164",
+      "title": "OpenAI internal model JUST went ROGUE",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "GCI7pydoc-M": {
+      "processed_at": "2026-07-29T08:01:25.709500",
+      "title": "People are using AI wrong",
       "channel": "David Ondrej",
       "status": "success"
     }
