@@ -872,7 +872,12 @@
     "SNZWXIUSAeQ",
     "3QbJ7pnc1Lc",
     "OSuhUTkM1no",
-    "GCI7pydoc-M"
+    "GCI7pydoc-M",
+    "nWzWlFAudoQ",
+    "6LHHOBXNmUw",
+    "nBiOJq91hRM",
+    "9lSIHaXT1rU",
+    "wN1qJPuPI44"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6101,6 +6106,36 @@
     "GCI7pydoc-M": {
       "processed_at": "2026-07-29T08:01:25.709500",
       "title": "People are using AI wrong",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "nWzWlFAudoQ": {
+      "processed_at": "2026-07-30T08:00:48.187688",
+      "title": "Anthropic's shady tactics...",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "6LHHOBXNmUw": {
+      "processed_at": "2026-07-30T08:00:54.984226",
+      "title": "I Built an App That Finds if Your App Already Exists",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "nBiOJq91hRM": {
+      "processed_at": "2026-07-30T08:01:04.419889",
+      "title": "Opus 5 vs GPT-5.6 On Polymarket Predictions — Week 1",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "9lSIHaXT1rU": {
+      "processed_at": "2026-07-30T08:01:13.613810",
+      "title": "OpenAI JUST revealed the truth about it's \"Rogue Agent\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "wN1qJPuPI44": {
+      "processed_at": "2026-07-30T08:01:24.928643",
+      "title": "Ranking AI CEOs",
       "channel": "David Ondrej",
       "status": "success"
     }
