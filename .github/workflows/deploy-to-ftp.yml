@@ -15,6 +15,10 @@ on:
         required: false
         type: boolean
         default: false
+      paths:
+        description: '特定ファイルのみ再送（カンマ区切りのリポジトリ相対パス。転送失敗の復旧用）'
+        required: false
+        type: string
 
 permissions:
   contents: read
@@ -37,7 +41,18 @@ jobs:
       - name: Get changed files
         id: changed-files
         run: |
-          if [ "${{ github.event.inputs.deploy_all }}" == "true" ]; then
+          if [ -n "${{ github.event.inputs.paths }}" ]; then
+            # 手動指定モード: 転送だけ失敗したファイルをピンポイントで再送する
+            echo "${{ github.event.inputs.paths }}" | tr ',' '\n' | sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | grep -E '^xserver/' > changed_files.txt || true
+            if [ ! -s changed_files.txt ]; then
+              echo "mode=none" >> $GITHUB_OUTPUT
+              echo "::error::paths に xserver/ 配下の有効なパスがありません"
+              exit 1
+            fi
+            echo "mode=diff" >> $GITHUB_OUTPUT
+            echo "手動指定されたファイル:"
+            cat changed_files.txt
+          elif [ "${{ github.event.inputs.deploy_all }}" == "true" ]; then
             echo "mode=all" >> $GITHUB_OUTPUT
           else
             # PRマージ時も手動実行時も、最新コミットの変更ファイルを取得
@@ -60,15 +75,21 @@ jobs:
           # lftpスクリプトを作成
           cat > upload.lftp << 'EOF'
           set ftp:ssl-allow no
-          set net:timeout 10
-          set net:max-retries 3
-          
+          set ftp:passive-mode on
+          set net:timeout 30
+          set net:max-retries 8
+          set net:reconnect-interval-base 10
+          set net:reconnect-interval-multiplier 1.2
+          set net:persist-retries 5
+          set cmd:fail-exit yes
+
           open ftp://${{ secrets.FTP_USER }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_HOST }}
-          
+
           EOF
-          
+
           UPLOAD_COUNT=0
-          
+          declare -A MKDIR_DONE
+
           if [ "${{ steps.changed-files.outputs.mode }}" == "all" ]; then
             echo "⚠️  全ファイルアップロードモード"
             
@@ -77,8 +98,9 @@ jobs:
               REMOTE_PATH="${file#xserver/summaries/}"
               REMOTE_DIR=$(dirname "$REMOTE_PATH")
               
-              if [ "$REMOTE_DIR" != "." ]; then
+              if [ "$REMOTE_DIR" != "." ] && [ -z "${MKDIR_DONE[$REMOTE_DIR]:-}" ]; then
                 echo "mkdir -p $REMOTE_DIR" >> upload.lftp
+                MKDIR_DONE[$REMOTE_DIR]=1
               fi
               echo "put \"$file\" -o \"$REMOTE_PATH\"" >> upload.lftp
               echo "✓ $REMOTE_PATH を追加"
@@ -103,8 +125,9 @@ jobs:
                 REMOTE_PATH="${file#xserver/summaries/}"
                 REMOTE_DIR=$(dirname "$REMOTE_PATH")
                 
-                if [ "$REMOTE_DIR" != "." ]; then
+                if [ "$REMOTE_DIR" != "." ] && [ -z "${MKDIR_DONE[$REMOTE_DIR]:-}" ]; then
                   echo "mkdir -p $REMOTE_DIR" >> upload.lftp
+                  MKDIR_DONE[$REMOTE_DIR]=1
                 fi
                 echo "put \"$file\" -o \"$REMOTE_PATH\"" >> upload.lftp
                 echo "✓ $REMOTE_PATH を追加 (変更検出)"
@@ -123,10 +146,24 @@ jobs:
           # lftpスクリプトを実行
           if [ $UPLOAD_COUNT -gt 0 ]; then
             echo ""
-            echo "📤 FTPアップロード中..."
-            lftp -f upload.lftp
+            echo "📤 FTPアップロード中... ($UPLOAD_COUNT ファイル)"
+
+            # Xserver側の一時的な接続拒否で転送が全滅する事故が複数回あったため、
+            # セッションごと張り直して粘る（lftp内のリトライだけでは足りなかった）
+            ATTEMPT=1
+            MAX_ATTEMPT=3
+            until lftp -f upload.lftp; do
+              if [ $ATTEMPT -ge $MAX_ATTEMPT ]; then
+                echo "::error::FTPアップロードが ${MAX_ATTEMPT} 回とも失敗しました（${UPLOAD_COUNT} ファイルがサイトに未反映）"
+                exit 1
+              fi
+              echo "⚠️  試行 ${ATTEMPT}/${MAX_ATTEMPT} 失敗。90秒待って再接続します..."
+              sleep 90
+              ATTEMPT=$((ATTEMPT + 1))
+            done
+
             echo ""
-            echo "✅ $UPLOAD_COUNT ファイルをアップロードしました"
+            echo "✅ $UPLOAD_COUNT ファイルをアップロードしました（試行 ${ATTEMPT}/${MAX_ATTEMPT}）"
           else
             echo "ℹ️  アップロード対象のファイルがありません"
           fi
@@ -134,8 +171,15 @@ jobs:
       - name: Summary
         if: always()
         run: |
-          echo "## 📊 FTPアップロード完了" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "main ブランチへのプッシュに伴い、変更ファイルをXSERVERにアップロードしました。" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ job.status }}" == "success" ]; then
+            echo "## 📊 FTPアップロード完了" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "変更ファイルをXSERVERにアップロードしました。" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## ❌ FTPアップロード失敗" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "リポジトリには反映済みだが、**サイトには未反映**。" >> $GITHUB_STEP_SUMMARY
+            echo "復旧: このワークフローを workflow_dispatch で実行し、\`paths\` に対象ファイルを指定して再送する。" >> $GITHUB_STEP_SUMMARY
+          fi
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "🌐 公開URL: https://office8-inc.com/youtube-summaries/" >> $GITHUB_STEP_SUMMARY
