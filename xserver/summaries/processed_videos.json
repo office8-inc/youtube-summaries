@@ -877,7 +877,12 @@
     "6LHHOBXNmUw",
     "nBiOJq91hRM",
     "9lSIHaXT1rU",
-    "wN1qJPuPI44"
+    "wN1qJPuPI44",
+    "J3MHGRAqms0",
+    "6PDX5uQbSRM",
+    "Y2GVqUQ_QxU",
+    "hii2UuFTdmA",
+    "FupqNwrXiGE"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6137,6 +6142,36 @@
       "processed_at": "2026-07-30T08:01:24.928643",
       "title": "Ranking AI CEOs",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "J3MHGRAqms0": {
+      "processed_at": "2026-07-31T08:00:50.763916",
+      "title": "I tested Abacus's new SUPERCOMPUTER... (INSANE)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "6PDX5uQbSRM": {
+      "processed_at": "2026-07-31T08:01:00.311296",
+      "title": "The Emoji Programming Language 👩‍💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "Y2GVqUQ_QxU": {
+      "processed_at": "2026-07-31T08:01:07.511083",
+      "title": "Build an army of Kimi K2 agents - here’s how",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "hii2UuFTdmA": {
+      "processed_at": "2026-07-31T08:01:14.413173",
+      "title": "Claude Code AI Agent (MCP) Is My No. 1 Employee (you must do this)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "FupqNwrXiGE": {
+      "processed_at": "2026-07-31T08:01:22.857057",
+      "title": "BREAKING: OpenAI's new release...",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
