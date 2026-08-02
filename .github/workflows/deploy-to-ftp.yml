@@ -73,7 +73,10 @@ jobs:
         if: steps.changed-files.outputs.mode != 'none'
         run: |
           # lftpスクリプトを作成
-          cat > upload.lftp << 'EOF'
+          # lftp の mkdir -p は GNU の mkdir -p と違い、既存ディレクトリに 550 を返す。
+          # cmd:fail-exit yes のまま mkdir を混ぜると put に到達せず全滅するので、
+          # mkdir 群は fail-exit no で流し、put 群だけ fail-exit yes で厳密に扱う。
+          cat > lftp_header.txt << 'EOF'
           set ftp:ssl-allow no
           set ftp:passive-mode on
           set net:timeout 30
@@ -81,12 +84,14 @@ jobs:
           set net:reconnect-interval-base 10
           set net:reconnect-interval-multiplier 1.2
           set net:persist-retries 5
-          set cmd:fail-exit yes
+          set cmd:fail-exit no
 
           open ftp://${{ secrets.FTP_USER }}:${{ secrets.FTP_PASSWORD }}@${{ secrets.FTP_HOST }}
 
           EOF
 
+          : > lftp_mkdirs.txt
+          : > lftp_puts.txt
           UPLOAD_COUNT=0
           declare -A MKDIR_DONE
 
@@ -99,10 +104,10 @@ jobs:
               REMOTE_DIR=$(dirname "$REMOTE_PATH")
               
               if [ "$REMOTE_DIR" != "." ] && [ -z "${MKDIR_DONE[$REMOTE_DIR]:-}" ]; then
-                echo "mkdir -p $REMOTE_DIR" >> upload.lftp
+                echo "mkdir -f -p $REMOTE_DIR" >> lftp_mkdirs.txt
                 MKDIR_DONE[$REMOTE_DIR]=1
               fi
-              echo "put \"$file\" -o \"$REMOTE_PATH\"" >> upload.lftp
+              echo "put \"$file\" -o \"$REMOTE_PATH\"" >> lftp_puts.txt
               echo "✓ $REMOTE_PATH を追加"
               UPLOAD_COUNT=$((UPLOAD_COUNT + 1))
             done < <(find xserver/summaries \( -name "*.md" -o -name "*.json" \) -type f)
@@ -111,7 +116,7 @@ jobs:
             for file in xserver/index.html xserver/get_articles.php xserver/marked.min.js; do
               if [ -f "$file" ]; then
                 FILENAME=$(basename "$file")
-                echo "put \"$file\" -o \"$FILENAME\"" >> upload.lftp
+                echo "put \"$file\" -o \"$FILENAME\"" >> lftp_puts.txt
                 echo "✓ $FILENAME を追加"
                 UPLOAD_COUNT=$((UPLOAD_COUNT + 1))
               fi
@@ -126,23 +131,28 @@ jobs:
                 REMOTE_DIR=$(dirname "$REMOTE_PATH")
                 
                 if [ "$REMOTE_DIR" != "." ] && [ -z "${MKDIR_DONE[$REMOTE_DIR]:-}" ]; then
-                  echo "mkdir -p $REMOTE_DIR" >> upload.lftp
+                  echo "mkdir -f -p $REMOTE_DIR" >> lftp_mkdirs.txt
                   MKDIR_DONE[$REMOTE_DIR]=1
                 fi
-                echo "put \"$file\" -o \"$REMOTE_PATH\"" >> upload.lftp
+                echo "put \"$file\" -o \"$REMOTE_PATH\"" >> lftp_puts.txt
                 echo "✓ $REMOTE_PATH を追加 (変更検出)"
                 UPLOAD_COUNT=$((UPLOAD_COUNT + 1))
               elif [[ "$file" == xserver/* ]]; then
                 FILENAME=$(basename "$file")
-                echo "put \"$file\" -o \"$FILENAME\"" >> upload.lftp
+                echo "put \"$file\" -o \"$FILENAME\"" >> lftp_puts.txt
                 echo "✓ $FILENAME を追加 (変更検出)"
                 UPLOAD_COUNT=$((UPLOAD_COUNT + 1))
               fi
             done < changed_files.txt
           fi
           
+          # mkdir 群 → fail-exit を戻す → put 群 の順に組み立てる
+          cat lftp_header.txt > upload.lftp
+          cat lftp_mkdirs.txt >> upload.lftp
+          echo "set cmd:fail-exit yes" >> upload.lftp
+          cat lftp_puts.txt >> upload.lftp
           echo "bye" >> upload.lftp
-          
+
           # lftpスクリプトを実行
           if [ $UPLOAD_COUNT -gt 0 ]; then
             echo ""
