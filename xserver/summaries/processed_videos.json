@@ -882,7 +882,12 @@
     "6PDX5uQbSRM",
     "Y2GVqUQ_QxU",
     "hii2UuFTdmA",
-    "FupqNwrXiGE"
+    "FupqNwrXiGE",
+    "52_wce7E3aQ",
+    "clrUbBtD2j4",
+    "TjUxBdiut1k",
+    "FtyePPCE5q0",
+    "p3Gqwtk-qAQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6172,6 +6177,36 @@
       "processed_at": "2026-07-31T08:01:22.857057",
       "title": "BREAKING: OpenAI's new release...",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "52_wce7E3aQ": {
+      "processed_at": "2026-08-03T08:00:51.563946",
+      "title": "The Most Important Paper in AI History",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "clrUbBtD2j4": {
+      "processed_at": "2026-08-03T08:01:01.115748",
+      "title": "I open-sourced my Agent Skills repo (it went viral)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "TjUxBdiut1k": {
+      "processed_at": "2026-08-03T08:01:10.010248",
+      "title": "OpenAI's Astra JUST solved math...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "FtyePPCE5q0": {
+      "processed_at": "2026-08-03T08:01:18.956030",
+      "title": "My Biggest AI Mistake...",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "p3Gqwtk-qAQ": {
+      "processed_at": "2026-08-03T08:01:29.849232",
+      "title": "Why I Run Agents Overnight",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
