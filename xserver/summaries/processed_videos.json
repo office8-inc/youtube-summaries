@@ -887,7 +887,12 @@
     "clrUbBtD2j4",
     "TjUxBdiut1k",
     "FtyePPCE5q0",
-    "p3Gqwtk-qAQ"
+    "p3Gqwtk-qAQ",
+    "ANN_GP_vAaA",
+    "HctuXVQci4E",
+    "Opsz0vsyJhQ",
+    "64cdhWFvxeY",
+    "_nck5o0m0AY"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6207,6 +6212,36 @@
       "processed_at": "2026-08-03T08:01:29.849232",
       "title": "Why I Run Agents Overnight",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "ANN_GP_vAaA": {
+      "processed_at": "2026-08-04T08:00:51.613857",
+      "title": "QuantWFX: Polymarket AI Weather Forcast + Week 1 AI Battle Results",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "HctuXVQci4E": {
+      "processed_at": "2026-08-04T08:01:00.494048",
+      "title": "OpenAI's Secret INTERNAL Model Almost Wins World Coding Competition...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Opsz0vsyJhQ": {
+      "processed_at": "2026-08-04T08:01:12.078722",
+      "title": "Base 44 - How to Vibe Code an AI Video App in 10 Minutes",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "64cdhWFvxeY": {
+      "processed_at": "2026-08-04T08:01:19.389932",
+      "title": "Did AI Just Kill Software Devs? ex-Google VP of Engineering Speaks out...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "_nck5o0m0AY": {
+      "processed_at": "2026-08-04T08:01:30.119332",
+      "title": "They’re Spending BILLIONS on Code Editors 👨‍💻",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
