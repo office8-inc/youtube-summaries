@@ -892,7 +892,12 @@
     "HctuXVQci4E",
     "Opsz0vsyJhQ",
     "64cdhWFvxeY",
-    "_nck5o0m0AY"
+    "_nck5o0m0AY",
+    "I_ap_mlJBqg",
+    "vhoX1i-lCNU",
+    "bjmbKdFOW_I",
+    "2WM3CQhc1bY",
+    "1J4grRoHqo0"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6241,6 +6246,36 @@
     "_nck5o0m0AY": {
       "processed_at": "2026-08-04T08:01:30.119332",
       "title": "They’re Spending BILLIONS on Code Editors 👨‍💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "I_ap_mlJBqg": {
+      "processed_at": "2026-08-05T08:00:54.726872",
+      "title": "DeepSeek V4 Flash is INSANE",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "vhoX1i-lCNU": {
+      "processed_at": "2026-08-05T08:01:01.739119",
+      "title": "Undertale is a 5,000-Line Switch Statement",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "bjmbKdFOW_I": {
+      "processed_at": "2026-08-05T08:01:09.869034",
+      "title": "QWEN just CRASHED the industry",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "2WM3CQhc1bY": {
+      "processed_at": "2026-08-05T08:01:18.990325",
+      "title": "Elon Musks Reveals GROK 4's Future | MacroHard, Tesla Merger, DoD and more...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "1J4grRoHqo0": {
+      "processed_at": "2026-08-05T08:01:25.888558",
+      "title": "Can you run AI ONLY on a Smartphone!? #ad",
       "channel": "Coding with Lewis",
       "status": "success"
     }
