@@ -1,11 +1,23 @@
 name: Copilot Improve Summaries
 
+# 【2026-08-05 凍結】push トリガーを停止した。
+#
+# 2026-08-03 の GitHub 側ランタイム更新以降、アサインされた Copilot coding agent が
+# 編集ツールを一度も呼ばずに終了し、0 ファイルの PR を作るようになった
+# （#443 / #444 / #446 で再現。ai-news-digest でも同日に同じ症状）。
+# 記事は英語プレースホルダーのまま公開され続けるため、改善フェーズを
+# crow-bot 側の Claude（_improve_summaries_with_claude）へ移した。
+#
+# このワークフローを動かすと、Claude が改善した後に不要な issue と空 PR が立つ。
+# 復旧手順は ~/.crow-bot/workspace/skills/youtube-summaries/SKILL.md の
+# 「Copilot モード（凍結中・復旧したら戻す用）」を参照。
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'xserver/summaries/**/*.md'
+  # push:
+  #   branches:
+  #     - main
+  #   paths:
+  #     - 'xserver/summaries/**/*.md'
+  workflow_dispatch:
 
 permissions:
   contents: write
