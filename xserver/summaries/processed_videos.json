@@ -897,7 +897,12 @@
     "vhoX1i-lCNU",
     "bjmbKdFOW_I",
     "2WM3CQhc1bY",
-    "1J4grRoHqo0"
+    "1J4grRoHqo0",
+    "i-S99NwmsQA",
+    "mE19g0youEQ",
+    "uz6cI0RpllM",
+    "yAslhELtKEg",
+    "TC94ECQhI1U"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6277,6 +6282,36 @@
       "processed_at": "2026-08-05T08:01:25.888558",
       "title": "Can you run AI ONLY on a Smartphone!? #ad",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "i-S99NwmsQA": {
+      "processed_at": "2026-08-06T08:00:51.242794",
+      "title": "Let agents write your tests",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "mE19g0youEQ": {
+      "processed_at": "2026-08-06T08:01:02.558837",
+      "title": "OpenAI vs Claude Polymarket AI Prediciton Battle Week 2",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "uz6cI0RpllM": {
+      "processed_at": "2026-08-06T08:01:09.398856",
+      "title": "ComfyUI Install in Under 4 Minutes | Free AI Image Generator | Stable Diffusion, Flux and More",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "yAslhELtKEg": {
+      "processed_at": "2026-08-06T08:01:18.033864",
+      "title": "5 simple Claude Code workflows you must have - beginners guide",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "TC94ECQhI1U": {
+      "processed_at": "2026-08-06T08:01:29.107293",
+      "title": "Why 99% Will Miss the AI Money Wave (Don’t Be One of Them)",
+      "channel": "All About AI",
       "status": "success"
     }
   }
