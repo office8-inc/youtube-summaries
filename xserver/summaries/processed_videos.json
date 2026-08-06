@@ -902,7 +902,12 @@
     "mE19g0youEQ",
     "uz6cI0RpllM",
     "yAslhELtKEg",
-    "TC94ECQhI1U"
+    "TC94ECQhI1U",
+    "08lTuvYITxQ",
+    "suJy7T_HzrE",
+    "hqxvIju_yjs",
+    "CB43-oFnavw",
+    "XTqEOt1EI84"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6312,6 +6317,36 @@
       "processed_at": "2026-08-06T08:01:29.107293",
       "title": "Why 99% Will Miss the AI Money Wave (Don’t Be One of Them)",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "08lTuvYITxQ": {
+      "processed_at": "2026-08-07T08:00:52.926000",
+      "title": "GUIs are not dead",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "suJy7T_HzrE": {
+      "processed_at": "2026-08-07T08:01:01.839078",
+      "title": "The Face Hidden Inside an Aphex Twin Song",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "hqxvIju_yjs": {
+      "processed_at": "2026-08-07T08:01:08.676795",
+      "title": "The AI Automation Agency Journey Explained (3 Key Phases)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "CB43-oFnavw": {
+      "processed_at": "2026-08-07T08:01:16.129935",
+      "title": "KIMI just BROKE the AI Industry...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "XTqEOt1EI84": {
+      "processed_at": "2026-08-07T08:01:23.899673",
+      "title": "GROK 4 STUNNING New Ability? Emerging \"Fluid Intelligence\" in AI Models?",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
