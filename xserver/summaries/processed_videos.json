@@ -912,7 +912,12 @@
     "hST4u6lhY5U",
     "C9WoQrslPMM",
     "BMSvmzJuMiM",
-    "xgkjtF89-44"
+    "xgkjtF89-44",
+    "utb7zYbK10c",
+    "AL-XQiM4248",
+    "MuXWT5wx47k",
+    "SFzrcPwvrBw",
+    "p6peD0Sv63Y"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6382,6 +6387,36 @@
       "processed_at": "2026-08-10T08:01:32.173576",
       "title": "Ex-NASA dev reveals his Agentic Engineering Workflow",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "utb7zYbK10c": {
+      "processed_at": "2026-08-11T08:00:50.122822",
+      "title": "Ex-Uber dev explains his Multi-Agent Workflow",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "AL-XQiM4248": {
+      "processed_at": "2026-08-11T08:00:58.903600",
+      "title": "AI just killed Crypto...  (INSANE)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "MuXWT5wx47k": {
+      "processed_at": "2026-08-11T08:01:09.690420",
+      "title": "Build anything with Grok 4, here's how",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "SFzrcPwvrBw": {
+      "processed_at": "2026-08-11T08:01:20.633877",
+      "title": "Elon is Actually SCARED of What He UNLEASHED | GROK 4 (Full Replay)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "p6peD0Sv63Y": {
+      "processed_at": "2026-08-11T08:01:29.554622",
+      "title": "Grok 4 Jailbreak on Day Zero - This is CRAZY!",
+      "channel": "All About AI",
       "status": "success"
     }
   }
