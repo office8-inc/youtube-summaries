@@ -917,7 +917,12 @@
     "AL-XQiM4248",
     "MuXWT5wx47k",
     "SFzrcPwvrBw",
-    "p6peD0Sv63Y"
+    "p6peD0Sv63Y",
+    "p4BD_krr-y0",
+    "AYbFMDxnK70",
+    "SktytwCcXIc",
+    "vbx8T1vErtc",
+    "OndGP_W1bAM"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6417,6 +6422,36 @@
       "processed_at": "2026-08-11T08:01:29.554622",
       "title": "Grok 4 Jailbreak on Day Zero - This is CRAZY!",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "p4BD_krr-y0": {
+      "processed_at": "2026-08-12T08:00:49.693554",
+      "title": "BREAKING: Elon Musk Releases GROK 4 | This is what we've been waiting for...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "AYbFMDxnK70": {
+      "processed_at": "2026-08-12T08:00:57.452541",
+      "title": "“How to prompt AI like a tech millionaire” – Balaji Srinivasan",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "SktytwCcXIc": {
+      "processed_at": "2026-08-12T08:01:05.323527",
+      "title": "The WORST Programming Language EVER👨‍💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "vbx8T1vErtc": {
+      "processed_at": "2026-08-12T08:01:15.813683",
+      "title": "This Google Veo 3 Update is a GAME CHANGER: Here's Why",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "OndGP_W1bAM": {
+      "processed_at": "2026-08-12T08:01:22.694650",
+      "title": "Zuckerberg goes SCORCHED EARTH.... Meta BUYS Ray Bans for \"AI Superintelligence\"...",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
