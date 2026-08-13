@@ -927,7 +927,12 @@
     "HHlWC6uAgkc",
     "SK10877zO4w",
     "hCnhN0cJLRE",
-    "k78l0-fDNCI"
+    "k78l0-fDNCI",
+    "3-WEYoWyDB8",
+    "aNrWN0M851k",
+    "BqVIYcU29ss",
+    "gJQce1SERFM",
+    "noivN2hIXLY"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6489,6 +6494,36 @@
       "channel": "Coding with Lewis",
       "status": "failed",
       "error": "字幕を取得できませんでした"
+    },
+    "3-WEYoWyDB8": {
+      "processed_at": "2026-08-14T08:00:52.346728",
+      "title": "STOP LOSING On Kalshi and Polymarket! Do This Now With AI",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "aNrWN0M851k": {
+      "processed_at": "2026-08-14T08:01:03.604581",
+      "title": "What is an AI Transformation Partner? (and how to become one)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "BqVIYcU29ss": {
+      "processed_at": "2026-08-14T08:01:10.373102",
+      "title": "New Manus AI Agent Update with Veo 3 Integration is MINDBLOWING!",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "gJQce1SERFM": {
+      "processed_at": "2026-08-14T08:01:20.642093",
+      "title": "I spend $2,000/mo on AI tools, here are the best ones",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "noivN2hIXLY": {
+      "processed_at": "2026-08-14T08:01:28.588678",
+      "title": "How to Perform a $60,000 AI Audit (Beginner’s Guide)",
+      "channel": "Liam Ottley",
+      "status": "success"
     }
   }
 }
