@@ -932,7 +932,12 @@
     "aNrWN0M851k",
     "BqVIYcU29ss",
     "gJQce1SERFM",
-    "noivN2hIXLY"
+    "noivN2hIXLY",
+    "e2W5HLrj-w4",
+    "OlvDQ4M1ltY",
+    "qZefjtkkvrY",
+    "zbbgb6-AoJA",
+    "8Hu2s7sMWZg"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6522,6 +6527,36 @@
     "noivN2hIXLY": {
       "processed_at": "2026-08-14T08:01:28.588678",
       "title": "How to Perform a $60,000 AI Audit (Beginner’s Guide)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "e2W5HLrj-w4": {
+      "processed_at": "2026-08-17T08:00:49.680973",
+      "title": "Does harness matter more than the model?",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "OlvDQ4M1ltY": {
+      "processed_at": "2026-08-17T08:00:57.334089",
+      "title": "Can AI & Machine Learning Beat Kalshi...or Is It Just Luck?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "qZefjtkkvrY": {
+      "processed_at": "2026-08-17T08:01:08.482645",
+      "title": "Anthropic just confirmed everyone's worst fear",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "zbbgb6-AoJA": {
+      "processed_at": "2026-08-17T08:01:15.193945",
+      "title": "Open-source is not what you think...",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "8Hu2s7sMWZg": {
+      "processed_at": "2026-08-17T08:01:23.070117",
+      "title": "How to Build Your Own AI Agent Operating System (Ultimate Guide)",
       "channel": "Liam Ottley",
       "status": "success"
     }
