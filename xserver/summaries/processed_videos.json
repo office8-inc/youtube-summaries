@@ -937,7 +937,12 @@
     "OlvDQ4M1ltY",
     "qZefjtkkvrY",
     "zbbgb6-AoJA",
-    "8Hu2s7sMWZg"
+    "8Hu2s7sMWZg",
+    "kmzvXTQx3Do",
+    "VB39bHByHuU",
+    "WmpiI7fmCDM",
+    "IsHvEIcwVNY",
+    "hx0b9JK8Wxk"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6558,6 +6563,36 @@
       "processed_at": "2026-08-17T08:01:23.070117",
       "title": "How to Build Your Own AI Agent Operating System (Ultimate Guide)",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "kmzvXTQx3Do": {
+      "processed_at": "2026-08-18T08:00:49.492362",
+      "title": "Your Printer is Secretly Tracking Every Page",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "VB39bHByHuU": {
+      "processed_at": "2026-08-18T08:01:00.109424",
+      "title": "Grok 4.6 is Fable now",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "WmpiI7fmCDM": {
+      "processed_at": "2026-08-18T08:01:09.503082",
+      "title": "AI Creates Videogames In Real-Time 🤯 | MIRAGE by ex-Google ex-NVIDIA ex-SEGA ex-Microsoft Engineers",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "IsHvEIcwVNY": {
+      "processed_at": "2026-08-18T08:01:20.304160",
+      "title": "AI model generates GTA in real time! AI will generate full videogames soon.",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "hx0b9JK8Wxk": {
+      "processed_at": "2026-08-18T08:01:30.485139",
+      "title": "Build Your First AI Agent in 16 Minutes (No Coding)",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
