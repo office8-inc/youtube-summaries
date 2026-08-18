@@ -942,7 +942,12 @@
     "VB39bHByHuU",
     "WmpiI7fmCDM",
     "IsHvEIcwVNY",
-    "hx0b9JK8Wxk"
+    "hx0b9JK8Wxk",
+    "AhA_m6OShi8",
+    "WiMckaqrIA8",
+    "T5gTIFhPDaY",
+    "rJ4C_-tX6qU",
+    "4KFPaovFXbc"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6593,6 +6598,36 @@
       "processed_at": "2026-08-18T08:01:30.485139",
       "title": "Build Your First AI Agent in 16 Minutes (No Coding)",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "AhA_m6OShi8": {
+      "processed_at": "2026-08-19T08:00:51.433543",
+      "title": "The Time When AWS Billed Random People for $2.5 Billion",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "WiMckaqrIA8": {
+      "processed_at": "2026-08-19T08:01:00.580742",
+      "title": "Building an Autonomous AI Video Agent in 15 Minutes: Here's How",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "T5gTIFhPDaY": {
+      "processed_at": "2026-08-19T08:01:08.000204",
+      "title": "3 Insane Algorithms Netflix Uses to Scan BILLIONS of Frames",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "rJ4C_-tX6qU": {
+      "processed_at": "2026-08-19T08:01:16.086933",
+      "title": "Google Deepmind's VIDEOGAME AGI? (the REAL reason for VEO 3)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "4KFPaovFXbc": {
+      "processed_at": "2026-08-19T08:01:23.925886",
+      "title": "Both Google Deepmind and John Carmack Are Building Videogame Simulations for Training AGI",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
