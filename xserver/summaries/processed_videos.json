@@ -947,7 +947,12 @@
     "WiMckaqrIA8",
     "T5gTIFhPDaY",
     "rJ4C_-tX6qU",
-    "4KFPaovFXbc"
+    "4KFPaovFXbc",
+    "D3tf1mv1ZZ0",
+    "fhcH4x1dUcE",
+    "Ewqga5Zh8R4",
+    "fxx4I4XmNOs",
+    "G-kPqsJycsc"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6627,6 +6632,36 @@
     "4KFPaovFXbc": {
       "processed_at": "2026-08-19T08:01:23.925886",
       "title": "Both Google Deepmind and John Carmack Are Building Videogame Simulations for Training AGI",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "D3tf1mv1ZZ0": {
+      "processed_at": "2026-08-20T08:00:51.755093",
+      "title": "Anthropic's new \"ECONOMIC AI\" Research is testing if Claude Can Run It's Own Business...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "fhcH4x1dUcE": {
+      "processed_at": "2026-08-20T08:01:00.837369",
+      "title": "Can Claude AI run it's own BUSINESS? Surprising results...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Ewqga5Zh8R4": {
+      "processed_at": "2026-08-20T08:01:09.481083",
+      "title": "What it Feels Like to Use the Command Line 👨‍💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "fxx4I4XmNOs": {
+      "processed_at": "2026-08-20T08:01:19.119460",
+      "title": "YouTube is taken over by AI content channels and bots? Will AI make it harder for YouTube?",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "G-kPqsJycsc": {
+      "processed_at": "2026-08-20T08:01:26.521140",
+      "title": "Ilya Sutskever's SHOCKING Superintelligence Warning \"extremely unpredictable and unimaginable\"",
       "channel": "Wes Roth",
       "status": "success"
     }
