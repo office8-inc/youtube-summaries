@@ -952,7 +952,12 @@
     "fhcH4x1dUcE",
     "Ewqga5Zh8R4",
     "fxx4I4XmNOs",
-    "G-kPqsJycsc"
+    "G-kPqsJycsc",
+    "QBfXiWvM0qc",
+    "LUFVYJlguJk",
+    "QcL72gbl-Nw",
+    "bvwn3h2XUp4",
+    "rrNCx4qXvJs"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6662,6 +6667,36 @@
     "G-kPqsJycsc": {
       "processed_at": "2026-08-20T08:01:26.521140",
       "title": "Ilya Sutskever's SHOCKING Superintelligence Warning \"extremely unpredictable and unimaginable\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "QBfXiWvM0qc": {
+      "processed_at": "2026-08-21T08:00:52.610355",
+      "title": "$75M founder reveals his Agentic Engineering setup",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "LUFVYJlguJk": {
+      "processed_at": "2026-08-21T08:01:01.341476",
+      "title": "here's how to build a real business...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "QcL72gbl-Nw": {
+      "processed_at": "2026-08-21T08:01:11.335058",
+      "title": "The Internet is DEAD and AI Slop Killed it...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "bvwn3h2XUp4": {
+      "processed_at": "2026-08-21T08:01:20.177947",
+      "title": "Claude Code Hooks is AMAZING: \"Text Message Me When AI Agent is Done\"",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "rrNCx4qXvJs": {
+      "processed_at": "2026-08-21T08:01:30.605424",
+      "title": "The Internet DIES as Gen AI Takes Over | The Dead Internet Theory is now true...",
       "channel": "Wes Roth",
       "status": "success"
     }
