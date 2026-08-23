@@ -957,7 +957,12 @@
     "LUFVYJlguJk",
     "QcL72gbl-Nw",
     "bvwn3h2XUp4",
-    "rrNCx4qXvJs"
+    "rrNCx4qXvJs",
+    "VbNdual0DFo",
+    "YOcWVXElbDY",
+    "CjhjTV3ftYY",
+    "5TxSqvPbnWw",
+    "YwUD3l7--V8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6698,6 +6703,36 @@
       "processed_at": "2026-08-21T08:01:30.605424",
       "title": "The Internet DIES as Gen AI Takes Over | The Dead Internet Theory is now true...",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "VbNdual0DFo": {
+      "processed_at": "2026-08-24T08:00:51.398111",
+      "title": "Ilya Sutskever new \"Superintelligence\" model will change EVERYTHING",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "YOcWVXElbDY": {
+      "processed_at": "2026-08-24T08:00:59.323317",
+      "title": "Kalshi AI Trading Bot Speedrunning - Can We Profit In 12 Hours?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "CjhjTV3ftYY": {
+      "processed_at": "2026-08-24T08:01:08.136911",
+      "title": "OnlyFans sued for using \"AI Models\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "5TxSqvPbnWw": {
+      "processed_at": "2026-08-24T08:01:19.407674",
+      "title": "How to Build & Sell AI Automations: Ultimate Beginner’s Guide",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "YwUD3l7--V8": {
+      "processed_at": "2026-08-24T08:01:26.576888",
+      "title": "Context Engineering is the future of AI Agents - here’s why",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
