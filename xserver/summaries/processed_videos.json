@@ -962,7 +962,12 @@
     "YOcWVXElbDY",
     "CjhjTV3ftYY",
     "5TxSqvPbnWw",
-    "YwUD3l7--V8"
+    "YwUD3l7--V8",
+    "AGLYcwegcis",
+    "FBxgbWwsMI4",
+    "gL9rvMClUXg",
+    "DaPbKtMvt-E",
+    "IAKAfvYh434"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6733,6 +6738,36 @@
       "processed_at": "2026-08-24T08:01:26.576888",
       "title": "Context Engineering is the future of AI Agents - here’s why",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "AGLYcwegcis": {
+      "processed_at": "2026-08-25T08:00:49.999419",
+      "title": "30 Days of AI Bot Trading on Kalshi and Polymarket: The Results",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "FBxgbWwsMI4": {
+      "processed_at": "2026-08-25T08:01:00.576883",
+      "title": "I Gave Claude $1,000 to Start a Business (No Humans Needed?)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "gL9rvMClUXg": {
+      "processed_at": "2026-08-25T08:01:10.056000",
+      "title": "Grok 3.5 is CANCELLED (now waiting on GROK 4)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "DaPbKtMvt-E": {
+      "processed_at": "2026-08-25T08:01:17.434864",
+      "title": "Elon Musk Goes SCORCHED EARTH! Grok 4, Neuralink plays Call of Duty and Self Delivered Teslas...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "IAKAfvYh434": {
+      "processed_at": "2026-08-25T08:01:26.447624",
+      "title": "Elon Musk goes SCORCHED EARTH - Grok 4, Neuralink and Tesla go BOOM!  #ai #llm #agi",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
