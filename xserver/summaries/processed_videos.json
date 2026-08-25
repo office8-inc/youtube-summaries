@@ -967,7 +967,12 @@
     "FBxgbWwsMI4",
     "gL9rvMClUXg",
     "DaPbKtMvt-E",
-    "IAKAfvYh434"
+    "IAKAfvYh434",
+    "VJKFwf_Vj6o",
+    "ZVjD1AfXLEo",
+    "Tj5gT79yYpo",
+    "cKDEl8BD6hc",
+    "5tx0CdUJYFw"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6769,6 +6774,37 @@
       "title": "Elon Musk goes SCORCHED EARTH - Grok 4, Neuralink and Tesla go BOOM!  #ai #llm #agi",
       "channel": "Wes Roth",
       "status": "success"
+    },
+    "VJKFwf_Vj6o": {
+      "processed_at": "2026-08-26T08:00:48.070745",
+      "title": "The Zuckerberg Selfie That Killed the Metaverse",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "ZVjD1AfXLEo": {
+      "processed_at": "2026-08-26T08:00:56.934009",
+      "title": "Learn n8n in 21 Minutes (Beginner's Guide)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "Tj5gT79yYpo": {
+      "processed_at": "2026-08-26T08:01:06.754423",
+      "title": "I took an “entry level\" CIA hacking test with HELP from AI",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "cKDEl8BD6hc": {
+      "processed_at": "2026-08-26T08:01:17.719047",
+      "title": "TESLA Robotaxi Just DESTROYED the Entire Industry! Dr. Know-it-all explains what's ACTUALLY going on",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "5tx0CdUJYFw": {
+      "processed_at": "2026-08-26T08:01:26.403193",
+      "title": "My new calling in life... Arpeggiator is open source on Hugging Face",
+      "channel": "Wes Roth",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
     }
   }
 }
