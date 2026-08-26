@@ -972,7 +972,12 @@
     "ZVjD1AfXLEo",
     "Tj5gT79yYpo",
     "cKDEl8BD6hc",
-    "5tx0CdUJYFw"
+    "5tx0CdUJYFw",
+    "Im2c-7jvKz8",
+    "Stcqh4BqlIY",
+    "xHKgxxuGwGw",
+    "id79jwieHq8",
+    "ZPwnp9uAJvE"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6805,6 +6810,36 @@
       "channel": "Wes Roth",
       "status": "failed",
       "error": "字幕を取得できませんでした"
+    },
+    "Im2c-7jvKz8": {
+      "processed_at": "2026-08-27T08:00:50.881798",
+      "title": "OpenAI BROKE the Industry Overnight....",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Stcqh4BqlIY": {
+      "processed_at": "2026-08-27T08:01:02.075669",
+      "title": "What Happens When 20 AI Models Play Wordle?",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "xHKgxxuGwGw": {
+      "processed_at": "2026-08-27T08:01:12.233834",
+      "title": "Gemini CLI – the real Claude Code killer?",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "id79jwieHq8": {
+      "processed_at": "2026-08-27T08:01:23.931576",
+      "title": "Gemini CLI: A Claude Code Killer? - First Test and Impression",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "ZPwnp9uAJvE": {
+      "processed_at": "2026-08-27T08:01:35.171702",
+      "title": "Dr Mike Israetel: We ALREADY Know How to Build ASI... Human Death Only Has DECADES Left",
+      "channel": "Wes Roth",
+      "status": "success"
     }
   }
 }
