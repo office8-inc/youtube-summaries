@@ -977,7 +977,12 @@
     "Stcqh4BqlIY",
     "xHKgxxuGwGw",
     "id79jwieHq8",
-    "ZPwnp9uAJvE"
+    "ZPwnp9uAJvE",
+    "n2x4ijx5xkk",
+    "fuECuGW_Eeo",
+    "ulJqlCPNGKI",
+    "HeuHwp86bUM",
+    "GqAyhsnxQfE"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6839,6 +6844,36 @@
       "processed_at": "2026-08-27T08:01:35.171702",
       "title": "Dr Mike Israetel: We ALREADY Know How to Build ASI... Human Death Only Has DECADES Left",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "n2x4ijx5xkk": {
+      "processed_at": "2026-08-28T08:00:51.032058",
+      "title": "OpenAI just revealed PHASEONE (BIG)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "fuECuGW_Eeo": {
+      "processed_at": "2026-08-28T08:01:00.649718",
+      "title": "Build a $5,000 AI Datacenter at Home, Here’s How",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "ulJqlCPNGKI": {
+      "processed_at": "2026-08-28T08:01:09.687926",
+      "title": "You're not behind (yet): How to learn AI in 22 minutes",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "HeuHwp86bUM": {
+      "processed_at": "2026-08-28T08:01:18.906028",
+      "title": "Dr Mike Israetel on AI Consciousness",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "GqAyhsnxQfE": {
+      "processed_at": "2026-08-28T08:01:26.026873",
+      "title": "AI is replacing AI Agencies… Now what?",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
