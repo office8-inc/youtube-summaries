@@ -982,7 +982,12 @@
     "fuECuGW_Eeo",
     "ulJqlCPNGKI",
     "HeuHwp86bUM",
-    "GqAyhsnxQfE"
+    "GqAyhsnxQfE",
+    "7uSjh5bde44",
+    "Dd5V_9fG7LY",
+    "lO0lQLZKzI0",
+    "LiDt_fcmT1w",
+    "OGKn8Zj2FkI"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6874,6 +6879,36 @@
       "processed_at": "2026-08-28T08:01:26.026873",
       "title": "AI is replacing AI Agencies… Now what?",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "7uSjh5bde44": {
+      "processed_at": "2026-08-31T08:00:51.976766",
+      "title": "Sam Altman \"AGI by December\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Dd5V_9fG7LY": {
+      "processed_at": "2026-08-31T08:00:59.225414",
+      "title": "Why Learning To Use AI Tools Like Veo 3 Is More Important Than Ever",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "lO0lQLZKzI0": {
+      "processed_at": "2026-08-31T08:01:08.578674",
+      "title": "This new vibe coding app is insane… Pythagora",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "LiDt_fcmT1w": {
+      "processed_at": "2026-08-31T08:01:19.076046",
+      "title": "Dr Mike Israetel \"Will superintelligence burn all humans in a reactor for energy\"? #podcast",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "OGKn8Zj2FkI": {
+      "processed_at": "2026-08-31T08:01:29.168411",
+      "title": "How to Look like a 10X Developer👨‍💻",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
