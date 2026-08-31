@@ -987,7 +987,12 @@
     "Dd5V_9fG7LY",
     "lO0lQLZKzI0",
     "LiDt_fcmT1w",
-    "OGKn8Zj2FkI"
+    "OGKn8Zj2FkI",
+    "Yb4_if4CqoQ",
+    "2mezj14pCFI",
+    "3Ejhj4n0uQo",
+    "LlWj6GNLgtU",
+    "Svp7fbF0g2I"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6909,6 +6914,36 @@
       "processed_at": "2026-08-31T08:01:29.168411",
       "title": "How to Look like a 10X Developer👨‍💻",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "Yb4_if4CqoQ": {
+      "processed_at": "2026-09-01T08:00:51.453950",
+      "title": "Sakana AI and the \"UNREASONABLE EFFECTIVE\" Tiny Teacher AI Models",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "2mezj14pCFI": {
+      "processed_at": "2026-09-01T08:01:02.954968",
+      "title": "Sakana AI New Model Sparks a RL Revolution",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "3Ejhj4n0uQo": {
+      "processed_at": "2026-09-01T08:01:13.174828",
+      "title": "Sakana AI's New \"Teacher Models\" Might be the Revolutionary New RL Approach",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "LlWj6GNLgtU": {
+      "processed_at": "2026-09-01T08:01:21.336037",
+      "title": "Build a Business In 1 Day With Claude Code and  Google Veo 3",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "Svp7fbF0g2I": {
+      "processed_at": "2026-09-01T08:01:28.025462",
+      "title": "“I built 500+ AI agents, here’s everything I know” - Nate Herk",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
