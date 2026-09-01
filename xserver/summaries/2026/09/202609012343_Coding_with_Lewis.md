@@ -1,4 +1,4 @@
-# 📺 WordPress Is Eating Itself Alive
+# 📺 WordPressは自らを食い潰している
 
 ## 📋 動画情報
 
@@ -12,11 +12,18 @@
 
 ## 💡 概要
 
-この記事は、YouTube動画の日本語字幕（自動翻訳含む）から自動生成された要約です。
+インターネットの40%を動かすソフトウェアが、なぜ数か月で信頼を失ったのか。2003年5月27日にb2/cafelogのフォークとして公開されたWordPressが、20年かけてWebの標準CMSになるまでと、2024年の90日でそれを損なうまでを追った動画です。  
+普及の転機は2004年、Movable Type 3.0が無料ユーザーに約70〜200ドルのライセンス料を課したこと。その月に8,000だったWordPressのダウンロードは翌月2万近くへ跳ね上がりました。  
+2024年9月20日のWordCamp USでMatt MullenwegがWP Engineを寄生的な存在だと名指しし、翌日には「WordPressのがん」と書きます。wordpress.orgがWP Engineを遮断し、人気プラグインACFをSecure Custom Fieldsとしてフォークし、ログイン時に宣誓のチェックボックスを求めるところまで進みました。  
+結果としてWP Engineは提訴して仮差止命令を勝ち取り、Automatticでは159人が退職。オープンソースへの貢献時間は週4,000時間近くから45時間へ削られ、市場シェアも6四半期連続で低下しています。
 
 ## ⭐ 重要なポイント
 
-> 📌 この動画の主要なトピックとポイントがここに表示されます
+- WordPressは2003年5月27日、Matt Mullenwegと「Mike」と名乗るユーザーによるb2/cafelogのフォークとして公開された。翌2004年にMovable Type 3.0が無料ユーザーへ約70〜200ドル（今の価値で120〜350ドル）のライセンス料を課したことで、その月8,000だったダウンロードが翌月には約2万へ急増し、一気に広まった。  
+- 「WordPress」は4つの別物を指す。GPLのソフトウェア本体、更新やプラグイン配布を担うwordpress.org、商標を持つ非営利のWordPress Foundation、そして2005年設立の営利企業Automattic。2010年にAutomatticは商標を財団へ移管したが、同時に財団は商用権を事実上永久にAutomatticへ独占ライセンスし直しており、3つの権力の中心の頂点には結局一人の人物がいた。  
+- 2024年9月20日、ポートランドのWordCamp USのキーノートでMattはWP Engineを寄生的だと名指しし、Five for the Futureの貢献時間をAutomatticの週3,786時間に対しWP Engineは47時間だと比較した。翌日のwordpress.orgの投稿ではWP Engineを「WordPressのがん」と表現。その1年半前のDECODEでは逆に「WP Engineのような会社を支持しよう」と語っていた。  
+- 対抗措置は利用者を直撃した。wordpress.orgがWP Engineを遮断して更新経路が止まり、200万以上のサイトで動いていたAdvanced Custom Fieldsが公式ディレクトリ側でSecure Custom Fieldsとしてフォークされ、インストールした覚えのないプラグインが客先サイトに現れた。ログインには「WP Engineとは一切関係がない」という宣誓チェックボックスが要求された。キーノートから3か月弱で連邦地裁が仮差止命令を出し、72時間以内にアクセス復旧・チェックボックス撤去・ACFの返還を命じた。  
+- 代償は大きい。方針に同意しないAutomattic社員159人（8.4%）が3万ドルまたは給与6か月分のいずれか高い方を受け取って退職し、16年間日本語ロケールマネージャーを務めたNaoko Takanoもその一人だった。Automatticのオープンソースへの貢献は週4,000時間近くから45時間へ削減され、REST APIを率いたRyan McCueらはLinux Foundationの下でFair Package Managerを立ち上げた。2026年7月時点でシェアは6四半期連続で低下して41.5%（2025年12月は43%）、BlackRockによるAutomattic株の評価も85ドルから27.74ドルへ下がっている。
 
 ## 📖 詳細内容
 
