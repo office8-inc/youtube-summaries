@@ -992,7 +992,12 @@
     "2mezj14pCFI",
     "3Ejhj4n0uQo",
     "LlWj6GNLgtU",
-    "Svp7fbF0g2I"
+    "Svp7fbF0g2I",
+    "GdArAq7WMSM",
+    "nYpN1D06LrM",
+    "AC8zIESRyVs",
+    "CmmLZeuK4lg",
+    "Dxix8GQD-P4"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6944,6 +6949,36 @@
       "processed_at": "2026-09-01T08:01:28.025462",
       "title": "“I built 500+ AI agents, here’s everything I know” - Nate Herk",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "GdArAq7WMSM": {
+      "processed_at": "2026-09-02T08:00:49.839005",
+      "title": "Fable 5.1 just smoked ASTRA...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "nYpN1D06LrM": {
+      "processed_at": "2026-09-02T08:00:57.594019",
+      "title": "There's a Name for People Who Paste AI Responses at You",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "AC8zIESRyVs": {
+      "processed_at": "2026-09-02T08:01:07.700324",
+      "title": "WordPress Is Eating Itself Alive",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "CmmLZeuK4lg": {
+      "processed_at": "2026-09-02T08:01:14.617495",
+      "title": "Infinite AI Streaming Will Change Content Forever (Minimax FastH3)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "Dxix8GQD-P4": {
+      "processed_at": "2026-09-02T08:01:22.470860",
+      "title": "Apple became an AI company OVERNIGHT...",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
