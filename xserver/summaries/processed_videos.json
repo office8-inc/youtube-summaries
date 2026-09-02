@@ -997,7 +997,12 @@
     "nYpN1D06LrM",
     "AC8zIESRyVs",
     "CmmLZeuK4lg",
-    "Dxix8GQD-P4"
+    "Dxix8GQD-P4",
+    "c9nRxEy1kUY",
+    "qRNZMGc7TMc",
+    "zNLuJ3WlSzE",
+    "bmv8ivmCMVw",
+    "z2IN9H4UGog"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -6979,6 +6984,36 @@
       "processed_at": "2026-09-02T08:01:22.470860",
       "title": "Apple became an AI company OVERNIGHT...",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "c9nRxEy1kUY": {
+      "processed_at": "2026-09-03T08:00:49.841672",
+      "title": "How I Ship Faster Than 99% of Devs (just copy me)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "qRNZMGc7TMc": {
+      "processed_at": "2026-09-03T08:00:56.824087",
+      "title": "GPT-6 Astra Just Went CRITICAL...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "zNLuJ3WlSzE": {
+      "processed_at": "2026-09-03T08:01:05.323250",
+      "title": "LIVE: chill Sunday stream",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "bmv8ivmCMVw": {
+      "processed_at": "2026-09-03T08:01:14.167588",
+      "title": "AI Video Just Went TOO FAR...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "z2IN9H4UGog": {
+      "processed_at": "2026-09-03T08:01:21.644139",
+      "title": "Ultimate Vibe Coding Setup: o3 pro, Cursor, Codex, Claude Code",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
