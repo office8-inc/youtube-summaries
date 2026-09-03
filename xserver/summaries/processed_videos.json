@@ -1002,7 +1002,12 @@
     "qRNZMGc7TMc",
     "zNLuJ3WlSzE",
     "bmv8ivmCMVw",
-    "z2IN9H4UGog"
+    "z2IN9H4UGog",
+    "3rSFxrKAb3o",
+    "OMnAJt9x7VY",
+    "4AOCZuaYQ2U",
+    "cpsqcViYceo",
+    "1QIVPotRhrw"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7014,6 +7019,36 @@
       "processed_at": "2026-09-03T08:01:21.644139",
       "title": "Ultimate Vibe Coding Setup: o3 pro, Cursor, Codex, Claude Code",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "3rSFxrKAb3o": {
+      "processed_at": "2026-09-04T08:00:52.706021",
+      "title": "AGI IS HERE",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "OMnAJt9x7VY": {
+      "processed_at": "2026-09-04T08:01:02.695063",
+      "title": "5 Agent Skills Every Developer Should Use",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "4AOCZuaYQ2U": {
+      "processed_at": "2026-09-04T08:01:09.417295",
+      "title": "this JUST became the #1 AI model...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "cpsqcViYceo": {
+      "processed_at": "2026-09-04T08:01:20.030681",
+      "title": "Google Veo 3 vs MiniMax Hailuo 02 | 5 Comparison Tests",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "1QIVPotRhrw": {
+      "processed_at": "2026-09-04T08:01:28.602523",
+      "title": "ex-Google Director Just Revealed What's Coming Next...",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
