@@ -1007,7 +1007,12 @@
     "OMnAJt9x7VY",
     "4AOCZuaYQ2U",
     "cpsqcViYceo",
-    "1QIVPotRhrw"
+    "1QIVPotRhrw",
+    "aHy7cNj-W2I",
+    "2b5Qq6tmhOE",
+    "LSQstBriMD8",
+    "IOPuHLIcrSI",
+    "1_sYkhWCpLE"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7048,6 +7053,36 @@
     "1QIVPotRhrw": {
       "processed_at": "2026-09-04T08:01:28.602523",
       "title": "ex-Google Director Just Revealed What's Coming Next...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "aHy7cNj-W2I": {
+      "processed_at": "2026-09-07T08:00:50.447930",
+      "title": "OpenAI just crossed a THRESHOLD...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "2b5Qq6tmhOE": {
+      "processed_at": "2026-09-07T08:01:01.206336",
+      "title": "Teaching AI to STOP Thinking!? 💀💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "LSQstBriMD8": {
+      "processed_at": "2026-09-07T08:01:12.445438",
+      "title": "I Built an AI That Knows 200,000 Game Characters",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "IOPuHLIcrSI": {
+      "processed_at": "2026-09-07T08:01:20.596244",
+      "title": "INSANE Claude Code Support AI Voice Agent Built With ElevenLabs",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "1_sYkhWCpLE": {
+      "processed_at": "2026-09-07T08:01:29.538033",
+      "title": "AI's STUNNING Covert Ops: LLMs Complete Hidden Objectives in Plain Sight",
       "channel": "Wes Roth",
       "status": "success"
     }
