@@ -1012,7 +1012,12 @@
     "2b5Qq6tmhOE",
     "LSQstBriMD8",
     "IOPuHLIcrSI",
-    "1_sYkhWCpLE"
+    "1_sYkhWCpLE",
+    "Vjh3YCnI3vo",
+    "PbIkYHbzFBY",
+    "BJX6uJHIz5U",
+    "l1NHK77AtRk",
+    "y_EHSs7j65M"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7084,6 +7089,36 @@
       "processed_at": "2026-09-07T08:01:29.538033",
       "title": "AI's STUNNING Covert Ops: LLMs Complete Hidden Objectives in Plain Sight",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Vjh3YCnI3vo": {
+      "processed_at": "2026-09-08T08:00:50.912691",
+      "title": "OpenAI’s chief scientist just issued a warning...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "PbIkYHbzFBY": {
+      "processed_at": "2026-09-08T08:01:01.816111",
+      "title": "Dave Shapiro \"40% unemployment rate\" and how Post Labor Economics help #ai #podcast",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "BJX6uJHIz5U": {
+      "processed_at": "2026-09-08T08:01:11.761066",
+      "title": "Claude Code + Context7 MCP Server Is a GAME CHANGER  for AI Coding",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "l1NHK77AtRk": {
+      "processed_at": "2026-09-08T08:01:23.193640",
+      "title": "AI Gets WEIRD: LLMs learn reasoning solely by their own internal \"sense of confidence\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "y_EHSs7j65M": {
+      "processed_at": "2026-09-08T08:01:31.603721",
+      "title": "He makes $3,000 a day Vibe Coding apps - here’s how",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
