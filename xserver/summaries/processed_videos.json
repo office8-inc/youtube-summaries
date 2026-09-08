@@ -1017,7 +1017,12 @@
     "PbIkYHbzFBY",
     "BJX6uJHIz5U",
     "l1NHK77AtRk",
-    "y_EHSs7j65M"
+    "y_EHSs7j65M",
+    "-tMyq-wQZBU",
+    "T2v2pf_uypE",
+    "7e7iCrUREmE",
+    "0TgkOkK7CIQ",
+    "GEnc4wiGfpQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7119,6 +7124,36 @@
       "processed_at": "2026-09-08T08:01:31.603721",
       "title": "He makes $3,000 a day Vibe Coding apps - here’s how",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "-tMyq-wQZBU": {
+      "processed_at": "2026-09-09T08:00:50.912152",
+      "title": "Building a GPT-6 Kalshi AI Trading Bot From Scratch (full guide)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "T2v2pf_uypE": {
+      "processed_at": "2026-09-09T08:00:59.140719",
+      "title": "The End Is Near for Claude Code AI Operating Systems...",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "7e7iCrUREmE": {
+      "processed_at": "2026-09-09T08:01:09.974510",
+      "title": "MIT's New AI \"REWRITES ITSELF\" to Improve It's Abilities | Researchers STUNNED!",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "0TgkOkK7CIQ": {
+      "processed_at": "2026-09-09T08:01:18.914787",
+      "title": "Ex-Google Employees Speak Out | Meta's Superintelligence and Murder Bots",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "GEnc4wiGfpQ": {
+      "processed_at": "2026-09-09T08:01:25.799657",
+      "title": "How AI Video Is Taking Over The Internet",
+      "channel": "All About AI",
       "status": "success"
     }
   }
