@@ -1027,7 +1027,12 @@
     "lkujyxUdUIk",
     "PYKbNj8UiTs",
     "Yhn42p7VE0c",
-    "Tw9HButMNu8"
+    "Tw9HButMNu8",
+    "nQz6sMBSK4A",
+    "WBK2WX7TA4g",
+    "1WNzPFtPEQs",
+    "82pykpCtBfI",
+    "XNAKsSQXJug"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7189,6 +7194,36 @@
       "processed_at": "2026-09-10T08:01:23.210144",
       "title": "9 AI Tools That Will Separate Winners from Losers in 2025",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "nQz6sMBSK4A": {
+      "processed_at": "2026-09-11T08:00:49.761828",
+      "title": "A Week In Montenegro With My Biggest Competitors",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "WBK2WX7TA4g": {
+      "processed_at": "2026-09-11T08:00:58.003622",
+      "title": "we JUST got played...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "1WNzPFtPEQs": {
+      "processed_at": "2026-09-11T08:01:07.340315",
+      "title": "LLMs Create a SELF-IMPROVING 🤯 AI Agent to Play Settlers of Catan",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "82pykpCtBfI": {
+      "processed_at": "2026-09-11T08:01:15.738958",
+      "title": "How Google Took Out the ENTIRE Internet 💀🌐",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "XNAKsSQXJug": {
+      "processed_at": "2026-09-11T08:01:26.677947",
+      "title": "Gemini Diffusion (tested), O3 Pro, Eleven Labs V3, FLUX.1 Kontext [MAX]",
+      "channel": "All About AI",
       "status": "success"
     }
   }
