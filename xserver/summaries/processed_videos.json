@@ -1032,7 +1032,12 @@
     "WBK2WX7TA4g",
     "1WNzPFtPEQs",
     "82pykpCtBfI",
-    "XNAKsSQXJug"
+    "XNAKsSQXJug",
+    "nT0A_K0Lkz0",
+    "SxuQs9GGYbk",
+    "bw0RU79LHdA",
+    "UaJSXjNX3wo",
+    "GDyRiPfgth4"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7224,6 +7229,37 @@
       "processed_at": "2026-09-11T08:01:26.677947",
       "title": "Gemini Diffusion (tested), O3 Pro, Eleven Labs V3, FLUX.1 Kontext [MAX]",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "nT0A_K0Lkz0": {
+      "processed_at": "2026-09-14T08:00:55.197371",
+      "title": "The World’s Smartest AIs Played Poker for $10,000",
+      "channel": "All About AI",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "SxuQs9GGYbk": {
+      "processed_at": "2026-09-14T08:01:02.652015",
+      "title": "Pi Agent dev reveals his Agentic Engineering Workflow",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "bw0RU79LHdA": {
+      "processed_at": "2026-09-14T08:01:11.954550",
+      "title": "Hollywood Insider Spills the SECRETS Behind the AI Video Revolution... | Tim of Theoretically Media",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "UaJSXjNX3wo": {
+      "processed_at": "2026-09-14T08:01:21.898346",
+      "title": "Build n8n agents into full-stack apps, here’s how",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "GDyRiPfgth4": {
+      "processed_at": "2026-09-14T08:01:32.642735",
+      "title": "Asking a “Reasoning” AI a simple question 💀",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
