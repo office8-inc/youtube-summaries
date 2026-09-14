@@ -1037,7 +1037,12 @@
     "SxuQs9GGYbk",
     "bw0RU79LHdA",
     "UaJSXjNX3wo",
-    "GDyRiPfgth4"
+    "GDyRiPfgth4",
+    "KOv_Oj8l8Mg",
+    "GTkGn8drbl4",
+    "ywcR2Rrcgvk",
+    "jb5-jaFZh0k",
+    "vmrm90u0dHs"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7260,6 +7265,36 @@
       "processed_at": "2026-09-14T08:01:32.642735",
       "title": "Asking a “Reasoning” AI a simple question 💀",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "KOv_Oj8l8Mg": {
+      "processed_at": "2026-09-15T08:00:50.514761",
+      "title": "GPT-6 Kalshi AI Trading Bot Week 1 Results - Printing Money?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "GTkGn8drbl4": {
+      "processed_at": "2026-09-15T08:00:59.653924",
+      "title": "Office Hours: Answering Your AI-for-Business Questions (Free Q&A)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "ywcR2Rrcgvk": {
+      "processed_at": "2026-09-15T08:01:10.613284",
+      "title": "Sam Altman's STUNNING Post \"We Are Close to Building Superintelligence\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "jb5-jaFZh0k": {
+      "processed_at": "2026-09-15T08:01:21.383724",
+      "title": "How to Build an INSANE Google Veo3 API AI Pipeline",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "vmrm90u0dHs": {
+      "processed_at": "2026-09-15T08:01:32.253367",
+      "title": "o3 pro is a BEAST... one-shots Apple's \"Illusion of Thinking\" test",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
