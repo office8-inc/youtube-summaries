@@ -1042,7 +1042,12 @@
     "GTkGn8drbl4",
     "ywcR2Rrcgvk",
     "jb5-jaFZh0k",
-    "vmrm90u0dHs"
+    "vmrm90u0dHs",
+    "abzbtEcxXSA",
+    "y26n8ZFTWCI",
+    "HnRjGA4FXK8",
+    "dvRFQ58x7O8",
+    "go4b3520RTc"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7294,6 +7299,36 @@
     "vmrm90u0dHs": {
       "processed_at": "2026-09-15T08:01:32.253367",
       "title": "o3 pro is a BEAST... one-shots Apple's \"Illusion of Thinking\" test",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "abzbtEcxXSA": {
+      "processed_at": "2026-09-16T08:00:50.120506",
+      "title": "I Overengineered a Cure for My ADHD",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "y26n8ZFTWCI": {
+      "processed_at": "2026-09-16T08:00:58.654724",
+      "title": "o3 pro SHATTERS the \"Illusion of Thinking\" paper....  #artificialintelligence #chatgpt #ai",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "HnRjGA4FXK8": {
+      "processed_at": "2026-09-16T08:01:06.365653",
+      "title": "Dev Tools Announced by Apple at WWDC25 👨‍💻🍎",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "dvRFQ58x7O8": {
+      "processed_at": "2026-09-16T08:01:16.325970",
+      "title": "Mathematicians STUNNED as o4-mini answers the world's hardest math problems...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "go4b3520RTc": {
+      "processed_at": "2026-09-16T08:01:24.526484",
+      "title": "Scott Aaronson ChatGPT and the \"Justaism\" religion... #artificialintelligence #ai #chatgpt",
       "channel": "Wes Roth",
       "status": "success"
     }
