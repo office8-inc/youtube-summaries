@@ -31,7 +31,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2  # 差分検出のため直前のコミットも取得
+          # push に含まれる全コミットを差分対象にするため履歴を全部取る。
+          # fetch-depth: 2 では github.event.before がローカルに存在せず範囲差分が取れない
+          fetch-depth: 0
       
       - name: Install lftp
         run: |
@@ -55,8 +57,25 @@ jobs:
           elif [ "${{ github.event.inputs.deploy_all }}" == "true" ]; then
             echo "mode=all" >> $GITHUB_OUTPUT
           else
-            # PRマージ時も手動実行時も、最新コミットの変更ファイルを取得
-            CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep -E '^xserver/' || true)
+            # push に含まれる **全コミット** を差分対象にする。
+            # HEAD~1..HEAD 決め打ちだと、cron が「📝要約追加」→「日本語品質改善」と
+            # 複数コミットを作ってから一度に push した時、最後のコミット以外で追加された
+            # 記事が対象にすら入らず永久に送られない。転送は1件も失敗しないので run は
+            # success で終わり、git 上は完璧に見えたまま公開だけ落ちる
+            # （2026-09-16 に 8/7・8/11 の記事4本が1ヶ月以上未公開だったのが発覚）。
+            BEFORE="${{ github.event.before }}"
+            if [ -n "$BEFORE" ] \
+               && [ "$BEFORE" != "0000000000000000000000000000000000000000" ] \
+               && git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+              DIFF_BASE="$BEFORE"
+            else
+              # 手動実行・ブランチ新規作成・force push 後など。直前コミットに退避
+              DIFF_BASE=$(git rev-parse HEAD~1 2>/dev/null || git hash-object -t tree /dev/null)
+            fi
+            echo "差分範囲: ${DIFF_BASE}..${{ github.sha }}"
+
+            # 削除されたファイルは put できず、cmd:fail-exit yes でその場から全滅するため除外
+            CHANGED_FILES=$(git diff --name-only --diff-filter=d "$DIFF_BASE" "${{ github.sha }}" | grep -E '^xserver/' || true)
             
             if [ -z "$CHANGED_FILES" ]; then
               echo "mode=none" >> $GITHUB_OUTPUT
@@ -162,12 +181,18 @@ jobs:
             # セッションごと張り直して粘る（lftp内のリトライだけでは足りなかった）
             ATTEMPT=1
             MAX_ATTEMPT=3
-            until lftp -f upload.lftp; do
+            LFTP_DEBUG=""
+            # shellcheck disable=SC2086 # LFTP_DEBUG は空なら消えてほしい
+            until lftp $LFTP_DEBUG -f upload.lftp; do
               if [ $ATTEMPT -ge $MAX_ATTEMPT ]; then
                 echo "::error::FTPアップロードが ${MAX_ATTEMPT} 回とも失敗しました（${UPLOAD_COUNT} ファイルがサイトに未反映）"
                 exit 1
               fi
-              echo "⚠️  試行 ${ATTEMPT}/${MAX_ATTEMPT} 失敗。90秒待って再接続します..."
+              echo "⚠️  試行 ${ATTEMPT}/${MAX_ATTEMPT} 失敗。90秒待って再接続します（次回は -d でプロトコルログを出します）..."
+              # 接続拒否なのか認証なのかデータチャネルのタイムアウトなのかを必ず残す。
+              # 2026-09-16 の全滅時は `max-retries exceeded` しか出ず原因を特定できなかった。
+              # 初回から付けないのは deploy_all（1,000本超）でログが膨れるため
+              LFTP_DEBUG="-d"
               sleep 90
               ATTEMPT=$((ATTEMPT + 1))
             done
