@@ -1052,7 +1052,12 @@
     "AuodUoWEWw0",
     "LVJem2iLKZ8",
     "PhhUB4OQlnw",
-    "K5F5M8muFkk"
+    "K5F5M8muFkk",
+    "HRaGvoRa-IU",
+    "R--bWH0x8_c",
+    "ONd2UNBmQ40",
+    "thR9_VYJiQo",
+    "BaTdILNkgos"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7367,6 +7372,37 @@
       "channel": "Wes Roth",
       "status": "failed",
       "error": "字幕を取得できませんでした"
+    },
+    "HRaGvoRa-IU": {
+      "processed_at": "2026-09-18T08:00:54.330347",
+      "title": "Every AI Startup Website Looks the Same",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "R--bWH0x8_c": {
+      "processed_at": "2026-09-18T08:01:03.439842",
+      "title": "I let GPT-6 Astra run my business… it’s insane",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "ONd2UNBmQ40": {
+      "processed_at": "2026-09-18T08:01:10.356432",
+      "title": "Build & Sell No-Code AI Operating Systems w/ Kylon (FULL COURSE)",
+      "channel": "Liam Ottley",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "thR9_VYJiQo": {
+      "processed_at": "2026-09-18T08:01:19.620883",
+      "title": "Google is SO back...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "BaTdILNkgos": {
+      "processed_at": "2026-09-18T08:01:28.513155",
+      "title": "Do you agree with Dan Martell's advice?",
+      "channel": "David Ondrej",
+      "status": "success"
     }
   }
 }
