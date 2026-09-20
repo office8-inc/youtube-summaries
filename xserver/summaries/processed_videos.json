@@ -1057,7 +1057,12 @@
     "R--bWH0x8_c",
     "ONd2UNBmQ40",
     "thR9_VYJiQo",
-    "BaTdILNkgos"
+    "BaTdILNkgos",
+    "f6We53TnkbU",
+    "iQGLI14p88Q",
+    "Od4j4osz4JY",
+    "NQQsAegQXuw",
+    "62K7OGmdNiM"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7402,6 +7407,36 @@
       "processed_at": "2026-09-18T08:01:28.513155",
       "title": "Do you agree with Dan Martell's advice?",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "f6We53TnkbU": {
+      "processed_at": "2026-09-21T08:00:57.124610",
+      "title": "Build Anything with Jev, Here’s How",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "iQGLI14p88Q": {
+      "processed_at": "2026-09-21T08:01:07.189285",
+      "title": "OpenAI JUST got HACKED...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Od4j4osz4JY": {
+      "processed_at": "2026-09-21T08:01:16.489342",
+      "title": "JEV - Can This NEW Type of AI Help Us Win on Kalshi?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "NQQsAegQXuw": {
+      "processed_at": "2026-09-21T08:01:24.927102",
+      "title": "OpenAI's model just JAILBROKE ITSELF...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "62K7OGmdNiM": {
+      "processed_at": "2026-09-21T08:01:34.221012",
+      "title": "AI Will Disrupt This BILLION DOLLAR Industry (Google Veo): Here's How",
+      "channel": "All About AI",
       "status": "success"
     }
   }
