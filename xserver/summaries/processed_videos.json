@@ -1062,7 +1062,12 @@
     "iQGLI14p88Q",
     "Od4j4osz4JY",
     "NQQsAegQXuw",
-    "62K7OGmdNiM"
+    "62K7OGmdNiM",
+    "40bjDoUIqmc",
+    "IXDYEF22CG8",
+    "kNNGOrJDdO8",
+    "Y7zdTyOyHbo",
+    "JPWX2lFRaRE"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7437,6 +7442,36 @@
       "processed_at": "2026-09-21T08:01:34.221012",
       "title": "AI Will Disrupt This BILLION DOLLAR Industry (Google Veo): Here's How",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "40bjDoUIqmc": {
+      "processed_at": "2026-09-22T08:00:54.233468",
+      "title": "Here's how this 35B competes with Frontier models",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "IXDYEF22CG8": {
+      "processed_at": "2026-09-22T08:01:04.117219",
+      "title": "I Rebuilt This 46-Person Accounting Firm With AI (in 4 Days)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "kNNGOrJDdO8": {
+      "processed_at": "2026-09-22T08:01:12.731974",
+      "title": "OpenAI's o3 is a \"MASTER OF DECEPTION\" Researchers Stunned | Diplomacy AI",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Y7zdTyOyHbo": {
+      "processed_at": "2026-09-22T08:01:19.805985",
+      "title": "This new AI benchmark test AI's ability to lie, deceive and betray | Diplomacy AI",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "JPWX2lFRaRE": {
+      "processed_at": "2026-09-22T08:01:28.921351",
+      "title": "I spent 700+ hours in Cursor, here’s what I learned",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
