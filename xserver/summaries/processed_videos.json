@@ -1067,7 +1067,12 @@
     "IXDYEF22CG8",
     "kNNGOrJDdO8",
     "Y7zdTyOyHbo",
-    "JPWX2lFRaRE"
+    "JPWX2lFRaRE",
+    "VeaaXWFQG0U",
+    "Xd2oJ5Sog24",
+    "g35VnTUNQic",
+    "_8Wod-K8bn0",
+    "p2i-fcx0G0M"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7472,6 +7477,36 @@
       "processed_at": "2026-09-22T08:01:28.921351",
       "title": "I spent 700+ hours in Cursor, here’s what I learned",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "VeaaXWFQG0U": {
+      "processed_at": "2026-09-23T08:00:52.207901",
+      "title": "Opus 5.5 is Here",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "Xd2oJ5Sog24": {
+      "processed_at": "2026-09-23T08:01:00.373636",
+      "title": "I Gave GPT-6 & Claude $1,000 Each to Trade on Kalshi",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "g35VnTUNQic": {
+      "processed_at": "2026-09-23T08:01:11.534093",
+      "title": "Every Developer needs a screen like this",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "_8Wod-K8bn0": {
+      "processed_at": "2026-09-23T08:01:19.051752",
+      "title": "Grok 4.7 is out, here's how I use it",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "p2i-fcx0G0M": {
+      "processed_at": "2026-09-23T08:01:30.268843",
+      "title": "AI labs may be hiding their biggest breakthroughs",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
