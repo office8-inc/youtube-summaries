@@ -1072,7 +1072,12 @@
     "Xd2oJ5Sog24",
     "g35VnTUNQic",
     "_8Wod-K8bn0",
-    "p2i-fcx0G0M"
+    "p2i-fcx0G0M",
+    "dePdvvaNBAA",
+    "5lHCoW5aVbE",
+    "-ti41FfVNS4",
+    "klkEfzUwZDI",
+    "x4wm5Y9E_9g"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7506,6 +7511,36 @@
     "p2i-fcx0G0M": {
       "processed_at": "2026-09-23T08:01:30.268843",
       "title": "AI labs may be hiding their biggest breakthroughs",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "dePdvvaNBAA": {
+      "processed_at": "2026-09-24T08:00:57.159579",
+      "title": "Your app isn't secure... here's how to solve it",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "5lHCoW5aVbE": {
+      "processed_at": "2026-09-24T08:01:05.571482",
+      "title": "JAM Stack… where is it today!? 💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "-ti41FfVNS4": {
+      "processed_at": "2026-09-24T08:01:13.613283",
+      "title": "INSANE AI VIDEO | VEO 3 created a BILLION $ Industry | Viral hit formula YOU can steal...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "klkEfzUwZDI": {
+      "processed_at": "2026-09-24T08:01:22.701317",
+      "title": "I Sold an AI Agent Pipeline for $5,000+: Here's How",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "x4wm5Y9E_9g": {
+      "processed_at": "2026-09-24T08:01:30.052069",
+      "title": "Google's Secret \"KINGFALL\" Model Leaked... plus other AI News",
       "channel": "Wes Roth",
       "status": "success"
     }
