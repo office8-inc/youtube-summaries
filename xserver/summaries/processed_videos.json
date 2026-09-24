@@ -1077,7 +1077,12 @@
     "5lHCoW5aVbE",
     "-ti41FfVNS4",
     "klkEfzUwZDI",
-    "x4wm5Y9E_9g"
+    "x4wm5Y9E_9g",
+    "WqtqmseDgNw",
+    "H7KruLVX2Rk",
+    "nmQU3T4m2o4",
+    "YSss30HKyjE",
+    "a4hHM9-eSMc"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7541,6 +7546,36 @@
     "x4wm5Y9E_9g": {
       "processed_at": "2026-09-24T08:01:30.052069",
       "title": "Google's Secret \"KINGFALL\" Model Leaked... plus other AI News",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "WqtqmseDgNw": {
+      "processed_at": "2026-09-25T08:00:52.447379",
+      "title": "WTF is going on at GitHub?",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "H7KruLVX2Rk": {
+      "processed_at": "2026-09-25T08:01:01.604052",
+      "title": "Claude JUST found hidden DNA...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "nmQU3T4m2o4": {
+      "processed_at": "2026-09-25T08:01:11.305009",
+      "title": "Google's Secret Model KINGFALL is leaked to users...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "YSss30HKyjE": {
+      "processed_at": "2026-09-25T08:01:18.600481",
+      "title": "The man who wants to build 1 billion AI Agents - Adam Silverman",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "a4hHM9-eSMc": {
+      "processed_at": "2026-09-25T08:01:27.261796",
+      "title": "Sam Altman \"FEEL THE AGI\" and the next BIG thing...",
       "channel": "Wes Roth",
       "status": "success"
     }
