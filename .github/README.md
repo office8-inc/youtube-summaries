@@ -10,7 +10,7 @@
   - 日本語の自然さ向上
   - 概要セクションの追加
   - 重要なポイントのハイライト
-- ✅ 未改善（英語＋プレースホルダー）の記事は push を保留して誤公開を防止
+- ✅ 未改善（英語＋プレースホルダー）の記事は push を保留して誤公開を防止（crow-bot 経由の実行時）
 - ✅ main への push 後、XSERVERへ自動FTPアップロード
 - ✅ Webビューアで閲覧可能
 
@@ -89,22 +89,11 @@ pip install -r requirements.txt
 
 ### 完全自動化フロー ⚡
 
-#### 1. ローカルで要約を生成＆自動プッシュ（手動実行・週1回程度）
+**通常は何もしなくてよい。** 常駐ボット（crow-bot）のスケジューラが平日 JST 8:00 に
+以下を一括で実行する：
 
-```bash
-python python/improved_summarize_youtube.py --from-list --limit 10 xserver/summaries --push
-```
-
-このコマンド1つで以下が実行されます：
-- ✅ `channel-list.md`の全チャンネルから未処理動画を取得
-- ✅ 字幕を取得して要約記事を生成（`xserver/summaries/YYYY/MM/` に保存）
-- ✅ 自動的にgit commit & push
-
-#### 2. 以降は完全自動 🤖
-
-**何もしなくても以下が自動実行されます：**
-
-1. **要約生成** → `xserver/summaries/YYYY/MM/` にローカル生成＆コミット
+1. **要約生成** → `improved_summarize_youtube.py --from-list --limit 5 xserver/summaries`
+   （`--push` なし）で生成し、crow-bot が `xserver/summaries` を commit（push はしない）
 2. **Claudeが記事を改善**
    - 日本語の自然さ向上
    - 概要セクションの追加
@@ -114,18 +103,29 @@ python python/improved_summarize_youtube.py --from-list --limit 10 xserver/summa
 5. **XSERVERへ自動FTPアップロード**（`deploy-to-ftp.yml`）
 6. **公開完了** → https://office8-inc.com/youtube-summaries/
 
-**あなたがやること：最初のコマンド実行だけ！**
+### 手動で生成したい場合
+
+`--push` を付けずに実行する。生成された記事は次回（平日 8:00）の crow-bot ジョブが
+commit・改善・push まで引き取る。
+
+```bash
+python python/improved_summarize_youtube.py --from-list --limit 10 xserver/summaries
+```
+
+> ⚠️ **`--push` は付けない。** `--push` は生成直後の記事（英語タイトル＋プレースホルダー）を
+> そのまま commit & push するため、`deploy-to-ftp.yml` が走って**改善前の記事が公開される**。
+> 未改善記事の push を止める安全弁は crow-bot 側にあり、このスクリプト単体には無い。
 
 ### オプション
 
 **単一動画を処理する場合：**
 ```bash
-python python/improved_summarize_youtube.py <YouTube URL> xserver/summaries --push
+python python/improved_summarize_youtube.py <YouTube URL> xserver/summaries
 ```
 
 **特定チャンネルのみ処理する場合：**
 ```bash
-python python/improved_summarize_youtube.py --channel <Channel URL> --limit 10 xserver/summaries --push
+python python/improved_summarize_youtube.py --channel <Channel URL> --limit 10 xserver/summaries
 ```
 
 ## 📁 ディレクトリ構造

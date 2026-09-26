@@ -12,8 +12,8 @@ sequenceDiagram
 
     %% フェーズ1: 要約記事の生成
     Note over Cron,Local: フェーズ1: 要約生成（ローカル）
-    Cron->>Local: python python/improved_summarize_youtube.py<br/>--from-list --limit N<br/>xserver/summaries
-    Note right of User: 手動実行も同じコマンド
+    Cron->>Local: python python/improved_summarize_youtube.py<br/>--from-list --limit 5<br/>xserver/summaries（--push なし）
+    Note right of User: 手動実行も --push なしで同じコマンド<br/>（--push は安全弁を迂回して即公開される）
 
     activate Local
     Note over Local: 1. channel-list.mdを読み込み
@@ -22,8 +22,8 @@ sequenceDiagram
     Note over Local: 4. 最新N件を抽出
     Note over Local: 5. 字幕を取得
     Note over Local: 6. 要約記事を生成<br/>xserver/summaries/YYYY/MM/file.md
-    Note over Local: 7. git add, commit（この時点では push しない）
     deactivate Local
+    Cron->>Local: git add xserver/summaries → git commit<br/>（crow-bot が実行。この時点では push しない）
 
     %% フェーズ2: Claudeによる改善
     Note over Local,Claude: フェーズ2: Claudeによる自動改善
@@ -46,8 +46,8 @@ sequenceDiagram
     Note over GitHub,XSERVER: フェーズ4: XSERVERへデプロイ
     GitHub->>GHA: トリガー: push to main<br/>paths: xserver/summaries/**/*.md ほか
     activate GHA
-    GHA->>GHA: Python環境セットアップ
-    GHA->>GHA: FTP接続情報を環境変数に設定<br/>（secrets.FTP_HOST/USER/PASSWORD）
+    GHA->>GHA: lftp をインストール
+    GHA->>GHA: 変更ファイルを検出し lftp スクリプトを生成<br/>（secrets.FTP_HOST/USER/PASSWORD）
     GHA->>XSERVER: FTP接続
 
     loop 各要約ファイル

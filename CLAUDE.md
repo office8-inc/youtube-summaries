@@ -69,23 +69,28 @@ Copilot 解約にあわせてツール非依存の形に書き換えた。
 #### 使用可能なコマンド
 ```bash
 # 単一動画の処理
-python python/improved_summarize_youtube.py <YouTube URL> xserver/summaries --push
+python python/improved_summarize_youtube.py <YouTube URL> xserver/summaries
 
 # チャンネルから最新N件を処理
-python python/improved_summarize_youtube.py --channel <Channel URL> --limit N xserver/summaries --push
+python python/improved_summarize_youtube.py --channel <Channel URL> --limit N xserver/summaries
 
 # channel-list.mdの全チャンネルを処理
-python python/improved_summarize_youtube.py --from-list --limit N xserver/summaries --push
+python python/improved_summarize_youtube.py --from-list --limit N xserver/summaries
 ```
+
+> ⚠️ **`--push` は付けない。** `--push` は生成直後の記事（英語タイトル＋プレースホルダー）を
+> そのまま commit & push するため、`deploy-to-ftp.yml` が走って**改善前の記事が公開される**。
+> 未改善記事の push を止める安全弁は crow-bot 側にあり、このスクリプト単体には無い。
 
 #### 重要な機能
 - **重複チェック**: 既に処理済みの動画は自動スキップ
-- **自動プッシュ**: `--push` オプションで自動的にgit commit & push
+- **`--push` オプション**: 生成直後に git commit & push する。改善前の記事が公開されるので通常は使わない
 - **公開トリガー**: main へ push されると `deploy-to-ftp.yml` が XSERVER へ転送する
 
 #### パイプライン（2026-08-05 以降）
-1. **生成** — `improved_summarize_youtube.py` が字幕から要約記事を作る
-   （この段階のタイトル・本文は英語＋プレースホルダーを含む）
+1. **生成** — `improved_summarize_youtube.py`（`--push` なし）が字幕から要約記事を作り、
+   crow-bot が `xserver/summaries` を commit する（push はしない）。
+   この段階のタイトル・本文は英語＋プレースホルダーを含む
 2. **改善** — Claude が日本語品質を整える。常駐ボット（crow-bot）のスケジューラが
    毎朝 JST 8:00 に生成→改善→push まで通す
 3. **公開** — main への push を `deploy-to-ftp.yml` が検知し、XSERVER へ FTP 転送
@@ -95,10 +100,14 @@ python python/improved_summarize_youtube.py --from-list --limit N xserver/summar
 挙動になり、Claude へ移した。2026-09-26 に Copilot を解約したため、Copilot 経路の
 ワークフロー（`copilot-improve-summaries.yml` / `auto-merge-copilot-pr.yml`）は削除済み。
 
-#### 未改善記事を公開しないための安全弁
+#### 未改善記事を公開しないための安全弁（crow-bot 側）
 改善が失敗したまま push すると、英語タイトル＋プレースホルダーの記事がそのまま
-公開される（2026-08-20 に実際に5本公開された）。改善フェーズが未完了のファイルを
-残している場合は **push しない**。コミットはローカルに残るので、原因を直せば次回出る。
+公開される（2026-08-20 に実際に5本公開された）。crow-bot は改善後にプレースホルダーを
+再判定し、未完了のファイルが残っていれば **push しない**。コミットはローカルに残るので、
+原因を直せば次回出る。
+
+この判定は crow-bot のスケジューラにあり、**生成スクリプトの `--push` は通らない**。
+手動で `--push` すると安全弁を迂回して未改善記事が公開される。
 
 ### 開発時の注意事項
 - テスト時は `--limit 1` で1件ずつ処理
