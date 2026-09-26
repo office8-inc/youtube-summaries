@@ -688,7 +688,7 @@ def auto_commit_and_push(file_paths, processed_count, output_dir=None):
         )
         
         if push_result.returncode == 0:
-            print("  ✓ プッシュ完了 - Copilotワークフローがトリガーされます")
+            print("  ✓ プッシュ完了 - FTPデプロイ（deploy-to-ftp.yml）がトリガーされます")
             return True
         else:
             print(f"  ⚠️  プッシュ失敗: {push_result.stderr}")
