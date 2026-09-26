@@ -1,17 +1,17 @@
 # 📺 YouTube動画自動要約システム
 
-英語圏のYouTube動画を自動的に日本語要約記事に変換し、GitHub Copilotで品質向上、XSERVERに公開するシステムです。
+英語圏のYouTube動画を自動的に日本語要約記事に変換し、Claude で品質向上、XSERVERに公開するシステムです。
 
 ## 🌟 機能
 
 - ✅ 登録したYouTubeチャンネルから新着動画を自動収集
 - ✅ 字幕を取得して日本語の要約記事を自動生成（ローカル実行）
-- ✅ **GitHub Copilot Coding Agentによる自動品質向上** 🆕
+- ✅ **Claude による自動品質向上**
   - 日本語の自然さ向上
   - 概要セクションの追加
   - 重要なポイントのハイライト
-- ✅ Pull Request経由での品質管理
-- ✅ マージ後、XSERVERへ自動FTPアップロード
+- ✅ 未改善（英語＋プレースホルダー）の記事は push を保留して誤公開を防止（crow-bot 経由の実行時）
+- ✅ main への push 後、XSERVERへ自動FTPアップロード
 - ✅ Webビューアで閲覧可能
 
 ## 📋 必要なもの
@@ -24,14 +24,17 @@
 4. 「認証情報」→「認証情報を作成」→「APIキー」を選択
 5. 生成されたAPIキーをコピー
 
-### 2. GitHub Copilot Pro サブスクリプション 🆕
+### 2. Claude Code CLI
 
 **自動品質向上機能を使用するには必須**
 
-- [GitHub Copilot Pro](https://github.com/features/copilot) ($10/月)
-- または GitHub Copilot Business/Enterprise
+- [Claude Code](https://claude.com/claude-code)（サブスクリプション枠で実行）
+- 生成→改善→push は常駐ボット（crow-bot）のスケジューラが毎朝 JST 8:00 に実行する
+- GitHub Actions 側では改善を行わない（API キーを Secrets に置かない設計）
 
-Copilot Coding Agentが自動でPull Requestを作成し、記事の品質を向上させます。
+> 2026-08-05 までは GitHub Copilot Coding Agent がこのフェーズを担当していた。
+> 2026-08-03 の Copilot 側ランタイム更新で「編集ツールを呼ばず 0 ファイルの PR を作る」
+> 挙動になったため Claude へ移行し、2026-09-26 の Copilot 解約で経路を削除した。
 
 ### 3. XSERVERアカウント
 
@@ -86,44 +89,43 @@ pip install -r requirements.txt
 
 ### 完全自動化フロー ⚡
 
-#### 1. ローカルで要約を生成＆自動プッシュ（手動実行・週1回程度）
+**通常は何もしなくてよい。** 常駐ボット（crow-bot）のスケジューラが平日 JST 8:00 に
+以下を一括で実行する：
 
-```bash
-python python/improved_summarize_youtube.py --from-list --limit 10 xserver/summaries --push
-```
-
-このコマンド1つで以下が実行されます：
-- ✅ `channel-list.md`の全チャンネルから未処理動画を取得
-- ✅ 字幕を取得して要約記事を生成（`xserver/summaries/YYYY/MM/` に保存）
-- ✅ 自動的にgit commit & push
-
-#### 2. 以降は完全自動 🤖
-
-**何もしなくても以下が自動実行されます：**
-
-1. **Push検知** → GitHub Actionsが起動
-2. **Issueが作成** → Copilotに自動アサイン
-3. **Copilotが記事を改善**
+1. **要約生成** → `improved_summarize_youtube.py --from-list --limit 5 xserver/summaries`
+   （`--push` なし）で生成し、crow-bot が `xserver/summaries` を commit（push はしない）
+2. **Claudeが記事を改善**
    - 日本語の自然さ向上
    - 概要セクションの追加
    - 重要なポイントのハイライト
-4. **Pull Requestが作成**
-5. **自動承認＆マージ** ⚡ 🆕
-6. **XSERVERへ自動FTPアップロード**
-7. **公開完了** → https://office8-inc.com/youtube-summaries/
+3. **改善完了を機械判定** → プレースホルダーが残っていれば push を保留
+4. **mainへpush**
+5. **XSERVERへ自動FTPアップロード**（`deploy-to-ftp.yml`）
+6. **公開完了** → https://office8-inc.com/youtube-summaries/
 
-**あなたがやること：最初のコマンド実行だけ！**
+### 手動で生成したい場合
+
+`--push` を付けずに実行する。生成された記事は次回（平日 8:00）の crow-bot ジョブが
+commit・改善・push まで引き取る。
+
+```bash
+python python/improved_summarize_youtube.py --from-list --limit 10 xserver/summaries
+```
+
+> ⚠️ **`--push` は付けない。** `--push` は生成直後の記事（英語タイトル＋プレースホルダー）を
+> そのまま commit & push するため、`deploy-to-ftp.yml` が走って**改善前の記事が公開される**。
+> 未改善記事の push を止める安全弁は crow-bot 側にあり、このスクリプト単体には無い。
 
 ### オプション
 
 **単一動画を処理する場合：**
 ```bash
-python python/improved_summarize_youtube.py <YouTube URL> xserver/summaries --push
+python python/improved_summarize_youtube.py <YouTube URL> xserver/summaries
 ```
 
 **特定チャンネルのみ処理する場合：**
 ```bash
-python python/improved_summarize_youtube.py --channel <Channel URL> --limit 10 xserver/summaries --push
+python python/improved_summarize_youtube.py --channel <Channel URL> --limit 10 xserver/summaries
 ```
 
 ## 📁 ディレクトリ構造
@@ -132,10 +134,9 @@ python python/improved_summarize_youtube.py --channel <Channel URL> --limit 10 x
 .
 ├── .github/
 │   ├── workflows/
-│   │   ├── copilot-improve-summaries.yml  # Copilot自動改善
-│   │   ├── auto-merge-copilot-pr.yml      # ⚡ PR自動マージ
-│   │   └── deploy-to-ftp.yml              # マージ時FTPアップロード
+│   │   └── deploy-to-ftp.yml              # main push時のFTPアップロード
 │   └── README.md                          # このファイル
+├── CLAUDE.md                              # 開発エージェント向け指示書
 ├── python/                                # Pythonスクリプト
 │   └── improved_summarize_youtube.py      # 要約エンジン本体
 ├── xserver/                               # XSERVER公開ファイル
@@ -166,9 +167,10 @@ python python/improved_summarize_youtube.py --channel <Channel URL> --limit 10 x
 
 ## 🔧 カスタマイズ
 
-### Copilotの改善指示を変更
+### 改善指示（プロンプト）を変更
 
-[.github/workflows/copilot-improve-summaries.yml](.github/workflows/copilot-improve-summaries.yml) の `custom_instructions` セクションを編集
+crow-bot 側の `YOUTUBE_IMPROVE_PROMPT`（`crow_bot/prompts.py`）を編集。
+リポジトリ側の規約は [CLAUDE.md](../CLAUDE.md) に置く。
 
 ### 処理対象のチャンネルを変更
 
@@ -176,23 +178,21 @@ python python/improved_summarize_youtube.py --channel <Channel URL> --limit 10 x
 
 ## 🐛 トラブルシューティング
 
-### Copilotにタスクがアサインされない
+### 記事が英語タイトル・プレースホルダーのまま
 
-**原因**: GitHub Copilot Pro/Business/Enterpriseが有効になっていない
-
-**解決策**:
-1. [GitHub Copilot](https://github.com/features/copilot)のサブスクリプションを確認
-2. リポジトリでCopilot Coding Agentが有効か確認
-3. Organization設定でCopilotが許可されているか確認
-
-### Pull Requestが作成されない
-
-**原因**: Copilotが処理中、またはエラーが発生している
+**原因**: 改善フェーズ（Claude）が失敗している。多いのは Claude CLI の認証切れ。
 
 **解決策**:
-1. Issueページでステータスを確認
-2. Copilotのセッションログを確認（Issue内のリンクから）
-3. 必要に応じてIssueにコメントで追加指示
+1. `claude auth status` で認証状態を確認
+2. crow-bot のスケジューラ通知（Slack）で改善フェーズのエラーを確認
+3. 直したら次回のジョブで再改善される（未改善のコミットは push されずローカルに残る）
+
+### mainにpushされない
+
+**原因**: 未改善ファイルが残っているため、安全弁が push を保留している（仕様）。
+
+**解決策**: 上記の改善フェーズのエラーを解消する。緊急で公開したい場合のみ手動で
+`git push` するが、未完成記事がそのまま公開されることに注意。
 
 ### FTPアップロードが失敗する
 
