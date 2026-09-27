@@ -1082,7 +1082,12 @@
     "H7KruLVX2Rk",
     "nmQU3T4m2o4",
     "YSss30HKyjE",
-    "a4hHM9-eSMc"
+    "a4hHM9-eSMc",
+    "RnbGsSiD4dw",
+    "A-JBaNvv3Tk",
+    "7d892sCIRNo",
+    "V3KeMw2nIDA",
+    "rRxZ_rC7nqg"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7577,6 +7582,37 @@
       "processed_at": "2026-09-25T08:01:27.261796",
       "title": "Sam Altman \"FEEL THE AGI\" and the next BIG thing...",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "RnbGsSiD4dw": {
+      "processed_at": "2026-09-28T08:00:53.895873",
+      "title": "Top 10 Ways to Make Money With JEV: Live Breakdown",
+      "channel": "Liam Ottley",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "A-JBaNvv3Tk": {
+      "processed_at": "2026-09-28T08:01:02.042970",
+      "title": "Ex-Apple dev reveals his Agentic Engineering Workflow",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "7d892sCIRNo": {
+      "processed_at": "2026-09-28T08:01:09.411186",
+      "title": "The Best Agentic Engineering GUI",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "V3KeMw2nIDA": {
+      "processed_at": "2026-09-28T08:01:16.494124",
+      "title": "OpenAI paused all training runs... ALIGNMENT FAILURE",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "rRxZ_rC7nqg": {
+      "processed_at": "2026-09-28T08:01:27.875743",
+      "title": "Q&A w/ @thesourcingguy : Answering Your AI, Business & Sourcing Questions",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
