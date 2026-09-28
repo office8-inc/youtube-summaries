@@ -1087,7 +1087,12 @@
     "A-JBaNvv3Tk",
     "7d892sCIRNo",
     "V3KeMw2nIDA",
-    "rRxZ_rC7nqg"
+    "rRxZ_rC7nqg",
+    "GwlqUZF52ug",
+    "vI4mMEAV0O8",
+    "3yvmtO6bWY8",
+    "1P5xtV-Kf0o",
+    "kSo_1IqhLjQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7613,6 +7618,36 @@
       "processed_at": "2026-09-28T08:01:27.875743",
       "title": "Q&A w/ @thesourcingguy : Answering Your AI, Business & Sourcing Questions",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "GwlqUZF52ug": {
+      "processed_at": "2026-09-29T08:00:53.210860",
+      "title": "You're betting against AI if you're doing this...",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "vI4mMEAV0O8": {
+      "processed_at": "2026-09-29T08:00:58.997789",
+      "title": "Why every Agent needs it's own computer",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "3yvmtO6bWY8": {
+      "processed_at": "2026-09-29T08:01:05.035235",
+      "title": "Why you shouldn't buy a Mac mini for your AI Agents",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "1P5xtV-Kf0o": {
+      "processed_at": "2026-09-29T08:01:11.681616",
+      "title": "Claude AI + Higgsfield = Insane $10K Websites",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "kSo_1IqhLjQ": {
+      "processed_at": "2026-09-29T08:01:18.051213",
+      "title": "Claude Opus 5.5 Is About to DOMINATE Kalshi & Polymarket",
+      "channel": "All About AI",
       "status": "success"
     }
   }
