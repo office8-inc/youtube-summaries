@@ -1092,7 +1092,12 @@
     "vI4mMEAV0O8",
     "3yvmtO6bWY8",
     "1P5xtV-Kf0o",
-    "kSo_1IqhLjQ"
+    "kSo_1IqhLjQ",
+    "IwTjR3qv5LE",
+    "qxOklTU2if4",
+    "2GPCo8gqyX8",
+    "FSgyJXwfC_Q",
+    "LYNSHecA2Ks"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7648,6 +7653,37 @@
       "processed_at": "2026-09-29T08:01:18.051213",
       "title": "Claude Opus 5.5 Is About to DOMINATE Kalshi & Polymarket",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "IwTjR3qv5LE": {
+      "processed_at": "2026-09-30T08:00:57.370731",
+      "title": "Can AI Predict The Future? - Sikt Intelligence (my new startup)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "qxOklTU2if4": {
+      "processed_at": "2026-09-30T08:01:05.265050",
+      "title": "ASTRA 6.1 too dangerous to be released...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "2GPCo8gqyX8": {
+      "processed_at": "2026-09-30T08:01:14.718995",
+      "title": "OpenAI DevDay 2026: LIVE Reaction w/ My Team",
+      "channel": "Liam Ottley",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "FSgyJXwfC_Q": {
+      "processed_at": "2026-09-30T08:01:24.212686",
+      "title": "How I accidentally destroyed the internet",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "LYNSHecA2Ks": {
+      "processed_at": "2026-09-30T08:01:31.216503",
+      "title": "THE END IS NEAR... and more AI doom",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
