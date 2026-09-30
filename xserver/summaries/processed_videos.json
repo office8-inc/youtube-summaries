@@ -1097,7 +1097,12 @@
     "qxOklTU2if4",
     "2GPCo8gqyX8",
     "FSgyJXwfC_Q",
-    "LYNSHecA2Ks"
+    "LYNSHecA2Ks",
+    "u9g9EBUAam8",
+    "7RbPL4C_Ykw",
+    "c4czA_ory4Y",
+    "XTyNvn1saho",
+    "1XXxG6PqzOY"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7683,6 +7688,36 @@
     "LYNSHecA2Ks": {
       "processed_at": "2026-09-30T08:01:31.216503",
       "title": "THE END IS NEAR... and more AI doom",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "u9g9EBUAam8": {
+      "processed_at": "2026-10-01T08:00:54.108903",
+      "title": "David's takes on OpenAI DevDay",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "7RbPL4C_Ykw": {
+      "processed_at": "2026-10-01T08:01:04.986461",
+      "title": "Sam Altman on the \"NEXT WAVE\" in AI model abilities... #ai #chatgpt #agi",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "c4czA_ory4Y": {
+      "processed_at": "2026-10-01T08:01:16.362791",
+      "title": "The Year of the Linux Desktop 💻🐧",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "XTyNvn1saho": {
+      "processed_at": "2026-10-01T08:01:26.649435",
+      "title": "Will Claude 4 Be a Snitch and Call The Police On Me? Can We Trust AI?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "1XXxG6PqzOY": {
+      "processed_at": "2026-10-01T08:01:37.359033",
+      "title": "World's First SELF IMPROVING CODING AI AGENT | Darwin Godel Machine",
       "channel": "Wes Roth",
       "status": "success"
     }
