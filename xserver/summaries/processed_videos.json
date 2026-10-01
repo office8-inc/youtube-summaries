@@ -1102,7 +1102,12 @@
     "7RbPL4C_Ykw",
     "c4czA_ory4Y",
     "XTyNvn1saho",
-    "1XXxG6PqzOY"
+    "1XXxG6PqzOY",
+    "oGM-nUx4mwo",
+    "Sy1Fjf-H-Qg",
+    "7SCHTfBRQJc",
+    "2Dl5n7W9bSk",
+    "Xim06Ckg-98"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7719,6 +7724,36 @@
       "processed_at": "2026-10-01T08:01:37.359033",
       "title": "World's First SELF IMPROVING CODING AI AGENT | Darwin Godel Machine",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "oGM-nUx4mwo": {
+      "processed_at": "2026-10-02T08:00:56.606968",
+      "title": "The most controversial operating system ever",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "Sy1Fjf-H-Qg": {
+      "processed_at": "2026-10-02T08:01:03.417571",
+      "title": "GEMINI 4 is nuts...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "7SCHTfBRQJc": {
+      "processed_at": "2026-10-02T08:01:13.243924",
+      "title": "Sakana AI Releases Self Improving Coding Agent #ai #artificialintelligence #machinelearning",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "2Dl5n7W9bSk": {
+      "processed_at": "2026-10-02T08:01:22.971011",
+      "title": "POV: spending $32,000 on AI developers at 23 years old (Poland)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "Xim06Ckg-98": {
+      "processed_at": "2026-10-02T08:01:31.138493",
+      "title": "What REALLY Happens on Richard Branson's $100M Private Island",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
