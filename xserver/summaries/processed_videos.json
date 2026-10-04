@@ -1107,7 +1107,12 @@
     "Sy1Fjf-H-Qg",
     "7SCHTfBRQJc",
     "2Dl5n7W9bSk",
-    "Xim06Ckg-98"
+    "Xim06Ckg-98",
+    "AutfckkBP80",
+    "9CGsq3A590Q",
+    "TD0VZSWmUoQ",
+    "WeiB_gLOdQE",
+    "bEJuF9JltYE"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7754,6 +7759,37 @@
       "processed_at": "2026-10-02T08:01:31.138493",
       "title": "What REALLY Happens on Richard Branson's $100M Private Island",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "AutfckkBP80": {
+      "processed_at": "2026-10-05T08:00:57.101674",
+      "title": "Exploring the NEW OpenAI Business Ecosystem: Dots, Spaces, Pages",
+      "channel": "Liam Ottley",
+      "status": "failed",
+      "error": "字幕を取得できませんでした"
+    },
+    "9CGsq3A590Q": {
+      "processed_at": "2026-10-05T08:01:06.049542",
+      "title": "OpenAI's employee's WARNING",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "TD0VZSWmUoQ": {
+      "processed_at": "2026-10-05T08:01:14.293124",
+      "title": "Opus 5.5 Is INSANE: Day Trader Tycoon (with real money)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "WeiB_gLOdQE": {
+      "processed_at": "2026-10-05T08:01:23.144705",
+      "title": "Vercel CEO reveals his Agentic Engineering Workflow",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "bEJuF9JltYE": {
+      "processed_at": "2026-10-05T08:01:33.798311",
+      "title": "Opus 5.5 almost lost to an open-source model...",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
