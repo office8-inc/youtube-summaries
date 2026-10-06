@@ -1117,7 +1117,12 @@
     "ouaoJlh3DB4",
     "dPUcWKxVjmo",
     "gFEfIWUa8jg",
-    "kORQK5NyXqo"
+    "kORQK5NyXqo",
+    "-jgGCvwBz3Q",
+    "QPJH2-GtGu8",
+    "7c27SVaWhuk",
+    "skEeLjS5m2Y",
+    "kTs3kDlKc8w"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7825,6 +7830,36 @@
       "processed_at": "2026-10-06T08:01:34.459474",
       "title": "I Revisited My Project That Broke YouTube Shorts",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "-jgGCvwBz3Q": {
+      "processed_at": "2026-10-07T08:00:53.953141",
+      "title": "Start Using AI Predictions To Beat The Market Today (beginner's guide)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "QPJH2-GtGu8": {
+      "processed_at": "2026-10-07T08:01:03.814173",
+      "title": "The most dangerous part about LLMs",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "7c27SVaWhuk": {
+      "processed_at": "2026-10-07T08:01:14.398739",
+      "title": "Ex-OpenAI VP's Warning \"A BLOODBATH COMING\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "skEeLjS5m2Y": {
+      "processed_at": "2026-10-07T08:01:24.882308",
+      "title": "Anthropic's CEO Sounds the Alarm on MASSIVE Job Loses from AI... #claude  #anthropic #ai",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "kTs3kDlKc8w": {
+      "processed_at": "2026-10-07T08:01:32.138946",
+      "title": "This AI Agent can do basically everything - Agent Zero",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
