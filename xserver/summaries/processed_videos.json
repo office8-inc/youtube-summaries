@@ -1122,7 +1122,12 @@
     "QPJH2-GtGu8",
     "7c27SVaWhuk",
     "skEeLjS5m2Y",
-    "kTs3kDlKc8w"
+    "kTs3kDlKc8w",
+    "fTGIV3e8dTU",
+    "8WUFmW9zrgY",
+    "IMgTd2VSyvY",
+    "U8m8TUREgBA",
+    "HbdwMpl0dqU"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7860,6 +7865,36 @@
       "processed_at": "2026-10-07T08:01:32.138946",
       "title": "This AI Agent can do basically everything - Agent Zero",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "fTGIV3e8dTU": {
+      "processed_at": "2026-10-08T08:00:58.015655",
+      "title": "OpenAI's secret model just BROKE math...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "8WUFmW9zrgY": {
+      "processed_at": "2026-10-08T08:01:04.693589",
+      "title": "The only moat in the age of AI is this",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "IMgTd2VSyvY": {
+      "processed_at": "2026-10-08T08:01:13.453336",
+      "title": "Can You Run a YouTube Channel with 7 MCP Servers and Claude Code?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "U8m8TUREgBA": {
+      "processed_at": "2026-10-08T08:01:20.814300",
+      "title": "AI Researcher SHOCKING \"Singularity in 2025 Prediction\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "HbdwMpl0dqU": {
+      "processed_at": "2026-10-08T08:01:29.459740",
+      "title": "We will enter the SINGULARITY in 2025...",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
