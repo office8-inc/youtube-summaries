@@ -1127,7 +1127,12 @@
     "8WUFmW9zrgY",
     "IMgTd2VSyvY",
     "U8m8TUREgBA",
-    "HbdwMpl0dqU"
+    "HbdwMpl0dqU",
+    "Ys9VBUSyfqY",
+    "nDSCI8GIy68",
+    "w9TxKASFvIE",
+    "5gyenH7Gf_c",
+    "lZuxqbw8IX4"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7895,6 +7900,36 @@
       "processed_at": "2026-10-08T08:01:29.459740",
       "title": "We will enter the SINGULARITY in 2025...",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Ys9VBUSyfqY": {
+      "processed_at": "2026-10-09T08:00:56.392899",
+      "title": "Is AI making developers slower?",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "nDSCI8GIy68": {
+      "processed_at": "2026-10-09T08:01:07.105326",
+      "title": "Google Deepmind CEO \"Are we in a SIMULATION?\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "w9TxKASFvIE": {
+      "processed_at": "2026-10-09T08:01:14.196995",
+      "title": "I Joined an AI Hosted Podcast with Google Veo 3",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "5gyenH7Gf_c": {
+      "processed_at": "2026-10-09T08:01:21.551591",
+      "title": "Demis Hassabis on the \"Intelligence Explosion\", Self-Improving AI and AlphaZero",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "lZuxqbw8IX4": {
+      "processed_at": "2026-10-09T08:01:31.537150",
+      "title": "How to create any n8n workflow using ChatGPT",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
