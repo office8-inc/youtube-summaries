@@ -1137,7 +1137,12 @@
     "usyN5aZUgEQ",
     "HvjHt25RGyU",
     "rxpV3QLV-pg",
-    "XzrvOTkqk4U"
+    "XzrvOTkqk4U",
+    "W2E-rN2sgs0",
+    "Kxp1hNwzHc8",
+    "qCfuktLkUkk",
+    "r8reti0CMO0",
+    "caXrIUtl2s0"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -7965,6 +7970,36 @@
       "processed_at": "2026-10-12T08:01:32.405170",
       "title": "Google Veo 3 + Gemini 2.5 Pro INSANE AI Video Workflow",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "W2E-rN2sgs0": {
+      "processed_at": "2026-10-13T08:00:54.776370",
+      "title": "Can AI Predict the Stock Market? - Sikt Intelligence (my new startup)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "Kxp1hNwzHc8": {
+      "processed_at": "2026-10-13T08:01:02.750970",
+      "title": "Project Mariner (Google AI Agent) - First 5 Tests and Impression",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "qCfuktLkUkk": {
+      "processed_at": "2026-10-13T08:01:12.165071",
+      "title": "Minecraft Voyager was one of the first autonomous AI agents...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "r8reti0CMO0": {
+      "processed_at": "2026-10-13T08:01:22.348847",
+      "title": "OpenAI new Codex is totally CRACKED",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "caXrIUtl2s0": {
+      "processed_at": "2026-10-13T08:01:33.724176",
+      "title": "AI Video Just Went TOO FAR... NIGHTMARE FUEL (VEO 3)",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
