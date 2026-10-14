@@ -1147,7 +1147,12 @@
     "Tbss1k3OKI8",
     "s7rZ1cP0mjw",
     "yGpZbU7kcQ4",
-    "tgRffdkLg5I"
+    "tgRffdkLg5I",
+    "OA2nFMWfCLY",
+    "FbKXvab-0yQ",
+    "NL0yDYXAQ0E",
+    "LNMIhNI7ZGc",
+    "dt2oDtssDNg"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8035,6 +8040,36 @@
       "processed_at": "2026-10-14T09:27:34.201622",
       "title": "Claude 4 - First Tests and Impressions (Claude Code, MCP API, Code Execution Tool++)",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "OA2nFMWfCLY": {
+      "processed_at": "2026-10-15T08:00:57.534003",
+      "title": "The BEST LLMs to run locally by device",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "FbKXvab-0yQ": {
+      "processed_at": "2026-10-15T08:01:05.360172",
+      "title": "Cloudroom just destroyed all AI coding apps (fully open-source)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "NL0yDYXAQ0E": {
+      "processed_at": "2026-10-15T08:01:11.786404",
+      "title": "GEMINI 4 ARGON IS WEIRD...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "LNMIhNI7ZGc": {
+      "processed_at": "2026-10-15T08:01:18.699800",
+      "title": "Claude 4 Opus is the MOST DANGEROUS Model | INSANE Coding and ML Abilities",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "dt2oDtssDNg": {
+      "processed_at": "2026-10-15T08:01:27.001915",
+      "title": "CODE with CLAUDE Event | Rumored Claude 4 Opus release (NOT confirmed)",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
