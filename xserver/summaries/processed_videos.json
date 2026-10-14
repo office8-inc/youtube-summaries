@@ -1142,7 +1142,12 @@
     "Kxp1hNwzHc8",
     "qCfuktLkUkk",
     "r8reti0CMO0",
-    "caXrIUtl2s0"
+    "caXrIUtl2s0",
+    "S0JwWcLVzQA",
+    "Tbss1k3OKI8",
+    "s7rZ1cP0mjw",
+    "yGpZbU7kcQ4",
+    "tgRffdkLg5I"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8000,6 +8005,36 @@
       "processed_at": "2026-10-13T08:01:33.724176",
       "title": "AI Video Just Went TOO FAR... NIGHTMARE FUEL (VEO 3)",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "S0JwWcLVzQA": {
+      "processed_at": "2026-10-14T09:26:56.140926",
+      "title": "Vibe Coding 2.0 is here...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Tbss1k3OKI8": {
+      "processed_at": "2026-10-14T09:27:04.211485",
+      "title": "Google Veo 3 | 20+  Never Seen AMAZING Clips Compliation",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "s7rZ1cP0mjw": {
+      "processed_at": "2026-10-14T09:27:14.593802",
+      "title": "AI Researchers SHOCKED After Claude 4 Attempts to Blackmail Them...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "yGpZbU7kcQ4": {
+      "processed_at": "2026-10-14T09:27:22.924733",
+      "title": "Anthropic just shocked the world with Claude 4 Opus…",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "tgRffdkLg5I": {
+      "processed_at": "2026-10-14T09:27:34.201622",
+      "title": "Claude 4 - First Tests and Impressions (Claude Code, MCP API, Code Execution Tool++)",
+      "channel": "All About AI",
       "status": "success"
     }
   }
