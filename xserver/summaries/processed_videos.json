@@ -1152,7 +1152,12 @@
     "FbKXvab-0yQ",
     "NL0yDYXAQ0E",
     "LNMIhNI7ZGc",
-    "dt2oDtssDNg"
+    "dt2oDtssDNg",
+    "EmaXeEdlJkI",
+    "MJyrr8AVnhs",
+    "gLdUcEhuaQo",
+    "MwmE9CSWK5Y",
+    "Uw0Z6DZj534"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8070,6 +8075,36 @@
       "processed_at": "2026-10-15T08:01:27.001915",
       "title": "CODE with CLAUDE Event | Rumored Claude 4 Opus release (NOT confirmed)",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "EmaXeEdlJkI": {
+      "processed_at": "2026-10-16T08:00:57.327073",
+      "title": "AI just BROKE all of the software industry...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "MJyrr8AVnhs": {
+      "processed_at": "2026-10-16T08:01:08.161712",
+      "title": "Google's AlphaEvolve SHOCKING Ability",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "gLdUcEhuaQo": {
+      "processed_at": "2026-10-16T08:01:15.769704",
+      "title": "Gemini Diffusion is a GAME CHANGER (don't blink)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "MwmE9CSWK5Y": {
+      "processed_at": "2026-10-16T08:01:23.965623",
+      "title": "Google's MASSIVE \"AI Ultra\" | Mariner, Astra, Veo 3, jules, Diffusion etc (FIRST LOOK)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Uw0Z6DZj534": {
+      "processed_at": "2026-10-16T08:01:37.432913",
+      "title": "Google Flow (Veo3) is an EXISTENTIAL CRISIS for Hollywood - First Tests and Impression",
+      "channel": "All About AI",
       "status": "success"
     }
   }
