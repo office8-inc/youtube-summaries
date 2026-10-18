@@ -1157,7 +1157,12 @@
     "MJyrr8AVnhs",
     "gLdUcEhuaQo",
     "MwmE9CSWK5Y",
-    "Uw0Z6DZj534"
+    "Uw0Z6DZj534",
+    "YaK6cnET2IE",
+    "dheMFHbM-lQ",
+    "2DmP5etgh4U",
+    "Xy2VtdxqSJQ",
+    "zLmwK4dBSkk"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8105,6 +8110,36 @@
       "processed_at": "2026-10-16T08:01:37.432913",
       "title": "Google Flow (Veo3) is an EXISTENTIAL CRISIS for Hollywood - First Tests and Impression",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "YaK6cnET2IE": {
+      "processed_at": "2026-10-19T08:01:00.110972",
+      "title": "OpenCode hack is INSANE.",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "dheMFHbM-lQ": {
+      "processed_at": "2026-10-19T08:01:08.502732",
+      "title": "We Put AI In a Time Machine. Did It Spot What NOBODY Else Did?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "2DmP5etgh4U": {
+      "processed_at": "2026-10-19T08:01:19.098553",
+      "title": "How to build a $10B AI company (Supabase Co-Founder)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "Xy2VtdxqSJQ": {
+      "processed_at": "2026-10-19T08:01:30.339385",
+      "title": "AI Video Just Got WAY TOO REAL... (VEO 3)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "zLmwK4dBSkk": {
+      "processed_at": "2026-10-19T08:01:39.688470",
+      "title": "The Most Important Google IO Announcements (SUPERCUT)",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
