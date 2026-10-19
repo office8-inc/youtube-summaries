@@ -1162,7 +1162,12 @@
     "dheMFHbM-lQ",
     "2DmP5etgh4U",
     "Xy2VtdxqSJQ",
-    "zLmwK4dBSkk"
+    "zLmwK4dBSkk",
+    "skpYjEGOdCs",
+    "TYe4pi7_svM",
+    "TnCDM1IdGFE",
+    "3xi7ZqGo1tU",
+    "8HBipmBWx-c"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8140,6 +8145,36 @@
       "processed_at": "2026-10-19T08:01:39.688470",
       "title": "The Most Important Google IO Announcements (SUPERCUT)",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "skpYjEGOdCs": {
+      "processed_at": "2026-10-20T08:00:59.599707",
+      "title": "Why Most Businesses Should Stop Buying AI (Right Now)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "TYe4pi7_svM": {
+      "processed_at": "2026-10-20T08:01:09.018966",
+      "title": "Build Anything with Codex, Here’s How",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "TnCDM1IdGFE": {
+      "processed_at": "2026-10-20T08:01:17.147281",
+      "title": "Controlling Agent Swarms is your ONLY job...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "3xi7ZqGo1tU": {
+      "processed_at": "2026-10-20T08:01:28.332755",
+      "title": "OpenAI just destroyed all coding apps - Codex",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "8HBipmBWx-c": {
+      "processed_at": "2026-10-20T08:01:39.948300",
+      "title": "AI Agents Are About to Get Superpowers: MCPSaaS (MCP Server as a Service)",
+      "channel": "All About AI",
       "status": "success"
     }
   }
