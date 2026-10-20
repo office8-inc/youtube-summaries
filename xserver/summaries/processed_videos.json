@@ -1167,7 +1167,12 @@
     "TYe4pi7_svM",
     "TnCDM1IdGFE",
     "3xi7ZqGo1tU",
-    "8HBipmBWx-c"
+    "8HBipmBWx-c",
+    "DwoWIf8f2yQ",
+    "hpXFS_ZsCjg",
+    "fMvPaFc29JM",
+    "8gfZZHMunnY",
+    "z0OZM5TruEE"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8175,6 +8180,36 @@
       "processed_at": "2026-10-20T08:01:39.948300",
       "title": "AI Agents Are About to Get Superpowers: MCPSaaS (MCP Server as a Service)",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "DwoWIf8f2yQ": {
+      "processed_at": "2026-10-21T08:00:56.902172",
+      "title": "Stop paying for AI, run everything locally (here’s how)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "hpXFS_ZsCjg": {
+      "processed_at": "2026-10-21T08:01:06.016699",
+      "title": "Giving my Giant Robot Arm a Camera Rig 👀 #ad",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "fMvPaFc29JM": {
+      "processed_at": "2026-10-21T08:01:16.556546",
+      "title": "AI plays doom, quake and pokemon red...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "8gfZZHMunnY": {
+      "processed_at": "2026-10-21T08:01:23.838626",
+      "title": "can AI sway public opinion?",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "z0OZM5TruEE": {
+      "processed_at": "2026-10-21T08:01:31.915556",
+      "title": "OpenAI's Codex is totally CRACKED...",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
