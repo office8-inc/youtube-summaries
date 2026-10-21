@@ -1172,7 +1172,12 @@
     "hpXFS_ZsCjg",
     "fMvPaFc29JM",
     "8gfZZHMunnY",
-    "z0OZM5TruEE"
+    "z0OZM5TruEE",
+    "ehcBwqyUGjo",
+    "6uN8SCQSutE",
+    "QEhwXWUeGAE",
+    "4XJnxDnvMeg",
+    "lhIQ-UoiqyU"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8210,6 +8215,36 @@
       "processed_at": "2026-10-21T08:01:31.915556",
       "title": "OpenAI's Codex is totally CRACKED...",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "ehcBwqyUGjo": {
+      "processed_at": "2026-10-22T08:00:59.436320",
+      "title": "they’re shutting it DOWN",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "6uN8SCQSutE": {
+      "processed_at": "2026-10-22T08:01:06.866995",
+      "title": "new ChatGPT personality is UNSETTLING... #chatgpt #ai #llm",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "QEhwXWUeGAE": {
+      "processed_at": "2026-10-22T08:01:18.274809",
+      "title": "Use AI Agents to increase productivity, here’s how",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "4XJnxDnvMeg": {
+      "processed_at": "2026-10-22T08:01:25.645918",
+      "title": "[OpenAI Livestream] developers (bring coffee)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "lhIQ-UoiqyU": {
+      "processed_at": "2026-10-22T08:01:34.878909",
+      "title": "5 Ways To Master Context For NEXT-LEVEL AI Performance",
+      "channel": "All About AI",
       "status": "success"
     }
   }
