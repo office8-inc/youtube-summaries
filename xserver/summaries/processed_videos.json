@@ -1182,7 +1182,12 @@
     "nz0_wi1T578",
     "ohAoH0Sma6Y",
     "WLvQCIUWebs",
-    "eM_Tg8_BGx4"
+    "eM_Tg8_BGx4",
+    "eK7Sn0_zHQw",
+    "RbnmhO1iXeM",
+    "wuv61uEq7uY",
+    "M0tq_xL04n0",
+    "Gr52Otxvx6A"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8280,6 +8285,36 @@
       "processed_at": "2026-10-23T08:01:34.231823",
       "title": "5 AMAZING Claude Code Commands You MUST Know About",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "eK7Sn0_zHQw": {
+      "processed_at": "2026-10-26T08:01:00.242950",
+      "title": "it's WORSE than we thought...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "RbnmhO1iXeM": {
+      "processed_at": "2026-10-26T08:01:08.451614",
+      "title": "The AI Model Iceberg",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "wuv61uEq7uY": {
+      "processed_at": "2026-10-26T08:01:14.967894",
+      "title": "Everything Is Getting Hacked (it’s over)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "M0tq_xL04n0": {
+      "processed_at": "2026-10-26T08:01:24.272016",
+      "title": "Sam Altman \"The Future of Work\" and the next 12 months...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Gr52Otxvx6A": {
+      "processed_at": "2026-10-26T08:01:34.746936",
+      "title": "AI JUST BEAT humans at running a business...",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
