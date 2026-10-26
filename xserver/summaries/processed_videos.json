@@ -1187,7 +1187,12 @@
     "RbnmhO1iXeM",
     "wuv61uEq7uY",
     "M0tq_xL04n0",
-    "Gr52Otxvx6A"
+    "Gr52Otxvx6A",
+    "Ck9-3WDw0Kk",
+    "C2NZs1fCLfo",
+    "V49MJEhsz_I",
+    "YMcgZ20oKrY",
+    "CFO_Ka-B_Fk"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8315,6 +8320,36 @@
       "processed_at": "2026-10-26T08:01:34.746936",
       "title": "AI JUST BEAT humans at running a business...",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "Ck9-3WDw0Kk": {
+      "processed_at": "2026-10-27T08:01:00.371714",
+      "title": "Google just destroyed ChatGPT forever… (Gemini 2.5 Pro)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "C2NZs1fCLfo": {
+      "processed_at": "2026-10-27T08:01:11.148086",
+      "title": "The Ultimate AI Agency Masterclass (6+ HOUR FREE COURSE)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "V49MJEhsz_I": {
+      "processed_at": "2026-10-27T08:01:21.340533",
+      "title": "Object-Oriented Programming in 60 Seconds 👨‍💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "YMcgZ20oKrY": {
+      "processed_at": "2026-10-27T08:01:32.134380",
+      "title": "New \"Absolute Zero\" AI SHOCKED Researchers \"uh-oh moment\"",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "CFO_Ka-B_Fk": {
+      "processed_at": "2026-10-27T08:01:41.854901",
+      "title": "How This AI AGENT Can Change Your Life",
+      "channel": "All About AI",
       "status": "success"
     }
   }
