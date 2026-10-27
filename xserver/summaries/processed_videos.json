@@ -1192,7 +1192,12 @@
     "C2NZs1fCLfo",
     "V49MJEhsz_I",
     "YMcgZ20oKrY",
-    "CFO_Ka-B_Fk"
+    "CFO_Ka-B_Fk",
+    "UYP94fslcbY",
+    "lskEzJ7ixw0",
+    "hIbe8wFnP4w",
+    "AtcMZB6-KXY",
+    "NyUtXqhitXo"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8350,6 +8355,36 @@
       "processed_at": "2026-10-27T08:01:41.854901",
       "title": "How This AI AGENT Can Change Your Life",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "UYP94fslcbY": {
+      "processed_at": "2026-10-28T08:00:57.093672",
+      "title": "One of the Worst Weeks EVER for the Internet",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "lskEzJ7ixw0": {
+      "processed_at": "2026-10-28T08:01:04.984762",
+      "title": "OpenAI just broke physics...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "hIbe8wFnP4w": {
+      "processed_at": "2026-10-28T08:01:16.458865",
+      "title": "Google is about to drop something MASSIVE...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "AtcMZB6-KXY": {
+      "processed_at": "2026-10-28T08:01:23.631161",
+      "title": "Awesome MCP Servers You Should Try 🤖",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "NyUtXqhitXo": {
+      "processed_at": "2026-10-28T08:01:31.263712",
+      "title": "I built a $100,000 AI startup, here’s what i learned",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
