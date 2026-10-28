@@ -1197,7 +1197,12 @@
     "lskEzJ7ixw0",
     "hIbe8wFnP4w",
     "AtcMZB6-KXY",
-    "NyUtXqhitXo"
+    "NyUtXqhitXo",
+    "6-sMVePCKS4",
+    "RHMsAm4ODDU",
+    "1iyP6sxiwiE",
+    "Qfm2Pts-TkQ",
+    "LKnsm4AK-08"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8385,6 +8390,36 @@
       "processed_at": "2026-10-28T08:01:31.263712",
       "title": "I built a $100,000 AI startup, here’s what i learned",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "6-sMVePCKS4": {
+      "processed_at": "2026-10-29T08:00:56.886050",
+      "title": "AI builds EVERYTHING...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "RHMsAm4ODDU": {
+      "processed_at": "2026-10-29T08:01:04.707589",
+      "title": "kimi k3.1 changes everything...",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "1iyP6sxiwiE": {
+      "processed_at": "2026-10-29T08:01:12.078979",
+      "title": "Gemini 2.5 Pro Coding Update - First Test: The Best LLM Got Even Better?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "Qfm2Pts-TkQ": {
+      "processed_at": "2026-10-29T08:01:20.867665",
+      "title": "Google JUST WON the AI Coding Game...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "LKnsm4AK-08": {
+      "processed_at": "2026-10-29T08:01:32.008759",
+      "title": "AI Agent Employee #1 Is Already Making Money - My Setup",
+      "channel": "All About AI",
       "status": "success"
     }
   }
