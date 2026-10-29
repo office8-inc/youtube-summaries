@@ -1202,7 +1202,12 @@
     "RHMsAm4ODDU",
     "1iyP6sxiwiE",
     "Qfm2Pts-TkQ",
-    "LKnsm4AK-08"
+    "LKnsm4AK-08",
+    "93JxG8dZv84",
+    "TFU33etuKb0",
+    "76EtxQ_lhoo",
+    "6j2R7No8qz0",
+    "tXMZr89L2Yk"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8419,6 +8424,36 @@
     "LKnsm4AK-08": {
       "processed_at": "2026-10-29T08:01:32.008759",
       "title": "AI Agent Employee #1 Is Already Making Money - My Setup",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "93JxG8dZv84": {
+      "processed_at": "2026-10-30T08:00:59.121443",
+      "title": "Can AI Predict the US Midterms?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "TFU33etuKb0": {
+      "processed_at": "2026-10-30T08:01:10.641940",
+      "title": "Cline - the most underrated AI code editor",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "76EtxQ_lhoo": {
+      "processed_at": "2026-10-30T08:01:19.178091",
+      "title": "The Most HATED Programming Languages Now vs 10 Years Ago 💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "6j2R7No8qz0": {
+      "processed_at": "2026-10-30T08:01:26.176688",
+      "title": "Wes Roth gets CONFRONTED by Dylan Curious about AI....",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "tXMZr89L2Yk": {
+      "processed_at": "2026-10-30T08:01:35.839463",
+      "title": "Controlling My Mac With Claude Code + \"LLM OS\" MCP Servers",
       "channel": "All About AI",
       "status": "success"
     }
