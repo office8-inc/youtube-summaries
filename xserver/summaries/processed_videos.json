@@ -1207,7 +1207,12 @@
     "TFU33etuKb0",
     "76EtxQ_lhoo",
     "6j2R7No8qz0",
-    "tXMZr89L2Yk"
+    "tXMZr89L2Yk",
+    "3h9kIpusNyA",
+    "WhA2iNfzytY",
+    "SaBtmnZGBxo",
+    "F8rc-ULd4_4",
+    "rY8FuDONHxw"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8455,6 +8460,36 @@
       "processed_at": "2026-10-30T08:01:35.839463",
       "title": "Controlling My Mac With Claude Code + \"LLM OS\" MCP Servers",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "3h9kIpusNyA": {
+      "processed_at": "2026-11-02T08:00:57.810106",
+      "title": "I Rebuilt This AI Agency Coaching Business (in 1 Week)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "WhA2iNfzytY": {
+      "processed_at": "2026-11-02T08:01:07.141775",
+      "title": "the BIGGEST HACK of all time just started...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "SaBtmnZGBxo": {
+      "processed_at": "2026-11-02T08:01:14.973945",
+      "title": "Can AI Predict The Future and MAKE MONEY On The Outcome?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "F8rc-ULd4_4": {
+      "processed_at": "2026-11-02T08:01:22.832817",
+      "title": "My Agentic Engineering Workflow (after 15,700 sessions)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "rY8FuDONHxw": {
+      "processed_at": "2026-11-02T08:01:30.709570",
+      "title": "my bots just BROKE Wall St...",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
