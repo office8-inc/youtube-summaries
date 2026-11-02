@@ -1212,7 +1212,12 @@
     "WhA2iNfzytY",
     "SaBtmnZGBxo",
     "F8rc-ULd4_4",
-    "rY8FuDONHxw"
+    "rY8FuDONHxw",
+    "xtzv9rD8sKs",
+    "9tOu4r-FiQI",
+    "R1lEpZkdA_U",
+    "468NVA8_a1k",
+    "qv6QDEPXe_A"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8489,6 +8494,36 @@
     "rY8FuDONHxw": {
       "processed_at": "2026-11-02T08:01:30.709570",
       "title": "my bots just BROKE Wall St...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "xtzv9rD8sKs": {
+      "processed_at": "2026-11-03T08:01:00.714289",
+      "title": "Start a $1M/Year 1-Person Business with this App (it’s better than Claude)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "9tOu4r-FiQI": {
+      "processed_at": "2026-11-03T08:01:10.248515",
+      "title": "This DeepSeek v4.1 is powerful and uncensored, let's run it",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "R1lEpZkdA_U": {
+      "processed_at": "2026-11-03T08:01:18.035143",
+      "title": "This Code Changed Gaming Forever",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "468NVA8_a1k": {
+      "processed_at": "2026-11-03T08:01:29.931034",
+      "title": "“Forget AI Agents, VOICE AGENTS are the future” – Jannis Moore",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "qv6QDEPXe_A": {
+      "processed_at": "2026-11-03T08:01:39.193079",
+      "title": "OpenAI's UNHINDGED AI Personality (red flags missed!)",
       "channel": "Wes Roth",
       "status": "success"
     }
