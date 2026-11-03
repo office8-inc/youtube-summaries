@@ -1217,7 +1217,12 @@
     "9tOu4r-FiQI",
     "R1lEpZkdA_U",
     "468NVA8_a1k",
-    "qv6QDEPXe_A"
+    "qv6QDEPXe_A",
+    "hlZ0nJwDGOE",
+    "eO1gxqzkeQw",
+    "heJpA0wYrrk",
+    "TvmGKc_T-aI",
+    "0P7F4ceq3O4"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8525,6 +8530,36 @@
       "processed_at": "2026-11-03T08:01:39.193079",
       "title": "OpenAI's UNHINDGED AI Personality (red flags missed!)",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "hlZ0nJwDGOE": {
+      "processed_at": "2026-11-04T08:01:00.502651",
+      "title": "The AI bubble is popping",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "eO1gxqzkeQw": {
+      "processed_at": "2026-11-04T08:01:09.045977",
+      "title": "Revisiting my Viral GitHub Repository #ad",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "heJpA0wYrrk": {
+      "processed_at": "2026-11-04T08:01:19.369771",
+      "title": "What can i even do with AI agents?",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "TvmGKc_T-aI": {
+      "processed_at": "2026-11-04T08:01:29.352818",
+      "title": "Is Qwen3 the new CODING KING? (model testing)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "0P7F4ceq3O4": {
+      "processed_at": "2026-11-04T08:01:38.140376",
+      "title": "People are getting RICH with AI mobile apps… let’s build one",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
