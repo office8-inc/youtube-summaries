@@ -1222,7 +1222,12 @@
     "eO1gxqzkeQw",
     "heJpA0wYrrk",
     "TvmGKc_T-aI",
-    "0P7F4ceq3O4"
+    "0P7F4ceq3O4",
+    "c2cA_LnBvN0",
+    "pwnGQxamPwA",
+    "9tWvDFhBlNU",
+    "BTorblQfXgc",
+    "FByI3Xl846A"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8559,6 +8564,36 @@
     "0P7F4ceq3O4": {
       "processed_at": "2026-11-04T08:01:38.140376",
       "title": "People are getting RICH with AI mobile apps… let’s build one",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "c2cA_LnBvN0": {
+      "processed_at": "2026-11-05T08:00:59.575257",
+      "title": "Best and Worst AI Predictions From The Midterms as Democrats Sweeps",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "pwnGQxamPwA": {
+      "processed_at": "2026-11-05T08:01:09.718733",
+      "title": "AI NEWS - Secret AI Experiments, Vibe Coding Robots and Open Source Insanity",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "9tWvDFhBlNU": {
+      "processed_at": "2026-11-05T08:01:18.855024",
+      "title": "Parsing a 5GB JSON file 💀",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "BTorblQfXgc": {
+      "processed_at": "2026-11-05T08:01:28.164201",
+      "title": "4 Challenges For My MCP AI Agent Setup - Can We Solve All?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "FByI3Xl846A": {
+      "processed_at": "2026-11-05T08:01:38.892196",
+      "title": "how to build a killer team of AI Agents (n8n masterclass)",
       "channel": "David Ondrej",
       "status": "success"
     }
