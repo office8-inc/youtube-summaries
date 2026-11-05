@@ -1232,7 +1232,12 @@
     "rwsOc7TnWAo",
     "gk0PrTcZfGA",
     "FjDhYMHjQsY",
-    "GDdDYMkUILQ"
+    "GDdDYMkUILQ",
+    "DJjK6LAIouM",
+    "J-eaPrkVka8",
+    "bUxjHF6Rp_o",
+    "CxCslLiG_Kc",
+    "3zhlLUObPnE"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8630,6 +8635,36 @@
       "processed_at": "2026-11-05T10:03:47.836798",
       "title": "Free Dev Tools that will Boost your Productivity",
       "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "DJjK6LAIouM": {
+      "processed_at": "2026-11-06T08:01:02.125837",
+      "title": "this might be HUGE...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "J-eaPrkVka8": {
+      "processed_at": "2026-11-06T08:01:11.959803",
+      "title": "Is INSANE Fast Special MCP AI Agents The Future? (I think so)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "bUxjHF6Rp_o": {
+      "processed_at": "2026-11-06T08:01:22.566069",
+      "title": "OpenAI o3 vs Gemini 2.5 Pro in GeoGuessr AI Duel: This Is Just INSANE!",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "CxCslLiG_Kc": {
+      "processed_at": "2026-11-06T08:01:31.322926",
+      "title": "OpenAI’s 7 Hour AI Agents Course in 15 Minutes",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "3zhlLUObPnE": {
+      "processed_at": "2026-11-06T08:01:38.585036",
+      "title": "Ex-OpenAI VP's URGENT Warning!",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
