@@ -1227,7 +1227,12 @@
     "pwnGQxamPwA",
     "9tWvDFhBlNU",
     "BTorblQfXgc",
-    "FByI3Xl846A"
+    "FByI3Xl846A",
+    "0MEHvqbgTWc",
+    "rwsOc7TnWAo",
+    "gk0PrTcZfGA",
+    "FjDhYMHjQsY",
+    "GDdDYMkUILQ"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8595,6 +8600,36 @@
       "processed_at": "2026-11-05T08:01:38.892196",
       "title": "how to build a killer team of AI Agents (n8n masterclass)",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "0MEHvqbgTWc": {
+      "processed_at": "2026-11-05T10:03:09.737938",
+      "title": "40 Programming Projects That Will Make You a Better Developer",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "rwsOc7TnWAo": {
+      "processed_at": "2026-11-05T10:03:18.529756",
+      "title": "8 AI Sales Automations That Feel Like Cheating (PROVEN Systems)",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "gk0PrTcZfGA": {
+      "processed_at": "2026-11-05T10:03:26.508712",
+      "title": "QWEN3 just BROKE the AI Industry...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "FjDhYMHjQsY": {
+      "processed_at": "2026-11-05T10:03:37.821183",
+      "title": "Google Firebase Studio for AI app development (FREE)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "GDdDYMkUILQ": {
+      "processed_at": "2026-11-05T10:03:47.836798",
+      "title": "Free Dev Tools that will Boost your Productivity",
+      "channel": "Coding with Lewis",
       "status": "success"
     }
   }
