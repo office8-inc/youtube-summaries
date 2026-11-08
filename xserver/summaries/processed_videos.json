@@ -1237,7 +1237,12 @@
     "J-eaPrkVka8",
     "bUxjHF6Rp_o",
     "CxCslLiG_Kc",
-    "3zhlLUObPnE"
+    "3zhlLUObPnE",
+    "us6SRuWuqWc",
+    "WpmznZlrhvk",
+    "2lt4P_xGFL8",
+    "HBgl6-tZLEs",
+    "C6V4sbSD0W8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8665,6 +8670,36 @@
       "processed_at": "2026-11-06T08:01:38.585036",
       "title": "Ex-OpenAI VP's URGENT Warning!",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "us6SRuWuqWc": {
+      "processed_at": "2026-11-09T08:00:54.243609",
+      "title": "The Ultimate Linux Tutorial for AI Agents (watch before 2027)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "WpmznZlrhvk": {
+      "processed_at": "2026-11-09T08:01:02.827134",
+      "title": "The Legendary Programmer Iceberg",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "2lt4P_xGFL8": {
+      "processed_at": "2026-11-09T08:01:10.595298",
+      "title": "Anthropic just built it...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "HBgl6-tZLEs": {
+      "processed_at": "2026-11-09T08:01:20.289857",
+      "title": "How to Remove Anything from a Video with AI | Vmake Labs",
+      "channel": "Theo AI Lab",
+      "status": "success"
+    },
+    "C6V4sbSD0W8": {
+      "processed_at": "2026-11-09T08:01:28.150858",
+      "title": "GOAI ",
+      "channel": "Theo AI Lab",
       "status": "success"
     }
   }
