@@ -1242,7 +1242,12 @@
     "WpmznZlrhvk",
     "2lt4P_xGFL8",
     "HBgl6-tZLEs",
-    "C6V4sbSD0W8"
+    "C6V4sbSD0W8",
+    "45-qbcAeUbM",
+    "rzSJ7qkXEjY",
+    "kzsXy3YxcI0",
+    "9skohgttu-E",
+    "jp1kp26kFsI"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8700,6 +8705,36 @@
       "processed_at": "2026-11-09T08:01:28.150858",
       "title": "GOAI ",
       "channel": "Theo AI Lab",
+      "status": "success"
+    },
+    "45-qbcAeUbM": {
+      "processed_at": "2026-11-10T08:00:59.088600",
+      "title": "More skills = worse agents (do this instead)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "rzSJ7qkXEjY": {
+      "processed_at": "2026-11-10T08:01:09.900967",
+      "title": "Could AI Have Predicted The November 5 Stock Market Crash?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "kzsXy3YxcI0": {
+      "processed_at": "2026-11-10T08:01:19.903522",
+      "title": "The Worlds First AI Labs Simulator RTS Game - Kimi K3.1 Pro",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "9skohgttu-E": {
+      "processed_at": "2026-11-10T08:01:29.760346",
+      "title": "Humans have always taken risks. So why should we stop now?✨ #ai #humanity #future",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "jp1kp26kFsI": {
+      "processed_at": "2026-11-10T08:01:41.010378",
+      "title": "Running MCP Servers In Games: This Changes EVERYTHING in AI Gaming?",
+      "channel": "All About AI",
       "status": "success"
     }
   }
