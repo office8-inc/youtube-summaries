@@ -1247,7 +1247,12 @@
     "rzSJ7qkXEjY",
     "kzsXy3YxcI0",
     "9skohgttu-E",
-    "jp1kp26kFsI"
+    "jp1kp26kFsI",
+    "3FKdVJf-tUk",
+    "h76wUNmRqxc",
+    "V3xufaoE8rA",
+    "wYC1UE7PD68",
+    "zDFY--jbaeU"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8735,6 +8740,36 @@
       "processed_at": "2026-11-10T08:01:41.010378",
       "title": "Running MCP Servers In Games: This Changes EVERYTHING in AI Gaming?",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "3FKdVJf-tUk": {
+      "processed_at": "2026-11-11T08:01:00.878103",
+      "title": "AI Agentic Trading Will Change EVERYTHING About Investing | Public",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "h76wUNmRqxc": {
+      "processed_at": "2026-11-11T08:01:09.613855",
+      "title": "NOTHING will be smarter than Fable 5.2...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "V3xufaoE8rA": {
+      "processed_at": "2026-11-11T08:01:19.303119",
+      "title": "AI Agents will be everywhere, are you prepared?",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "wYC1UE7PD68": {
+      "processed_at": "2026-11-11T08:01:29.390703",
+      "title": "UK Researchers SHOCKED at AI's Abilities to ESCAPE and REPLICATE...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "zDFY--jbaeU": {
+      "processed_at": "2026-11-11T08:01:39.611501",
+      "title": "Lovable 2.0 is insane… vibe-code anything in minutes!",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
