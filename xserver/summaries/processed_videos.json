@@ -1252,7 +1252,12 @@
     "h76wUNmRqxc",
     "V3xufaoE8rA",
     "wYC1UE7PD68",
-    "zDFY--jbaeU"
+    "zDFY--jbaeU",
+    "W97nSZQMn0A",
+    "-stDMq7S8Q0",
+    "t7nlRXpXBXw",
+    "Z6MPDx7e1Po",
+    "GPY3hQ-Hlio"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8770,6 +8775,36 @@
       "processed_at": "2026-11-11T08:01:39.611501",
       "title": "Lovable 2.0 is insane… vibe-code anything in minutes!",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "W97nSZQMn0A": {
+      "processed_at": "2026-11-12T08:00:59.241231",
+      "title": "Reviving 7 Old Computers #ad",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "-stDMq7S8Q0": {
+      "processed_at": "2026-11-12T08:01:10.374439",
+      "title": "The Best AI-MADE VIDEOGAMES (2025 Vibe Coding Game Jam)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "t7nlRXpXBXw": {
+      "processed_at": "2026-11-12T08:01:19.129645",
+      "title": "OpenAI gpt-image-1 API - Build AMAZING AI Image Apps: Here's How",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "Z6MPDx7e1Po": {
+      "processed_at": "2026-11-12T08:01:28.869824",
+      "title": "Build AI Agents for anything & everything - here’s how",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "GPY3hQ-Hlio": {
+      "processed_at": "2026-11-12T08:01:37.578951",
+      "title": "Ex-Google CEO's DISTURBING Predictions | Eric Schmidt",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
