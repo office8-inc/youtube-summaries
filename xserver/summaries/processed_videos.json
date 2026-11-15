@@ -1262,7 +1262,12 @@
     "bhAAAqg1M_E",
     "YCV5MClAze4",
     "3W8pjngjx3o",
-    "QxCSLBm3_iA"
+    "QxCSLBm3_iA",
+    "3mVxP-p_eAM",
+    "Sc6TriRAGnI",
+    "dSHSsMY8u88",
+    "mDcULe4GMyA",
+    "IAfZvQbo0Po"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8840,6 +8845,36 @@
       "processed_at": "2026-11-13T08:01:39.394581",
       "title": "Meta's AI Chief: \"I'm DONE with LLMs\"",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "3mVxP-p_eAM": {
+      "processed_at": "2026-11-16T08:00:56.881260",
+      "title": "Can AI Predict The Future Week 2: The Nvidia Affair",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "Sc6TriRAGnI": {
+      "processed_at": "2026-11-16T08:01:04.053264",
+      "title": "Gemini 4 Swarm is out of control...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "dSHSsMY8u88": {
+      "processed_at": "2026-11-16T08:01:13.834508",
+      "title": "My $1,000 Fable 5.2 Workflow (just copy me)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "mDcULe4GMyA": {
+      "processed_at": "2026-11-16T08:01:23.800115",
+      "title": "Agent2Agent Protocol (A2A), clearly explained (why it matters)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "IAfZvQbo0Po": {
+      "processed_at": "2026-11-16T08:01:31.840313",
+      "title": "This is the future of productivity",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
