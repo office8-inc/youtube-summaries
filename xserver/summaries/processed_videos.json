@@ -1267,7 +1267,12 @@
     "Sc6TriRAGnI",
     "dSHSsMY8u88",
     "mDcULe4GMyA",
-    "IAfZvQbo0Po"
+    "IAfZvQbo0Po",
+    "pjYntsza2FA",
+    "7-Tj5qaOUbc",
+    "PSiZAUwh80c",
+    "akjKelVER9Q",
+    "yxStHAjTTbU"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8875,6 +8880,36 @@
       "processed_at": "2026-11-16T08:01:31.840313",
       "title": "This is the future of productivity",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "pjYntsza2FA": {
+      "processed_at": "2026-11-17T08:01:02.659811",
+      "title": "Claude just changed EVERYTHING...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "7-Tj5qaOUbc": {
+      "processed_at": "2026-11-17T08:01:12.437825",
+      "title": "Build your own open-source Grok Bot, here’s how",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "PSiZAUwh80c": {
+      "processed_at": "2026-11-17T08:01:24.063322",
+      "title": "VideoGameBench Tutorial | AI Vision Will Never be the same...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "akjKelVER9Q": {
+      "processed_at": "2026-11-17T08:01:34.224736",
+      "title": "he made $1m with AI Automations, here's how:",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "yxStHAjTTbU": {
+      "processed_at": "2026-11-17T08:01:42.300660",
+      "title": "7 Proven AI Systems Giving Ecommerce Stores an Edge in 2025",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
