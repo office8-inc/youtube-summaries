@@ -1272,7 +1272,12 @@
     "7-Tj5qaOUbc",
     "PSiZAUwh80c",
     "akjKelVER9Q",
-    "yxStHAjTTbU"
+    "yxStHAjTTbU",
+    "K81vU-gykmQ",
+    "tEysfZGzJc8",
+    "EPopZq-vJjA",
+    "fChjiW9wW0c",
+    "1cChmOB1ZtM"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8910,6 +8915,36 @@
       "processed_at": "2026-11-17T08:01:42.300660",
       "title": "7 Proven AI Systems Giving Ecommerce Stores an Edge in 2025",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "K81vU-gykmQ": {
+      "processed_at": "2026-11-18T08:01:00.947402",
+      "title": "RSI is here?! GPT 6.2 is “high” on recursive self-improvement",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "tEysfZGzJc8": {
+      "processed_at": "2026-11-18T08:01:07.044368",
+      "title": "OpenAI JUST made EVERYONE MAD...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "EPopZq-vJjA": {
+      "processed_at": "2026-11-18T08:01:16.531648",
+      "title": "8 AI Predictions for GTA 6 — Will Jason or Lucia Die?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "fChjiW9wW0c": {
+      "processed_at": "2026-11-18T08:01:27.939714",
+      "title": "Using Python to Control your GPU 💻🐍",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "1cChmOB1ZtM": {
+      "processed_at": "2026-11-18T08:01:37.857246",
+      "title": "Gemini 2.5 Flash - First Test and Impression: Google Wins Again?",
+      "channel": "All About AI",
       "status": "success"
     }
   }
