@@ -1277,7 +1277,12 @@
     "tEysfZGzJc8",
     "EPopZq-vJjA",
     "fChjiW9wW0c",
-    "1cChmOB1ZtM"
+    "1cChmOB1ZtM",
+    "Na1v2yaUXlY",
+    "3PJj-fYy2z0",
+    "_whn-VpVtjo",
+    "qqcmI72marw",
+    "wvcFdERgW64"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8945,6 +8950,36 @@
       "processed_at": "2026-11-18T08:01:37.857246",
       "title": "Gemini 2.5 Flash - First Test and Impression: Google Wins Again?",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "Na1v2yaUXlY": {
+      "processed_at": "2026-11-19T08:01:01.599496",
+      "title": "AI video just got scary good...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "3PJj-fYy2z0": {
+      "processed_at": "2026-11-19T08:01:10.816137",
+      "title": "Can o3 beat Gemini 2.5 Pro? The Ultimate Coding AI showdown.",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "_whn-VpVtjo": {
+      "processed_at": "2026-11-19T08:01:21.737784",
+      "title": "Build Anything with OpenAI o3, Here’s How",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "qqcmI72marw": {
+      "processed_at": "2026-11-19T08:01:30.200266",
+      "title": "OpenAI Codex Coding Agent with O4-mini | Claude Code Killer?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "wvcFdERgW64": {
+      "processed_at": "2026-11-19T08:01:36.796134",
+      "title": "The smart get smarter with AI, here's why",
+      "channel": "David Ondrej",
       "status": "success"
     }
   }
