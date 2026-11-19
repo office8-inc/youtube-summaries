@@ -1282,7 +1282,12 @@
     "3PJj-fYy2z0",
     "_whn-VpVtjo",
     "qqcmI72marw",
-    "wvcFdERgW64"
+    "wvcFdERgW64",
+    "-0uvPVwPFgM",
+    "N9bj9dXdgGs",
+    "zWi_N_sU0uk",
+    "D0iXkmyWcPM",
+    "W-Jhoh5y0R0"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -8979,6 +8984,36 @@
     "wvcFdERgW64": {
       "processed_at": "2026-11-19T08:01:36.796134",
       "title": "The smart get smarter with AI, here's why",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "-0uvPVwPFgM": {
+      "processed_at": "2026-11-20T08:01:01.747764",
+      "title": "Google's Neon is wild...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "N9bj9dXdgGs": {
+      "processed_at": "2026-11-20T08:01:09.179303",
+      "title": "OpenAI's \"AI SYSTEMS\" and New Scientific Discoveries",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "zWi_N_sU0uk": {
+      "processed_at": "2026-11-20T08:01:17.685416",
+      "title": "Roasting Developers by Programming Language 🔥🧑‍💻",
+      "channel": "Coding with Lewis",
+      "status": "success"
+    },
+    "D0iXkmyWcPM": {
+      "processed_at": "2026-11-20T08:01:25.540376",
+      "title": "INSANE Parallel Coding with Claude Code + Cursor MCP Server",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "W-Jhoh5y0R0": {
+      "processed_at": "2026-11-20T08:01:35.063945",
+      "title": "Chat GPT images are OP... here's how to use them right",
       "channel": "David Ondrej",
       "status": "success"
     }
