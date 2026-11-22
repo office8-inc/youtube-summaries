@@ -1287,7 +1287,12 @@
     "N9bj9dXdgGs",
     "zWi_N_sU0uk",
     "D0iXkmyWcPM",
-    "W-Jhoh5y0R0"
+    "W-Jhoh5y0R0",
+    "n-LwSQq3xYE",
+    "AxQE_ash8b8",
+    "xjX3jESpZqs",
+    "0k4x9YDrWMo",
+    "u1tl4Dx4wCI"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -9015,6 +9020,36 @@
       "processed_at": "2026-11-20T08:01:35.063945",
       "title": "Chat GPT images are OP... here's how to use them right",
       "channel": "David Ondrej",
+      "status": "success"
+    },
+    "n-LwSQq3xYE": {
+      "processed_at": "2026-11-23T08:01:00.049577",
+      "title": "Gemini 4 Neon vs Fable 5.2 vs GPT 6.2 Astra",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "AxQE_ash8b8": {
+      "processed_at": "2026-11-23T08:01:08.804457",
+      "title": "AI just BROKE SaaS...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "xjX3jESpZqs": {
+      "processed_at": "2026-11-23T08:01:18.840370",
+      "title": "Claude JUST solved the Riemann Hypothesis...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "0k4x9YDrWMo": {
+      "processed_at": "2026-11-23T08:01:26.184770",
+      "title": "6 Lessons From Installing AI in Your Business",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "u1tl4Dx4wCI": {
+      "processed_at": "2026-11-23T08:01:37.048787",
+      "title": "AI Video Just Went TOO FAR... NIGHTMARE FUEL",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
