@@ -1292,7 +1292,12 @@
     "AxQE_ash8b8",
     "xjX3jESpZqs",
     "0k4x9YDrWMo",
-    "u1tl4Dx4wCI"
+    "u1tl4Dx4wCI",
+    "YCvKoOE0X1w",
+    "f5_c0O_chy4",
+    "02rOcvzNLvE",
+    "iQs7zaojIZ4",
+    "fkNmSQaNO7U"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -9050,6 +9055,36 @@
       "processed_at": "2026-11-23T08:01:37.048787",
       "title": "AI Video Just Went TOO FAR... NIGHTMARE FUEL",
       "channel": "Wes Roth",
+      "status": "success"
+    },
+    "YCvKoOE0X1w": {
+      "processed_at": "2026-11-24T08:00:58.410001",
+      "title": "Can AI Predict the Unpredictable? (the black swan event)",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "f5_c0O_chy4": {
+      "processed_at": "2026-11-24T08:01:05.937869",
+      "title": "OpenAI's SHOCKING new warning...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "02rOcvzNLvE": {
+      "processed_at": "2026-11-24T08:01:13.681163",
+      "title": "Build AI Agents with GPT 4.1 - Step by step",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "iQs7zaojIZ4": {
+      "processed_at": "2026-11-24T08:01:25.021063",
+      "title": "OpenAI GPT-4.1 First Tests and Impression: A Model For Developers?",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "fkNmSQaNO7U": {
+      "processed_at": "2026-11-24T08:01:35.469489",
+      "title": "The New ChatGPT Just Made 13 Insane Business Ideas Possible",
+      "channel": "Liam Ottley",
       "status": "success"
     }
   }
