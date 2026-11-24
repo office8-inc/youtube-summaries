@@ -1297,7 +1297,12 @@
     "f5_c0O_chy4",
     "02rOcvzNLvE",
     "iQs7zaojIZ4",
-    "fkNmSQaNO7U"
+    "fkNmSQaNO7U",
+    "75n_pAmvG0c",
+    "gEQ0q1XmRg8",
+    "jeCeCAE6o2M",
+    "LjL3J_TLt08",
+    "M2RFKs8Bnr8"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -9085,6 +9090,36 @@
       "processed_at": "2026-11-24T08:01:35.469489",
       "title": "The New ChatGPT Just Made 13 Insane Business Ideas Possible",
       "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "75n_pAmvG0c": {
+      "processed_at": "2026-11-25T08:01:00.754893",
+      "title": "I Rebuilt This 8-Figure Sourcing Company With AI",
+      "channel": "Liam Ottley",
+      "status": "success"
+    },
+    "gEQ0q1XmRg8": {
+      "processed_at": "2026-11-25T08:01:11.483136",
+      "title": "OpenAI's \"supermassive black hole\" AI model (4.1)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "jeCeCAE6o2M": {
+      "processed_at": "2026-11-25T08:01:20.124697",
+      "title": "[OpenAI Livestream] developers 🤝 supermassive black hole",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "LjL3J_TLt08": {
+      "processed_at": "2026-11-25T08:01:31.855393",
+      "title": "Google just destroyed all vibe-coding apps (Firebase Studio)",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "M2RFKs8Bnr8": {
+      "processed_at": "2026-11-25T08:01:41.525227",
+      "title": "EASY Memory DB MCP Server Setup in Under 15 Minutes",
+      "channel": "All About AI",
       "status": "success"
     }
   }
