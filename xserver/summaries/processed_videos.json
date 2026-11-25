@@ -1302,7 +1302,12 @@
     "gEQ0q1XmRg8",
     "jeCeCAE6o2M",
     "LjL3J_TLt08",
-    "M2RFKs8Bnr8"
+    "M2RFKs8Bnr8",
+    "RlemAajyNrQ",
+    "LbiEkzt7yhQ",
+    "OWlHwjsVBeU",
+    "KnpnLhgKKtk",
+    "5taJhLo13hs"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -9120,6 +9125,36 @@
       "processed_at": "2026-11-25T08:01:41.525227",
       "title": "EASY Memory DB MCP Server Setup in Under 15 Minutes",
       "channel": "All About AI",
+      "status": "success"
+    },
+    "RlemAajyNrQ": {
+      "processed_at": "2026-11-26T08:01:01.759846",
+      "title": "HOLY S*** HOLY S*** HOLY S*** HOLY S*** HOLY S***",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "LbiEkzt7yhQ": {
+      "processed_at": "2026-11-26T08:01:11.754221",
+      "title": "Google's secret AI model \"DRAGONTAIL\" is scary good...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "OWlHwjsVBeU": {
+      "processed_at": "2026-11-26T08:01:19.828635",
+      "title": "Steal My Gemini 2.5 Pro Workflow To DOMINATE With AI",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "KnpnLhgKKtk": {
+      "processed_at": "2026-11-26T08:01:28.310638",
+      "title": "Unitree Robot Will Box a Human Opponent (Livestream Soon) #ai #llm #chatgpt",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "5taJhLo13hs": {
+      "processed_at": "2026-11-26T08:01:36.458304",
+      "title": "OpenAI's \"STEALTH\" Models Revealed (AI Safety Concern?)",
+      "channel": "Wes Roth",
       "status": "success"
     }
   }
