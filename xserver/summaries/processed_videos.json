@@ -1307,7 +1307,12 @@
     "LbiEkzt7yhQ",
     "OWlHwjsVBeU",
     "KnpnLhgKKtk",
-    "5taJhLo13hs"
+    "5taJhLo13hs",
+    "WqJ_RNRVxvI",
+    "uClZwJ-BoSc",
+    "6kadyV1GkcE",
+    "KE_xHfeuclo",
+    "bnNXIUdqnt0"
   ],
   "details": {
     "uOEengY4Da4": {
@@ -9154,6 +9159,36 @@
     "5taJhLo13hs": {
       "processed_at": "2026-11-26T08:01:36.458304",
       "title": "OpenAI's \"STEALTH\" Models Revealed (AI Safety Concern?)",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "WqJ_RNRVxvI": {
+      "processed_at": "2026-11-27T08:01:02.601743",
+      "title": "AI Is Just Getting Scary Now...",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "uClZwJ-BoSc": {
+      "processed_at": "2026-11-27T08:01:09.909976",
+      "title": "Hermes Agent just leveled up...",
+      "channel": "Wes Roth",
+      "status": "success"
+    },
+    "6kadyV1GkcE": {
+      "processed_at": "2026-11-27T08:01:15.838796",
+      "title": "Hermes Agent, but 100% uncensored… it’s insane",
+      "channel": "David Ondrej",
+      "status": "success"
+    },
+    "KE_xHfeuclo": {
+      "processed_at": "2026-11-27T08:01:24.258358",
+      "title": "Gemini 2.5 Pro MCP Server in Claude Code: INSANE LLM Collaboration Unlocked!",
+      "channel": "All About AI",
+      "status": "success"
+    },
+    "bnNXIUdqnt0": {
+      "processed_at": "2026-11-27T08:01:32.975486",
+      "title": "Google UNLEASHED Firebase Studio for AI app development (FREE)",
       "channel": "Wes Roth",
       "status": "success"
     }
